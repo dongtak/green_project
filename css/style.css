@@ -1,0 +1,164 @@
+#thumbnail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    animation: fadeOut 2s forwards;
+  }
+  #thumbnail h1{
+    color: white;
+    position: fixed;
+    top: 45%;
+    left: 48%;
+    width: 50px;
+    text-align: center;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      z-index:999;
+      opacity: 1;
+    }
+    70%{
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+      z-index:0;
+      pointer-events: none;
+    }
+  }
+.header{
+    /* position: relative; */
+    width: 100%;
+    height: 100px;
+    background: rgb(173, 255, 157);
+    /* background:url("../images/parallex/parallax-mountain-bg.png"); */
+    background-size:contain;
+    
+}
+
+.logo{
+    /* position: absolute; */
+    font-size: 32px;
+    background: #ffa3a3;
+    height: 100px;
+    width: 200px;
+    margin: 0 25px;
+
+}
+.logo:hover + .logo h1{
+    color: blue;
+}
+.logo h1,.logo p{
+    text-align: center;
+}
+.top_nav{
+    width: 600px;
+    position: absolute;
+    top: 35px; 
+    right: 0;
+    font-size: 22px;
+}
+.top_nav li{
+    display: inline-block;
+    margin-inline: 10px;
+    font-weight: 600;
+}
+.top_nav a:hover + .sub_artist,
+.info:hover + .sub_info{
+    display: block;
+}
+.sub_artist:hover,.sub_info:hover{
+    transition: 0.2s;
+    background: #347bff;
+    display: block;
+}
+.sub_artist,.sub_info {
+    transition: 0.2s;
+    display: none;
+    position: absolute;
+    height: 80px;
+}
+.sub_artist a,.sub_info a{
+    transition: 0.2s;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.main_ticket{
+    display: flex;
+    justify-content: center;
+}
+.main_ticket a{
+    border: 1px solid black;
+    width: 240px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.main_about{
+    text-align: center;
+    /* background: #f94eff; */
+    height: 380px;
+}
+
+.main_about ul{
+    margin-top: 50px;
+    display: flex;
+    justify-content:space-around;
+    /* background: #ff6a6a; */
+}
+
+.main_parallex{
+    width: 100%;
+    margin:60px 0;
+    background: url("../images/main/main02.jpg");
+    background-size: cover;
+    height: 460px;
+}
+.main_about li{
+    display: inline-block;
+}
+hr{
+    margin: 45px auto;
+    width: 70%;
+}
+.main_about h1{
+    margin-top: 20px;
+}
+.lineup_box{
+    /* background: #ff5858; */
+    height: 600px;
+    width: 960px;
+}
+
+.main_lineup img{
+    width: 420px;
+    float: left;
+    margin-left: 4.1666%;
+   /* float: left; */
+}
+
+.footer_logo{
+    margin-top: 700px;
+    height: 400px;
+    text-align: center;
+}
+.footer_logo h1{
+    margin-bottom: 20px
+}
+@media all and (min-width:960px){
+    section{
+        width: 960px;
+        margin: 0 auto;
+    }
+}

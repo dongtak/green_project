@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+document.addEventListener('touchmove', function(e) {
+  let mobileBtn = document.querySelector('.mobile_btn');
+  if (e.touches[0].pageY > 0 && !hamburger.checked) {
+    mobileBtn.style.display = 'none';
+
+  } else {
+    mobileBtn.style.display = 'block';
+  }
+});
+
+hamburger.addEventListener('change', () => {
+  let mobileBtn = document.querySelector('.mobile_btn');
+  if (hamburger.checked) {
+    mobileBtn.style.display = 'block';
+  } else if (document.documentElement.pageYOffset === 0) {
+    mobileBtn.style.display = 'block';
+  }
+  else {
+    mobileBtn.style.display = 'none';
+  }
+});
+
+    </script>
+<style>
+    *{ margin: 0;padding: 0; }
+    a {text-decoration: none;
+    color: black;}
+
+    html,body {width: 100%; overflow-x: hidden; overflow-y: auto;}
+
+
+    .mobile_btn{
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    top:25px;
+    right: 20px;
+} 
+
+input[id="hamburger"] {
+    transition:  0.3s;
+  display: none;
+}
+
+input[id="hamburger"] + label {
+  display: block;
+  width: 60px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[id="hamburger"] + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  border-radius: 30px;
+  background: #000;
+  transition: all 0.35s;
+}
+
+input[id="hamburger"] + label span:nth-child(1) {
+  top: 0;
+}
+input[id="hamburger"] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+input[id="hamburger"] + label span:nth-child(3) {
+  bottom: 0;
+}
+input[id="hamburger"]:checked + label {
+  z-index: 99;
+}
+input[id="hamburger"]:checked + label span {
+  background: black;
+}
+input[id="hamburger"]:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+input[id="hamburger"]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+input[id="hamburger"]:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+div[class="top_nav"] {
+  width: 100%;
+  /* background: rgb(255, 129, 129); */
+  position: fixed;
+  left: 0%;
+  top: -100%;
+  z-index: 98;
+  transition: all 0.35s;
+}
+
+input[id="hamburger"]:checked + label + div {
+    top:0%;
+}
+.nav_mobile {
+    position: absolute;
+    top:100px;
+    width: 100%;
+    }
+    .top_nav .nav_mobile li {
+	color:black;
+    position:relative;
+    width:100%; 
+    list-style-type:none; 
+    font-size:20px;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+    }
+
+    .top_nav li a{
+      height: 80px;
+    display:block;
+    line-height:80px;
+    padding:0;
+    text-align:center;
+    text-decoration:none;
+    transition: all 0.4s;
+    }
+
+    .top_nav li a:hover, .top_nav ul li:hover a {
+
+text-decoration: none;
+color: #eee;
+padding: 0;
+margin: 0;
+border: 0px;
+}
+
+    .main_vid{
+        opacity: 0.5;
+        position: relative;
+        top: 0;
+    }
+    #main_vid{
+        width: 100%;
+    }
+    
+</style>
+</head>
+<body>
+    
+<div class="mobile_btn">
+	<input type="checkbox" id="hamburger" />
+	<label for="hamburger">
+	  <span></span>
+	  <span></span>
+	  <span></span>
+	</label>
+	<div class="top_nav">
+    <hr style="position: relative; top:100px; border: solid 1px black;">
+    <ul class="nav_mobile">
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">ARTIST</a></li>
+      <li><a href="#">TICKET</a></li>
+      <li><a href="#">GALLERY</a></li>
+      <li>INFO<a href="#">MAP</a>
+        <a href="#">FAQ/Q&A</a></li>
+      <li><a href="#">SIGN IN</a></li>
+    </ul>
+	</div>
+	</div>
+<!-- <section class="main_vid">
+    <video  loop id="main_vid" autoplay muted>
+        <source src="./images/video/video01.mp4" type="video/mp4">
+        <a href="#" style="position:absolute; top:30%; left:50%; transform:translate(-50%, -50%);">클릭하세요!</a>
+    </video>
+</section> -->
+<section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</section>
+  
+</body>
+</html>

@@ -1,0 +1,38 @@
+.general {
+    display: flex;
+    background: #40c9ff;
+    height: 150px;
+    margin-bottom: 100px;
+}
+.promotion_menu span{
+    text-align: center;
+    border: 1px solid black;
+    width: 60px;
+    height: 150px;
+    
+    transform: skew(-20deg);
+    transition: 0.3s; 
+}
+.general span{
+    background: #6150ff;
+}
+.general span:hover,.premium span:hover{
+    height: 250px;
+    width: 150px;
+    margin-left: -19px;
+    margin-right: 18px;
+}
+.premium{
+    background: #ff4545;
+
+    height: 150px;
+    display: flex;
+}
+.premium span{
+    background: #ff7878;
+}
+
+
+.promotion_menu li{
+    display: inline-block;
+}

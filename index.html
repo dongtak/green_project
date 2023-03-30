@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 외부 스타일 -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <!-- 외부 스크립트 -->
+    <script src="./js/mobile_btn.js"></script>
+    <!-- 외부 폰트 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+    document.addEventListener(DOMContentLoaded,function(){ 
+        hamburger();
+     });
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        color: aliceblue;
+      }
+      body {
+        background: #1d1d1d;
+      }
+      /* 헤더 */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #ffffff;
+      }
+
+      /* 헤더 로고 */
+      .logo {
+        margin: 0;
+      }
+      .logo a {
+        text-align: center;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: #000000;
+        line-height: 50px;
+      }
+      /* 헤더 메뉴 */
+
+      .mobile_btn {
+        transition: all 0.3s ease-in-out;
+        position: fixed;
+        top: 25px;
+        right: 20px;
+        z-index: 999;
+      }
+
+      input[id="hamburger"] {
+        transition: 0.3s;
+        display: none;
+      }
+
+      input[id="hamburger"] + label {
+        display: block;
+        width: 60px;
+        height: 40px;
+        position: relative;
+        cursor: pointer;
+      }
+
+      input[id="hamburger"] + label span {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 7px;
+        border-radius: 30px;
+        background: #000;
+        transition: all 0.3s;
+      }
+
+      input[id="hamburger"] + label span:nth-child(1) {
+        top: 0;
+      }
+      input[id="hamburger"] + label span:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      input[id="hamburger"] + label span:nth-child(3) {
+        bottom: 0;
+      }
+      input[id="hamburger"]:checked + label {
+        z-index: 99;
+      }
+      input[id="hamburger"]:checked + label span {
+        background: black;
+      }
+      input[id="hamburger"]:checked + label span:nth-child(1) {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+      }
+      input[id="hamburger"]:checked + label span:nth-child(2) {
+        opacity: 0;
+      }
+      input[id="hamburger"]:checked + label span:nth-child(3) {
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+      }
+      div[class="top_nav"] {
+        width: 100%;
+        position: fixed;
+        left: 0%;
+        top: -100%;
+        z-index: 98;
+        transition: all 0.35s;
+      }
+
+      input[id="hamburger"]:checked + label + div {
+        top: 0%;
+      }
+      .nav_mobile {
+        position: absolute;
+        top: 100px;
+        width: 100%;
+      }
+      .top_nav .nav_mobile li {
+        color: rgb(255, 255, 255);
+        position: relative;
+        width: 100%;
+        list-style-type: none;
+        font-size: 20px;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+      }
+
+      .top_nav li a {
+        background: #525252;
+        color: aliceblue;
+        height: 80px;
+        display: block;
+        line-height: 80px;
+        padding: 0;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.4s;
+      }
+      .top_nav .info {
+        height: 160px;
+
+        line-height: 80px;
+        background: #ff7777;
+      }
+
+      .top_nav li a:hover,
+      .top_nav ul li:hover a {
+        text-decoration: none;
+        color: #eee;
+        padding: 0;
+        margin: 0;
+        border: 0px;
+      }
+      /* 메인 동영상 */
+      #main_vid {
+        position: relative;
+        opacity: 0.5;
+        z-index: 0;
+        top: 100px;
+        width: 100%;
+      }
+      /* 메인 티켓 버튼*/
+      .main_ticket_btn {
+        /* position:static; */
+        z-index: 99;
+        background: #3d3d3d;
+        text-align: center;
+      }
+
+      .main_ticket_btn a {
+        color: aliceblue;
+        margin: 30px;
+        width: 280px;
+        height: 60px;
+        line-height: 60px;
+        display: inline-block;
+        border: 1px solid aliceblue;
+        border-radius: 10px;
+      }
+      /* 메인 어바웃 */
+      .main_about {
+        /* background: #aaaaaa; */
+        margin: 0 auto;
+        width: 80vw;
+        text-align: center;
+      }
+      .main_about img {
+        width: 50%;
+      }
+      .main_about li {
+        /* background: #ff9191; */
+        margin: 40px 0;
+      }
+      .main_about p {
+        margin-top: 20px;
+      }
+      /* 메인 라인업 */
+      .main_lineup {
+        display: flex;
+        width: 100%;
+        height: 28vh;
+        background: #000000;
+      }
+      .main_lineup a {
+        margin: auto;
+        background: url("images/work01.jpg");
+        background-size: cover;
+        width: 194px;
+        height: 194px;
+      }
+      /* 메인 하단 티켓 번들 */
+      .main_ticket_bundle li {
+        text-align: center;
+      }
+      .main_ticket_bundle a {
+        color: aliceblue;
+        margin-top: 30px;
+        width: 70%;
+        height: 60px;
+        line-height: 60px;
+        display: inline-block;
+        border: 1px solid aliceblue;
+        transform: skew(-20deg);
+        transition: 0.3s ease-in;
+      }
+      .main_ticket_bundle a:hover {
+        background: aliceblue;
+      }
+
+      footer {
+        position: static;
+        bottom: 0;
+        width: 100%;
+        padding: 100px 0;
+        text-align: center;
+        line-height: 30px;
+        background: #000000;
+      }
+      @media all and (min-width: 960px) {
+        .mobile_btn {
+          transition: 0.3s ease-out;
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- 헤더 -->
+      <header>
+        <div class="logo">
+          <a href=""
+            ><h1>
+              G&B
+              <br />
+              FESTIVAL
+            </h1></a
+          >
+        </div>
+        <!-- 모바일 버튼 -->
+        <div class="mobile_btn">
+            <!-- 햄버거버튼 -->
+          <input type="checkbox" id="hamburger" />
+          <label for="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="top_nav">
+            <hr
+              style="position: relative; top: 100px; border: solid 1px black"
+            />
+            <ul class="nav_mobile">
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">ARTIST</a></li>
+              <li><a href="#">TICKET</a></li>
+              <li><a href="#">GALLERY</a></li>
+              <li class="info">
+                INFO<a href="#">MAP</a> <a href="#">FAQ/Q&A</a>
+              </li>
+              <li><a href="#">SIGN IN</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- 메인 영상 -->
+      <section>
+        <div class="main_vid">
+        <video
+          loop
+          id="main_vid"
+          autoplay
+          muted
+          playsinline
+          style="width: 100%; object-fit: cover; z-index: 0"
+        >
+          <source src="./images/video/video01.mp4" type="video/mp4" />
+        </video>
+    </div>
+      </section>
+      <!-- 메인 최초 티켓버튼 -->
+      <section>
+        <div class="main_ticket_btn">
+        <a href="ticket_prototype.html"> 티켓 예매하기 </a>
+    </div>
+      </section>
+      <section>
+        <!-- 메인 어바웃 -->
+        <div class="main_about">
+          <ul>
+            <li>
+              <a href="">
+                <img src="./images/about_icon01.png" alt="" /><br />ABOUT</a
+              >
+              <p>설명글입니다</p>
+            </li>
+            <li>
+              <a href="">
+                <img src="./images/about_icon02.png" alt="" /><br />ARTIST</a
+              >
+              <p>설명글입니다</p>
+            </li>
+            <li>
+              <a href="">
+                <img src="./images/about_icon03.png" alt="" /><br />GALLERY</a
+              >
+              <p>설명글입니다</p>
+            </li>
+            <li>
+              <a href="">
+                <img src="./images/about_icon04.png" alt="" /><br />INFO</a
+              >
+              <p>설명글입니다</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="main_lineup">
+          <a href=""></a>
+          <a href=""></a>
+        </div>
+      </section>
+      <section>
+        <div class="main_ticket_bundle">
+          <ul>
+            <li><a href="">1DAY</a></li>
+            <li><a href="">2DAY</a></li>
+            <li><a href="">PREMIUM</a></li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        <h1>G&B<br />FESTIVAL</h1>
+        <p>&copy; Copyright</p>
+      </footer>
+    </div>
+  </body>
+</html>
