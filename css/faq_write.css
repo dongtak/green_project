@@ -1,0 +1,28 @@
+.qna_writebox {
+
+    width: 90%;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+li.title {
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+input.title {
+
+    width: 600px;
+}
+
+input.info {
+
+    width: 300px;
+}
+
+input.page {
+
+    width: 600px;
+}
