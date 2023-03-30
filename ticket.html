@@ -18,77 +18,47 @@
         section {
           margin-top: 100px;
         }
-        .ticket_general_box {
-          /* background: #cfcfcf; */
+        .ticket h1{
+          font-size: 50px;
+        height: 100px;
+          line-height: 100px;
+        }
+        .ticket{
           text-align: center;
+          background: #ff0000;
         }
-        .ticket_general_box>h1{
-          height: 120px;
-          line-height: 120px;
-          font-size: 60px;
-        }
-        .ticket_general {
-          /* background: #e4fd88; */
+        .ticket_btn{
           width: 80%;
-          margin: 0 auto;
-        }
-        .ticket_general_buy {
-          display: flex;
-          height: 300px;
-          justify-content: space-around;
-          align-items: center;
-          /* background: #ff6262; */
-        }
-        .ticket_general_buy h1:nth-child(2){
-          /* color: #ff0000; */
-          line-height: 0;
-        }
-        .ticket_general_buy a {
-          font-size: 30px;
-          width: 240px;
-          height: 120px;
-          line-height: 80px;
-          /* background: #43b800; */
-          border: 1px solid rgb(255, 255, 255);
-          
-        }
-        .ticket_general_offer {
-          position: relative;
-          background: #5e5e5e;
-        }
-        .ticket_general_offer ul{
-          display: flex;
+          background: #ff9900;
           margin: auto;
-          background: #7e9cff;
-         
-          justify-content: center;
-          
+          display: flex;
         }
-        .ticket_general_offer li>h3{
-          background: #33ff00;
-          border: 1px solid black;
-          height: 160px;
-          width: 60px;
-          transform: skew(-8deg);
-        }
-        .ticket_general_offer li:nth-child(1) h3{
-          transform-origin: bottom right;
-        }
-        .ticket_general_offer li:nth-child(2) h3{
-          transform-origin: bottom left;
-        }
-        .ticket_general_offer li>h3:hover{
-          transform: skew(-8deg) scale(1.5) scaleX(1.8);
-        }
-        
-        .ticket_general_offer>h3{
-          position: absolute;
-          background: #790000;
-          width: 160px;
+        .ticket_btn a{
+          background: #3cff00;
+          width: 30%;
+          margin: 0 auto;
+          height: 120px;
+          text-align: center;
           line-height: 60px;
-          height: 60px;
-          top: 100px;
-          left: 40%;
+        }
+        .offers{
+          width: 50%;
+          background: #fffb00;
+          height: 120px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+        }
+        .offer{
+          border: 1px solid black;
+          width: 60px;
+          height: 120px;
+          background: #00c3ff;
+        }
+        .offer:hover{
+          width: 140px;
+          height: 200px;
+          transform-origin: bottom left;
         }
       }
     </style>
@@ -137,39 +107,28 @@
           </div>
         </div>
       </header>
-
       <section>
         <!-- 컨텐츠 여기 넣어주세요 -->
-        <div class="ticket_general_box">
+        <div class="ticket">
           <h1>TICKET</h1>
-          <div class="ticket_general">
-            <div class="ticket_general_buy">
-              <a href="">
-                <h1>1DAY</h1>
-                <h1>99,000</h1>
-              </a>
-              <a href="">
-                <h1>2DAY</h1>
-                <h1>149,000</h1>
-              </a>
+          <div class="ticket_btn">
+            <a href="">1DAY<br>99,000</a>
+            <a href="">2DAY<br>149,000</a>
+          </div>
+          <div class="offers">
+            <div class="offer">
+              <div class="offer_img"></div>
             </div>
-            <div class="ticket_general_offer">
-              <ul>
-                <li>
-                  <h3>셔틀버스</h3>
-                  <p></p>
-                </li>
-                <li>
-                  <h3>웰컴 드링크</h3>
-                  <p></p>
-                </li>
-              </ul>
-              <h3>GENERAL</h3>
+            <div class="offer">
+              <div class="offer_img"></div>
             </div>
           </div>
+          <div class="general">
+            <a href="">GENERAL</a>
+          </div>
         </div>
-      </section>
 
+      </section>
       <footer>
         <h1>G&B<br />FESTIVAL</h1>
         <p>&copy; Copyright</p>
