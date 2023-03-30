@@ -24,15 +24,7 @@
            height: 150px;
            margin-left: 25%;
            margin-bottom: 10px;
-           /* background-color: tomato; */
-
-
-
-
        }
-
-
-
 
        .artist_title_box {
            width: 60%;
@@ -40,15 +32,7 @@
            margin-left: 20%;
            display: flex;
            justify-content: center;
-
-
-
-
-           /* background-color: yellow; */
        }
-
-
-
 
        .artist_title_box li {
            width: 100%;
@@ -56,31 +40,12 @@
            text-align: center;
            line-height: 75px;
            box-sizing: border-box;
-
-
-
-
-
-
-
-
-           /* background-color: green; */
        }
-
-
-
-
-
-
-
 
        .artist_title_box li:first-child {
            border-bottom: 2px solid;
            margin-bottom: 20%;
        }
-
-
-
 
        #button_g {
            background-color: #4CAF50;
@@ -96,9 +61,6 @@
            border-radius: 10px;
        }
 
-
-
-
        #button_b {
            background-color: #add8e6;
            border: none;
@@ -113,45 +75,24 @@
            border-radius: 10px;
        }
 
-
-
-
        .container {
            display: grid;
            grid-template-columns: repeat(2, 1fr);
            grid-gap: 10px;
            width: 50%;
+           margin-top: 2%;
            margin-left: 25%;
+           margin-bottom: 10%;
            box-sizing: border-box;
            border: 5px solid black;
-           /* transition: 1s ease; */
        }
-
-
-
 
        .container img {
            width: 100%;
            height: auto;
-           /* transition: 1s ease; */
        }
 
-
-
-
-     
-
-
-
-
-
-
-
-
        /* PC용 */
-
-
-
 
        @media all and (min-width:800px) {
            .artist_title_container {
@@ -159,11 +100,7 @@
                height: 150px;
                margin-left: 25%;
                margin-bottom: 10px;
-               /* background-color: tomato; */
            }
-
-
-
 
            .artist_title_box {
                width: 60%;
@@ -171,11 +108,8 @@
                margin-left: 20%;
                display: flex;
                justify-content: center;
-               /* background-color: yellow; */
+               
            }
-
-
-
 
            .artist_title_box li {
                width: 100%;
@@ -183,19 +117,12 @@
                text-align: center;
                line-height: 75px;
                box-sizing: border-box;
-               /* background-color: green; */
            }
-
-
-
 
            .artist_title_box li:first-child {
                border-bottom: 2px solid;
                margin-bottom: 20%;
            }
-
-
-
 
            #button_g {
                background-color: #4CAF50;
@@ -211,9 +138,6 @@
                border-radius: 10px;
            }
 
-
-
-
            #button_b {
                background-color: #add8e6;
                border: none;
@@ -228,9 +152,6 @@
                border-radius: 10px;
            }
 
-
-
-
            .container {
                display: grid;
                grid-template-columns: repeat(3, 1fr);
@@ -239,25 +160,12 @@
                margin-left: 25%;
                box-sizing: border-box;
                border: 5px solid black;
-               /* transition: 1s ease; */
            }
-
-
-
 
            .container img {
                width: 100%;
                height: auto;
-               /* transition: 1s ease; */
            }
-
-
-
-
-
-
-
-
        }
     </style>
   </head>
@@ -308,15 +216,12 @@
         <div class="artist_title_container" style="margin-top: 100px">
           <div class="artist_title_box">
               <ul>
-                  <li><a href="./artist.html" id="button_a">ARTIST</a></li>
-
+                  <li><a href="./artist.html" id="button_a"><h1 style="color:white">ARTIST</h1></a></li>
                   <a href="./artist_g.html" id="button_g">G</a>
                   <a href="./artist_b.html" id="button_b">B</a>
               </ul>
           </div>
       </div>
-
-
 
 
       <div class="container">
@@ -339,60 +244,6 @@
           <img id="g9" src="./images/artist(green)/g9.jpg">
           <img id="b9" src="./images/artist(blue)/b9.jpg">
       </div>
-      <!-- <script>
-          let container=document.querySelector('.container');
-          let imgContainer = document.createElement('div');
-          imgContainer.classList.add('image-container');
-          imgContainer.style.display = 'inline-block';
-          container.appendChild(imgContainer);
-
-
-          for (let i=1; i<=9; i++){
-              let img=document.createElement('img');
-              img.src = 'images/artist_prac/a'+(2*i-1)+'.jpg';
-              imgContainer.appendChild(img);
-          }
-
-
-         
-         
-      </script> -->
-
-
-
-
-  <!-- 준혁 씨가 알려준 방식 -->
-<!-- //             let container=document.querySelector('.container');
-        
-//             for (let i = 3; i <= 9; i+3) {
-//   let imgGreen1 = document.createElement('img');
-//   imgGreen1.src = 'images/artist(green)/g'+i-2+'.jpg';
-//   let imgGreen2 = document.createElement('img');
-//   imgGreen2.src = 'images/artist(green)/g'+i-1+'.jpg';
-//   let imgGreen3 = document.createElement('img');
-//   imgGreen3.src = 'images/artist(green)/g'+i+'.jpg';
-//   let imgBlue = document.createElement('img');
-//   imgBlue.src = 'images/artist(blue)/b'+i+'.jpg';
-//   imgBlue.src = 'images/artist(blue)/b'+i-2+'.jpg';
-//   imgBlue.src = 'images/artist(blue)/b'+i-1+'.jpg';
-
-
-
-
-//   let imgContainer = document.createElement('div');
-//   imgContainer.classList.add('image-container');
-//   imgContainer.appendChild(imgGreen1);
-//   imgContainer.appendChild(imgGreen2);
-//   imgContainer.appendChild(imgGreen3);
-//   imgContainer.appendChild(imgBlue);
-//   container.appendChild(imgContainer); -->
-
-
-
-
-
-
-
 
       </section>
 
