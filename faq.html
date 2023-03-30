@@ -3,7 +3,7 @@
   <head>
     <!-- 외부 스타일 -->
     <link rel="stylesheet" href="./css/reset.css" />
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/common.css">
 
     <!-- 외부 스크립트 -->
     <script src="./js/mobile_btn.js"></script>
@@ -11,175 +11,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQ/Q&A</title>
+    <title>FAQ</title>
 
     <script>
-        document.addEventListener(DOMContentLoaded,function(){ 
-            hamburger();
-         });
-        </script>
+    document.addEventListener('DOMContentLoaded',function(){ 
+        hamburger_btn();
+     });
+    </script>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        color: aliceblue;
-      }
-      body {
-        background: #1d1d1d;
-      }
-      /* 헤더 */
-      header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        color: #ffffff;
-      }
-
-      /* 헤더 로고 */
-      .logo {
-        margin: 0;
-      }
-      .logo a {
-        text-align: center;
-        display: inline-block;
-        width: 100px;
-        height: 100px;
-        background: #000000;
-        line-height: 50px;
-      }
-      /* 헤더 메뉴 */
-
-      .mobile_btn {
-        transition: all 0.3s ease-in-out;
-        position: fixed;
-        top: 25px;
-        right: 20px;
-        z-index: 999;
-      }
-
-      input[id="hamburger"] {
-        transition: 0.3s;
-        display: none;
-      }
-
-      input[id="hamburger"] + label {
-        display: block;
-        width: 60px;
-        height: 40px;
-        position: relative;
-        cursor: pointer;
-      }
-
-      input[id="hamburger"] + label span {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 7px;
-        border-radius: 30px;
-        background: #000;
-        transition: all 0.3s;
-      }
-
-      input[id="hamburger"] + label span:nth-child(1) {
-        top: 0;
-      }
-      input[id="hamburger"] + label span:nth-child(2) {
-        top: 50%;
-        transform: translateY(-50%);
-      }
-      input[id="hamburger"] + label span:nth-child(3) {
-        bottom: 0;
-      }
-      input[id="hamburger"]:checked + label {
-        z-index: 99;
-      }
-      input[id="hamburger"]:checked + label span {
-        background: black;
-      }
-      input[id="hamburger"]:checked + label span:nth-child(1) {
-        top: 50%;
-        transform: translateY(-50%) rotate(45deg);
-      }
-      input[id="hamburger"]:checked + label span:nth-child(2) {
-        opacity: 0;
-      }
-      input[id="hamburger"]:checked + label span:nth-child(3) {
-        bottom: 50%;
-        transform: translateY(50%) rotate(-45deg);
-      }
-      div[class="top_nav"] {
-        width: 100%;
-        /* background: rgb(255, 129, 129); */
-        position: fixed;
-        left: 0%;
-        top: -100%;
-        z-index: 98;
-        transition: all 0.35s;
-      }
-
-      input[id="hamburger"]:checked + label + div {
-        top: 0%;
-      }
-      .nav_mobile {
-        position: absolute;
-        top: 100px;
-        width: 100%;
-      }
-      .top_nav .nav_mobile li {
-        color: rgb(255, 255, 255);
-        position: relative;
-        width: 100%;
-        list-style-type: none;
-        font-size: 20px;
-        border-bottom: 1px solid #ccc;
-        text-align: center;
-      }
-
-      .top_nav li a {
-        background: #525252;
-        color: aliceblue;
-        height: 80px;
-        display: block;
-        line-height: 80px;
-        padding: 0;
-        text-align: center;
-        text-decoration: none;
-        transition: all 0.4s;
-      }
-      .top_nav .info {
-        height: 160px;
-
-        line-height: 80px;
-        background: #ff7777;
-      }
-
-      .top_nav li a:hover,
-      .top_nav ul li:hover a {
-        text-decoration: none;
-        color: #eee;
-        padding: 0;
-        margin: 0;
-        border: 0px;
-      }
-      
-
-      footer {
-        position: static;
-        bottom: 0;
-        width: 100%;
-        padding: 100px 0;
-        text-align: center;
-        line-height: 30px;
-        background: #000000;
-      }
-      @media all and (min-width: 960px) {
-        .mobile_btn {
-          transition: 0.3s ease-out;
-          display: none;
-        }
-      }
+     
     </style>
   </head>
   <body>
@@ -221,14 +61,15 @@
           </div>
         </div>
       </header>
+
       <section>
         <!-- 컨텐츠 여기 넣어주세요 -->
 
 
 
 
-
       </section>
+
       <footer>
         <h1>G&B<br />FESTIVAL</h1>
         <p>&copy; Copyright</p>
