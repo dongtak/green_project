@@ -17,6 +17,7 @@
     text-align: center;
     animation: logo 3s ease;
   }
+  /* 썸네일 로고방향으로 */
   @keyframes logo{
     0%{
         top: 45%;
@@ -31,6 +32,7 @@
         left: 1%;
     }
   }
+  /* 사이트 접속시 썸네일 */
   @keyframes fadeOut {
     0% {
       z-index:999;
@@ -47,6 +49,8 @@
     }
   }
 
+
+  
 * {
     margin: 0;
     padding: 0;
