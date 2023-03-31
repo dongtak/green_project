@@ -1,0 +1,165 @@
+/*** 1:1 문의 페이지 CSS ***/
+
+section{margin-top: 200px;
+    }
+
+/* 1:1 문의 페이지 부모상자 */
+
+.qna_writebox {
+    width: 80%;
+    /* background-color: aqua; 지울 부분 */
+    margin: 0 auto;
+}
+
+/* 1:1 문의 페이지 큰제목 */
+.qna_writebox >h1{
+    margin: 30px auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/* 개인정보 이용약관 내용 */
+/* .policy .text{
+    height: 200px; 
+    border: 1px solid black; 
+    background-color: white;
+    white-space: pre-line;
+    overflow-y: scroll; 
+    margin-bottom: 10px;
+} */
+
+/* 개인정보 이용약관 동의버튼 */
+/* .policy_button{
+    text-align: right;
+    margin: 0 auto;
+} 
+
+.policy_button label{
+    font-size: 17px;
+    margin:0 auto;
+}*/
+
+/* 개인정보 이용약관 체크박스 */
+/*#checkbox{
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    appearance: auto;
+}*/
+
+/* 1:1 문의 게시글 내용 */
+
+.qna_write_title,
+.qna_write_writer,
+.qna_write_pwd,
+.qna_write_page
+{
+
+    border-bottom: 1px solid rgb(126, 121, 121);
+    background-color: beige;
+}
+
+form label{
+    
+    display: inline-block;
+    width: 150px;
+    margin: 8px auto;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+/* line-height: 10px ; */
+}
+
+
+
+.qna_write_title>#title,
+.qna_write_writer>#writer,
+.qna_write_pwd>#pwd
+{
+    display: block;
+    width: 80%;
+    color: black;
+    /* max-width: 386px; */
+    height: 40px;
+    margin: 10px auto;
+    /* margin-left: 10px; */
+    border: 1px solid rgb(126, 121, 121);
+}
+
+
+.qna_write_page>#page{
+    width: 100%;
+    height: 150px;
+    margin: 10px auto;
+    color: black;
+    border: 1px solid rgb(126, 121, 121);
+}
+
+
+/* 1:1 문의 게시글 등록/취소 버튼 */
+
+
+.qna_write_btn,
+.qna_write_btn>a {
+    background-color: beige; /* 지울 부분 */
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.qna_write_btn button,
+.qna_write_btn input 
+{
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+}
+
+
+/*label 정렬 맞추기 위함*/
+@media all and (min-width:480px) {
+
+form label{
+      
+        line-height: 40px;}
+
+
+
+    .qna_write_title>#title,
+.qna_write_writer>#writer,
+.qna_write_pwd>#pwd
+
+{
+    display: inline;
+    width: 50%;
+    height: 40px;
+    margin: 7px auto;
+    border: 1px solid rgb(126, 121, 121);
+    
+}
+
+
+}
+
+
+
+
+/*** PC 버전 크기일때 ***/
+
+@media all and (min-width:960px) {
+    section {
+        width: 960px;
+        /* margin: 0 auto; */
+    }
+
+
+
+}
+

@@ -1,263 +1,29 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-ul,
-li {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-body {
-    width: 90%;
-    margin: 0 auto;
-}
+/*** FAQ/Q&A 페이지 CSS ***/
 
 
-/*상단 제목 */
-
-
+/* FAQ/Q&A 페이지 부모상자 */
 .board {
     width: 100%;
-
 }
 
+/* FAQ/Q&A 페이지 큰제목 */
 .board>h1 {
     text-align: center;
     margin: 50px;
-
 }
 
-
+/* FAQ/Q&A 탭메뉴 */
 .board_tap {
+    font-size: 30px;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
-
 }
-
-
-
-
 
 .board_tap li {
     text-align: center;
     margin: 2rem 0;
-    ;
     font-size: 2.5rem;
-}
-
-
-
-
-
-
-
-
-/* faq css */
-
-.faqbox {
-    width: 80%;
-    border: 1px solid black;
-    margin: 0 auto;
-}
-
-.faqbox span {
-
-    margin-left: 10px;
-
-    line-height: 20px;
-}
-
-.question,
-.answer {
-    width: 100%;
-    cursor: pointer;
-    padding: 10px;
-    text-align: left;
-    outline: none;
-}
-
-.question>b,
-.answer>b {
-    font-size: large;
-}
-
-
-
-.qnabox {
-    display: none;
-}
-
-.question {
-    height: 50px;
-
-}
-
-.answer {
-    transition-delay: .3s;
-    display: none;
-}
-
-.faqbox_q1 {
-    height: 250px;
-}
-
-.faqbox_q2 {
-    height: 400px;
-}
-
-.faqbox_q1>h1,
-.faqbox_q2>h1 {
-    margin: 20px 0;
-}
-
-
-
-
-/** qna css **/
-
-
-
-/* qna 박스 */
-
-.qnabox_list {
-    width: 100%;
-}
-
-.qnabox_list div {
-    border-bottom: 1px solid rgb(160, 157, 157);
-}
-
-
-.qnabox_list div:first-child {
-    border-top: 2px solid black;
-    font-weight: 600;
-}
-
-
-.qnabox_list li {
-    display: inline-block;
-    text-align: center;
-    padding: 13px 0;
-
-}
-
-
-.qnabox_list li.title {
-    width: 70%;
-}
-
-.qnabox_list li.date {
-    width: 20%;
-}
-
-.qnabox_list li.title>a:hover {
-
-    cursor: pointer;
-}
-
-
-.qnabox_list li.num,
-.qnabox_list li.writer,
-.qnabox_list li.counter {
-    display: none;
-}
-
-
-
-
-
-/* 하단 페이지버튼 */
-
-.qnabox_page {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.qnabox_page li {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    font-size: 17px;
-
-}
-
-.qnabox_page li>a {
-
-    padding: 8px 8px;
-    transition: background-color .3s;
-}
-
-
-.qnabox_page li:hover {
-    background-color: rgb(172, 172, 233);
-    color: white;
-}
-
-
-
-/* 하단 글쓰기 버튼 */
-
-.qnabox_btn {
-    position: relative;
-
-
-}
-
-.qnabox_btn_box {
-    position: absolute;
-    right: 20px;
-
-}
-
-
-
-
-.qnabox_btn input {
-
-    width: 200px;
-    height: 30px;
-    margin: 5px 3px;
-
-}
-
-
-
-
-.qnabox_btn a {
-
-
-    display: inline-block;
-    font-size: 17px;
-    margin: 2px 0;
-    padding: 7px;
-    text-align: center;
-    border: 1px solid rgb(178, 172, 172);
-    border-radius: 5px;
-
-
-}
-
-
-div.board_tap {
-
-    font-size: 30px;
-
-}
-
-.board_tap li {
     display: inline-block;
     margin: 0 10px;
     position: relative;
@@ -272,10 +38,182 @@ div.board_tap {
     top: 10px;
     bottom: 0;
     margin: 0 15px;
-
 }
 
-/*크기 */
+
+/** FAQ 페이지 CSS **/
+
+/* FAQ 페이지 부모상자 */
+.faqbox {
+    width: 80%;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+/* FAQ 중 예매안내(faqbox_q1)/입장안내(faqbox_q2) 공통 부분 */
+
+.faqbox span {
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+.question,
+.answer {
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+    outline: none;
+}
+
+.question {
+    height: 50px;
+}
+
+.answer {
+    transition-delay: .3s; /* 확인사항 */
+    display: none; /* 모바일버전에서는 답변이 숨겨져있는 상태 */
+}
+
+.question>b,
+.answer>b {
+    font-size: large;
+}
+
+.faqbox_q1>h1,
+.faqbox_q2>h1 {
+    margin: 20px 0;
+}
+
+
+/* 예매안내 부분 */
+
+.faqbox_q1 {
+    height: 250px;
+}
+
+/* 입장안내 부분 */
+
+.faqbox_q2 {
+    height: 400px;
+}
+
+
+/** Q&A 페이지 CSS **/
+
+
+/* Q&A 페이지 부모상자 */
+/* 처음 출력되는 페이지는 FAQ 페이지이므로 Q&A 페이지는 안보이게 설정 */
+.qnabox {
+    display: none;
+}
+
+/* Q&A 게시판 */
+
+.qnabox_list {
+    width: 100%;
+}
+
+.qnabox_list div {
+    border-bottom: 1px solid rgb(160, 157, 157);
+}
+
+.qnabox_list div:first-child {
+    border-top: 2px solid black;
+    font-weight: 600;
+}
+
+.qnabox_list li {
+    display: inline-block;
+    text-align: center;
+    padding: 13px 0;
+}
+
+/* 게시판 메뉴별 너비 설정 - 모바일 버전일때는 제목과 작성일만 보이게 */
+
+.qnabox_list li.title {
+    width: 70%;
+}
+
+.qnabox_list li.date {
+    width: 20%;
+}
+
+.qnabox_list li.num,
+.qnabox_list li.writer,
+.qnabox_list li.counter {
+    display: none;
+}
+
+/* 게시판 제목 hover*/
+.qnabox_list li.title>a:hover {
+    cursor: pointer;
+}
+
+
+/* Q&A 게시판 하단 페이지 버튼 */
+
+.qnabox_page {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.qnabox_page li {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 17px;
+}
+
+
+.qnabox_page li>a {
+    padding: 8px 8px;
+    transition: background-color .3s;
+}
+
+
+.qnabox_page li:hover {
+    background-color: rgb(172, 172, 233); /* 지울 부분 */
+    color: white;
+}
+
+
+
+/* Q&A 게시판 하단 글쓰기 버튼 */
+
+.qnabox_btn {
+    position: relative
+}
+
+.qnabox_btn_box {
+    position: absolute;
+    right: 20px;
+}
+
+
+.qnabox_btn input {
+    width: 200px;
+    height: 30px;
+    margin: 5px 3px;
+}
+
+
+
+
+.qnabox_btn a {
+    display: inline-block;
+    font-size: 17px;
+    margin: 2px 0;
+    padding: 7px;
+    text-align: center;
+    border: 1px solid rgb(178, 172, 172);
+    border-radius: 5px;
+}
+
+
+
+/*** PC 버전 크기일때 ***/
 
 @media all and (min-width:960px) {
     section {
@@ -289,37 +227,29 @@ div.board_tap {
         display: inline-block;
     }
 
+    /* 게시판 메뉴별 너비 설정 - PC 버전일때는 모두 보이게 */
 
-
-
-    /* 모바일 이상크기일때? */
     .qnabox_list li.num {
-
         width: 8%;
     }
 
     .qnabox_list li.title {
-
         width: 60%;
     }
 
     .qnabox_list li.writer {
-
         width: 10%;
     }
 
     .qnabox_list li.date {
-
         width: 10%;
     }
 
     .qnabox_list li.counter {
-
         width: 8%;
     }
 
-
-
+    /* PC버전일때는 아코디언 메뉴가 모두 펼쳐진 상태를 출력하기 위하여 설정*/
     .answer {
         display: block;
     }

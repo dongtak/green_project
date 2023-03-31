@@ -1,5 +1,5 @@
 
-// faq 아코디언 메뉴 설정
+// FAQ 아코디언 메뉴 설정
 
 let question = document.getElementsByClassName("question");
 
@@ -33,3 +33,24 @@ faq.addEventListener('click', function() {
 });
 
 
+//게시글 등록 비밀번호 유효성 검사(회원가입과 합칠수있는지 확인하기)
+
+// const pwd = document.getElementsById('.pwd');
+// const id = document.getElementsById('.writer');
+
+// function validatePassword(pwd){
+
+//   if( pwd.length<6 || pwd.length>12 ){
+//   return false;
+
+//   }
+//   return ture;
+//   }
+  
+//   function validatePasswordSpecialCharacters(pwd) {
+//     if (!/[@#$%^&*()\-_=+\\\|\[\]{};:'",.<>\/?]/.test(pwd)) {
+//       alert("비밀번호는 특수문자를 1자리 이상 사용하여 입력하시오.");
+//       return false;
+//     }
+//     return true;
+//   }
