@@ -3,7 +3,7 @@
   <head>
     <!-- 외부 스타일 -->
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common.css" />
 
     <!-- 외부 스크립트 -->
     <script src="./js/mobile_btn.js"></script>
@@ -13,14 +13,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TICKET</title>
 
-    <script>
-    document.addEventListener('DOMContentLoaded',function(){ 
-        hamburger_btn();
-     });
-    </script>
     <style>
-     
+      @media all and (min-width: 960px) {
+        section {
+          margin-top: 100px;
+        }
+        .ticket h1{
+          font-size: 50px;
+        height: 100px;
+          line-height: 100px;
+        }
+        .ticket{
+          text-align: center;
+          background: #ff0000;
+        }
+        .ticket_btn{
+          width: 80%;
+          background: #ff9900;
+          margin: auto;
+          display: flex;
+        }
+        .ticket_btn a{
+          background: #3cff00;
+          width: 30%;
+          margin: 0 auto;
+          height: 120px;
+          text-align: center;
+          line-height: 60px;
+        }
+        .offers{
+          width: 50%;
+          background: #fffb00;
+          height: 120px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+        }
+        .offer{
+          border: 1px solid black;
+          width: 60px;
+          height: 120px;
+          /* background: #00c3ff; */
+        }
+        .offer_img{ background-image: url("./images/ticket/offer1.jpg");}
+        .offer:hover{
+          transform: scale(1.5) scaleX(2);
+          transform-origin: bottom;
+        }
+      }
     </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        hamburger_btn();
+      });
+    </script>
   </head>
   <body>
     <div id="wrapper">
@@ -37,7 +83,7 @@
         </div>
         <!-- 모바일 버튼 -->
         <div class="mobile_btn">
-            <!-- 햄버거버튼 -->
+          <!-- 햄버거버튼 -->
           <input type="checkbox" id="hamburger" />
           <label for="hamburger">
             <span></span>
@@ -61,15 +107,28 @@
           </div>
         </div>
       </header>
-
       <section>
         <!-- 컨텐츠 여기 넣어주세요 -->
-
-
-
+        <div class="ticket">
+          <h1>TICKET</h1>
+          <div class="ticket_btn">
+            <a href="">1DAY<br>99,000</a>
+            <a href="">2DAY<br>149,000</a>
+          </div>
+          <div class="offers">
+            <div class="offer">
+              <div class="offer_img"></div>
+            </div>
+            <div class="offer">
+              <div class="offer_img"></div>
+            </div>
+          </div>
+          <div class="general">
+            <a href="">GENERAL</a>
+          </div>
+        </div>
 
       </section>
-
       <footer>
         <h1>G&B<br />FESTIVAL</h1>
         <p>&copy; Copyright</p>
