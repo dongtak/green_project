@@ -6,7 +6,7 @@
     width: 100%;
     height: 100%;
     background-color: #00101d;
-    animation: fadeOut 3s forwards;
+    animation: fadeOut 2s forwards;
   }
   #thumbnail h1{
     color: white;
@@ -15,7 +15,7 @@
     left: 48%;
     width: 50px;
     text-align: center;
-    animation: logo 3s ease;
+    animation: logo 2s ease;
   }
   /* 썸네일 로고방향으로 */
   @keyframes logo{
@@ -137,10 +137,10 @@
   }
   @keyframes colorChange {
     0% {
-      background-color: rgb(0, 0, 255);
+      background-color: rgb(137, 137, 255);
     }
     50% {
-      background-color: rgb(0, 255, 0);
+      background-color: rgb(138, 255, 138);
     }
     100% {
       background-color: rgb(255, 0, 0);
@@ -223,37 +223,74 @@
     line-height: 30px;
     background: #000000;
   }
-
+  .top_pc {
+    display: none;
+  }
   /* PC화면 */
   @media all and (min-width: 480px) {
     header {
       position: static;
     }
-
-    /* header .mobile_btn {
-      position: static;
+    .mobile_btn{
+      display: none;
     }
-   
-    .mobile_btn .top_nav {
-      position: static;
-    }
-    .top_nav {
-      width: 200px;
-    }
-    .mobile_btn a {
-      width: 60px;
-    }
-    header li {
-      display: inline-block;
-    }
-    .logo{
-      background: #ff5050;
+    header .logo{
       width: 100px;
     }
-    .nav_mobile{
-      position: static;
+    .top_pc{
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      /* background: #ff0000; */
+      width: 70%;
+      height: 100px;
+      top: 0;
+      right: 0;
+      font-size: 20px;
     }
-    .nav_mobile ul {
+
+
+    .top_pc a{
+      line-height: 100px;
       display: inline-block;
-    } */
+      color: aliceblue;
+    }
+    /* PC 로그인 버튼 */
+    .top_pc a:nth-child(8){
+      background: #0026ff;
+      overflow: hidden;
+      font-size: 12px;
+      text-align: center;
+      width: 80px;
+      margin: auto 0;
+      margin-right: 10px;
+      line-height: 40px;
+    }
+    .top_pc ul {
+      display: none;
+    }
+    .top_pc > a:nth-child(2):hover ~ ul:nth-of-type(1){
+      display: block;
+      position: fixed;
+      top: 100px;
+      left: 42%;
+      z-index: 1;
+    }
+.top_pc > a:nth-child(6):hover ~ ul:nth-of-type(2){
+  display: block;
+  position: fixed;
+  top: 100px;
+  left: 80%;
+  z-index: 1;
+}
+/* .top_pc ul.submenu {
+  position: static;
+  background-color: #ff0000;
+  width: auto;
+  height: auto;
+} */
+.top_pc ul li {
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
   }
