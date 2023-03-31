@@ -8,6 +8,11 @@
     <!-- 외부 스크립트 -->
     <script src="./js/mobile_btn.js"></script>
     <!-- 외부 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,6 +35,7 @@
       }
       /* 메인 티켓 버튼*/
       .main_ticket_btn {
+        /* background: #ff0101; */
         position:relative;
         z-index: 99;
         text-align: center;
@@ -95,7 +101,10 @@
         background: aliceblue;
       }
 
-     
+     @media all and (min-width:480px){
+      .main_ticket_btn{
+      }
+     }
     </style>
   </head>
 
@@ -127,9 +136,7 @@
             <span></span>
           </label>
           <div class="top_nav">
-            <hr
-              style="position: relative; top: 100px; border: solid 1px black"
-            />
+            <hr>
             <ul class="nav_mobile">
               <li><a href="#">ABOUT</a></li>
               <li><a href="#">ARTIST</a></li>
@@ -161,7 +168,7 @@
       <!-- 메인 최초 티켓버튼 -->
       <section>
         <div class="main_ticket_btn">
-        <a href="ticket_prototype.html"> 티켓 예매하기 </a>
+        <a href="ticket.html"> 티켓 예매하기 </a>
     </div>
       </section>
       <section>

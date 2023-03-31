@@ -8,6 +8,10 @@
     <!-- 외부 스크립트 -->
     <script src="./js/mobile_btn.js"></script>
     <!-- 외부 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,42 +29,160 @@
         }
         .ticket{
           text-align: center;
-          background: #ff0000;
+          /* background: #ff0000; */
         }
         .ticket_btn{
+          font-weight: bold;
           width: 80%;
-          background: #ff9900;
+          /* background: #ff9900; */
           margin: auto;
           display: flex;
         }
         .ticket_btn a{
-          background: #3cff00;
+          font-size: 30px;
+          background: #ffffff;
           width: 30%;
           margin: 0 auto;
           height: 120px;
           text-align: center;
           line-height: 60px;
+          transition: 0.3s;
+          
+        }
+        .ticket_btn a:hover{
+          background: linear-gradient(to top,#c700bd,#450000);
+          color: #09ff00;
+          text-shadow: 0px -10px 10px black;
+          animation:  shake 1s infinite;  
+        }
+        .premium .ticket_btn a:hover{
+          animation:  shake_more 0.5s infinite;  
+        }
+
+        @keyframes shake {
+  0% { transform: translateX(0) translateY(0); }
+  10% { transform: translateX(-1px) translateY(-2px); }
+  20% { transform: translateX(2px) translateY(1px); }
+  30% { transform: translateX(-3px) translateY(-1px); }
+  40% { transform: translateX(1px) translateY(3px); }
+  50% { transform: translateX(-2px) translateY(-1px); }
+  60% { transform: translateX(1px) translateY(0); }
+  70% { transform: translateX(-1px) translateY(-2px); }
+  80% { transform: translateX(2px) translateY(1px); }
+  90% { transform: translateX(-1px) translateY(-1px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+
+        @keyframes shake_more {
+  0% { transform: translateX(0) translateY(0); }
+  10% { transform: translateX(-2px) translateY(-3px); }
+  20% { transform: translateX(3px) translateY(2px); }
+  30% { transform: translateX(-4px) translateY(-1px); }
+  40% { transform: translateX(2px) translateY(4px); }
+  50% { transform: translateX(-3px) translateY(-2px); }
+  60% { transform: translateX(2px) translateY(1px); }
+  70% { transform: translateX(-1px) translateY(-3px); }
+  80% { transform: translateX(3px) translateY(2px); }
+  90% { transform: translateX(-2px) translateY(-2px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+
+
+
+
+/* 예시 스타일 */
+.element {
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+        .general,.premium{
+          margin-top: 140px;
+          background: rgb(0, 0, 0);
         }
         .offers{
           width: 50%;
-          background: #fffb00;
+          /* background: #fffb00; */
           height: 120px;
           margin: 0 auto;
+          margin-top: 100px;
           display: flex;
           justify-content: center;
+         
         }
-        .offer{
+        .offer {
+          /* margin: 0 30px; */
           border: 1px solid black;
           width: 60px;
           height: 120px;
+          transition: 0.2s;
+          transform: skew(-10deg);
           /* background: #00c3ff; */
         }
-        .offer_img{ background-image: url("./images/ticket/offer1.jpg");}
-        .offer:hover{
-          transform: scale(1.5) scaleX(2);
+        .offer:nth-child(1){
+          transform-origin: bottom right;
+        }
+        .offer:nth-child(2){
+          transform-origin: bottom left;
+        }
+        .offer:nth-child(3){
           transform-origin: bottom;
         }
-      }
+        .offer:nth-child(4){
+          transform-origin: bottom;
+
+        }
+        .offer:nth-child(5){
+          transform-origin: bottom;
+        }
+        .offer:nth-child(6){
+          transform-origin: bottom left;
+        }
+        
+        .offer:hover{
+          width: 140px;
+          transform: scale(2.5) skew(-10deg);
+}
+
+          
+        }
+        .offer_img{
+          width: 100%;
+          height: 100%;
+        }
+        .offer:nth-child(1) .offer_img{
+          content: "셔틀버스";
+          background: url("./images/ticket/offer1 (2).jpg") right/cover;
+        }
+        .offer:nth-child(2) .offer_img{
+          background: url("./images/ticket/offer2.jpg") right/cover;
+        }
+        .offer:nth-child(3) .offer_img{
+          background: url("./images/ticket/offer3.jpg") right/cover;
+        }
+        .offer:nth-child(4) .offer_img{
+          background: url("./images/ticket/offer4.jpg") right/cover;
+        }
+        .offer:nth-child(5) .offer_img{
+          background: url("./images/ticket/offer5.jpg") right/cover;
+        }
+        .offer:nth-child(6) .offer_img{
+          background: url("./images/ticket/offer1.jpg") right/cover;
+        }
+        .offer:hover .offer_img::before {
+          
+          font-size: 12px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
+}
+       .grade a{
+        color: aliceblue;
+       }
+        
+      
     </style>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -73,7 +195,7 @@
       <!-- 헤더 -->
       <header>
         <div class="logo">
-          <a href=""
+          <a href="index.html"
             ><h1>
               G&B
               <br />
@@ -111,6 +233,7 @@
         <!-- 컨텐츠 여기 넣어주세요 -->
         <div class="ticket">
           <h1>TICKET</h1>
+          <div class="general">
           <div class="ticket_btn">
             <a href="">1DAY<br>99,000</a>
             <a href="">2DAY<br>149,000</a>
@@ -123,9 +246,43 @@
               <div class="offer_img"></div>
             </div>
           </div>
-          <div class="general">
+
+          <div class="grade">
             <a href="">GENERAL</a>
           </div>
+
+          </div>
+          <div class="premium">
+            <div class="ticket_btn">
+              <a href="">1DAY<br>149,000</a>
+              <a href="">2DAY<br>199,000</a>
+            </div>
+            <div class="offers">
+              <div class="offer">
+                <div class="offer_img"></div>
+              </div>
+              <div class="offer">
+                <div class="offer_img"></div>
+              </div>
+              <div class="offer">
+                <div class="offer_img"></div>
+              </div>
+              <div class="offer">
+                <div class="offer_img"></div>
+              </div>
+              <div class="offer">
+                <div class="offer_img"></div>
+              </div>
+              <div class="offer">
+                <div class="offer_img"></div>
+              </div>
+            </div>
+  
+            <div class="grade">
+              <a href="">PREMIUM</a>
+            </div>
+            
+            </div>
         </div>
 
       </section>

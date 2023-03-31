@@ -1,6 +1,9 @@
-@charset utf-8;
-
 /* 웹폰트 CSS */
+*{
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
+}
 
  
 /* CSS 초기화 */
