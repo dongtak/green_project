@@ -8,6 +8,11 @@
     <!-- 외부 스크립트 -->
     <script src="./js/mobile_btn.js"></script>
     <!-- 외부 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,6 +35,7 @@
       }
       /* 메인 티켓 버튼*/
       .main_ticket_btn {
+        /* background: #ff0101; */
         position:relative;
         z-index: 99;
         text-align: center;
@@ -94,6 +100,67 @@
       .main_ticket_bundle a:hover {
         background: aliceblue;
       }
+      @media all and (min-width:480px){
+        #main_vid{
+          top: 0px;
+        }
+      }
+
+      
+        
+
+      .main_ticket_btn a:hover{
+   
+   background:white;
+color: #f00084;
+box-shadow: 2px 2px 100px #00F260,2px 2px 100px #0575E6;
+}
+
+    
+
+      .main_about li>a{
+        color: white; 
+
+    }
+
+    .main_ticket_bundle ul{
+       text-align: center;
+      }
+    
+
+    .main_ticket_bundle li{
+        display: inline-block;
+       width: 30%;}
+       
+
+
+      .main_ticket_bundle li a{
+        transform: skew(0);
+        transition: none; 
+        /* transition: 0.3s ease-in; */
+      }
+      
+  .main_ticket_bundle li a:hover{
+   
+    
+    color: #f00084;
+    box-shadow: 2px 2px 100px #00F260,2px 2px 100px #0575E6;
+  }
+
+
+.main_lineup a{
+  width: 300px;
+  height: 400px;
+}
+
+@media all and (min-width:720px){
+  .main_about li{ 
+        display: inline-block;
+        width: 24%;
+  
+      }
+    }
+     
 
      
     </style>
@@ -103,7 +170,8 @@
     홈페이지 접속 시 2초간 출력 -->
     <div id="thumbnail">
       <h1>G&B</h1>
-  </div>
+    </div>
+
   <body>
     <div id="wrapper">
       <!-- 헤더 -->
@@ -127,21 +195,36 @@
             <span></span>
           </label>
           <div class="top_nav">
-            <hr
-              style="position: relative; top: 100px; border: solid 1px black"
-            />
+            <hr>
             <ul class="nav_mobile">
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">ARTIST</a></li>
-              <li><a href="#">TICKET</a></li>
-              <li><a href="#">GALLERY</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="artist.html">ARTIST</a></li>
+              <li><a href="ticket.html">TICKET</a></li>
+              <li><a href="gallery.html">GALLERY</a></li>
               <li class="info">
-                INFO<a href="#">MAP</a> <a href="#">FAQ/Q&A</a>
+                INFO<a href="map.html">MAP</a> <a href="faq.html">FAQ/Q&A</a>
               </li>
-              <li><a href="#">SIGN IN</a></li>
+              <li><a href="signin.html">SIGN IN</a></li>
             </ul>
           </div>
         </div>
+        <div class="top_pc">
+          <a href="">ABOUT</a>
+          <a href="">ARTIST</a>
+          <ul class="submenu">
+            <li><a href="">GREEN</a></li>
+            <li><a href="">BLUE</a></li>
+          </ul>
+          <a href="">TICKET</a>
+          <a href="">GALLERY</a>
+          <a href="">INFO</a>
+          <ul class="submenu">
+            <li><a href="">MAP</a></li>
+            <li><a href="">FAQ/Q&A</a></li>
+          </ul>
+          <a href="">SIGN IN</a>
+        </div>
+        
       </header>
       <!-- 메인 영상 -->
       <section>
@@ -161,7 +244,7 @@
       <!-- 메인 최초 티켓버튼 -->
       <section>
         <div class="main_ticket_btn">
-        <a href="ticket_prototype.html"> 티켓 예매하기 </a>
+        <a href="ticket.html"> 티켓 예매하기 </a>
     </div>
       </section>
       <section>

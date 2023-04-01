@@ -1,16 +1,11 @@
-/*** MAP 페이지 CSS ***/
-
-
-/* MAP 페이지 부모상자 */
 .map {
     margin: 50px auto;
     width: 80%;
     min-width: 360px;
     text-align: center;
-    background-color: rgb(198, 241, 241); /* 지울 부분 */
+    background-color: rgb(198, 241, 241);
 }
 
-/* MAP 페이지 큰제목 */
 .map>h1 {
     /* margin: 2px 0; */
     font-size: 3.0rem;
@@ -18,16 +13,39 @@
 }
 
 .map_wrap {
-    background-color: rgb(226, 165, 73); /* 지울 부분 */
+
+    background-color: rgb(226, 165, 73);
     /* width: 100%; */
     /* text-align: center; */
     margin: 50px auto;
     /* position: relative; */
 }
 
+.map_green {
+
+    /* position: absolute; */
+
+    background-color: rgba(214, 214, 11, 0.918);
+}
+
+.map_blue {
+
+    margin-top: 20px;
+
+    background-color: rgba(148, 231, 159, 0.918);
+}
 
 
-/* 전체 공통 부분 */
+.map_right {
+    width: 90%;
+    margin: 10px auto;
+    background-color: rgb(206, 178, 233);
+}
+
+.map_right>h3,
+.map_right>p {
+    margin: 20px 0;
+}
 
 li.subway,
 li.bus,
@@ -35,41 +53,6 @@ li.car {
     display: flex;
     /* background-color: antiquewhite;  */
 }
-
-
-li.subway>div,
-li.bus>div,
-li.car>div {
-    text-align: start;
-    margin-top: 10px;
-    background-color: rgb(156, 198, 235); /* 지울 부분 */
-}
-
-
-li.subway ul,
-li.bus ul,
-li.car ul {
-    margin-top: 20px;
-}
-
-li.subway ul>li,
-li.bus ul>li,
-li.car ul>li {
-    margin-left: 10px;
-}
-
-
-li.subway img,
-li.bus img,
-li.car img {
-    width: 40px;
-    height: 40px;
-    margin: 50px 20px;
-}
-
-
-
-/* MAP 오시는길 안내 왼쪽(지도+주소) 공통 부분 */
 
 .map_left {
     border: 1px solid rgb(129, 129, 129);
@@ -98,40 +81,45 @@ li.car img {
     margin: 10px auto;
 }
 
-/* MAP 오시는길 안내 오른쪽(오는 방법) 내용 공통 부분 */
 
-.map_right {
-    width: 90%;
-    margin: 10px auto;
-    background-color: rgb(206, 178, 233); /* 지울 부분 */
-}
-
-.map_right>h3,
-.map_right>p {
-    margin: 20px 0;
-}
-
-
-
-/* MAP 페이지 Green 공연장 오시는길 안내 */
-
-
-.map_green {
-    /* position: absolute; */
-    background-color: rgba(214, 214, 11, 0.918); /* 지울 부분 */
-}
-
-/* MAP 페이지 BLUE 공연장 오시는길 안내 */
-
-.map_blue {
+li.subway ul,
+li.bus ul,
+li.car ul {
     margin-top: 20px;
-    background-color: rgba(148, 231, 159, 0.918); /* 지울 부분 */
+}
+
+
+li.subway ul>li,
+li.bus ul>li,
+li.car ul>li {
+    margin-left: 10px;
+
 }
 
 
 
+li.subway img,
+li.bus img,
+li.car img {
 
-/*** PC 버전 크기일때 ***/
+    width: 40px;
+    height: 40px;
+    margin: 50px 20px;
+
+}
+
+li.subway>div,
+li.bus>div,
+li.car>div {
+
+    text-align: start;
+    margin-top: 10px;
+    background-color: rgb(156, 198, 235);
+}
+
+
+
+/* 크기 변경 */
 
 @media all and (min-width:960px) {
     section {
@@ -149,6 +137,8 @@ li.car img {
     .map_left {
         width: 50%;
     }
+
+
 
 
 }

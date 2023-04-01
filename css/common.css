@@ -1,13 +1,12 @@
 /* 썸네일 */
 #thumbnail {
     position: fixed;
-    z-index: 999;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000;
-    animation: fadeOut 3s forwards;
+    background-color: #00101d;
+    animation: fadeOut 2s forwards;
   }
   #thumbnail h1{
     color: white;
@@ -16,7 +15,7 @@
     left: 48%;
     width: 50px;
     text-align: center;
-    animation: logo 3s ease;
+    animation: logo 2s ease;
   }
   /* 썸네일 로고방향으로 */
   @keyframes logo{
@@ -24,7 +23,7 @@
         top: 45%;
         left: 48%;
     }
-    70%{
+    40%{
         top: 45%;
         left: 48%;
     }
@@ -45,7 +44,7 @@
     100% {
       opacity: 0;
       display: none;
-      z-index:0;
+      z-index:9999;
       pointer-events: none;
     }
   }
@@ -58,7 +57,7 @@
     color: aliceblue;
   }
   body {
-    background: #1d1d1d;
+    background: #141414;
   }
   /* 헤더 */
   header {
@@ -66,9 +65,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #000000;
     color: #ffffff;
-    z-index: 9999;
+    z-index: 999;
   }
 
   /* 헤더 로고 */
@@ -80,7 +79,7 @@
     display: inline-block;
     width: 100px;
     height: 100px;
-    background: #000000;
+    /* background: #000000; */
     line-height: 50px;
   }
   /* 헤더 메뉴 */
@@ -93,6 +92,7 @@
     z-index: 999;
   }
 
+  /* 햄버거버튼 */
   input[id="hamburger"] {
     transition: 0.3s;
     display: none;
@@ -112,7 +112,7 @@
     width: 100%;
     height: 7px;
     border-radius: 30px;
-    background: #000;
+    background: #ffffff;
     transition: all 0.3s;
   }
 
@@ -126,12 +126,27 @@
   input[id="hamburger"] + label span:nth-child(3) {
     bottom: 0;
   }
+
+  /* 햄버거 애니메이션 */
+
   input[id="hamburger"]:checked + label {
     z-index: 99;
   }
   input[id="hamburger"]:checked + label span {
-    background: black;
+    animation: colorChange 0.3s infinite;
   }
+  @keyframes colorChange {
+    0% {
+      background-color: rgb(137, 137, 255);
+    }
+    50% {
+      background-color: rgb(138, 255, 138);
+    }
+    100% {
+      background-color: rgb(255, 0, 0);
+    }
+  }
+
   input[id="hamburger"]:checked + label span:nth-child(1) {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
@@ -143,6 +158,8 @@
     bottom: 50%;
     transform: translateY(50%) rotate(-45deg);
   }
+
+
   div[class="top_nav"] {
     width: 100%;
     position: fixed;
@@ -171,7 +188,7 @@
   }
 
   .top_nav li a {
-    background: #525252;
+    background: #001107;
     color: aliceblue;
     height: 80px;
     display: block;
@@ -185,7 +202,7 @@
     height: 160px;
 
     line-height: 80px;
-    background: #ff7777;
+    /* background: #ff7777; */
   }
 
   .top_nav li a:hover,
@@ -206,12 +223,74 @@
     line-height: 30px;
     background: #000000;
   }
-
+  .top_pc {
+    display: none;
+  }
   /* PC화면 */
-  @media all and (min-width: 960px) {
-    .mobile_btn {
-      transition: 0.3s ease-out;
-      /* display: none; */
+  @media all and (min-width: 480px) {
+    header {
+      position: static;
+    }
+    .mobile_btn{
+      display: none;
+    }
+    header .logo{
+      width: 100px;
+    }
+    .top_pc{
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      /* background: #ff0000; */
+      width: 70%;
+      height: 100px;
+      top: 0;
+      right: 0;
+      font-size: 20px;
     }
 
+
+    .top_pc a{
+      line-height: 100px;
+      display: inline-block;
+      color: aliceblue;
+    }
+    /* PC 로그인 버튼 */
+    .top_pc a:nth-child(8){
+      background: #0026ff;
+      overflow: hidden;
+      font-size: 12px;
+      text-align: center;
+      width: 80px;
+      margin: auto 0;
+      margin-right: 10px;
+      line-height: 40px;
+    }
+    .top_pc ul {
+      display: none;
+    }
+    .top_pc > a:nth-child(2):hover ~ ul:nth-of-type(1){
+      display: block;
+      position: fixed;
+      top: 100px;
+      left: 42%;
+      z-index: 1;
+    }
+.top_pc > a:nth-child(6):hover ~ ul:nth-of-type(2){
+  display: block;
+  position: fixed;
+  top: 100px;
+  left: 80%;
+  z-index: 1;
+}
+/* .top_pc ul.submenu {
+  position: static;
+  background-color: #ff0000;
+  width: auto;
+  height: auto;
+} */
+.top_pc ul li {
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
   }
