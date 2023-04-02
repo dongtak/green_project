@@ -1,307 +1,332 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <!-- 외부 스타일 -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/common.css">
 
-    <!-- 외부 스크립트 -->
-    <script src="./js/mobile_btn.js"></script>
-    <!-- 외부 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    
+<head>
+  <!-- 외부 스타일 -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/common.css">
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <script>
-    document.addEventListener('DOMContentLoaded',function(){ 
-        hamburger_btn();
-     });
-    </script>
-    <style>
-      
-      /* 메인 동영상 */
-      #main_vid {
-        position: relative;
-        opacity: 0.5;
-        z-index: 0;
-        top: 100px;
-        width: 100%;
-      }
-      /* 메인 티켓 버튼*/
-      .main_ticket_btn {
-        /* background: #ff0101; */
-        position:relative;
-        z-index: 99;
-        text-align: center;
-      }
-
-      .main_ticket_btn a {
-        color: aliceblue;
-        margin: 0px;
-        width: 280px;
-        height: 60px;
-        line-height: 60px;
-        display: inline-block;
-        border: 1px solid aliceblue;
-        border-radius: 10px;
-      }
-      /* 메인 어바웃 */
-      .main_about {
-        /* background: #aaaaaa; */
-        margin: 0 auto;
-        width: 80vw;
-        text-align: center;
-      }
-      .main_about img {
-        width: 50%;
-      }
-      .main_about li {
-        /* background: #ff9191; */
-        margin: 40px 0;
-      }
-      .main_about p {
-        margin-top: 20px;
-      }
-      /* 메인 라인업 */
-      .main_lineup {
-        display: flex;
-        width: 100%;
-        height: 28vh;
-        background: #000000;
-      }
-      .main_lineup{
-        margin: auto;
-      }
-      /* 메인 하단 티켓 번들 */
-      .main_ticket_bundle li {
-        text-align: center;
-      }
-      .main_ticket_bundle a {
-        color: aliceblue;
-        margin-top: 30px;
-        width: 70%;
-        height: 60px;
-        line-height: 60px;
-        display: inline-block;
-        border: 1px solid aliceblue;
-        transform: skew(-20deg);
-        transition: 0.3s ease-in;
-      }
-      .main_ticket_bundle a:hover {
-        background: aliceblue;
-      }
-      @media all and (min-width:480px){
-        #main_vid{
-          top: 0px;
-        }
-        .main_lineup {
-          height: auto;
-        }
+  <!-- 외부 스크립트 -->
+  <script src="./js/mobile_btn.js"></script>
+  <!-- 외부 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap"
+    rel="stylesheet">
 
 
-        .main_lineup img{
-  max-width: 100%;
-  height: auto;
-}
-      }
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-      
-        
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      hamburger_btn();
+    });
+  </script>
+  <style>
+    /* 메인 동영상 */
+    #main_vid {
+      position: relative;
+      opacity: 0.5;
+      z-index: 0;
+      top: 100px;
+      width: 100%;
+    }
 
-      .main_ticket_btn a:hover{
-   
-   background:white;
-color: #f00084;
-box-shadow: 2px 2px 100px #00F260,2px 2px 100px #0575E6;
-}
+    /* 메인 티켓 버튼*/
+    .main_ticket_btn {
+      /* background: #ff0101; */
+      position: relative;
+      z-index: 99;
+      text-align: center;
+    }
 
-    
+    .main_ticket_btn a {
+      color: aliceblue;
+      margin: 0px;
+      width: 280px;
+      height: 60px;
+      line-height: 60px;
+      display: inline-block;
+      border: 1px solid aliceblue;
+      border-radius: 10px;
+    }
 
-      .main_about li>a{
-        color: white; 
+    /* 메인 어바웃 */
+    .main_about {
+      /* background: #aaaaaa; */
+      margin: 0 auto;
+      width: 80vw;
+      text-align: center;
+    }
+
+    .main_about img {
+      width: 50%;
+    }
+
+    .main_about li {
+      /* background: #ff9191; */
+      margin: 40px 0;
+    }
+
+    .main_about p {
+      margin-top: 20px;
+    }
+
+    /* 메인 라인업 */
+    #lineup {
+      text-align: center;
+      font-size: 24px;
+      margin: 60px;
+    }
+
+    .main_lineup {
+      display: flex;
+      justify-content: space-around;
+      /* 좌우 정렬 */
+      margin: 0 auto;
+      width: 100%;
+      height: 28vh;
+      /* background: #ff6c6c; */
+    }
+
+    .main_lineup img {
+      max-width: 100%;
+      height: auto;
 
     }
 
-    .main_ticket_bundle ul{
-       text-align: center;
+    /* 메인 하단 티켓 번들 */
+    .main_ticket_bundle li {
+      text-align: center;
+    }
+
+    .main_ticket_bundle a {
+      color: aliceblue;
+      margin-top: 30px;
+      width: 70%;
+      height: 60px;
+      line-height: 60px;
+      display: inline-block;
+      border: 1px solid aliceblue;
+      transform: skew(-20deg);
+      transition: 0.3s ease-in;
+    }
+
+    .main_ticket_bundle a:hover {
+      background: aliceblue;
+    }
+
+    @media all and (min-width:480px) {
+      #main_vid {
+        top: 0px;
       }
-    
 
-    .main_ticket_bundle li{
-        display: inline-block;
-       width: 30%;}
-       
-
-
-      .main_ticket_bundle li a{
-        transform: skew(0);
-        transition: none; 
-        /* transition: 0.3s ease-in; */
+      .main_ticket_btn {
+        margin-top: 100px;
       }
-      
-  .main_ticket_bundle li a:hover{
-   
-    
-    color: #f00084;
-    box-shadow: 2px 2px 100px #00F260,2px 2px 100px #0575E6;
-  }
+
+      .main_lineup {
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+      }
 
 
-@media all and (min-width:720px){
-  .main_about li{ 
+      .main_lineup img {
+        max-width: 90%;
+        margin-left: 5%;
+      }
+    }
+
+
+
+
+    .main_ticket_btn a:hover {
+
+      background: white;
+      color: #f00084;
+      box-shadow: 2px 2px 100px #00F260, 2px 2px 100px #0575E6;
+    }
+
+
+
+    .main_about li>a {
+      color: white;
+
+    }
+
+    .main_ticket_bundle ul {
+      text-align: center;
+    }
+
+
+    .main_ticket_bundle li {
+      display: inline-block;
+      width: 30%;
+    }
+
+
+
+    .main_ticket_bundle li a {
+      transform: skew(0);
+      transition: none;
+      /* transition: 0.3s ease-in; */
+    }
+
+    .main_ticket_bundle li a:hover {
+
+
+      color: #f00084;
+      box-shadow: 2px 2px 100px #00F260, 2px 2px 100px #0575E6;
+    }
+
+
+    @media all and (min-width:720px) {
+      .main_about li {
         display: inline-block;
         width: 24%;
-  
+
       }
     }
-     
+  </style>
+</head>
 
-     
-    </style>
-  </head>
-
-   <!-- 썸네일
+<!-- 썸네일
     홈페이지 접속 시 2초간 출력 -->
-    <div id="thumbnail">
-      <h1>GREEN AND BLUE</h1>
-    </div>
+<div id="thumbnail">
+  <h1>GREEN AND BLUE</h1>
+</div>
 
-  <body>
-    <div id="wrapper">
-      <!-- 헤더 -->
-      <header>
-        <div class="logo">
-          <a href="index.html"
-            ><h1>
-              G&B
-              <br />
-              FESTIVAL
-            </h1></a
-          >
-        </div>
-        <!-- 모바일 버튼 -->
-        <div class="mobile_btn">
-            <!-- 햄버거버튼 -->
-          <input type="checkbox" id="hamburger" />
-          <label for="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <div class="top_nav">
-            <hr>
-            <ul class="nav_mobile">
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="artist.html">ARTIST</a></li>
-              <li><a href="ticket.html">TICKET</a></li>
-              <li><a href="gallery.html">GALLERY</a></li>
-              <li class="info">
-                INFO
-                <a href="map.html">MAP</a> <a href="faq.html">FAQ/Q&A</a>
-              </li>
-              <li><a href="signin.html">SIGN IN</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="top_pc">
-          <a href="about.html">ABOUT</a>
-          <a href="artist.html">ARTIST</a>
-          <ul class="submenu">
-            <li><a href="artist_g.html">GREEN</a></li>
-            <li><a href="artist_b.html">BLUE</a></li>
+<body>
+  <div id="wrapper">
+    <!-- 헤더 -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <h1>
+            G&B
+            <br />
+            FESTIVAL
+          </h1>
+        </a>
+      </div>
+      <!-- 모바일 버튼 -->
+      <div class="mobile_btn">
+        <!-- 햄버거버튼 -->
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="top_nav">
+          <hr>
+          <ul class="nav_mobile">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="artist.html">ARTIST</a></li>
+            <li><a href="ticket.html">TICKET</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li class="info">
+              INFO
+              <a href="map.html">MAP</a> <a href="faq.html">FAQ/Q&A</a>
+            </li>
+            <li><a href="signin.html">SIGN IN</a></li>
           </ul>
-          <a href="ticket.html">TICKET</a>
-          <a href="gallery.html">GALLERY</a>
-          <a href="">INFO</a>
-          <ul class="submenu">
-            <li><a href="map.html">MAP</a></li>
-            <li><a href="faq.html">FAQ/Q&A</a></li>
-          </ul>
-          <a href="signin.html">SIGN IN</a>
         </div>
-        
-      </header>
-      <!-- 메인 영상 -->
-      <section>
-        <div class="main_vid">
-        <video
-          loop
-          id="main_vid"
-          autoplay
-          muted
-          playsinline
-          style="width: 100%; object-fit: cover; z-index: 0"
-        >
+      </div>
+      <div class="top_pc">
+        <a href="about.html">ABOUT</a>
+        <a href="artist.html">ARTIST</a>
+        <ul class="submenu">
+          <li><a href="artist_g.html">GREEN</a></li>
+          <li><a href="artist_b.html">BLUE</a></li>
+        </ul>
+        <a href="ticket.html">TICKET</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="">INFO</a>
+        <ul class="submenu">
+          <li><a href="map.html">MAP</a></li>
+          <li><a href="faq.html">FAQ/Q&A</a></li>
+        </ul>
+        <a href="signin.html">SIGN IN</a>
+      </div>
+
+    </header>
+    <!-- 메인 영상 -->
+    <section>
+      <div class="main_vid">
+        <video loop id="main_vid" autoplay muted playsinline style="width: 100%; object-fit: cover; z-index: 0">
           <source src="./images/video/video01.mp4" type="video/mp4" />
         </video>
-    </div>
-      </section>
-      <!-- 메인 최초 티켓버튼 -->
-      <section>
-        <div class="main_ticket_btn">
+      </div>
+    </section>
+    <!-- 메인 최초 티켓버튼 -->
+    <section>
+      <div class="main_ticket_btn">
         <a href="ticket.html"> 티켓 예매하기 </a>
-    </div>
-      </section>
-      <section>
-        <!-- 메인 어바웃 -->
-        <div class="main_about">
-          <ul>
-            <li>
-              <a href="about.html">
-                <img src="./images/about_icon01.png" alt="" /><br />ABOUT</a
-              >
-              <p>설명글입니다</p>
-            </li>
-            <li>
-              <a href="artist.html">
-                <img src="./images/about_icon02.png" alt="" /><br />ARTIST</a
-              >
-              <p>설명글입니다</p>
-            </li>
-            <li>
-              <a href="gallery.html">
-                <img src="./images/about_icon03.png" alt="" /><br />GALLERY</a
-              >
-              <p>설명글입니다</p>
-            </li>
-            <li>
-              <a href="images/">
-                <img src="./images/about_icon04.png" alt="" /><br />INFO</a
-              >
-              <p>설명글입니다</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <div class="main_lineup">
-          <a href="artist_g.html">
-            <img src="./images/main/DALL·E 2023-04-02 15.27.17 - An expressive oil painting of greenish mountain and bluish ocean side, with an explosion of a nebula.png" alt="">
-          </a>
-          <a href="artist_b.html">
-            <img src="./images/main/DALL·E 2023-04-02 15.44.38 - An expressive oil painting of greenish mountain and bluish ocean side, with beautiful supernova explosion, high quality.png" alt="">
-          </a>
-        </div>
-      </section>
-      <section>
-        <div class="main_ticket_bundle">
-          <ul>
-            <li><a href="ticket.html">1DAY</a></li>
-            <li><a href="ticket.html">2DAY</a></li>
-            <li><a href="ticket.html">PREMIUM</a></li>
-          </ul>
-        </div>
-      </section>
-      <footer>
-        <h1>G&B<br />FESTIVAL</h1>
-        <p>&copy; Copyright</p>
-      </footer>
-    </div>
-  </body>
+      </div>
+    </section>
+    <section>
+      <!-- 메인 어바웃 -->
+      <div class="main_about">
+        <ul>
+          <li>
+            <a href="about.html">
+              <img src="./images/about_icon01.png" alt="" /><br />ABOUT</a>
+            <p>설명글입니다</p>
+          </li>
+          <li>
+            <a href="artist.html">
+              <img src="./images/about_icon02.png" alt="" /><br />ARTIST</a>
+            <p>설명글입니다</p>
+          </li>
+          <li>
+            <a href="gallery.html">
+              <img src="./images/about_icon03.png" alt="" /><br />GALLERY</a>
+            <p>설명글입니다</p>
+          </li>
+          <li>
+            <a href="images/">
+              <img src="./images/about_icon04.png" alt="" /><br />INFO</a>
+            <p>설명글입니다</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h1 id="lineup">LINE UP</h1>
+      <div class="main_lineup">
+        <a href="artist_g.html">
+          <img
+            src="./images/main/DALL·E 2023-04-02 15.27.17 - An expressive oil painting of greenish mountain and bluish ocean side, with an explosion of a nebula.png"
+            alt="">
+        </a>
+        <a href="artist_b.html">
+          <img
+            src="./images/main/DALL·E 2023-04-02 15.44.38 - An expressive oil painting of greenish mountain and bluish ocean side, with beautiful supernova explosion, high quality.png"
+            alt="">
+        </a>
+      </div>
+    </section>
+    <section>
+      <!-- 티켓 번들 -->
+      <div class="main_ticket_bundle">
+        <ul>
+          <li><a href="ticket.html">1DAY</a></li>
+          <li><a href="ticket.html">2DAY</a></li>
+          <li><a href="ticket.html">PREMIUM</a></li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <h1>G&B<br />FESTIVAL</h1>
+      <p>&copy; Copyright</p>
+    </footer>
+  </div>
+</body>
+
 </html>

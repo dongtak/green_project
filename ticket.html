@@ -1,232 +1,305 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <!-- 외부 스타일 -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/common.css" />
 
-    <!-- 외부 스크립트 -->
-    <script src="./js/mobile_btn.js"></script>
-    <!-- 외부 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<head>
+  <!-- 외부 스타일 -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/common.css" />
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TICKET</title>
+  <!-- 외부 스크립트 -->
+  <script src="./js/mobile_btn.js"></script>
+  <!-- 외부 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap"
+    rel="stylesheet">
 
-    <style>
-      @media all and (min-width: 480px) {
-        section {
-          margin-top: 100px;
-        }
-        .ticket h1{
-          font-size: 50px;
-        height: 100px;
-          line-height: 100px;
-        }
-        .ticket{
-          text-align: center;
-          /* background: #ff0000; */
-        }
-        .ticket_btn{
-          font-weight: bold;
-          width: 80%;
-          /* background: #ff9900; */
-          margin: auto;
-          display: flex;
-        }
-        .ticket_btn a{
-          font-size: 30px;
-          background: #ffffff;
-          width: 30%;
-          margin: 0 auto;
-          height: 120px;
-          text-align: center;
-          line-height: 60px;
-          transition: 0.3s;
-          
-        }
-        .ticket_btn a:hover{
-          color: #ffffff;
-          background: black;
-          /* text-shadow: 0px 0px 50px rgb(43, 255, 0),10px 10px 50px rgb(43, 255, 0),-10px -10px 50px rgb(43, 255, 0); */
-        }
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TICKET</title>
+
+  <style>
+    section {
+      margin-top: 100px;
+    }
+
+    a {
+      color: aliceblue;
+    }
+
+    .ticket h1 {
+      font-size: 50px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+    }
+
+    .general {
+      background: #e5ff00;
+      height: 60vh;
+    }
+
+    .ticket_btn {
+      background: #15ff00;
+      text-align: center;
+    }
+
+    .ticket_btn a {
+      width: 70vw;
+      background: #ff0303;
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+
+    .offer_img {
+      width: 100%;
+      height: 100px;
+      transition: 0.2s;
+    }
+
+    .offer_img:hover {
+      height: 200px;
+    }
+
+
+    /* 오퍼 설명 */
+    .offer_img::before {
+      content: "셔틀버스";
+      font-size: inherit;
+    }
+
+    .offer_img::after {
+      display: none;
+      content: "설명";
+      font-size: 12px;
+    }
+
+    .offer:nth-child(1) .offer_img {
+      background: url("./images/ticket/offer1.jpg") right/cover;
+    }
+
+    .offer:nth-child(2) .offer_img {
+      background: url("./images/ticket/offer2.jpg") right/cover;
+    }
+
+    .offer:nth-child(3) .offer_img {
+      background: url("./images/ticket/offer3.jpg") right/cover;
+    }
+
+    .offer:nth-child(4) .offer_img {
+      background: url("./images/ticket/offer4.jpg") right/cover;
+    }
+
+    .offer:nth-child(5) .offer_img {
+      background: url("./images/ticket/offer5.jpg") right/cover;
+    }
+
+    .offer:nth-child(6) .offer_img {
+      background: url("./images/ticket/offer1.jpg") right/cover;
+    }
+
+    .grade {
+      text-align: center;
+      width: 100px;
+      height: 60px;
+      line-height: 60px;
+      margin: 0 auto;
+    }
+
+    @media all and (min-width: 480px) {
+
+
+      .ticket {
+        text-align: center;
+        /* background: #ff0000; */
+      }
+
+      .ticket_btn {
+        font-weight: bold;
+        width: 80%;
+        /* background: #ff9900; */
+        margin: auto;
+        display: flex;
+      }
+
+      .ticket_btn a {
+        font-size: 30px;
+        background: #ffffff;
+        width: 30%;
+        margin: 0 auto;
+        height: 120px;
+        text-align: center;
+        line-height: 60px;
+        transition: 0.3s;
+        color: #000;
+      }
+
+      .ticket_btn a:hover {
+        color: #ffffff;
+        background: black;
+        /* text-shadow: 0px 0px 50px rgb(43, 255, 0),10px 10px 50px rgb(43, 255, 0),-10px -10px 50px rgb(43, 255, 0); */
+      }
 
 
       /* 오퍼 스타일 */
 
-        .general,.premium{
-          margin-top: 140px;
-          background: rgb(0, 0, 0);
-        }
-        .offers{
-          
-          /* background: #fffb00; */
-          height: 120px;
-          margin: 200px auto;
-          display: flex;
-          justify-content: center;
-         
-        }
-        .offer {
-          border: 1px solid black;
-          width: 120px;
-          height: 200px;
-          transition: 0.2s;
-          transform: skew(-10deg);
-          transform-origin: bottom left;
-          /* background: #00c3ff; */
-        }
-        .offer:nth-child(1){
-          transform-origin: bottom left;
-        }
-        .offer:nth-child(2){
-          transform-origin: bottom left;
-        }
-        .offer:nth-child(3){
-          transform-origin: bottom left;
-        }
-        .offer:nth-child(4){
-          transform-origin: bottom left;
+      .general,
+      .premium {
+        margin-top: 140px;
+        background: rgb(0, 0, 0);
+      }
 
-        }
-        .offer:nth-child(5){
-          transform-origin: bottom left;
-        }
-        .offer:nth-child(6){
-          transform-origin: bottom left;
-        }
-        
-        .offer:hover{
-          width: 240px;
-          height: 300px;
-          transform: translateY(-100px) skew(-10deg);
-          transform-origin: bottom left;
-}
+      .offers {
 
-          
-        }
-        .offer_img{
-          width: 100%;
-          height: 100%;
-          
-        }
-        /* 오퍼 설명 */
-        .offer_img::before{
-          content: "셔틀버스";
-          font-size: inherit;
-        }
-        .offer_img::after{
-          display: none;
-          content: "설명";
-          font-size: 12px;
-        }
-        .offer:nth-child(1) .offer_img{
-          background: url("./images/ticket/offer1.jpg") right/cover;
-        }
-        .offer:nth-child(2) .offer_img{
-          background: url("./images/ticket/offer2.jpg") right/cover;
-        }
-        .offer:nth-child(3) .offer_img{
-          background: url("./images/ticket/offer3.jpg") right/cover;
-        }
-        .offer:nth-child(4) .offer_img{
-          background: url("./images/ticket/offer4.jpg") right/cover;
-        }
-        .offer:nth-child(5) .offer_img{
-          background: url("./images/ticket/offer5.jpg") right/cover;
-        }
-        .offer:nth-child(6) .offer_img{
-          background: url("./images/ticket/offer1.jpg") right/cover;
-        }
-        .offer:hover .offer_img::before {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
-}
-       .grade a{
+        /* background: #fffb00; */
+        height: 120px;
+        margin: 200px auto;
+        display: flex;
+        justify-content: center;
+
+      }
+
+      .offer {
+        border: 1px solid black;
+        width: 120px;
+        height: 200px;
+        transition: 0.2s;
+        transform: skew(-10deg);
+        transform-origin: bottom left;
+        /* background: #00c3ff; */
+      }
+
+      .offer:nth-child(1) {
+        transform-origin: bottom left;
+      }
+
+      .offer:nth-child(2) {
+        transform-origin: bottom left;
+      }
+
+      .offer:nth-child(3) {
+        transform-origin: bottom left;
+      }
+
+      .offer:nth-child(4) {
+        transform-origin: bottom left;
+
+      }
+
+      .offer:nth-child(5) {
+        transform-origin: bottom left;
+      }
+
+      .offer:nth-child(6) {
+        transform-origin: bottom left;
+      }
+
+      .offer:hover {
+        width: 240px;
+        height: 300px;
+        transform: translateY(-100px) skew(-10deg);
+        transform-origin: bottom left;
+
+      }
+
+      .offer_img {
+        width: 100%;
+        height: 100%;
+
+      }
+
+      .offer:hover .offer_img::before {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 102%;
+        height: 101%;
+        transition: all 0.3s ease-in-out;
+        background: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 0, 0, 0));
+      }
+
+      .grade a {
         display: inline-block;
         color: aliceblue;
         width: 120px;
         height: 60px;
         background: blue;
-       }
-        
-      
-    </style>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        hamburger_btn();
-      });
-    </script>
-  </head>
-  <body>
-    <div id="wrapper">
-      <!-- 헤더 -->
-      <header>
-        <div class="logo">
-          <a href="index.html"
-            ><h1>
-              G&B
-              <br />
-              FESTIVAL
-            </h1></a
-          >
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      hamburger_btn();
+    });
+  </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- 헤더 -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <h1>
+            G&B
+            <br />
+            FESTIVAL
+          </h1>
+        </a>
+      </div>
+      <!-- 모바일 버튼 -->
+      <div class="mobile_btn">
+        <!-- 햄버거버튼 -->
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="top_nav">
+          <hr>
+          <ul class="nav_mobile">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="artist.html">ARTIST</a></li>
+            <li><a href="ticket.html">TICKET</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li class="info">
+              INFO<a href="map.html">MAP</a> <a href="faq.html">FAQ/Q&A</a>
+            </li>
+            <li><a href="signin.html">SIGN IN</a></li>
+          </ul>
         </div>
-        <!-- 모바일 버튼 -->
-        <div class="mobile_btn">
-            <!-- 햄버거버튼 -->
-          <input type="checkbox" id="hamburger" />
-          <label for="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <div class="top_nav">
-            <hr>
-            <ul class="nav_mobile">
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="artist.html">ARTIST</a></li>
-              <li><a href="ticket.html">TICKET</a></li>
-              <li><a href="gallery.html">GALLERY</a></li>
-              <li class="info">
-                INFO<a href="map.html">MAP</a> <a href="faq.html">FAQ/Q&A</a>
-              </li>
-              <li><a href="signin.html">SIGN IN</a></li>
-            </ul>
+      </div>
+      <div class="top_pc">
+        <a href="about.html">ABOUT</a>
+        <a href="artist.html">ARTIST</a>
+        <ul class="submenu">
+          <li><a href="artist_g.html">GREEN</a></li>
+          <li><a href="artist_b.html">BLUE</a></li>
+        </ul>
+        <a href="ticket.html">TICKET</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="">INFO</a>
+        <ul class="submenu">
+          <li><a href="map.html">MAP</a></li>
+          <li><a href="faq.html">FAQ/Q&A</a></li>
+        </ul>
+        <a href="signin.html">SIGN IN</a>
+      </div>
+
+    </header>
+
+
+    <section>
+      <!-- 컨텐츠 여기 넣어주세요 -->
+      <div class="ticket">
+        <h1>TICKET</h1>
+        <div class="general">
+          <div class="grade">
+            <a href="">GENERAL</a>
           </div>
-        </div>
-        <div class="top_pc">
-          <a href="about.html">ABOUT</a>
-          <a href="artist.html">ARTIST</a>
-          <ul class="submenu">
-            <li><a href="artist_g.html">GREEN</a></li>
-            <li><a href="artist_b.html">BLUE</a></li>
-          </ul>
-          <a href="ticket.html">TICKET</a>
-          <a href="gallery.html">GALLERY</a>
-          <a href="">INFO</a>
-          <ul class="submenu">
-            <li><a href="map.html">MAP</a></li>
-            <li><a href="faq.html">FAQ/Q&A</a></li>
-          </ul>
-          <a href="signin.html">SIGN IN</a>
-        </div>
-        
-      </header>
-
-
-      <section>
-        <!-- 컨텐츠 여기 넣어주세요 -->
-        <div class="ticket">
-          <h1>TICKET</h1>
-          <div class="general">
           <div class="ticket_btn">
             <a href="">1DAY<br>99,000</a>
             <a href="">2DAY<br>149,000</a>
@@ -245,46 +318,50 @@
             <a href="">GENERAL</a>
           </div>
 
-          </div>
-          <div class="premium">
-            <div class="ticket_btn">
-              <a href="">1DAY<br>149,000</a>
-              <a href="">2DAY<br>199,000</a>
-            </div>
-            <div class="offers">
-              <div class="offer">
-                <div class="offer_img">
-                </div>
-              </div>
-              <div class="offer">
-                <div class="offer_img"></div>
-              </div>
-              <div class="offer">
-                <div class="offer_img"></div>
-              </div>
-              <div class="offer">
-                <div class="offer_img"></div>
-              </div>
-              <div class="offer">
-                <div class="offer_img"></div>
-              </div>
-              <div class="offer">
-                <div class="offer_img"></div>
-              </div>
-            </div>
-  
-            <div class="grade">
-              <a href="">PREMIUM</a>
-            </div>
-            
-            </div>
         </div>
+        <div class="premium">
+          <div class="grade">
+            <a href="">PREMIUM</a>
+          </div>
+          <div class="ticket_btn">
+            <a href="">1DAY<br>149,000</a>
+            <a href="">2DAY<br>199,000</a>
+          </div>
+          <div class="offers">
+            <div class="offer">
+              <div class="offer_img">
+              </div>
+            </div>
+            <div class="offer">
+              <div class="offer_img"></div>
+            </div>
+            <div class="offer">
+              <div class="offer_img"></div>
+            </div>
+            <div class="offer">
+              <div class="offer_img"></div>
+            </div>
+            <div class="offer">
+              <div class="offer_img"></div>
+            </div>
+            <div class="offer">
+              <div class="offer_img"></div>
+            </div>
+          </div>
 
-      </section>
-      <footer>
-        <h1>G&B<br />FESTIVAL</h1>
-        <p>&copy; Copyright</p>
-      </footer>
-    </div>
-  </body>
+          <div class="grade">
+            <a href="">PREMIUM</a>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <footer>
+      <h1>G&B<br />FESTIVAL</h1>
+      <p>&copy; Copyright</p>
+    </footer>
+  </div>
+</body>
+
 </html>
