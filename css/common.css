@@ -5,16 +5,17 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #00101d;
+    background-color: #000000;
     animation: fadeOut 2s forwards;
   }
   #thumbnail h1{
-    color: white;
+    color: rgb(255, 255, 255);
     position: fixed;
     top: 45%;
     left: 48%;
     width: 50px;
     text-align: center;
+    font-size: 24px;
     animation: logo 2s ease;
   }
   /* 썸네일 로고방향으로 */
@@ -22,6 +23,11 @@
     0%{
         top: 45%;
         left: 48%;
+          text-shadow: 
+          0px 0px 20px #00ffaa,
+          0px 10px 40px #00aeff,
+          0px -10px 60px #ffffff,
+          0px 0px 80px #ffffff;
     }
     40%{
         top: 45%;
@@ -30,6 +36,7 @@
     100%{
         top: 1%;
         left: 1%;
+
     }
   }
   /* 사이트 접속시 썸네일 */
@@ -38,8 +45,18 @@
       z-index:999;
       opacity: 1;
     }
+    50%{
+      background: #000;
+    }
     70%{
       opacity: 1;
+      
+    }
+    80%{
+      background: #98ffe5;
+    }
+    90%{
+      background: #ff0000;
     }
     100% {
       opacity: 0;
@@ -143,7 +160,7 @@
       background-color: rgb(138, 255, 138);
     }
     100% {
-      background-color: rgb(255, 0, 0);
+      background-color: rgb(255, 37, 91);
     }
   }
 
@@ -166,7 +183,7 @@
     left: 0%;
     top: -100%;
     z-index: 98;
-    transition: all 0.35s;
+    transition: all 0.5s;
   }
 
   input[id="hamburger"]:checked + label + div {
@@ -188,7 +205,7 @@
   }
 
   .top_nav li a {
-    background: #001107;
+    background: #000000;
     color: aliceblue;
     height: 80px;
     display: block;
@@ -199,12 +216,19 @@
     transition: all 0.4s;
   }
   .top_nav .info {
+    
     height: 160px;
-
+    background: #000;
     line-height: 80px;
-    /* background: #ff7777; */
+    border-bottom: 10px solid white;
   }
-
+.top_nav .info a{
+  display: flex;
+  width: 50%;
+  color: #0026ff;
+  border-bottom: 1px solid aliceblue;
+  border-top: 1px solid aliceblue;
+}
   .top_nav li a:hover,
   .top_nav ul li:hover a {
     text-decoration: none;
@@ -226,6 +250,9 @@
   .top_pc {
     display: none;
   }
+
+
+  
   /* PC화면 */
   @media all and (min-width: 480px) {
     header {
@@ -248,9 +275,39 @@
       right: 0;
       font-size: 20px;
     }
+    .top_pc ul {
+      display: none;
+    }
+    .top_pc>a:nth-child(2):hover ~ .submenu:nth-of-type(1){
+      display: block;
+      position: fixed;
+      top: 90px;
+      left: 42%;
+      z-index: 1;
+    }
+    .top_pc>a:nth-child(6):hover ~ .submenu:nth-of-type(2){
+      display: block;
+      position: fixed;
+      top: 90px;
+      left: 80%;
+      z-index: 1;
+    }
 
+    .submenu a{
+      display: inline-block;
+      background: #3cff00;
+      line-height: 30px;
+      
+    }
+    .submenu a:hover{
+      display: block;
+    }
+    .top_pc ul li {
+      display: block;
+      border-bottom: 1px solid #ccc;
+    }
 
-    .top_pc a{
+    .top_pc>a{
       line-height: 100px;
       display: inline-block;
       color: aliceblue;
@@ -266,31 +323,7 @@
       margin-right: 10px;
       line-height: 40px;
     }
-    .top_pc ul {
-      display: none;
-    }
-    .top_pc > a:nth-child(2):hover ~ ul:nth-of-type(1){
-      display: block;
-      position: fixed;
-      top: 100px;
-      left: 42%;
-      z-index: 1;
-    }
-.top_pc > a:nth-child(6):hover ~ ul:nth-of-type(2){
-  display: block;
-  position: fixed;
-  top: 100px;
-  left: 80%;
-  z-index: 1;
+    
+
+
 }
-/* .top_pc ul.submenu {
-  position: static;
-  background-color: #ff0000;
-  width: auto;
-  height: auto;
-} */
-.top_pc ul li {
-  display: block;
-  border-bottom: 1px solid #ccc;
-}
-  }

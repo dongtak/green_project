@@ -112,10 +112,20 @@
         .offer_img{
           width: 100%;
           height: 100%;
+          
+        }
+        /* 오퍼 설명 */
+        .offer_img::before{
+          content: "셔틀버스";
+          font-size: inherit;
+        }
+        .offer_img::after{
+          display: none;
+          content: "설명";
+          font-size: 12px;
         }
         .offer:nth-child(1) .offer_img{
-          content: "셔틀버스";
-          background: url("./images/ticket/offer1 (2).jpg") right/cover;
+          background: url("./images/ticket/offer1.jpg") right/cover;
         }
         .offer:nth-child(2) .offer_img{
           background: url("./images/ticket/offer2.jpg") right/cover;
@@ -133,8 +143,6 @@
           background: url("./images/ticket/offer1.jpg") right/cover;
         }
         .offer:hover .offer_img::before {
-          
-          font-size: 12px;
           position: absolute;
           top: 0;
           left: 0;
@@ -143,7 +151,11 @@
           background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
 }
        .grade a{
+        display: inline-block;
         color: aliceblue;
+        width: 120px;
+        height: 60px;
+        background: blue;
        }
         
       
@@ -159,7 +171,7 @@
       <!-- 헤더 -->
       <header>
         <div class="logo">
-          <a href=""
+          <a href="index.html"
             ><h1>
               G&B
               <br />
@@ -221,7 +233,8 @@
           </div>
           <div class="offers">
             <div class="offer">
-              <div class="offer_img"></div>
+              <div class="offer_img">
+              </div>
             </div>
             <div class="offer">
               <div class="offer_img"></div>
@@ -240,7 +253,8 @@
             </div>
             <div class="offers">
               <div class="offer">
-                <div class="offer_img"></div>
+                <div class="offer_img">
+                </div>
               </div>
               <div class="offer">
                 <div class="offer_img"></div>

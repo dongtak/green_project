@@ -9,9 +9,9 @@
     <script src="./js/mobile_btn.js"></script>
     <!-- 외부 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -75,12 +75,8 @@
         height: 28vh;
         background: #000000;
       }
-      .main_lineup a {
+      .main_lineup{
         margin: auto;
-        background: url("images/blog01.jpg");
-        background-size: cover;
-        width: 194px;
-        height: 145px;
       }
       /* 메인 하단 티켓 번들 */
       .main_ticket_bundle li {
@@ -104,9 +100,14 @@
         #main_vid{
           top: 0px;
         }
-        .main_lineup a{
-  width: 300px;
-  height: 400px;
+        .main_lineup {
+          height: auto;
+        }
+
+
+        .main_lineup img{
+  max-width: 100%;
+  height: auto;
 }
       }
 
@@ -168,7 +169,7 @@ box-shadow: 2px 2px 100px #00F260,2px 2px 100px #0575E6;
    <!-- 썸네일
     홈페이지 접속 시 2초간 출력 -->
     <div id="thumbnail">
-      <h1>G&B</h1>
+      <h1>GREEN AND BLUE</h1>
     </div>
 
   <body>
@@ -176,7 +177,7 @@ box-shadow: 2px 2px 100px #00F260,2px 2px 100px #0575E6;
       <!-- 헤더 -->
       <header>
         <div class="logo">
-          <a href=""
+          <a href="index.html"
             ><h1>
               G&B
               <br />
@@ -201,7 +202,8 @@ box-shadow: 2px 2px 100px #00F260,2px 2px 100px #0575E6;
               <li><a href="ticket.html">TICKET</a></li>
               <li><a href="gallery.html">GALLERY</a></li>
               <li class="info">
-                INFO<a href="map.html">MAP</a> <a href="faq.html">FAQ/Q&A</a>
+                INFO
+                <a href="map.html">MAP</a> <a href="faq.html">FAQ/Q&A</a>
               </li>
               <li><a href="signin.html">SIGN IN</a></li>
             </ul>
@@ -279,8 +281,12 @@ box-shadow: 2px 2px 100px #00F260,2px 2px 100px #0575E6;
       </section>
       <section>
         <div class="main_lineup">
-          <a href=""></a>
-          <a href=""></a>
+          <a href="">
+            <img src="./images/main/DALL·E 2023-04-02 15.27.17 - An expressive oil painting of greenish mountain and bluish ocean side, with an explosion of a nebula.png" alt="">
+          </a>
+          <a href="">
+            <img src="./images/main/DALL·E 2023-04-02 15.44.38 - An expressive oil painting of greenish mountain and bluish ocean side, with beautiful supernova explosion, high quality.png" alt="">
+          </a>
         </div>
       </section>
       <section>
