@@ -69,15 +69,25 @@
         margin-top: 20px;
       }
       /* 메인 라인업 */
+      #lineup{
+        text-align: center;
+        font-size: 24px;
+        margin: 60px;
+      }
       .main_lineup {
-        display: flex;
-        width: 100%;
-        height: 28vh;
-        background: #000000;
-      }
-      .main_lineup{
-        margin: auto;
-      }
+         display: flex;
+         justify-content: space-around; /* 좌우 정렬 */
+         margin: 0 auto;
+         width: 100%;
+         height: 28vh;
+         /* background: #ff6c6c; */
+        }
+
+      .main_lineup img{
+        max-width: 100%;
+        height: auto;
+
+        }
       /* 메인 하단 티켓 번들 */
       .main_ticket_bundle li {
         text-align: center;
@@ -105,12 +115,14 @@
         }
         .main_lineup {
           height: auto;
+          width: 90%;
+          margin: 0 auto;
         }
 
 
         .main_lineup img{
-  max-width: 100%;
-  height: auto;
+          max-width: 90%;
+          margin-left: 5%;
 }
       }
 
@@ -283,6 +295,7 @@ box-shadow: 2px 2px 100px #00F260,2px 2px 100px #0575E6;
         </div>
       </section>
       <section>
+        <h1 id="lineup">LINE UP</h1>
         <div class="main_lineup">
           <a href="artist_g.html">
             <img src="./images/main/DALL·E 2023-04-02 15.27.17 - An expressive oil painting of greenish mountain and bluish ocean side, with an explosion of a nebula.png" alt="">
@@ -293,6 +306,7 @@ box-shadow: 2px 2px 100px #00F260,2px 2px 100px #0575E6;
         </div>
       </section>
       <section>
+        <!-- 티켓 번들 -->
         <div class="main_ticket_bundle">
           <ul>
             <li><a href="ticket.html">1DAY</a></li>
