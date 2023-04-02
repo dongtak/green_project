@@ -1,218 +1,232 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <!-- 외부 스타일 -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/common.css">
 
-    <!-- 외부 스크립트 -->
-    <script src="./js/mobile_btn.js"></script>
-    <!-- 외부 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GALLERY</title>
+<head>
+  <!-- 외부 스타일 -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/common.css">
 
-    <script>
-    document.addEventListener('DOMContentLoaded',function(){ 
-        hamburger_btn();
-     });
-    </script>
-    <style>
-        .container {
-         
-            width: 70%;
-            margin-left: 15%;
-           margin-top: 150px;
-            display: inline-block;
-        }
- 
-        .line {
-            width: 90%;
-            margin-bottom: 1%;
-            float: left;         
-        }
- 
-        .short {
-            width: 38.85%;
-            margin-right: 1.15%;
-             float: left; 
-        }
- 
-        .short img{
-            width: 100%;
-        }
- 
-        .long{
-            width: 60%;     
-            float: left;
-        }
- 
-        .long img{
-            width: 31.33333%;
-            margin-right: 2%;
-            float: left;
-            height: auto;         
-        }
- 
-        .long img:nth-child(n+4){
-            margin-top: 1.5%;
-        }
+  <!-- 외부 스크립트 -->
+  <script src="./js/mobile_btn.js"></script>
+  <!-- 외부 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap"
+    rel="stylesheet">
 
- 
-    </style>
-  </head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GALLERY</title>
 
-  <body>
-    <div id="wrapper">
-      <!-- 헤더 -->
-      <header>
-        <div class="logo">
-          <a href="index.html"
-            ><h1>
-              G&B
-              <br />
-              FESTIVAL
-            </h1></a
-          >
-        </div>
-        <!-- 모바일 버튼 -->
-        <div class="mobile_btn">
-            <!-- 햄버거버튼 -->
-          <input type="checkbox" id="hamburger" />
-          <label for="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <div class="top_nav">
-            <hr>
-            <ul class="nav_mobile">
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="artist.html">ARTIST</a></li>
-              <li><a href="ticket.html">TICKET</a></li>
-              <li><a href="gallery.html">GALLERY</a></li>
-              <li class="info">
-                INFO<a href="map.html">MAP</a> <a href="faq.html">FAQ/Q&A</a>
-              </li>
-              <li><a href="signin.html">SIGN IN</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="top_pc">
-          <a href="about.html">ABOUT</a>
-          <a href="artist.html">ARTIST</a>
-          <ul class="submenu">
-            <li><a href="artist_g.html">GREEN</a></li>
-            <li><a href="artist_b.html">BLUE</a></li>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      hamburger_btn();
+    });
+  </script>
+  <style>
+    .container {
+
+      width: 70%;
+      margin-left: 15%;
+      margin-top: 150px;
+      display: inline-block;
+    }
+
+    .line {
+      width: 90%;
+      margin-bottom: 1%;
+      float: left;
+    }
+
+    .short {
+      width: 38.85%;
+      margin-right: 1.15%;
+      float: left;
+    }
+
+    .short img {
+      width: 100%;
+    }
+
+    .long {
+      width: 60%;
+      float: left;
+    }
+
+    .long img {
+      width: 31.33333%;
+      margin-right: 2%;
+      float: left;
+      height: auto;
+    }
+
+    .long img:nth-child(n+4) {
+      margin-top: 1.5%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- 헤더 -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <h1>
+            G&B
+            <br />
+            FESTIVAL
+          </h1>
+        </a>
+      </div>
+      <!-- 모바일 버튼 -->
+      <div class="mobile_btn">
+        <!-- 햄버거버튼 -->
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="top_nav">
+          <hr>
+          <ul class="nav_mobile">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="artist.html">ARTIST</a></li>
+            <li><a href="ticket.html">TICKET</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li class="info">
+              INFO<a href="map.html">MAP</a> <a href="faq.html">FAQ/Q&A</a>
+            </li>
+            <li><a href="signin.html">SIGN IN</a></li>
           </ul>
-          <a href="ticket.html">TICKET</a>
-          <a href="gallery.html">GALLERY</a>
-          <a href="">INFO</a>
-          <ul class="submenu">
-            <li><a href="map.html">MAP</a></li>
-            <li><a href="faq.html">FAQ/Q&A</a></li>
-          </ul>
-          <a href="signin.html">SIGN IN</a>
         </div>
-        
-      </header>
-   
-   
-          <div class="container">
-              <ul>
-                  <li class="line">
-                  <li class="short">
-                      <img src="./images/gallery/gall01.jpg"></li>
-                  <li class="long">
-                      <img src="./images/gallery/gall02.jpg">
-                      <img src="./images/gallery/gall03.jpg">
-                      <img src="./images/gallery/gall04.jpg">
-                      <img src="./images/gallery/gall11.jpg">
-                      <img src="./images/gallery/gall09.jpg">
-                      <img src="./images/gallery/gall10.jpg"></li>
-                  </li>
-   
-   
-   
-   
-                  <li class="line">
-                  <li class="long">
-                      <img src="./images/gallery/gall12.jpg">
-                      <img src="./images/gallery/gall13.jpg">
-                      <img src="./images/gallery/gall15.jpg">
-                      <img src="./images/gallery/gall16.jpg">
-                      <img src="./images/gallery/gall20.jpg">
-                      <img src="./images/gallery/gall01.jpg"></li>
-                  <li class="short">
-                      <img src="./images/gallery/gall08.jpg"></li>
-                  </li>
-   
-   
-                  <li class="line">
-                  <li class="short">
-                      <img src="./images/gallery/gall18.jpg"></li>
-                  <li class="long">
-                      <img src="./images/gallery/gall02.jpg">
-                      <img src="./images/gallery/gall03.jpg">
-                      <img src="./images/gallery/gall04.jpg">
-                      <img src="./images/gallery/gall11.jpg">
-                      <img src="./images/gallery/gall09.jpg">
-                      <img src="./images/gallery/gall10.jpg"></li>
-                  </li>
-                  <li class="line">
-                    
-                      <li class="long">
-                          <img src="./images/gallery/gall02.jpg">
-                          <img src="./images/gallery/gall03.jpg">
-                          <img src="./images/gallery/gall04.jpg">
-                          <img src="./images/gallery/gall11.jpg">
-                          <img src="./images/gallery/gall09.jpg">
-                          <img src="./images/gallery/gall10.jpg"></li>
-                          <li class="short">
-                              <img src="./images/gallery/gall19.jpg"></li>
-                      </li>
-     
-     
-                      <li class="line">
-                          <li class="short">
-                              <img src="./images/gallery/gall14.jpg"></li>
-                      <li class="long">
-                          <img src="./images/gallery/gall02.jpg">
-                          <img src="./images/gallery/gall03.jpg">
-                          <img src="./images/gallery/gall04.jpg">
-                          <img src="./images/gallery/gall11.jpg">
-                          <img src="./images/gallery/gall09.jpg">
-                          <img src="./images/gallery/gall10.jpg"></li>
-                   
-                      </li>
-     
-     
-                      <li class="line">
-                      <li class="short">
-                          <img src="./images/gallery/gall15.jpg"></li>
-                      <li class="long">
-                          <img src="./images/gallery/gall02.jpg">
-                          <img src="./images/gallery/gall03.jpg">
-                          <img src="./images/gallery/gall04.jpg">
-                          <img src="./images/gallery/gall11.jpg">
-                          <img src="./images/gallery/gall09.jpg">
-                          <img src="./images/gallery/gall10.jpg"></li>
-                      </li>
-              </ul>
-            
-          </div>
+      </div>
+      <div class="top_pc">
+        <a href="about.html">ABOUT</a>
+        <a href="artist.html">ARTIST</a>
+        <ul class="submenu">
+          <li><a href="artist_g.html">GREEN</a></li>
+          <li><a href="artist_b.html">BLUE</a></li>
+        </ul>
+        <a href="ticket.html">TICKET</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="">INFO</a>
+        <ul class="submenu">
+          <li><a href="map.html">MAP</a></li>
+          <li><a href="faq.html">FAQ/Q&A</a></li>
+        </ul>
+        <a href="signin.html">SIGN IN</a>
+      </div>
 
-      </section>
+    </header>
 
-      <footer>
-        <h1>G&B<br />FESTIVAL</h1>
-        <p>&copy; Copyright</p>
-      </footer>
+
+    <div class="container">
+      <ul>
+        <li class="line">
+        <li class="short">
+          <img src="./images/gallery/gall01.jpg">
+        </li>
+        <li class="long">
+          <img src="./images/gallery/gall02.jpg">
+          <img src="./images/gallery/gall03.jpg">
+          <img src="./images/gallery/gall04.jpg">
+          <img src="./images/gallery/gall11.jpg">
+          <img src="./images/gallery/gall09.jpg">
+          <img src="./images/gallery/gall10.jpg">
+        </li>
+        </li>
+
+
+
+
+        <li class="line">
+        <li class="long">
+          <img src="./images/gallery/gall12.jpg">
+          <img src="./images/gallery/gall13.jpg">
+          <img src="./images/gallery/gall15.jpg">
+          <img src="./images/gallery/gall16.jpg">
+          <img src="./images/gallery/gall20.jpg">
+          <img src="./images/gallery/gall01.jpg">
+        </li>
+        <li class="short">
+          <img src="./images/gallery/gall08.jpg">
+        </li>
+        </li>
+
+
+        <li class="line">
+        <li class="short">
+          <img src="./images/gallery/gall18.jpg">
+        </li>
+        <li class="long">
+          <img src="./images/gallery/gall02.jpg">
+          <img src="./images/gallery/gall03.jpg">
+          <img src="./images/gallery/gall04.jpg">
+          <img src="./images/gallery/gall11.jpg">
+          <img src="./images/gallery/gall09.jpg">
+          <img src="./images/gallery/gall10.jpg">
+        </li>
+        </li>
+        <li class="line">
+
+        <li class="long">
+          <img src="./images/gallery/gall02.jpg">
+          <img src="./images/gallery/gall03.jpg">
+          <img src="./images/gallery/gall04.jpg">
+          <img src="./images/gallery/gall11.jpg">
+          <img src="./images/gallery/gall09.jpg">
+          <img src="./images/gallery/gall10.jpg">
+        </li>
+        <li class="short">
+          <img src="./images/gallery/gall19.jpg">
+        </li>
+        </li>
+
+
+        <li class="line">
+        <li class="short">
+          <img src="./images/gallery/gall14.jpg">
+        </li>
+        <li class="long">
+          <img src="./images/gallery/gall02.jpg">
+          <img src="./images/gallery/gall03.jpg">
+          <img src="./images/gallery/gall04.jpg">
+          <img src="./images/gallery/gall11.jpg">
+          <img src="./images/gallery/gall09.jpg">
+          <img src="./images/gallery/gall10.jpg">
+        </li>
+
+        </li>
+
+
+        <li class="line">
+        <li class="short">
+          <img src="./images/gallery/gall15.jpg">
+        </li>
+        <li class="long">
+          <img src="./images/gallery/gall02.jpg">
+          <img src="./images/gallery/gall03.jpg">
+          <img src="./images/gallery/gall04.jpg">
+          <img src="./images/gallery/gall11.jpg">
+          <img src="./images/gallery/gall09.jpg">
+          <img src="./images/gallery/gall10.jpg">
+        </li>
+        </li>
+      </ul>
+
     </div>
-  </body>
+
+    </section>
+
+    <footer>
+      <h1>G&B<br />FESTIVAL</h1>
+      <p>&copy; Copyright</p>
+    </footer>
+  </div>
+</body>
+
 </html>

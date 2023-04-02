@@ -1,159 +1,172 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <!-- 외부 스타일 -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/common.css"/>
 
-    <!-- 외부 스크립트 -->
-    <script src="./js/mobile_btn.js"></script>
-    <!-- 외부 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SIGN UP</title>
-    <style>    
-    section{
+<head>
+  <!-- 외부 스타일 -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+
+  <!-- 외부 스크립트 -->
+  <script src="./js/mobile_btn.js"></script>
+  <!-- 외부 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap"
+    rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIGN UP</title>
+  <style>
+    section {
       margin-top: 100px;
       color: aliceblue;
     }
-    .container{
+
+    .container {
       /* background: #ff3a3a; */
 
     }
-    .container h1{
+
+    .container h1 {
       width: 250px;
       height: 100px;
       font-size: 30px;
       line-height: 140px;
       /* background: #ff6600; */
       text-align: center;
-      margin:0 auto;
-  
+      margin: 0 auto;
+
     }
-    form{
+
+    form {
       width: 90%;
       margin: 0 auto;
       /* background: #c8ff00; */
       height: 600px;
       text-align: center;
     }
-    form label{
+
+    form label {
       text-align: left;
       display: inline-block;
       width: 70%;
       margin-top: 15px;
       font-size: 20px;
     }
-    form label:nth-child(6) input{
-      
+
+    form label:nth-child(6) input {
+
       width: 24%;
     }
-    
-    form input{
+
+    form input {
       height: 40px;
       border-radius: 10px;
     }
-    form div{
+
+    form div {
       margin-top: 25px;
       display: flex;
       line-height: 40px;
       justify-content: space-evenly;
     }
-    form div input{
-      width: 40px;
-     
-    }
-   
-    form input[type=checkbox]{
-      appearance:auto;
-      
-    }
-    </style>
-</head>
-<body>
-    <div id="wrapper">
-      <!-- 헤더 -->
-      <header>
-        <div class="logo">
-          <a href="index.html"
-            ><h1>
-              G&B
-              <br />
-              FESTIVAL
-            </h1></a
-          >
-        </div>
-        <!-- 모바일 버튼 -->
-        <div class="mobile_btn">
-            <!-- 햄버거버튼 -->
-          <input type="checkbox" id="hamburger" />
-          <label for="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <div class="top_nav">
-            <hr>
-            <ul class="nav_mobile">
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="artist.html">ARTIST</a></li>
-              <li><a href="ticket.html">TICKET</a></li>
-              <li><a href="gallery.html">GALLERY</a></li>
-              <li class="info">
-                INFO<a href="map.html">MAP</a> <a href="faq.html">FAQ/Q&A</a>
-              </li>
-              <li><a href="signin.html">SIGN IN</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="top_pc">
-          <a href="about.html">ABOUT</a>
-          <a href="artist.html">ARTIST</a>
-          <ul class="submenu">
-            <li><a href="artist_g.html">GREEN</a></li>
-            <li><a href="artist_b.html">BLUE</a></li>
-          </ul>
-          <a href="ticket.html">TICKET</a>
-          <a href="gallery.html">GALLERY</a>
-          <a href="">INFO</a>
-          <ul class="submenu">
-            <li><a href="map.html">MAP</a></li>
-            <li><a href="faq.html">FAQ/Q&A</a></li>
-          </ul>
-          <a href="signin.html">SIGN IN</a>
-        </div>
-        
-      </header>
-      
 
-      <section>
-        <!-- 컨텐츠 여기 넣어주세요 -->
+    form div input {
+      width: 40px;
+
+    }
+
+    form input[type=checkbox] {
+      appearance: auto;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- 헤더 -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <h1>
+            G&B
+            <br />
+            FESTIVAL
+          </h1>
+        </a>
+      </div>
+      <!-- 모바일 버튼 -->
+      <div class="mobile_btn">
+        <!-- 햄버거버튼 -->
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="top_nav">
+          <hr>
+          <ul class="nav_mobile">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="artist.html">ARTIST</a></li>
+            <li><a href="ticket.html">TICKET</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li class="info">
+              INFO<a href="map.html">MAP</a> <a href="faq.html">FAQ/Q&A</a>
+            </li>
+            <li><a href="signin.html">SIGN IN</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="top_pc">
+        <a href="about.html">ABOUT</a>
+        <a href="artist.html">ARTIST</a>
+        <ul class="submenu">
+          <li><a href="artist_g.html">GREEN</a></li>
+          <li><a href="artist_b.html">BLUE</a></li>
+        </ul>
+        <a href="ticket.html">TICKET</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="">INFO</a>
+        <ul class="submenu">
+          <li><a href="map.html">MAP</a></li>
+          <li><a href="faq.html">FAQ/Q&A</a></li>
+        </ul>
+        <a href="signin.html">SIGN IN</a>
+      </div>
+
+    </header>
+
+
+    <section>
+      <!-- 컨텐츠 여기 넣어주세요 -->
       <div class="container">
         <h1>회원가입</h1>
         <form action="" method="post">
-         <label for="id">ID :<input type="text" name="id" required></label>
-         <label for="">ID확인 :<input type="text" required></label>
-         <label for="">PW :<input type="password"></label>
-         <label for="">PW확인 :<input type="password"></label>
-         <label for="">EMAIL :<input type="text"></label>
-         <label for="">PHONE :<br><input type="text"> - <input type="text"> - <input type="text"></label>
-         <div><input type="checkbox">구독
-          <input type="checkbox">수신동의</div>
-         <button>회원가입</button>
+          <label for="id">ID :<input type="text" name="id" required></label>
+          <label for="">ID확인 :<input type="text" required></label>
+          <label for="">PW :<input type="password"></label>
+          <label for="">PW확인 :<input type="password"></label>
+          <label for="">EMAIL :<input type="text"></label>
+          <label for="">PHONE :<br><input type="text"> - <input type="text"> - <input type="text"></label>
+          <div><input type="checkbox">구독
+            <input type="checkbox">수신동의
+          </div>
+          <button>회원가입</button>
         </form>
 
       </div>
 
-      </section>
-      <footer>
-        <h1>G&B<br />FESTIVAL</h1>
-        <p>&copy; Copyright</p>
-      </footer>
-    </div>
+    </section>
+    <footer>
+      <h1>G&B<br />FESTIVAL</h1>
+      <p>&copy; Copyright</p>
+    </footer>
+  </div>
 </body>
+
 </html>

@@ -1,267 +1,272 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <!-- 외부 스타일 -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/faq.css">
-    <link rel="stylesheet" href="./css/faq_write.css">
 
-    <!-- 외부 스크립트 -->
-    <script src="./js/mobile_btn.js"></script>
-    <script defer src="./js/faq.js"></script>
+<head>
+  <!-- 외부 스타일 -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/faq.css">
+  <link rel="stylesheet" href="./css/faq_write.css">
+
+  <!-- 외부 스크립트 -->
+  <script src="./js/mobile_btn.js"></script>
+  <script defer src="./js/faq.js"></script>
 
 
-    <!-- 외부 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQ</title>
+  <!-- 외부 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap"
+    rel="stylesheet">
 
-    <script>
-    document.addEventListener('DOMContentLoaded',function(){ 
-        hamburger_btn();
-     });
-    </script>
-    <style>
-     
-    </style>
-  </head>
-  <body>
-    <div id="wrapper">
-      <!-- 헤더 -->
-      <header>
-        <div class="logo">
-          <a href="index.html"
-            ><h1>
-              G&B
-              <br />
-              FESTIVAL
-            </h1></a
-          >
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ</title>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      hamburger_btn();
+    });
+  </script>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- 헤더 -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <h1>
+            G&B
+            <br />
+            FESTIVAL
+          </h1>
+        </a>
+      </div>
+      <!-- 모바일 버튼 -->
+      <div class="mobile_btn">
+        <!-- 햄버거버튼 -->
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="top_nav">
+          <hr>
+          <ul class="nav_mobile">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="artist.html">ARTIST</a></li>
+            <li><a href="ticket.html">TICKET</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li class="info">
+              INFO<a href="map.html">MAP</a> <a href="faq.html">FAQ/Q&A</a>
+            </li>
+            <li><a href="signin.html">SIGN IN</a></li>
+          </ul>
         </div>
-        <!-- 모바일 버튼 -->
-        <div class="mobile_btn">
-            <!-- 햄버거버튼 -->
-          <input type="checkbox" id="hamburger" />
-          <label for="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <div class="top_nav">
-            <hr>
-            <ul class="nav_mobile">
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="artist.html">ARTIST</a></li>
-              <li><a href="ticket.html">TICKET</a></li>
-              <li><a href="gallery.html">GALLERY</a></li>
-              <li class="info">
-                INFO<a href="map.html">MAP</a> <a href="faq.html">FAQ/Q&A</a>
-              </li>
-              <li><a href="signin.html">SIGN IN</a></li>
-            </ul>
+      </div>
+      <div class="top_pc">
+        <a href="about.html">ABOUT</a>
+        <a href="artist.html">ARTIST</a>
+        <ul class="submenu">
+          <li><a href="artist_g.html">GREEN</a></li>
+          <li><a href="artist_b.html">BLUE</a></li>
+        </ul>
+        <a href="ticket.html">TICKET</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="">INFO</a>
+        <ul class="submenu">
+          <li><a href="map.html">MAP</a></li>
+          <li><a href="faq.html">FAQ/Q&A</a></li>
+        </ul>
+        <a href="signin.html">SIGN IN</a>
+      </div>
+
+    </header>
+
+    <section>
+      <!-- 컨텐츠 여기 넣어주세요 -->
+      <!-- 수정2 -->
+      <div class="board">
+
+        <h1>자주 묻는 질문</h1>
+
+        <!-- FAQ/Q&A 탭메뉴 -->
+        <div class="board_tap">
+          <ul class="tap">
+            <li class="faq">FAQ</li>
+            <li class="qna">QNA</li>
+          </ul>
+        </div>
+
+
+        <!-- FAQ 박스 -->
+
+        <div class="faqbox">
+
+          <div class=" faqbox_q1">
+            <h1>예매안내</h1>
+
+            <button type="button" class="question"><b>Q.</b><span>공연 예매를 하고싶은데 어떻게 하면 되나요?</span>
+            </button>
+            <div class="answer">
+              <b>A.</b><span>G&B페스티벌은 G&B페스티벌 홈페이지에서만 독점판매중입니다.
+              </span>
+            </div>
+
+            <button type="button" class="question"><b>Q.</b><span>티켓 환불 방식은 어떻게 되나요?</span>
+            </button>
+            <div class="answer">
+              <b>A.</b><span>홈페이지에서 가능합니다.</span>
+            </div>
+          </div>
+
+          <div class=" faqbox_q2">
+
+            <h1>입장안내</h1>
+
+            <button type="button" class="question"><b>Q.</b><span>입장은 언제부터 가능한가요?</span>
+            </button>
+            <div class="answer">
+              <b>A.</b><span>입장은 5시 30분부터 대기 후 6시부터 입장 가능합니다.<br />공연 당일, 공연 입장 3시간 전부터 공연안내부스가 운영될 예정이오니 참고바랍니다.</span>
+            </div>
+
+            <button type="button" class="question"><b>Q.</b><span>현장 티켓 수령 방법은 어떻게 되나요?</span>
+            </button>
+            <div class="answer">
+              <b>A.</b><span>공연 당일 현장 티켓 수령 부스가 설치될 예정입니다. 자세한 내용은 추후 공지해드리겠습니다.</span>
+            </div>
+
+            <button type="button" class="question"><b>Q.</b><span>공연 시간보다 늦어도 입장이 가능한가요?</span>
+            </button>
+            <div class="answer">
+              <b>A.</b><span>입장 제한은 없으나 입장시 딜레이가 발생할 수 있음을 참고바랍니다.</span>
+            </div>
           </div>
         </div>
-        <div class="top_pc">
-          <a href="about.html">ABOUT</a>
-          <a href="artist.html">ARTIST</a>
-          <ul class="submenu">
-            <li><a href="artist_g.html">GREEN</a></li>
-            <li><a href="artist_b.html">BLUE</a></li>
-          </ul>
-          <a href="ticket.html">TICKET</a>
-          <a href="gallery.html">GALLERY</a>
-          <a href="">INFO</a>
-          <ul class="submenu">
-            <li><a href="map.html">MAP</a></li>
-            <li><a href="faq.html">FAQ/Q&A</a></li>
-          </ul>
-          <a href="signin.html">SIGN IN</a>
-        </div>
-        
-      </header>
 
-      <section>
-        <!-- 컨텐츠 여기 넣어주세요 -->
-        <!-- 수정2 -->
-        <div class="board">
 
-          <h1>자주 묻는 질문</h1>
-      
-          <!-- FAQ/Q&A 탭메뉴 -->
-          <div class="board_tap">
-              <ul class="tap">
-                  <li class="faq">FAQ</li>
-                  <li class="qna">QNA</li>
+        <!-- Q&A박스 -->
+
+        <div class="qnabox">
+
+          <div class="qnabox_list">
+
+            <div class="qnabox_list_top ">
+              <ul>
+                <li class="num">번호</li>
+                <li class="title">제목</li>
+                <li class="writer">작성자</li>
+                <li class="date">작성일</li>
+                <li class="counter">조회</li>
               </ul>
+            </div>
+
+            <div>
+              <ul>
+                <li class="num">5</li>
+                <li class="title"><a href="">비밀글입니다.</a></li>
+                <li class="writer">작성자</li>
+                <li class="date">2023.03.24</li>
+                <li class="counter">101</li>
+              </ul>
+            </div>
+
+            <div>
+              <ul>
+                <li class="num">4</li>
+                <li class="title"><a href="">비밀글입니다.</a></li>
+                <li class="writer">작성자</li>
+                <li class="date">2023.03.24</li>
+                <li class="counter">101</li>
+              </ul>
+            </div>
+
+            <div>
+              <ul>
+                <li class="num">3</li>
+                <li class="title"><a href="">비밀글입니다.</a></li>
+                <li class="writer">작성자</li>
+                <li class="date">2023.03.24</li>
+                <li class="counter">101</li>
+              </ul>
+            </div>
+
+            <div>
+              <ul>
+                <li class="num">2</li>
+                <li class="title"><a href="">비밀글입니다.</a></li>
+                <li class="writer">작성자</li>
+                <li class="date">2023.03.24</li>
+                <li class="counter">101</li>
+              </ul>
+            </div>
+
+            <div>
+              <ul>
+                <li class="num">1</li>
+                <li class="title"><a href="">비밀글입니다.</a></li>
+                <li class="writer">작성자</li>
+                <li class="date">2023.03.24</li>
+                <li class="counter">101</li>
+              </ul>
+            </div>
+
+
+
           </div>
-      
 
-          <!-- FAQ 박스 -->
+          <div class="qnabox_page">
 
-          <div class="faqbox">
+            <ul class="pagination">
 
-            <div class=" faqbox_q1">
-                  <h1>예매안내</h1>
-              
-                    <button type="button" class="question"><b>Q.</b><span>공연 예매를 하고싶은데 어떻게 하면 되나요?</span>
-                    </button>
-                    <div class="answer">
-                       <b>A.</b><span>G&B페스티벌은 G&B페스티벌 홈페이지에서만 독점판매중입니다.
-                       </span>
-                    </div>
-              
-                    <button type="button" class="question"><b>Q.</b><span>티켓 환불 방식은 어떻게 되나요?</span>
-                    </button>
-                    <div class="answer">
-                       <b>A.</b><span>홈페이지에서 가능합니다.</span>
-                    </div>
-              </div>
+              <li><a href="#">&laquo;</a></li>
+              <li><a href="#"><i class="fa-sharp fa-light fa-chevron-left"></i></a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#"><i class="fa-light fa-angle-right"></i></a></li>
+              <li><a href="#">&raquo;</a></li>
 
-              <div class=" faqbox_q2">
+            </ul>
 
-                  <h1>입장안내</h1>
 
-                    <button type="button" class="question"><b>Q.</b><span>입장은 언제부터 가능한가요?</span>
-                    </button>
-                    <div class="answer">
-                     <b>A.</b><span>입장은 5시 30분부터 대기 후 6시부터 입장 가능합니다.<br/>공연 당일, 공연 입장 3시간 전부터 공연안내부스가 운영될 예정이오니 참고바랍니다.</span>
-                    </div>
+          </div>
 
-                    <button type="button" class="question"><b>Q.</b><span>현장 티켓 수령 방법은 어떻게 되나요?</span>
-                    </button>
-                    <div class="answer">
-                       <b>A.</b><span>공연 당일 현장 티켓 수령 부스가 설치될 예정입니다. 자세한 내용은 추후 공지해드리겠습니다.</span>
-                    </div>
+          <div class="qnabox_btn">
+            <div class="qnabox_btn_box">
 
-                      <button type="button" class="question"><b>Q.</b><span>공연 시간보다 늦어도 입장이 가능한가요?</span>
-                      </button>
-                        <div class="answer">
-                          <b>A.</b><span>입장 제한은 없으나 입장시 딜레이가 발생할 수 있음을 참고바랍니다.</span>
-                        </div>
-               </div>
+              <input type="text" class="qnabox" placeholder="입력해주세요.">
+              <a href="#">글쓰기</a>
+            </div>
+
           </div>
 
 
-          <!-- Q&A박스 -->
 
-          <div class="qnabox">
-      
-              <div class="qnabox_list">
-      
-                  <div class="qnabox_list_top ">
-                      <ul>
-                          <li class="num">번호</li>
-                          <li class="title">제목</li>
-                          <li class="writer">작성자</li>
-                          <li class="date">작성일</li>
-                          <li class="counter">조회</li>
-                      </ul>
-                  </div>
-      
-                <div>
-                      <ul>
-                          <li class="num">5</li>
-                          <li class="title"><a href="">비밀글입니다.</a></li>
-                          <li class="writer">작성자</li>
-                          <li class="date">2023.03.24</li>
-                          <li class="counter">101</li>
-                      </ul>
-                </div>
-      
-                <div>
-                      <ul>
-                          <li class="num">4</li>
-                          <li class="title"><a href="">비밀글입니다.</a></li>
-                          <li class="writer">작성자</li>
-                          <li class="date">2023.03.24</li>
-                          <li class="counter">101</li>
-                      </ul>
-                </div>
-      
-                <div>
-                      <ul>
-                          <li class="num">3</li>
-                          <li class="title"><a href="">비밀글입니다.</a></li>
-                          <li class="writer">작성자</li>
-                          <li class="date">2023.03.24</li>
-                          <li class="counter">101</li>
-                      </ul>
-                </div>
-      
-                <div>
-                      <ul>
-                          <li class="num">2</li>
-                          <li class="title"><a href="">비밀글입니다.</a></li>
-                          <li class="writer">작성자</li>
-                          <li class="date">2023.03.24</li>
-                          <li class="counter">101</li>
-                      </ul>
-                </div>
-      
-                <div>
-                      <ul>
-                          <li class="num">1</li>
-                          <li class="title"><a href="">비밀글입니다.</a></li>
-                          <li class="writer">작성자</li>
-                          <li class="date">2023.03.24</li>
-                          <li class="counter">101</li>
-                      </ul>
-                </div>
-      
-      
-              
-              </div>
-      
-              <div class="qnabox_page">
-      
-                  <ul class="pagination">
-      
-                      <li><a href="#">&laquo;</a></li>
-                      <li><a href="#"><i class="fa-sharp fa-light fa-chevron-left"></i></a></li>
-                      <li><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li><a href="#"><i class="fa-light fa-angle-right"></i></a></li>
-                      <li><a href="#">&raquo;</a></li>
-      
-                  </ul>
-      
-      
-              </div>
-      
-              <div class="qnabox_btn">
-                  <div class="qnabox_btn_box">
-                      
-                      <input type="text" class="qnabox" placeholder="입력해주세요.">
-                      <a href="#">글쓰기</a>
-                  </div>
-      
-              </div>
-      
-               
-      
-          </div>
         </div>
+      </div>
 
 
 
 
 
 
-      </section>
+    </section>
 
-      <footer>
-        <h1>G&B<br />FESTIVAL</h1>
-        <p>&copy; Copyright</p>
-      </footer>
-    </div>
-  </body>
+    <footer>
+      <h1>G&B<br />FESTIVAL</h1>
+      <p>&copy; Copyright</p>
+    </footer>
+  </div>
+</body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <!-- 외부 스타일 -->
   <link rel="stylesheet" href="./css/reset.css" />
@@ -10,195 +11,201 @@
   <!-- 외부 폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap"
+    rel="stylesheet">
+
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ARTIST</title>
 
   <script>
-  document.addEventListener('DOMContentLoaded',function(){ 
+    document.addEventListener('DOMContentLoaded', function () {
       hamburger_btn();
-   });
+    });
   </script>
   <style>
-     .artist_title_container {
-         width: 50%;
-         height: 150px;
-         margin-left: 25%;
-         margin-bottom: 10px;
-     }
+    .artist_title_container {
+      width: 50%;
+      height: 150px;
+      margin-left: 25%;
+      margin-bottom: 10px;
+    }
 
-     .artist_title_box {
-         width: 60%;
-         height: 150px;
-         margin-left: 20%;
-         display: flex;
-         justify-content: center;
-     }
+    .artist_title_box {
+      width: 60%;
+      height: 150px;
+      margin-left: 20%;
+      display: flex;
+      justify-content: center;
+    }
 
-     .artist_title_box li {
-         width: 100%;
-         height: 75px;
-         text-align: center;
-         line-height: 75px;
-         box-sizing: border-box;
-     }
+    .artist_title_box li {
+      width: 100%;
+      height: 75px;
+      text-align: center;
+      line-height: 75px;
+      box-sizing: border-box;
+    }
 
-     .artist_title_box li:first-child {
-         border-bottom: 2px solid;
-         margin-bottom: 20%;
-     }
+    .artist_title_box li:first-child {
+      border-bottom: 2px solid;
+      margin-bottom: 20%;
+    }
 
-     #button_g {
-         background-color: #4CAF50;
-         border: none;
-         color: white;
-         padding: 15px;
-         text-align: center;
-         text-decoration: none;
-         display: inline-block;
-         font-size: 16px;
-         margin: 4px 2px;
-         cursor: pointer;
-         border-radius: 10px;
-     }
+    #button_g {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
 
-     #button_b {
-         background-color: #add8e6;
-         border: none;
-         color: white;
-         padding: 15px;
-         text-align: center;
-         text-decoration: none;
-         display: inline-block;
-         font-size: 16px;
-         margin: 4px 2px;
-         cursor: pointer;
-         border-radius: 10px;
-     }
+    #button_b {
+      background-color: #add8e6;
+      border: none;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
 
-     .container {
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         grid-gap: 10px;
-         width: 50%;
-         margin-top: 2%;
-         margin-left: 25%;
-         margin-bottom: 10%;
-         box-sizing: border-box;
-         border: 5px solid lightblue;;
-     }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      width: 50%;
+      margin-top: 2%;
+      margin-left: 25%;
+      margin-bottom: 10%;
+      box-sizing: border-box;
+      border: 5px solid lightblue;
+      ;
+    }
 
-     .container img {
-         width: 100%;
-         height: auto;
-     }
+    .container img {
+      width: 100%;
+      height: auto;
+    }
 
-     .container img:hover {
-            transition: transform .3s;
-            transform: scale(1.3);
-          border: 3px solid lightblue;}
+    .container img:hover {
+      transition: transform .3s;
+      transform: scale(1.3);
+      border: 3px solid lightblue;
+    }
 
-     /* PC용 */
+    /* PC용 */
 
-     @media all and (min-width:800px) {
-         .artist_title_container {
-             width: 50%;
-             height: 150px;
-             margin-left: 25%;
-             margin-bottom: 10px;
-         }
+    @media all and (min-width:800px) {
+      .artist_title_container {
+        width: 50%;
+        height: 150px;
+        margin-left: 25%;
+        margin-bottom: 10px;
+      }
 
-         .artist_title_box {
-             width: 60%;
-             height: 150px;
-             margin-left: 20%;
-             display: flex;
-             justify-content: center;
-             
-         }
+      .artist_title_box {
+        width: 60%;
+        height: 150px;
+        margin-left: 20%;
+        display: flex;
+        justify-content: center;
 
-         .artist_title_box li {
-             width: 100%;
-             height: 75px;
-             text-align: center;
-             line-height: 75px;
-             box-sizing: border-box;
-         }
+      }
 
-         .artist_title_box li:first-child {
-             border-bottom: 2px solid;
-             margin-bottom: 20%;
-         }
+      .artist_title_box li {
+        width: 100%;
+        height: 75px;
+        text-align: center;
+        line-height: 75px;
+        box-sizing: border-box;
+      }
 
-         #button_g {
-             background-color: #4CAF50;
-             border: none;
-             color: white;
-             padding: 15px;
-             text-align: center;
-             text-decoration: none;
-             display: inline-block;
-             font-size: 16px;
-             margin: 4px 2px;
-             cursor: pointer;
-             border-radius: 10px;
-         }
+      .artist_title_box li:first-child {
+        border-bottom: 2px solid;
+        margin-bottom: 20%;
+      }
 
-         #button_b {
-             background-color: #add8e6;
-             border: none;
-             color: white;
-             padding: 15px;
-             text-align: center;
-             text-decoration: none;
-             display: inline-block;
-             font-size: 16px;
-             margin: 4px 2px;
-             cursor: pointer;
-             border-radius: 10px;
-         }
+      #button_g {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
 
-         .container {
-             display: grid;
-             grid-template-columns: repeat(3, 1fr);
-             grid-gap: 10px;
-             width: 50%;
-             margin-left: 25%;
-             box-sizing: border-box;
-             border: 5px solid lightblue;
-         }
+      #button_b {
+        background-color: #add8e6;
+        border: none;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
 
-         .container img {
-             width: 100%;
-             height: auto;
-         }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        width: 50%;
+        margin-left: 25%;
+        box-sizing: border-box;
+        border: 5px solid lightblue;
+      }
 
-         .container img:hover {
-            transition: transform .3s;
-            transform: scale(1.3);
-          border: 3px solid lightblue;}
-     }
+      .container img {
+        width: 100%;
+        height: auto;
+      }
+
+      .container img:hover {
+        transition: transform .3s;
+        transform: scale(1.3);
+        border: 3px solid lightblue;
+      }
+    }
   </style>
 </head>
+
 <body>
   <div id="wrapper">
     <!-- 헤더 -->
     <header>
       <div class="logo">
-        <a href="index.html"
-          ><h1>
+        <a href="index.html">
+          <h1>
             G&B
             <br />
             FESTIVAL
-          </h1></a
-        >
+          </h1>
+        </a>
       </div>
       <!-- 모바일 버튼 -->
       <div class="mobile_btn">
-          <!-- 햄버거버튼 -->
+        <!-- 햄버거버튼 -->
         <input type="checkbox" id="hamburger" />
         <label for="hamburger">
           <span></span>
@@ -235,7 +242,7 @@
         </ul>
         <a href="signin.html">SIGN IN</a>
       </div>
-      
+
     </header>
 
     <section>
@@ -244,16 +251,18 @@
 
       <div class="artist_title_container" style="margin-top: 100px">
         <div class="artist_title_box">
-            <ul>
-                <li><a href="./artist.html" id="button_a"><h1 style="color:white">ARTIST</h1></a></li>
-                <a href="./artist_g.html" id="button_g">G</a>
-                <a href="./artist_b.html" id="button_b">B</a>
-            </ul>
+          <ul>
+            <li><a href="./artist.html" id="button_a">
+                <h1 style="color:white">ARTIST</h1>
+              </a></li>
+            <a href="./artist_g.html" id="button_g">G</a>
+            <a href="./artist_b.html" id="button_b">B</a>
+          </ul>
         </div>
-    </div>
+      </div>
 
 
-    <div class="container">
+      <div class="container">
         <img id="b1" src="./images/artist(blue)/b1.jpg">
         <img id="b2" src="./images/artist(blue)/b2.jpg">
         <img id="b3" src="./images/artist(blue)/b3.jpg">
@@ -263,7 +272,7 @@
         <img id="b7" src="./images/artist(blue)/b7.jpg">
         <img id="b8" src="./images/artist(blue)/b8.jpg">
         <img id="b9" src="./images/artist(blue)/b9.jpg">
-    </div>
+      </div>
 
     </section>
 
@@ -273,4 +282,5 @@
     </footer>
   </div>
 </body>
+
 </html>
