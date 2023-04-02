@@ -18,15 +18,83 @@
     <title>TICKET</title>
 
     <style>
-      @media all and (min-width: 480px) {
-        section {
+      section {
           margin-top: 100px;
+        }
+        a{
+          color: aliceblue;
         }
         .ticket h1{
           font-size: 50px;
-        height: 100px;
+          height: 100px;
           line-height: 100px;
+          text-align: center;
         }
+        .general {
+          background: #e5ff00;
+          height: 60vh;
+        }
+        .ticket_btn{
+          background: #15ff00;
+          text-align: center;
+        }
+        .ticket_btn a{
+          width: 70vw;
+          background: #ff0303;
+          display: inline-block;
+          margin-bottom:30px;
+        }
+
+        .offer_img{
+          width: 100%;
+          height: 100px;
+          transform: skewX(-20deg);
+          transition: 0.2s;
+        }
+        .offer_img:hover{
+          height: 200px;
+        }
+
+
+        /* 오퍼 설명 */
+        .offer_img::before{
+          content: "셔틀버스";
+          font-size: inherit;
+        }
+        .offer_img::after{
+          display: none;
+          content: "설명";
+          font-size: 12px;
+        }
+        .offer:nth-child(1) .offer_img{
+          background: url("./images/ticket/offer1.jpg") right/cover;
+        }
+        .offer:nth-child(2) .offer_img{
+          background: url("./images/ticket/offer2.jpg") right/cover;
+        }
+        .offer:nth-child(3) .offer_img{
+          background: url("./images/ticket/offer3.jpg") right/cover;
+        }
+        .offer:nth-child(4) .offer_img{
+          background: url("./images/ticket/offer4.jpg") right/cover;
+        }
+        .offer:nth-child(5) .offer_img{
+          background: url("./images/ticket/offer5.jpg") right/cover;
+        }
+        .offer:nth-child(6) .offer_img{
+          background: url("./images/ticket/offer1.jpg") right/cover;
+        }
+        .grade {
+        text-align: center;
+        width: 100px;
+        height: 60px;
+        line-height: 60px;
+        margin: 0 auto;
+        }
+      
+      @media all and (min-width: 480px) {
+        
+        
         .ticket{
           text-align: center;
           /* background: #ff0000; */
@@ -47,7 +115,7 @@
           text-align: center;
           line-height: 60px;
           transition: 0.3s;
-          
+          color: #000;
         }
         .ticket_btn a:hover{
           color: #ffffff;
@@ -105,51 +173,23 @@
           height: 300px;
           transform: translateY(-100px) skew(-10deg);
           transform-origin: bottom left;
-}
 
-          
         }
         .offer_img{
           width: 100%;
           height: 100%;
           
         }
-        /* 오퍼 설명 */
-        .offer_img::before{
-          content: "셔틀버스";
-          font-size: inherit;
-        }
-        .offer_img::after{
-          display: none;
-          content: "설명";
-          font-size: 12px;
-        }
-        .offer:nth-child(1) .offer_img{
-          background: url("./images/ticket/offer1.jpg") right/cover;
-        }
-        .offer:nth-child(2) .offer_img{
-          background: url("./images/ticket/offer2.jpg") right/cover;
-        }
-        .offer:nth-child(3) .offer_img{
-          background: url("./images/ticket/offer3.jpg") right/cover;
-        }
-        .offer:nth-child(4) .offer_img{
-          background: url("./images/ticket/offer4.jpg") right/cover;
-        }
-        .offer:nth-child(5) .offer_img{
-          background: url("./images/ticket/offer5.jpg") right/cover;
-        }
-        .offer:nth-child(6) .offer_img{
-          background: url("./images/ticket/offer1.jpg") right/cover;
-        }
+        
         .offer:hover .offer_img::before {
           position: absolute;
           top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
-}
+          left: 0px;
+          width: 102%;
+          height: 101%;
+          transition: all 0.3s ease-in-out;
+          background: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 0, 0, 0));
+              }   
        .grade a{
         display: inline-block;
         color: aliceblue;
@@ -157,6 +197,8 @@
         height: 60px;
         background: blue;
        }
+      }
+      
         
       
     </style>
@@ -227,6 +269,9 @@
         <div class="ticket">
           <h1>TICKET</h1>
           <div class="general">
+            <div class="grade">
+              <a href="">GENERAL</a>
+            </div>
           <div class="ticket_btn">
             <a href="">1DAY<br>99,000</a>
             <a href="">2DAY<br>149,000</a>
@@ -247,6 +292,9 @@
 
           </div>
           <div class="premium">
+            <div class="grade">
+              <a href="">PREMIUM</a>
+            </div>
             <div class="ticket_btn">
               <a href="">1DAY<br>149,000</a>
               <a href="">2DAY<br>199,000</a>
