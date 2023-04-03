@@ -5,7 +5,7 @@
   <!-- 외부 스타일 -->
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/common.css">
-
+  <link rel="stylesheet" href="./css/blur.css">
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <!-- 외부 스크립트 -->
@@ -28,6 +28,15 @@
 
   </script>
   <style>
+  
+  @keyframes float {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-40px, 200px);
+    }
+  }
     /* 메인 동영상 */
     #main_vid {
       position: relative;
@@ -36,6 +45,7 @@
       top: 100px;
       width: 100%;
     }
+    
 
     /* 메인 티켓 버튼*/
     .main_ticket_btn {
@@ -59,7 +69,7 @@
     /* 메인 어바웃 */
     .main_about {
       /* background: #aaaaaa; */
-      margin: 0 auto;
+      margin: 160px auto;
       width: 80vw;
       text-align: center;
     }
@@ -110,7 +120,7 @@
     }
     /* 메인 하단 티켓 번들 */
     .main_ticket_bundle{
-      margin-top: 60px;
+      margin: 60px;
       height: 30vh;
       display: flex;
       text-align: center;
@@ -208,6 +218,7 @@ transition: 0.3s ease-in;
 </div> -->
 
 <body>
+  <div class="blur"></div>
   <div id="wrapper">
     <!-- 헤더 -->
     <header>
