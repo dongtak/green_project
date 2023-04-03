@@ -1,21 +1,21 @@
 /*** 1:1 문의 페이지 CSS ***/
 
 section{margin-top: 200px;
-    }
+}
 
 /* 1:1 문의 페이지 부모상자 */
 
 .qna_writebox {
-    width: 80%;
-    /* background-color: aqua; 지울 부분 */
-    margin: 0 auto;
+width: 80%;
+/* background-color: aqua; 지울 부분 */
+margin: 0 auto;
 }
 
 /* 1:1 문의 페이지 큰제목 */
 .qna_writebox >h1{
-    margin: 30px auto;
-    text-align: center;
-    font-size: 30px;
+margin: 30px auto;
+text-align: center;
+font-size: 30px;
 }
 
 /* 1:1 문의 게시글 내용 */
@@ -27,19 +27,19 @@ section{margin-top: 200px;
 .qna_write_page
 {
 
-    border-bottom: 1px solid rgb(126, 121, 121);
-    background-color: beige;
+border-bottom: 1px solid rgb(126, 121, 121);
+background-color: beige;
 }
 
 form label{
-    
-    display: inline-block;
-    width: 150px;
-    margin: 8px auto;
-    margin-left: 10px;
-    font-weight: bold;
-    font-size: 20px;
-    color: black;
+
+display: inline-block;
+width: 150px;
+margin: 8px auto;
+margin-left: 10px;
+font-weight: bold;
+font-size: 20px;
+color: black;
 /* line-height: 10px ; */
 }
 
@@ -50,24 +50,24 @@ form label{
 .qna_write_pwd>#pwd,
 .qna_write_pwd_check>#pwd_check
 {
-    display: block;
-    width: 80%;
-    color: black;
-    /* max-width: 386px; */
-    height: 40px;
-    margin: 10px auto;
-    /* margin-left: 10px; */
-    border: 1px solid rgb(126, 121, 121);
+display: block;
+width: 80%;
+color: black;
+/* max-width: 386px; */
+height: 40px;
+margin: 10px auto;
+/* margin-left: 10px; */
+border: 1px solid rgb(126, 121, 121);
 }
 
 
 .qna_write_page>#page{
-    display: block;
-    width: 90%;
-    height: 150px;
-    margin: 10px auto;
-    color: black;
-    border: 1px solid rgb(126, 121, 121);
+display: block;
+width: 90%;
+height: 150px;
+margin: 10px auto;
+color: black;
+border: 1px solid rgb(126, 121, 121);
 }
 
 
@@ -76,23 +76,23 @@ form label{
 
 .qna_write_btn,
 .qna_write_btn>a {
-    background-color: beige; /* 지울 부분 */
-    width: 100%;
-    height: 50px;
-    text-align: center;
+background-color: beige; /* 지울 부분 */
+width: 100%;
+height: 50px;
+text-align: center;
 }
 
 .qna_write_btn button,
 .qna_write_btn input 
 {
-    width: 60px;
-    height: 40px;
-    text-align: center;
-    margin: 0 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: black;
-    font-size: 15px;
+width: 60px;
+height: 40px;
+text-align: center;
+margin: 0 10px;
+border: 1px solid black;
+border-radius: 5px;
+color: black;
+font-size: 15px;
 }
 
 
@@ -100,23 +100,23 @@ form label{
 @media all and (min-width:480px) {
 
 form label{
-      
-        line-height: 40px;}
+  
+    line-height: 40px;}
 
 
 
-    .qna_write_title>#title,
+.qna_write_title>#title,
 .qna_write_writer>#writer,
 .qna_write_pwd>#pwd,
 .qna_write_pwd_check>#pwd_check
 
 {
-    display: inline;
-    width: 50%;
-    height: 40px;
-    margin: 7px auto;
-    border: 1px solid rgb(126, 121, 121);
-    
+display: inline;
+width: 50%;
+height: 40px;
+margin: 7px auto;
+border: 1px solid rgb(126, 121, 121);
+
 }
 
 
@@ -128,10 +128,10 @@ form label{
 /*** PC 버전 크기일때 ***/
 
 @media all and (min-width:960px) {
-    section {
-        width: 960px;
-        /* margin: 0 auto; */
-    }
+section {
+    width: 960px;
+    /* margin: 0 auto; */
+}
 
 
 

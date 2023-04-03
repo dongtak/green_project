@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
+  <head>
     <!-- 외부 스타일 -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css">
@@ -22,9 +21,9 @@
     <title>MAP</title>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            hamburger_btn();
-        });
+    document.addEventListener('DOMContentLoaded',function(){ 
+        hamburger_btn();
+     });
     </script>
 
     
@@ -34,70 +33,54 @@
 
 
     <style>
-
+     
     </style>
-</head>
-
-<body>
+  </head>
+  <body>
     <div id="wrapper">
-        <!-- 헤더 -->
-        <header>
-            <div class="logo">
-                <a href="index.html">
-                    <h1>
-                        G&B
-                        <br />
-                        FESTIVAL
-                    </h1>
-                </a>
-            </div>
-            <!-- 모바일 버튼 -->
-            <div class="mobile_btn">
-                <!-- 햄버거버튼 -->
-                <input type="checkbox" id="hamburger" />
-                <label for="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-                <div class="top_nav">
-                    <hr>
-                    <ul class="nav_mobile">
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="artist.html">ARTIST</a></li>
-                        <li><a href="ticket.html">TICKET</a></li>
-                        <li><a href="gallery.html">GALLERY</a></li>
-                        <li class="info">
-                            INFO<a href="map.html">MAP</a> <a href="faq.html">FAQ/Q&A</a>
-                        </li>
-                        <li><a href="signin.html">SIGN IN</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="top_pc">
-                <a href="about.html">ABOUT</a>
-                <a href="artist.html">ARTIST</a>
-                <ul class="submenu">
-                    <li><a href="artist_g.html">GREEN</a></li>
-                    <li><a href="artist_b.html">BLUE</a></li>
-                </ul>
-                <a href="ticket.html">TICKET</a>
-                <a href="gallery.html">GALLERY</a>
-                <a href="">INFO</a>
-                <ul class="submenu">
-                    <li><a href="map.html">MAP</a></li>
-                    <li><a href="faq.html">FAQ/Q&A</a></li>
-                </ul>
-                <a href="signin.html">SIGN IN</a>
-            </div>
+      <!-- 헤더 -->
+      <header>
+        <div class="logo">
+          <a href=""
+            ><h1>
+              G&B
+              <br />
+              FESTIVAL
+            </h1></a
+          >
+        </div>
+        <!-- 모바일 버튼 -->
+        <div class="mobile_btn">
+            <!-- 햄버거버튼 -->
+          <input type="checkbox" id="hamburger" />
+          <label for="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="top_nav">
+            <hr
+              style="position: relative; top: 100px; border: solid 1px black"
+            />
+            <ul class="nav_mobile">
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">ARTIST</a></li>
+              <li><a href="#">TICKET</a></li>
+              <li><a href="#">GALLERY</a></li>
+              <li class="info">
+                INFO<a href="#">MAP</a> <a href="#">FAQ/Q&A</a>
+              </li>
+              <li><a href="#">SIGN IN</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
 
-        </header>
-
-        <section>
-            <!-- 컨텐츠 여기 넣어주세요 -->
+      <section>
+        <!-- 컨텐츠 여기 넣어주세요 -->
 
 
-            <div class="map">
+        <div class="map">
 
 
 
@@ -118,9 +101,9 @@
 
             <div class="map_wrap">
 
-                <div class="map_wrap">
+                <div class="map_green">
 
-                    <div class="map_green">
+                    <div class="map_left">
 
                       <div class="polaroid">
 
@@ -138,9 +121,10 @@
 
                     </div>
 
-                    <div class="map_blue">
+                    <div class="map_right">
 
-                        <div class="map_left">
+                        <ul class="transfer">
+                            <li class="subway">
 
                               <p>
                                   <img src="./images/favicon/mapsubway.png" 
@@ -162,7 +146,7 @@
                              </li>
 
 
-                        </div>
+                            <li class="bus">
 
                                 <p>
                                   <img src="./images/favicon/mapbus.png" 
@@ -180,26 +164,11 @@
                                       </li>
                                     </ul>
 
-                                    <p>
-                                        <img src="../green_project(videologo)/images/icon/free-icon-subway-3540853.png"
-                                            alt="">
-                                    </p>
-                                    <div>
-                                        <strong>지하철</strong>
-                                        <ul>
-                                            <li>
-                                                강릉역 내려서 경포해변 어쩌구
-                                            </li>
-                                            <li>
-                                                교대역 1번출구 → 서초리시온아파트 골목길 400m 직진 → 삼거리에서 서울교육대학교 담장을 따라 350m 직진 → 횡단보도
-                                                나오면
-                                                좌측으로 70m → 서초2동 주민센터 3층
-                                            </li>
-                                        </ul>
+                                </div>
 
-                                    </div>
+                            </li>
 
-                                </li>
+                            <li class="car">
 
                                 <p>
                                   <img src="./images/favicon/mapsubway.png"
@@ -221,25 +190,12 @@
                                         </li>
                                   </ul>
 
-                                    <p>
-                                        <img src="../green_project(videologo)/images/icon/free-icon-bus-stop-2684157.png"
-                                            alt="">
-                                    </p>
-                                    <div>
-                                        <strong>지하철</strong>
-                                        <ul>
-                                            <li>
-                                                강릉역 내려서 경포해변 어쩌구
-                                            </li>
-                                            <li>
-                                                교대역 1번출구 → 서초리시온아파트 골목길 400m 직진 → 삼거리에서 서울교육대학교 담장을 따라 350m 직진 → 횡단보도
-                                                나오면
-                                                좌측으로 70m → 서초2동 주민센터 3층
-                                            </li>
-                                        </ul>
+                                </div>
 
-                                    </div>
+                            </li>
 
+                        </ul>
+                    </div>
 
                    
 
@@ -369,16 +325,19 @@
 
                 </div>
 
+
             </div>
 
+        </div>
 
 
-        </section>
 
-        <footer>
-            <h1>G&B<br />FESTIVAL</h1>
-            <p>&copy; Copyright</p>
-        </footer>
+      </section>
+
+      <footer>
+        <h1>G&B<br />FESTIVAL</h1>
+        <p>&copy; Copyright</p>
+      </footer>
     </div>
   </body>
 

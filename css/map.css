@@ -12,6 +12,7 @@
     /* background-color: rgb(198, 241, 241); 지울 부분 */
 }
 
+/* MAP 페이지 큰제목 */
 .map>h1 {
     margin-bottom: 50px;
     font-size: 3.0rem;
@@ -26,31 +27,9 @@
     /* position: relative; */
 }
 
-.map_green {
-
-    /* position: absolute; */
-
-    background-color: rgba(214, 214, 11, 0.918);
-}
-
-.map_blue {
-
-    margin-top: 20px;
-
-    background-color: rgba(148, 231, 159, 0.918);
-}
 
 
-.map_right {
-    width: 90%;
-    margin: 10px auto;
-    background-color: rgb(206, 178, 233);
-}
-
-.map_right>h3,
-.map_right>p {
-    margin: 20px 0;
-}
+/* 전체 공통 부분 */
 
 li.subway,
 li.bus,
@@ -141,6 +120,7 @@ li.car img {
     color: black;
 }
 
+/* MAP 오시는길 안내 오른쪽(오는 방법) 내용 공통 부분 */
 
 .map_right {
     width: 90%;
@@ -149,12 +129,9 @@ li.car img {
     /* background-color: rgb(245, 243, 247); */
 }
 
-
-li.subway ul>li,
-li.bus ul>li,
-li.car ul>li {
-    margin-left: 10px;
-
+.map_right>h3,
+.map_right>p {
+    margin: 20px 0;
 }
 
 /* 오른쪽 오시는길 안내 배경색 구분*/
@@ -194,6 +171,19 @@ li.car ul>li {
         border: none;  
     }
 
+    
+    
+    
+.map_left_address
+{  position: absolute;
+        left: 50%; transform: translate( -50%);
+        bottom: 0;
+        width: 90%;
+        height: 20%;
+        border: 1px solid black;
+    
+    }    
+
 
 /* MAP 페이지 Green 공연장 오시는길 안내 */
 
@@ -210,12 +200,7 @@ li.car ul>li {
 
 
 
-
-
-
-li.subway>div,
-li.bus>div,
-li.car>div {
+/* MAP 페이지 BLUE 공연장 오시는길 안내 */
 
 .map_blue {
     margin-top: 20px;
@@ -355,7 +340,7 @@ hr.divider{
 
 
 
-/* 크기 변경 */
+/*** PC 버전 크기일때 ***/
 
 @media all and (min-width:960px) {
     section {
@@ -374,8 +359,6 @@ hr.divider{
         width: 50%;
         margin: 5px;
     }
-
-
 
 
 }

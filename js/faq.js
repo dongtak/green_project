@@ -1,5 +1,5 @@
 
-// faq 아코디언 메뉴 설정
+// FAQ 아코디언 메뉴 설정
 
 let question = document.getElementsByClassName("question");
 
@@ -80,25 +80,20 @@ faq.addEventListener('click', function() {
 
 
 // pwd_check.js 파일에 저장한 경우
-
-
-function Check(){
-  event.preventDefault();
+function pwd_check(){
   const pwd = document.getElementById('pwd').value;
-  const pwdCheck = document.getElementById('pwd_check').value;
-  const regExp = /^(?=.*[A-Za-z])(?=.*?[0-9])(?=.*?[!@#$%^&*()_+-=])[A-Za-z0-9!@#$%^&*()_+-=]{8,12}$/;
+  const pwd_check = document.getElementById('pwd_check').value;
   
   
-  if(!regExp.test(pwd)){
+  if( pwd.length<8 || pwd.length>12 ){
     alert('8자~12자 사이로 입력해주세요.')
-    return false;
-  }else if(pwd !== pwdCheck) { //password 동일한지 확인
-      alert("비밀번호가 다릅니다.");
-      document.getElementById('pwd_check').value="";
-      document.getElementById('pwd_check').focus();
+    return false;}
     
-      return false;
-}else{
+  if (pwd !== pwd_check) {
+    alert("비밀번호가 일치하지 않습니다.");
+    return false;
+  }else{
+
   return true;
 }
 }
