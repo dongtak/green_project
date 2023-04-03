@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+section{
+  margin-top: 100px;
+  /* color: aliceblue; */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.container{
+  /* background: #ff3a3a; */
+  width: 100%;
+  margin-top: -100px;
+  /* background-color: #979797; */
+  border: 1px solid aliceblue;
+  overflow:auto;
+  
+}
+.container h1{
+  width: 250px;
+  height: 50px;
+  font-size: 30px;
+  color: aliceblue;
+  line-height: 50px;
+  /* background: #ff6600; */
+  text-align: center;
+  margin:0 auto;
+  margin-top: 50px;
+  
+}
+form{
+  width: 90%;
+  margin: 0 auto;
+  /* background: #c8ff00; */
+  height: 600px;
+  text-align: center;
+}
+form label{
+  text-align: left;
+  display: inline-block;
+  width: 50%;
+  margin-top: 20px;
+  color:aliceblue;
+}
+
+label>input{
+  display: inline-block;
+  margin-top: 12px;
+}
+
+#select{
+  color: black;
+  float: right;
+  
+}
+
+label .spans{
+  transform: translateY(100%);
+}
+
+form label:nth-child(4) input{
+  width: 44.4%;
+  /* display: inline-block; */
+}
+
+form label:nth-child(6) input {
+ 
+  margin-inline: 10px;
+  margin-left: 0px;
+  width: 25px;
+  height: 30px;
+}
+
+form input{
+  font-size: 1.0rem;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  color: black;
+}
+
+form div{
+  margin-top: 25px;
+  display: flex;
+  line-height: 40px;
+  justify-content: space-evenly;
+}
+
+form div input{
+  width: 30px;
+}
+
+.aa{
+  width: 23.1%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+
+}
+
+div.checkbox1{
+  /* background-color: blueviolet; */
+  margin-inline: 25.2px;
+}
+
+.checkbox1 label{
+  width: 22%;
+  margin-top: -15px;
+  text-align: center;
+  margin-inline: -60px;
+  font-size: 0.7rem;
+}
+
+form input[type=checkbox]{
+  appearance:auto;
+  display: none;
+  /* background-color: #979797; */
+}
+
+.checkbox1 input[type="checkbox"] {
+   display:none;
+
+}
+
+.checkbox1 input[type="checkbox"] + label {
+  color:#f2f2f2;
+  height: 50px;
+  
+}
+
+.checkbox1 input[type="checkbox"] + label span {
+display:inline-block;
+width:19px;
+height:19px;
+margin:0px 3px 0 3px;
+vertical-align:middle;
+background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat ;
+cursor:pointer;
+}
+
+.checkbox1 input[type="checkbox"]:checked + label span {
+background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
+}
+
+label span{
+display: inline-block;
+
+}
+
+/* .agree .all_agree input[type="checkbox"]{
+display: none;
+}
+
+.agree .all_agree input[type="checkbox"] + label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-color: #fa3062;
+  cursor: pointer;
+  border-radius: 3px;
+  float: right;
+}
+
+.agree .all_agree:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.agree .all_agree input[type="checkbox"]:checked + label {
+  background: url(./images/checkbox/checkbox-g1ee0c01c9_640.png) #fa3062 no-repeat center/10px 10px;
+  float: right;
+}
+
+.agree .all_agree input[type="checkbox"] + label span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  font-weight: bold;
+}
+
+.agree ul{
+  margin-top: 10px;
+}
+
+.agree ul li {
+  margin-bottom: 15px;
+}
+
+.agree ul li:after{
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.agree ul li input[type="checkbox"]{
+  display: none;
+}
+
+.agree ul li input[type="checkbox"] + label {
+  width: 17px;
+  height: 17px;
+  background: #fa3062;
+  cursor: pointer;
+  border-radius: 3px;
+  float: right;
+}
+
+.agree ul li input[type="checkbox"]:checked + label {
+  background: url(./images/checkbox/checkbox-g1ee0c01c9_640.png) #fa3062 no-repeat center/10px 10px;
+  float:right;
+}
+
+.agree ul li input[type="checkbox"] + label span {
+  position: absolute;
+  left: 0px;
+  display: block;
+} */
+.Btn_signup{
+  background-color: none;
+  background: transparent;
+  text-decoration: none;
+  color: bisque;
+  width: 25%;
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid aliceblue;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.Btn_signup:hover{
+  color:rgb(235, 56, 56);
+  background-color: aliceblue;
+}
+
+footer{
+ padding: 70px;
+}
+
+@media all and (min-width: 780px){
+.container{
+  width: 700px;
+  margin: 0 auto;
+  margin-top: -100px;
+}
+
+.container h1{
+  /* border: 1px solid aliceblue; */
+  letter-spacing: 5px;
+}
+
+form{
+  width: 90%;
+  margin: 0 auto;
+  /* background: skyblue; */
+  height: 600px;
+  text-align: center;
+}
+
+form label:nth-child(4) input{
+  width: 46.5%;
+  /* display: inline-block; */
+}
+
+form label:nth-child(6) input{
+  display: inline-block;
+  margin-inline: 20px;
+  margin-left: 0px;
+}
+
+.aa{
+  width: 27%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+label .spans{
+  transform: translateY(100%);
+  
+}
+
+.checkbox1 label{
+  width: 22%;
+  margin-top: -15px;
+  margin-inline: -120px;
+  font-size: 1rem;
+}
+}
