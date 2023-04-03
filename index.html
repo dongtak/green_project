@@ -23,7 +23,7 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      hamburger_btn();
+      hamburger();
     });
   </script>
   <style>
@@ -63,6 +63,10 @@
       text-align: center;
     }
 
+    .main_about li>a {
+  color: white;
+
+}
     .main_about img {
       width: 50%;
     }
@@ -99,90 +103,91 @@
 
     }
 
+    .main_lineup a{ 
+      height: fit-content;
+
+    }
     /* 메인 하단 티켓 번들 */
-    .main_ticket_bundle li {
+    .main_ticket_bundle{
+      margin-top: 60px;
+      height: 30vh;
+      display: flex;
       text-align: center;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+     
+
     }
 
     .main_ticket_bundle a {
       color: aliceblue;
-      margin-top: 30px;
-      width: 70%;
+      display: inline-block;
+      width: 90%;
       height: 60px;
       line-height: 60px;
-      display: inline-block;
       border: 1px solid aliceblue;
-      transform: skew(-20deg);
       transition: 0.3s ease-in;
     }
 
-    .main_ticket_bundle a:hover {
-      background: aliceblue;
-    }
 
+.main_ticket_bundle a:hover{
+background: aliceblue;;
+}
+
+    .main_ticket_btn a:hover, .main_ticket_bundle a:hover {
+
+      background: aliceblue;
+color: #f00084;
+box-shadow: 2px 2px 100px #00F260, 2px 2px 100px #0575E6;
+transition: 0.3s ease-in;
+}
+
+    /* PC 화면 */
     @media all and (min-width:480px) {
+      /* 메인 동영상 */
       #main_vid {
         top: 0px;
       }
 
+      /* 최초 티켓 버튼 */
       .main_ticket_btn {
         margin-top: 100px;
       }
 
+      /* 라인업 */
       .main_lineup {
         height: auto;
         width: 90%;
         margin: 0 auto;
       }
 
-
       .main_lineup img {
         max-width: 90%;
         margin-left: 5%;
       }
-    }
 
-
-
-
-    .main_ticket_btn a:hover {
-
-      background: white;
-      color: #f00084;
-      box-shadow: 2px 2px 100px #00F260, 2px 2px 100px #0575E6;
-    }
-
-
-
-    .main_about li>a {
-      color: white;
-
-    }
-
-    .main_ticket_bundle ul {
-      text-align: center;
-    }
-
-
-    .main_ticket_bundle li {
+      /* 하단 티켓 번들 */
+      .main_ticket_bundle{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+        height:26vh;
+      }
+    
+      .main_ticket_bundle a {
+      color: aliceblue;
+      width: 24%;
+      height: 60px;
+      line-height: 60px;
       display: inline-block;
-      width: 30%;
+      border: 1px solid aliceblue;
+     
+    }
     }
 
-
-
-    .main_ticket_bundle li a {
-      transform: skew(0);
-      transition: none;
-      /* transition: 0.3s ease-in; */
-    }
-
-    .main_ticket_bundle li a:hover {
-
-
-      color: #f00084;
-      box-shadow: 2px 2px 100px #00F260, 2px 2px 100px #0575E6;
-    }
 
 
     @media all and (min-width:720px) {
@@ -197,9 +202,9 @@
 
 <!-- 썸네일
     홈페이지 접속 시 2초간 출력 -->
-<div id="thumbnail">
+<!-- <div id="thumbnail">
   <h1>GREEN AND BLUE</h1>
-</div>
+</div> -->
 
 <body>
   <div id="wrapper">
@@ -241,17 +246,17 @@
       <div class="top_pc">
         <a href="about.html">ABOUT</a>
         <a href="artist.html">ARTIST</a>
-        <ul class="submenu">
-          <li><a href="artist_g.html">GREEN</a></li>
-          <li><a href="artist_b.html">BLUE</a></li>
-        </ul>
+        <div class="artist_menu">
+          <a href="artist_g.html"></a>
+          <a href="artist_b.html"></a>
+        </div>
         <a href="ticket.html">TICKET</a>
         <a href="gallery.html">GALLERY</a>
         <a href="">INFO</a>
-        <ul class="submenu">
-          <li><a href="map.html">MAP</a></li>
-          <li><a href="faq.html">FAQ/Q&A</a></li>
-        </ul>
+          <div class="info_menu">
+            <a href="map.html"></a>
+            <a href="faq.html"></a>
+          </div>
         <a href="signin.html">SIGN IN</a>
       </div>
 
@@ -315,11 +320,9 @@
     <section>
       <!-- 티켓 번들 -->
       <div class="main_ticket_bundle">
-        <ul>
-          <li><a href="ticket.html">1DAY</a></li>
-          <li><a href="ticket.html">2DAY</a></li>
-          <li><a href="ticket.html">PREMIUM</a></li>
-        </ul>
+        <a href="ticket.html">1DAY</a>
+          <a href="ticket.html">2DAY</a>
+          <a href="ticket.html">PREMIUM</a>
       </div>
     </section>
     <footer>
