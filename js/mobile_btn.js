@@ -24,18 +24,19 @@
 //       });
 // };
 
-function hamburger() {
-  // 스크롤 이벤트 추가 {
-    let mobileBtn = document.querySelector(".mobile_btn");
-    let header = document.querySelector("header");
-    if (document.documentElement.scrollTop > 0 && !hamburger.checked) {
-      mobileBtn.style.display = "none";
-      header.style.display = "none";
-    } else {
-      mobileBtn.style.display = "block";
-      header.style.display = "block";
-    }
-  };
+// function hamburger() {
+//   // 스크롤 이벤트 추가
+//   window.addEventListener("scroll", () => {
+//     let mobileBtn = document.querySelector(".mobile_btn");
+//     let header = document.querySelector("header");
+//     if (document.documentElement.scrollTop > 0 && !hamburger.checked) {
+//       mobileBtn.style.display = "none";
+//       header.style.display = "none";
+//     } else {
+//       mobileBtn.style.display = "block";
+//       header.style.display = "block";
+//     }
+//   });
 
 //   // 햄버거 버튼 클릭 이벤트 추가
 //   hamburger.addEventListener("change", () => {
@@ -50,4 +51,3 @@ function hamburger() {
 //     }
 //   });
 // }
-

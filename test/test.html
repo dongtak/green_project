@@ -1,19 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    li:nth-child(3){
-        display: none;
-    }
-    .nav_b{
-        display: none;
-    }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  /* position: absolute; */
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 </style>
-<ul class="nav_mobile">
-    <li><a href="about.html">ABOUT</a></li>
-    <li><a href="artist.html">ARTIST</a></li>
-    <li><a class="nav_g" href="artist_g.html">GREEN</a></li>
-    <li><a class="nav_b" href="artist_b.html">BLUE</a></li>
-    <li><a href="ticket.html">TICKET</a></li>
-    <li><a href="gallery.html">GALLERY</a></li>
-    <li><a href="map.html">MAP</a> </li> 
-     <li><a href="faq.html">FAQ/Q&A</a></li>
-    <li><a href="signin.html">SIGN IN</a></li>
-  </ul>
+</head>
+<body>
+
+<h2>Hoverable Dropdown</h2>
+<p>Move the mouse over the button to open the dropdown menu.</p>
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+</body>
+</html>

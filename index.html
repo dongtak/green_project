@@ -6,8 +6,11 @@
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/common.css">
 
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <!-- 외부 스크립트 -->
   <script src="./js/mobile_btn.js"></script>
+
   <!-- 외부 폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,9 +25,7 @@
   <title>Document</title>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      hamburger();
-    });
+
   </script>
   <style>
     /* 메인 동영상 */
@@ -233,8 +234,6 @@ transition: 0.3s ease-in;
           <ul class="nav_mobile">
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="artist.html">ARTIST</a></li>
-            <li><a class="nav_g" href="artist_g.html">GREEN</a></li>
-            <li><a class="nav_b" href="artist_b.html">BLUE</a></li>
             <li><a href="ticket.html">TICKET</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
             <li><a href="map.html">MAP</a> </li> 
@@ -246,19 +245,16 @@ transition: 0.3s ease-in;
       <div class="top_pc">
         <a href="about.html">ABOUT</a>
         <a href="artist.html">ARTIST</a>
-        <div class="artist_menu">
-          <a href="artist_g.html"></a>
-          <a href="artist_b.html"></a>
-        </div>
-        <a href="ticket.html">TICKET</a>
-        <a href="gallery.html">GALLERY</a>
-        <a href="">INFO</a>
-          <div class="info_menu">
-            <a href="map.html"></a>
-            <a href="faq.html"></a>
-          </div>
-        <a href="signin.html">SIGN IN</a>
+          <!-- <a href="artist_g.html">GREEN</a>
+          <a href="artist_b.html">BLUE</a> -->
+          <a href="ticket.html">TICKET</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="">INFO</a> 
+          <!-- <a href="map.html">MAP</a>
+          <a href="faq.html">FAQ/Q&A</a> -->
+          <a href="signin.html">SIGN IN</a>
       </div>
+      
 
     </header>
     <!-- 메인 영상 -->
@@ -331,5 +327,7 @@ transition: 0.3s ease-in;
     </footer>
   </div>
 </body>
+<script>
 
+</script>
 </html>
