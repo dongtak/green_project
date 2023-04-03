@@ -1,20 +1,25 @@
+/*** MAP 페이지 CSS ***/
+
+
+
+/* MAP 페이지 부모상자 */
 .map {
-    margin: 50px auto;
-    width: 80%;
+    margin:0 auto;
+    margin-top: 300px;
+    width: 90%;
     min-width: 360px;
     text-align: center;
-    background-color: rgb(198, 241, 241);
+    /* background-color: rgb(198, 241, 241); 지울 부분 */
 }
 
 .map>h1 {
-    /* margin: 2px 0; */
+    margin-bottom: 50px;
     font-size: 3.0rem;
     padding: 10px 0;
 }
 
 .map_wrap {
-
-    background-color: rgb(226, 165, 73);
+    border: 1px solid rgb(255, 255, 255); /* 지울 부분 */
     /* width: 100%; */
     /* text-align: center; */
     margin: 50px auto;
@@ -52,33 +57,24 @@ li.bus,
 li.car {
     display: flex;
     /* background-color: antiquewhite;  */
+    
 }
 
-.map_left {
-    border: 1px solid rgb(129, 129, 129);
+
+li.subway>div,
+li.bus>div,
+li.car>div {
+    text-align: start;
+    margin-top: 10px;
+    /* background-color: rgb(183, 199, 106); 지울 부분 */
 }
 
-.map_left>iframe {
-    margin-bottom: 10px;
-    border: none;
-    width: 80%;
-    height: 300px;
-}
+li.subway>div>strong,
+li.bus>div>strong,
+li.car>div>strong {
+font-size: 20px;
+margin-left: 10px;
 
-.map_left_address {
-    padding: 10px;
-}
-
-.map_left_address>h3 {
-    margin: 10px 0;
-}
-
-.map_left_address b {
-    margin-right: 10px;
-}
-
-.map_left_address p {
-    margin: 10px auto;
 }
 
 
@@ -86,6 +82,71 @@ li.subway ul,
 li.bus ul,
 li.car ul {
     margin-top: 20px;
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+
+
+li.subway ul>li,
+li.bus ul>li,
+li.car ul>li {
+   padding: 10px;
+   color: black;
+}
+
+.map_right strong{
+  
+   color: black;
+}
+
+
+
+
+li.subway img,
+li.bus img,
+li.car img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 20px;
+    background-color: #00cdac;
+    
+}
+
+
+
+/* MAP 오시는길 안내 왼쪽(지도+주소) 공통 부분 */
+
+.map_left {
+    border: 1px solid rgb(129, 129, 129);
+    
+}
+
+
+
+
+.map_left_address>h3 {
+    margin: 10px 0;
+    color: black;
+    
+}
+
+.map_left_address b {
+    margin-right: 10px;
+    color: black;
+}
+
+.map_left_address p {
+    margin: 10px auto;
+    color: black;
+}
+
+
+.map_right {
+    width: 90%;
+    margin: 10px auto;
+  
+    /* background-color: rgb(245, 243, 247); */
 }
 
 
@@ -96,26 +157,201 @@ li.car ul>li {
 
 }
 
+/* 오른쪽 오시는길 안내 배경색 구분*/
 
-
-li.subway img,
-li.bus img,
-li.car img {
-
-    width: 40px;
-    height: 40px;
-    margin: 50px 20px;
-
+.map_green { 
+    background-color: #d2f7d6;
+    backdrop-filter: blur(15px);
+   
 }
+
+
+.map_blue { 
+    background-color: #bfcbf3;
+    backdrop-filter: blur(15px);
+    }
+
+
+
+/* MAP 페이지 지도 폴라로이드 효과 적용*/
+
+.map_left>.polaroid
+{
+    position: relative;
+    display: inline-block;
+    margin: 20px auto;
+    background-color: #fff;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(194, 187, 187, 0.3);
+    height: 500px;}
+
+.polaroid iframe{
+        position: absolute;
+        left: 50%; transform: translate( -50%);
+        width: 90%;
+        height: 70%;
+        top: 7%;
+        border: none;  
+    }
+
+
+/* MAP 페이지 Green 공연장 오시는길 안내 */
+
+
+.map_green {
+    
+    /* background-color: rgba(254, 254, 254, 0.918);  */
+    
+    border: 3px solid rgba(210, 248, 210, 0.918);
+   
+    /* ,2px 2px 100px #00cdac; */
+}
+
+
+
+
+
+
 
 li.subway>div,
 li.bus>div,
 li.car>div {
 
-    text-align: start;
-    margin-top: 10px;
-    background-color: rgb(156, 198, 235);
+.map_blue {
+    margin-top: 20px;
+    /* background-color: rgba(244, 248, 250, 0.918);  */
+    
+    border: 3px solid rgba(148, 203, 231, 0.918);
+   
 }
+
+
+/* 글씨 효과 */
+
+/* MAP 탭메뉴 */
+.map_tap {
+    font-size: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.map_tap li {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    color: black;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.map_tap li:first-child:after {
+    content: "";
+    width: 1px;
+    height: 25px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    margin: 0 15px;
+}
+
+.map_tap li {
+    animation: flicker 1s infinite;
+  }
+  
+  .map_tap .gtap {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #02aab0, 0 0 30px #02aab0, 0 0 40px #02aab0, 0 0 55px #00cdac, 0 0 75px #00cdac;
+  }
+  
+  .map_tap .btap {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #36d1dc, 0 0 30px #36d1dc, 0 0 40px #5b86e5, 0 0 55px #5b86e5, 0 0 75px #5b86e5;
+  }
+  
+  @keyframes flicker {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+
+
+
+
+
+/* .map_tap li.gtap>h1{
+    animation: blink 2s infinite;
+    text-shadow: 2px 2px 100px #02aab0;
+}
+
+
+@keyframes blink  {
+    0%{ text-shadow: none;}
+    50%{ text-shadow: 
+        
+        2px 2px 100px #00cdac;}
+    100%{ text-shadow: 
+         2px 2px 100px #02aab0
+        ;}
+    
+}
+
+
+
+.map_tap li.btap>h1{
+    text-shadow: 2px 2px 100px #2980b9;
+    animation: blink 1s infinite;
+
+}
+
+@keyframes blink  {
+    25%{ text-shadow: 
+       
+        2px 2px 100px #6dd5fa;}
+    
+
+
+    75%{ text-shadow: 
+        2px 2px 100px #02aab0
+       ;}
+    
+}
+
+
+ */
+
+
+
+
+/* 구분선 */
+
+hr.divider{
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+}
+
+/* 지도 안내 밑 사진 추가 */
+
+.map_img{
+    display: flex;
+    justify-content: center;
+
+}
+.map_img>img{
+
+    width: 100px; height: 100px;
+}
+
+
 
 
 
@@ -136,6 +372,7 @@ li.car>div {
     .map_right,
     .map_left {
         width: 50%;
+        margin: 5px;
     }
 
 

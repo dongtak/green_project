@@ -18,41 +18,12 @@ section{margin-top: 200px;
     font-size: 30px;
 }
 
-
-/* 개인정보 이용약관 내용 */
-/* .policy .text{
-    height: 200px; 
-    border: 1px solid black; 
-    background-color: white;
-    white-space: pre-line;
-    overflow-y: scroll; 
-    margin-bottom: 10px;
-} */
-
-/* 개인정보 이용약관 동의버튼 */
-/* .policy_button{
-    text-align: right;
-    margin: 0 auto;
-} 
-
-.policy_button label{
-    font-size: 17px;
-    margin:0 auto;
-}*/
-
-/* 개인정보 이용약관 체크박스 */
-/*#checkbox{
-    width: 20px;
-    height: 20px;
-    margin: 0 auto;
-    appearance: auto;
-}*/
-
 /* 1:1 문의 게시글 내용 */
 
 .qna_write_title,
 .qna_write_writer,
 .qna_write_pwd,
+.qna_write_pwd_check,
 .qna_write_page
 {
 
@@ -76,7 +47,8 @@ form label{
 
 .qna_write_title>#title,
 .qna_write_writer>#writer,
-.qna_write_pwd>#pwd
+.qna_write_pwd>#pwd,
+.qna_write_pwd_check>#pwd_check
 {
     display: block;
     width: 80%;
@@ -90,7 +62,8 @@ form label{
 
 
 .qna_write_page>#page{
-    width: 100%;
+    display: block;
+    width: 90%;
     height: 150px;
     margin: 10px auto;
     color: black;
@@ -134,7 +107,8 @@ form label{
 
     .qna_write_title>#title,
 .qna_write_writer>#writer,
-.qna_write_pwd>#pwd
+.qna_write_pwd>#pwd,
+.qna_write_pwd_check>#pwd_check
 
 {
     display: inline;
