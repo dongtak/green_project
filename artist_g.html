@@ -23,163 +23,179 @@
    });
   </script>
   <style>
-     .artist_title_container {
-         width: 50%;
-         height: 150px;
-         margin-left: 25%;
-         margin-bottom: 10px;
-     }
+      /* 모바일용 */
+    
+      .artist_title_container {
+      width: 50%;
+      height: 150px;
+      margin-left: 25%;
+      margin-bottom: 10px;
+    }
 
-     .artist_title_box {
-         width: 60%;
-         height: 150px;
-         margin-left: 20%;
-         display: flex;
-         justify-content: center;
-     }
+    .artist_title_box {
+      width: 60%;
+      height: 150px;
+      margin-left: 20%;
+      display: flex;
+      justify-content: center;
+    }
 
-     .artist_title_box li {
-         width: 100%;
-         height: 75px;
-         text-align: center;
-         line-height: 75px;
-         box-sizing: border-box;
-     }
+    .artist_title_box li {
+      width: 100%;
+      height: 75px;
+      text-align: center;
+      line-height: 75px;
+      box-sizing: border-box;
+    }
 
-     .artist_title_box li:first-child {
-         border-bottom: 2px solid;
-         margin-bottom: 20%;
-     }
+    .artist_title_box li:first-child {
+      border-bottom: 2px solid;
+      margin-bottom: 20%;
+    }
 
-     #button_g {
-         background-color: #4CAF50;
-         border: none;
-         color: white;
-         padding: 15px;
-         text-align: center;
-         text-decoration: none;
-         display: inline-block;
-         font-size: 16px;
-         margin: 4px 2px;
-         cursor: pointer;
-         border-radius: 10px;
-     }
+    #button_g {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
 
-     #button_b {
-         background-color: #add8e6;
-         border: none;
-         color: white;
-         padding: 15px;
-         text-align: center;
-         text-decoration: none;
-         display: inline-block;
-         font-size: 16px;
-         margin: 4px 2px;
-         cursor: pointer;
-         border-radius: 10px;
-     }
+    #button_b {
+      background-color: #add8e6;
+      border: none;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
 
-     .container {
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         grid-gap: 10px;
-         width: 50%;
-         margin-top: 2%;
-         margin-left: 25%;
-         margin-bottom: 10%;
-         box-sizing: border-box;
-         border: 5px solid lightgreen;
-     }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      width: 50%;
+      margin-top: 2%;
+      margin-left: 25%;
+      margin-bottom: 10%;
+      box-sizing: border-box;
+      border: 5px solid lightgreen;
+    }
 
-     .container img {
-         width: 100%;
-         height: auto;
-     }
-     .container img:hover {
-            transition: transform .3s;
-            transform: scale(1.3);
-          border: 3px solid lightgreen;}
+    .container img {
+      width: 100%;
+      height: auto;
+    }
 
-     /* PC용 */
+    .container img:hover {
+      transition: transform .3s;
+      transform: scale(1.3);
+      border: 3px solid lightgreen;
+    }
 
-     @media all and (min-width:800px) {
-         .artist_title_container {
-             width: 50%;
-             height: 150px;
-             margin-left: 25%;
-             margin-bottom: 10px;
-         }
+    .text {
+        text-align: center;
+        font-size: 10px;
+        font-weight: 300;
+        margin-top: 3px;
+        margin-bottom: 4px;
+      }
+    
 
-         .artist_title_box {
-             width: 60%;
-             height: 150px;
-             margin-left: 20%;
-             display: flex;
-             justify-content: center;
-             
-         }
+    /* PC용 */
 
-         .artist_title_box li {
-             width: 100%;
-             height: 75px;
-             text-align: center;
-             line-height: 75px;
-             box-sizing: border-box;
-         }
+    @media all and (min-width:560px){ 
+      .artist_title_container {
+        width: 50%;
+        height: 150px;
+        margin-left: 25%;
+        margin-bottom: 10px;
+      }
 
-         .artist_title_box li:first-child {
-             border-bottom: 2px solid;
-             margin-bottom: 20%;
-         }
+      .artist_title_box {
+        width: 60%;
+        height: 150px;
+        margin-left: 20%;
+        display: flex;
+        justify-content: center;
 
-         #button_g {
-             background-color: #4CAF50;
-             border: none;
-             color: white;
-             padding: 15px;
-             text-align: center;
-             text-decoration: none;
-             display: inline-block;
-             font-size: 16px;
-             margin: 4px 2px;
-             cursor: pointer;
-             border-radius: 10px;
-         }
+      }
 
-         #button_b {
-             background-color: #add8e6;
-             border: none;
-             color: white;
-             padding: 15px;
-             text-align: center;
-             text-decoration: none;
-             display: inline-block;
-             font-size: 16px;
-             margin: 4px 2px;
-             cursor: pointer;
-             border-radius: 10px;
-         }
+      .artist_title_box li {
+        width: 100%;
+        height: 75px;
+        text-align: center;
+        line-height: 75px;
+        box-sizing: border-box;
+      }
 
-         .container {
-             display: grid;
-             grid-template-columns: repeat(3, 1fr);
-             grid-gap: 10px;
-             width: 50%;
-             margin-left: 25%;
-             box-sizing: border-box;
-             border: 5px solid lightgreen;
-         }
+      .artist_title_box li:first-child {
+        border-bottom: 2px solid;
+        margin-bottom: 20%;
+      }
 
-         .container img {
-             width: 100%;
-             height: auto;
-         }
+      #button_g {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
 
-         .container img:hover {
-            transition: transform .3s;
-            transform: scale(1.3);
-          border: 3px solid lightgreen;}
-     }
+      #button_b {
+        background-color: #add8e6;
+        border: none;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        width: 50%;
+        margin-left: 25%;
+        box-sizing: border-box;
+        border: 5px solid lightgreen;
+      }
+
+      .container li {
+        width: 100%;
+      }
+    
+      .text {
+        text-align: center;
+        margin-top: 3px;
+        margin-bottom: 4px;
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+
   </style>
 </head>
 <body>
