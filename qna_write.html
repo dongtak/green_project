@@ -21,9 +21,22 @@
     <title>FAQ</title>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            hamburger_btn();
-        });
+        function pwd_check(){
+  const pwd = document.getElementById('pwd').value;
+  const pwd_check = document.getElementById('pwd_check').value;
+  
+  
+  if( pwd.length<8 || pwd.length>12 ){
+    alert('8자~12자 사이로 입력해주세요.')
+    return false;}
+    
+  if (pwd !== pwd_check) {
+    alert("비밀번호가 일치하지 않습니다.");
+    return false;
+  }else{
+
+  return true;
+}}
     </script>
     <style>
 
@@ -116,12 +129,12 @@
                     <!-- 1:1 문의 게시글 등록/취소 버튼-->
                     <div class="qna_write_btn">
 
-                        <a href="./faq.html">
-                            <input type="button" onclick="if(pwd_check()){ alert('등록하시겠습니까?'); return true; } else { return false; }" value="등록"></input>
+                        <a href="./faq.html#qnabox_page">
+                            <input type="button" onclick="if(pwd_check()){ alert('등록하시겠습니까?'); return true; } else { return false; }" value="등록">
                           </a>
-                        <a href="./faq.html">
+                        <a href="./faq.html#qnabox_page">
                             
-                            <input type="button" onclick="alert('취소하시겠습니까?')" value="취소"></input>
+                            <input type="button" onclick="alert('취소하시겠습니까?')" value="취소">
                         </a>
 
                     </div>

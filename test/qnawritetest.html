@@ -1,0 +1,71 @@
+<script>
+    function pwd_check(){
+      const pwd = document.getElementById('pwd').value;
+      const pwd_check = document.getElementById('pwd_check').value;
+      
+      
+      if( pwd.length<8 || pwd.length>12 ){
+        alert('8자~12자 사이로 입력해주세요.')
+        return false;}
+        
+      if (pwd === pwd_check) {
+        
+        return true;
+      }else{
+        alert("비밀번호가 일치하지 않습니다.");
+      return false;
+    }
+    }
+    
+    </script>
+<form action="" method="post">
+                
+    <!-- 1:1 문의 게시글 내용 -->
+
+    <div class="qna_write_title">
+
+        <label for="title">제목</label>
+        <input type="text" id="title" name="title" placeholder="제목을 입력해주세요." required />
+    </div>
+
+    <div class="qna_write_writer">
+        <label for="writer">작성자</label>
+        <input type="text" id="writer" name="writer" placeholder="작성자를 입력해주세요." required />
+    </div>
+
+    <div class="qna_write_pwd">
+        <label for="pwd">비밀번호</label>
+        <input type="password" id="pwd" name="pwd" placeholder="비밀번호를 입력해주세요." required />
+
+    </div>
+
+    <div class="qna_write_pwd_check">
+        <label for="pwd_check">비밀번호 확인</label>
+        <input type="password" id="pwd_check" name="pwd_check" placeholder="비밀번호를 입력해주세요." required />
+    
+
+    </div>
+
+
+    <div class="qna_write_page">
+        <label for="page">문의사항</label>
+        <input type="text" id="page" name="page" placeholder="문의사항을 입력해주세요." required />
+    </div>
+
+    <br /> <!-- 띄워서 구분하기 -->
+    
+    <!-- 1:1 문의 게시글 등록/취소 버튼-->
+    <div class="qna_write_btn">
+
+        <a href="./faq.html#qnabox_page">
+            <input type="button" onclick=" alert('등록하시겠습니까?'); pwd_check();" value="등록">
+          </a>
+        <a href="./faq.html#qnabox_page">
+            
+            <input type="button" onclick="alert('취소하시겠습니까?')" value="취소">
+        </a>
+
+    </div>
+
+</form>
+

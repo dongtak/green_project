@@ -95,6 +95,7 @@
     max-height: 1000px;
     transition: max-height .3s ease-in-out;
     background-color: aliceblue;
+    /* padding: 30px; */
     
 }
 
@@ -129,6 +130,10 @@
 /** Q&A 페이지 CSS **/
 
 
+
+
+
+
 /* Q&A 페이지 부모상자 */
 /* 처음 출력되는 페이지는 FAQ 페이지이므로 Q&A 페이지는 안보이게 설정 */
 .qnabox {
@@ -139,6 +144,7 @@
 
 .qnabox_list {
     width: 100%;
+    
 }
 
 .qnabox_list div {
@@ -154,7 +160,10 @@
     display: inline-block;
     text-align: center;
     padding: 13px 0;
+   
 }
+
+
 
 /* 게시판 메뉴별 너비 설정 - 모바일 버전일때는 제목과 작성일만 보이게 */
 
@@ -191,13 +200,17 @@
     height: 35px;
     line-height: 35px;
     font-size: 17px;
+  
 }
 
 
 .qnabox_page li>a {
     padding: 8px 8px;
     transition: background-color .3s;
+    
 }
+
+.qnabox_page li.title>a { color: white;}
 
 
 .qnabox_page li:hover {
@@ -236,6 +249,7 @@
     text-align: center;
     border: 1px solid rgb(178, 172, 172);
     border-radius: 5px;
+    color: white;
 }
 
 

@@ -41,6 +41,12 @@ const qnabox = document.querySelector('.qnabox');
 const faq= document.querySelector('.faq');
 const faqbox = document.querySelector('.faqbox');
 
+
+// //faqbox 내용이 보이게 초기화
+// faqbox.style.display = "block";
+// qnabox.style.display = "none";
+
+
 qna.addEventListener('click', function() {
   qnabox.style.display = "block";
   faqbox.style.display = "none";
@@ -50,6 +56,18 @@ faq.addEventListener('click', function() {
   faqbox.style.display = "block";
   qnabox.style.display = "none";
 });
+
+
+//Q&A 
+
+const qnaBtn = document.querySelector('.qna_write_btn input');
+
+qnaBtn.addEventListener('click', function() {
+  qnabox.style.display = "block";
+  faqbox.style.display = "none";
+});
+
+
 
 
 //게시글 등록 비밀번호 유효성 검사(회원가입과 합칠수있는지 확인하기)

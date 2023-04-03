@@ -52,7 +52,7 @@ color: black;
 {
 display: block;
 width: 80%;
-color: black;
+color: rgb(6, 0, 0);
 /* max-width: 386px; */
 height: 40px;
 margin: 10px auto;
@@ -66,7 +66,7 @@ display: block;
 width: 90%;
 height: 150px;
 margin: 10px auto;
-color: black;
+color: rgb(254, 254, 254);
 border: 1px solid rgb(126, 121, 121);
 }
 

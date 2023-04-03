@@ -35,6 +35,7 @@ li.subway,
 li.bus,
 li.car {
     display: flex;
+    
     /* background-color: antiquewhite;  */
     
 }
@@ -61,7 +62,7 @@ li.subway ul,
 li.bus ul,
 li.car ul {
     margin-top: 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(255, 255, 255);
     color: black;
 }
 
@@ -71,12 +72,12 @@ li.subway ul>li,
 li.bus ul>li,
 li.car ul>li {
    padding: 10px;
-   color: black;
+   color: white;
 }
 
 .map_right strong{
   
-   color: black;
+   color: rgb(255, 255, 255);
 }
 
 
@@ -88,9 +89,23 @@ li.car img {
     width: 40px;
     height: 40px;
     margin: 10px 20px;
-    background-color: #00cdac;
-    
+  
 }
+
+
+.map_green li.subway img,
+.map_green li.bus img,
+.map_green li.car img{
+    background-color: #a9f4bd;
+}
+
+.map_blue li.subway img,
+.map_blue li.bus img,
+.map_blue li.car img{
+    background-color: #adcaf7;
+}
+
+
 
 
 
@@ -136,7 +151,7 @@ li.car img {
 
 /* 오른쪽 오시는길 안내 배경색 구분*/
 
-.map_green { 
+/* .map_green { 
     background-color: #d2f7d6;
     backdrop-filter: blur(15px);
    
@@ -146,7 +161,7 @@ li.car img {
 .map_blue { 
     background-color: #bfcbf3;
     backdrop-filter: blur(15px);
-    }
+    } */
 
 
 
@@ -192,12 +207,12 @@ li.car img {
     
     /* background-color: rgba(254, 254, 254, 0.918);  */
     
-    border: 3px solid rgba(210, 248, 210, 0.918);
+    border: 5px solid rgba(210, 248, 210, 0.918);
+    border-radius: 5px;
+    /* border-filter: blur(3px); */
    
     /* ,2px 2px 100px #00cdac; */
 }
-
-
 
 
 /* MAP 페이지 BLUE 공연장 오시는길 안내 */
@@ -205,9 +220,9 @@ li.car img {
 .map_blue {
     margin-top: 20px;
     /* background-color: rgba(244, 248, 250, 0.918);  */
+    border-radius: 5px;
+    border: 5px solid rgba(148, 203, 231, 0.918);
     
-    border: 3px solid rgba(148, 203, 231, 0.918);
-   
 }
 
 
@@ -225,7 +240,7 @@ li.car img {
     text-align: center;
     margin: 2rem 0;
     font-size: 2.5rem;
-    color: black;
+    color: rgb(255, 255, 255);
     display: inline-block;
     margin: 0 10px;
     position: relative;
@@ -322,18 +337,6 @@ hr.divider{
     width: 80%;
     margin: 50px auto;
     background-color: #fff;
-}
-
-/* 지도 안내 밑 사진 추가 */
-
-.map_img{
-    display: flex;
-    justify-content: center;
-
-}
-.map_img>img{
-
-    width: 100px; height: 100px;
 }
 
 
