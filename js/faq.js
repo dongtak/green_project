@@ -1,50 +1,22 @@
+// 아코디언 메뉴 설정********
 
-// FAQ 아코디언 메뉴 설정
 
-let question = document.getElementsByClassName("question");
-
-            for (let i = 0; i < question.length; i++) {
-                question[i].onclick = function() {
-                    this.classList.toggle("active");
-                    let answer = this.nextElementSibling;
-                    if (answer.style.maxHeight) {
-                        answer.style.maxHeight = null;
-                    } else {
-                        answer.style.maxHeight = answer.scrollHeight + "px";
-                    }
-                };
-            }
+$(document).ready(function() {
+  $('.faqbox_question .question').click(function() {
+    $(this).next('.answer').slideToggle();
+    $(this).parent().siblings().children('.answer').slideUp();
+  });
+});
 
 
 
 
-
-
-// let question = document.getElementsByClassName("question");
-
-// for (let i = 0; i < question.length; i++) {
-//     question[i].onclick = function() {
-//         this.classList.toggle("active");
-//         let answer = this.nextElementSibling;
-//     if (answer.style.display === "block") {
-//         answer.style.display = "none";
-//     } else {
-//         answer.style.display = "block";
-//     }
-//   };
-// }
-
-//FAQ,Q&A 탭메뉴 설정
+// FAQ,Q&A 탭메뉴 설정**********
 
 const qna = document.querySelector('.qna');
 const qnabox = document.querySelector('.qnabox');
 const faq= document.querySelector('.faq');
 const faqbox = document.querySelector('.faqbox');
-
-
-// //faqbox 내용이 보이게 초기화
-// faqbox.style.display = "block";
-// qnabox.style.display = "none";
 
 
 qna.addEventListener('click', function() {
@@ -58,14 +30,45 @@ faq.addEventListener('click', function() {
 });
 
 
+
+
+
+
+
+
+
 //Q&A 
 
-const qnaBtn = document.querySelector('.qna_write_btn input');
+// const qnaBtn = document.querySelector('.qna_write_btn input');
 
-qnaBtn.addEventListener('click', function() {
-  qnabox.style.display = "block";
-  faqbox.style.display = "none";
-});
+// qnaBtn.addEventListener('click', function() {
+//   qnabox.style.display = "block";
+//   faqbox.style.display = "none";
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -98,23 +101,23 @@ qnaBtn.addEventListener('click', function() {
 
 
 // pwd_check.js 파일에 저장한 경우
-function pwd_check(){
-  const pwd = document.getElementById('pwd').value;
-  const pwd_check = document.getElementById('pwd_check').value;
+// function pwd_check(){
+//   const pwd = document.getElementById('pwd').value;
+//   const pwd_check = document.getElementById('pwd_check').value;
   
   
-  if( pwd.length<8 || pwd.length>12 ){
-    alert('8자~12자 사이로 입력해주세요.')
-    return false;}
+//   if( pwd.length<8 || pwd.length>12 ){
+//     alert('8자~12자 사이로 입력해주세요.')
+//     return false;}
     
-  if (pwd !== pwd_check) {
-    alert("비밀번호가 일치하지 않습니다.");
-    return false;
-  }else{
+//   if (pwd !== pwd_check) {
+//     alert("비밀번호가 일치하지 않습니다.");
+//     return false;
+//   }else{
 
-  return true;
-}
-}
+//   return true;
+// }
+// }
 // const pwd = document.getElementsById('.pwd');
 // const pwd_check = document.getElementsById('.pwd_check');
 // const submit = document.getElementsByClassName('.submit');

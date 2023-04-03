@@ -28,7 +28,12 @@ font-size: 30px;
 {
 
 border-bottom: 1px solid rgb(126, 121, 121);
-background-color: beige;
+/* background-color: beige; */
+}
+
+form{
+    border: 5px solid white;
+    color: white;
 }
 
 form label{
@@ -39,7 +44,7 @@ margin: 8px auto;
 margin-left: 10px;
 font-weight: bold;
 font-size: 20px;
-color: black;
+color: rgb(255, 255, 255);
 /* line-height: 10px ; */
 }
 
@@ -47,12 +52,12 @@ color: black;
 
 .qna_write_title>#title,
 .qna_write_writer>#writer,
-.qna_write_pwd>#pwd,
-.qna_write_pwd_check>#pwd_check
+.qna_write_pwd>#password,
+.qna_write_pwd_check>#password_check
 {
 display: block;
 width: 80%;
-color: rgb(6, 0, 0);
+color: rgb(0, 0, 0);
 /* max-width: 386px; */
 height: 40px;
 margin: 10px auto;
@@ -66,9 +71,15 @@ display: block;
 width: 90%;
 height: 150px;
 margin: 10px auto;
-color: rgb(254, 254, 254);
+color: rgb(9, 9, 9);
 border: 1px solid rgb(126, 121, 121);
 }
+
+.qna_write_pwd_check #message{
+    color: red;
+    font-size: 15px;
+}
+
 
 
 /* 1:1 문의 게시글 등록/취소 버튼 */
@@ -76,7 +87,7 @@ border: 1px solid rgb(126, 121, 121);
 
 .qna_write_btn,
 .qna_write_btn>a {
-background-color: beige; /* 지울 부분 */
+/* background-color: beige; 지울 부분 */
 width: 100%;
 height: 50px;
 text-align: center;
@@ -107,8 +118,8 @@ form label{
 
 .qna_write_title>#title,
 .qna_write_writer>#writer,
-.qna_write_pwd>#pwd,
-.qna_write_pwd_check>#pwd_check
+.qna_write_pwd>#password,
+.qna_write_pwd_check>#password_check
 
 {
 display: inline;

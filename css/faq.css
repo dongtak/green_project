@@ -1,16 +1,16 @@
 /*** FAQ/Q&A 페이지 CSS ***/
 
 
-
-
 /* FAQ/Q&A 페이지 부모상자 */
 .board {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     margin-top: 300px;
 }
 
 
 /* FAQ/Q&A 탭메뉴 */
+
 .board_tap {
     font-size: 30px;
     margin-bottom: 50px;
@@ -31,7 +31,7 @@
     content: "";
     width: 1px;
     height: 25px;
-    background-color: #343131;
+    background-color: #ffffff;
     position: absolute;
     top: 10px;
     bottom: 0;
@@ -40,6 +40,14 @@
 
 
 /** FAQ 페이지 CSS **/
+
+
+/*아코디언 기본값*/
+
+.faqbox_question li .answer {
+    display: none;
+  }
+
 
 /* FAQ 페이지 부모상자 */
 .faqbox {
@@ -58,7 +66,18 @@
 }
 
 .question{
-    background-color: antiquewhite;
+    background-color: rgb(253, 253, 253);
+    color: #343131;
+    width: 100%;
+    cursor: pointer;
+    padding: 20px;
+    text-align: left;
+    outline: none;
+    margin-bottom: 1px;
+    
+}
+.answer{
+    background-color: rgb(207, 207, 207);
     width: 100%;
     cursor: pointer;
     padding: 20px;
@@ -66,72 +85,25 @@
     outline: none;
     
 }
-
-
-
-
-/* .question,
-.answer {
-    width: 100%;
-    cursor: pointer;
-    padding: 10px;
-    text-align: left;
-    outline: none;
-} */
-
-
-.answer {
-   
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .3s ease-in-out; /*아코디언 메뉴 효과*/
-    background-color: aliceblue;
-    margin-bottom: 10px;
-   /* padding: 20px; */
-   
-}
-
-.answer.active {
-    max-height: 1000px;
-    transition: max-height .3s ease-in-out;
-    background-color: aliceblue;
-    /* padding: 30px; */
-    
-}
-
-/* .answer>span.active {
-    padding: 20px;
-} */
 
 .question>b,
 .answer>b {
     font-size: large;
+    color: #343131;
 }
 
 .faqbox_q1>h1,
-.faqbox_q2>h1 {
+.faqbox_q2>h1, 
+.faqbox_q3>h1 
+
+{
+    font-size: 25px;
     margin: 20px 0;
 }
 
 
-/* 예매안내 부분 */
-
-.faqbox_q1 {
-    height: 250px;
-}
-
-/* 입장안내 부분 */
-
-.faqbox_q2 {
-    height: 400px;
-}
-
 
 /** Q&A 페이지 CSS **/
-
-
-
-
 
 
 /* Q&A 페이지 부모상자 */
@@ -200,17 +172,16 @@
     height: 35px;
     line-height: 35px;
     font-size: 17px;
-  
+    
 }
 
 
 .qnabox_page li>a {
     padding: 8px 8px;
     transition: background-color .3s;
-    
+    color: white;
 }
 
-.qnabox_page li.title>a { color: white;}
 
 
 .qnabox_page li:hover {
