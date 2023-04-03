@@ -25,8 +25,7 @@
 // };
 
 function hamburger() {
-  // 스크롤 이벤트 추가
-  window.addEventListener("scroll", () => {
+  // 스크롤 이벤트 추가 {
     let mobileBtn = document.querySelector(".mobile_btn");
     let header = document.querySelector("header");
     if (document.documentElement.scrollTop > 0 && !hamburger.checked) {
@@ -36,7 +35,7 @@ function hamburger() {
       mobileBtn.style.display = "block";
       header.style.display = "block";
     }
-  });
+  };
 
 //   // 햄버거 버튼 클릭 이벤트 추가
 //   hamburger.addEventListener("change", () => {
