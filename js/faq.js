@@ -5,6 +5,7 @@ $(document).ready(function() {
   $('.faqbox_question .question').click(function() {
     $(this).next('.answer').slideToggle();
     $(this).parent().siblings().children('.answer').slideUp();
+    
   });
 });
 

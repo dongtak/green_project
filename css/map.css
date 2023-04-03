@@ -194,12 +194,11 @@ li.car img {
     }    
 
 
-.map_green .map_left_address {
+.map_green .map_left_address,
+.map_blue .map_left_address 
+ {
     border: 1px solid white;
-}
-
-.map_blue .map_left_address {
-    border: 1px solid white;
+    margin-bottom: 10px;
 }
 
 
