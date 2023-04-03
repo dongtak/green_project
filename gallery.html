@@ -17,10 +17,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GALLERY</title>
 
+
     <script>
     document.addEventListener('DOMContentLoaded',function(){ 
         hamburger_btn();
      });
+
+
     </script>
     <style>
 
@@ -30,17 +33,11 @@
     
         .container {
          
-         width: 90%;
-         margin-left: 5%;
+         width: 70%;
+         margin-left: 15%;
          margin-top: 100px;
          display: inline-block;
      }
-
-     /* .line {
-         width: 90%;
-         margin-bottom: 1%;
-         float: left;         
-     } */
 
      .long img{
             width: 47%;
@@ -68,9 +65,6 @@
         }
       }
       
-
-  
-
       /* PC용 */
       @media all and (min-width:800px){
 
@@ -120,13 +114,135 @@
         
         }
 
-
         #end{
           width: 109.8%;
           margin-top: 1.2%;
         
         }
       }
+
+
+      /* 모달창 (삭제가능) */
+
+
+      /* #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+} */
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: black;
+  padding: 10px 0;
+  height: 150px;
+  /* background-color: pink; */
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 버튼 */
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 4%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: pink;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 800px){
+  .modal-content {
+    width: 100%;
+  }
+}
 
  
     </style>
@@ -187,12 +303,42 @@
         
       </header>
    
-   
           <div class="container">
               <ul>
                   <li class="line">
                   <li class="short">
-                      <img src="./images/gallery/gall01.jpg"></li>
+                      <img src="./images/gallery/gall01.jpg" id="myImg">
+                      <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"><h1>Guitar Player</h1></div>
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                      </div>
+                      <script>
+                        // Get the modal
+                        var modal = document.getElementById("myModal");
+                        
+                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                        var img = document.getElementById("myImg");
+                        var modalImg = document.getElementById("img01");
+                        var captionText = document.getElementById("caption");
+                        img.onclick = function(){
+                          modal.style.display = "block";
+                          modalImg.src = this.src;
+                          captionText.innerHTML = this.alt;
+                        }
+                        
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+                        
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() { 
+                          modal.style.display = "none";
+                        }
+                        </script>
+                  </li>
+
                   <li class="long">
                       <img src="./images/gallery/gall02.jpg">
                       <img src="./images/gallery/gall03.jpg">
@@ -201,8 +347,6 @@
                       <img src="./images/gallery/gall06.jpg">
                       <img src="./images/gallery/gall07.jpg" id="dis"></li>
                   </li>
-   
-   
    
    
                   <li class="line">
@@ -216,15 +360,9 @@
                   <li class="short">
                       <img src="./images/gallery/gall14.jpg"></li>
                   </li>
-
-                  
-
-
                  
                     <img src="./images/gallery/gall_middle.jpg" id="middle">
                 
-
-  
    
                   <li class="line">
                   <li class="short">
@@ -239,8 +377,6 @@
                   </li>
                   <li class="line">
 
-               
-                    
                       <li class="long">
                           <img src="./images/gallery/gall22.jpg" id="delete">
                           <img src="./images/gallery/gall23.jpg">
@@ -252,40 +388,11 @@
                               <img src="./images/gallery/gall28.jpg" id="dis"></li>
                       </li>
 
+
                       <li class="line">
                         <img src="./images/gallery/gall_end.jpg" id="end">
                       </li> 
 
-                   
-     
-<!--      
-                      <li class="line">
-                          <li class="short">
-                              <img src="./images/gallery/gall29.jpg"></li>
-                      <li class="long">
-                          <img src="./images/gallery/gall30.jpg">
-                          <img src="./images/gallery/gall31.jpg">
-                          <img src="./images/gallery/gall32.jpg">
-                          <img src="./images/gallery/gall33.jpg">
-                          <img src="./images/gallery/gall34.jpg">
-                          <img src="./images/gallery/gall35.jpg"></li>
-                   
-                      </li>
-     
-     
-                      <li class="line">
-                      <li class="short">
-                          <img src="./images/gallery/gall36.jpg"></li>
-                      <li class="long">
-                          <img src="./images/gallery/gall37.jpg">
-                          <img src="./images/gallery/gall38.jpg">
-                          <img src="./images/gallery/gall39.jpg">
-                          <img src="./images/gallery/gall40.jpg">
-                          <img src="./images/gallery/gall41.jpg">
-                          <img src="./images/gallery/gall42.jpg"></li>
-                      </li>
-              </ul> -->
-            
           </div>
 
       </section>

@@ -6,8 +6,11 @@
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/common.css">
 
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <!-- 외부 스크립트 -->
   <script src="./js/mobile_btn.js"></script>
+
   <!-- 외부 폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,9 +25,7 @@
   <title>Document</title>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      hamburger();
-    });
+
   </script>
   <style>
     /* 메인 동영상 */
@@ -235,10 +236,8 @@ transition: 0.3s ease-in;
             <li><a href="artist.html">ARTIST</a></li>
             <li><a href="ticket.html">TICKET</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
-            <li class="info">
-              INFO
-              <a href="map.html">MAP</a> <a href="faq.html">FAQ/Q&A</a>
-            </li>
+            <li><a href="map.html">MAP</a> </li> 
+             <li><a href="faq.html">FAQ/Q&A</a></li>
             <li><a href="signin.html">SIGN IN</a></li>
           </ul>
         </div>
@@ -246,19 +245,16 @@ transition: 0.3s ease-in;
       <div class="top_pc">
         <a href="about.html">ABOUT</a>
         <a href="artist.html">ARTIST</a>
-        <div class="artist_menu">
-          <a href="artist_g.html"></a>
-          <a href="artist_b.html"></a>
-        </div>
-        <a href="ticket.html">TICKET</a>
-        <a href="gallery.html">GALLERY</a>
-        <a href="">INFO</a>
-          <div class="info_menu">
-            <a href="map.html"></a>
-            <a href="faq.html"></a>
-          </div>
-        <a href="signin.html">SIGN IN</a>
+          <!-- <a href="artist_g.html">GREEN</a>
+          <a href="artist_b.html">BLUE</a> -->
+          <a href="ticket.html">TICKET</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="">INFO</a> 
+          <!-- <a href="map.html">MAP</a>
+          <a href="faq.html">FAQ/Q&A</a> -->
+          <a href="signin.html">SIGN IN</a>
       </div>
+      
 
     </header>
     <!-- 메인 영상 -->
@@ -281,22 +277,22 @@ transition: 0.3s ease-in;
         <ul>
           <li>
             <a href="about.html">
-              <img src="./images/about_icon01.png" alt="" /><br />ABOUT</a>
+              <img src="./images/main/icon01.jpg" alt="" /><br />ABOUT</a>
             <p>설명글입니다</p>
           </li>
           <li>
             <a href="artist.html">
-              <img src="./images/about_icon02.png" alt="" /><br />ARTIST</a>
+              <img src="./images/main/icon02.jpg" alt="" /><br />ARTIST</a>
             <p>설명글입니다</p>
           </li>
           <li>
             <a href="gallery.html">
-              <img src="./images/about_icon03.png" alt="" /><br />GALLERY</a>
+              <img src="./images/main/icon03.jpg" alt="" /><br />GALLERY</a>
             <p>설명글입니다</p>
           </li>
           <li>
             <a href="images/">
-              <img src="./images/about_icon04.png" alt="" /><br />INFO</a>
+              <img src="./images/main/icon04.jpg" alt="" /><br />INFO</a>
             <p>설명글입니다</p>
           </li>
         </ul>
@@ -331,5 +327,7 @@ transition: 0.3s ease-in;
     </footer>
   </div>
 </body>
+<script>
 
+</script>
 </html>
