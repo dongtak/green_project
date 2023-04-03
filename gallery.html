@@ -23,11 +23,62 @@
      });
     </script>
     <style>
+
+      /* 모바일용 */
+
+      @media all and (max-width:800px){
+    
+        .container {
+         
+         width: 90%;
+         margin-left: 5%;
+         margin-top: 100px;
+         display: inline-block;
+     }
+
+     /* .line {
+         width: 90%;
+         margin-bottom: 1%;
+         float: left;         
+     } */
+
+     .long img{
+            width: 47%;
+            margin-right: 1%;
+            margin-left: 1.33333%;
+            margin-top: 2.2%;
+            float: left;
+            height: auto;         
+        }
+
+     .short img {
+      width: 47%;
+      margin-right: 1%;
+      margin-left: 1.33333%;
+      margin-top: 2.2%;
+            float: left;
+            height: auto;   
+     }
+
+     #middle, #end, #dis{
+     
+  
+          display: none;
+        
+        }
+      }
+      
+
+  
+
+      /* PC용 */
+      @media all and (min-width:800px){
+
         .container {
          
             width: 70%;
             margin-left: 15%;
-            margin-top: 150px;
+            margin-top: 100px;
             display: inline-block;
         }
  
@@ -75,6 +126,7 @@
           margin-top: 1.2%;
         
         }
+      }
 
  
     </style>
@@ -147,7 +199,7 @@
                       <img src="./images/gallery/gall04.jpg">
                       <img src="./images/gallery/gall05.jpg">
                       <img src="./images/gallery/gall06.jpg">
-                      <img src="./images/gallery/gall07.jpg"></li>
+                      <img src="./images/gallery/gall07.jpg" id="dis"></li>
                   </li>
    
    
@@ -182,7 +234,7 @@
                       <img src="./images/gallery/gall17.jpg">
                       <img src="./images/gallery/gall18.jpg">
                       <img src="./images/gallery/gall19.jpg">
-                      <img src="./images/gallery/gall20.jpg">
+                      <img src="./images/gallery/gall20.jpg" id="dis">
                       <img src="./images/gallery/gall21.jpg"></li>
                   </li>
                   <li class="line">
@@ -190,14 +242,14 @@
                
                     
                       <li class="long">
-                          <img src="./images/gallery/gall22.jpg">
+                          <img src="./images/gallery/gall22.jpg" id="delete">
                           <img src="./images/gallery/gall23.jpg">
                           <img src="./images/gallery/gall24.jpg">
-                          <img src="./images/gallery/gall25.jpg">
-                          <img src="./images/gallery/gall26.jpg">
-                          <img src="./images/gallery/gall27.jpg"></li>
+                          <img src="./images/gallery/gall25.jpg" id="dis">
+                          <img src="./images/gallery/gall26.jpg" id="dis">
+                          <img src="./images/gallery/gall27.jpg" id="dis"></li>
                           <li class="short">
-                              <img src="./images/gallery/gall28.jpg"></li>
+                              <img src="./images/gallery/gall28.jpg" id="dis"></li>
                       </li>
 
                       <li class="line">
