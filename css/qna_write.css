@@ -15,7 +15,7 @@ margin: 0 auto;
 .qna_writebox >h1{
 margin: 30px auto;
 text-align: center;
-font-size: 30px;
+font-size: 3.0rem;
 }
 
 /* 1:1 문의 게시글 내용 */
@@ -64,6 +64,8 @@ margin: 10px auto;
 /* margin-left: 10px; */
 border: 1px solid rgb(126, 121, 121);
 }
+
+
 
 
 .qna_write_page>#page{

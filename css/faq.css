@@ -153,6 +153,12 @@
     display: none;
 }
 
+/*게시판 글자색*/
+.qnabox_list li.title>a{
+    color: white;
+}
+
+
 /* 게시판 제목 hover*/
 .qnabox_list li.title>a:hover {
     cursor: pointer;

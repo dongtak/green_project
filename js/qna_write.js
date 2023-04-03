@@ -34,6 +34,7 @@ if (password !== pwdCheck){
 
  alert('문의해주셔서 감사합니다.')
   return true;
+  
 }};
 
 // 제출 버튼 클릭 시 비밀번호 유효성 검사 실행
@@ -51,21 +52,17 @@ submitButton.addEventListener("click", (event) => {
 
 
 
-
-
-
-
-
 function qnaReturn(){
   let result = confirm('취소하시겠습니까?')
   
   if(result==true){
     let answer = "확인";
-    window.location.href="./faq.html#qnabox_page"
+    
   //  let qnabox = document.getElementById("qnabox");
   //   let faqbox = document.getElementById("faqbox"); 
-    qnabox.style.display = "block";
-      faqbox.style.display = "none";
+  //   qnabox.style.display = "block";
+  //     faqbox.style.display = "none";
+  //     history.go(href="faq.html#qna_writebox")
   
   
     }else{
