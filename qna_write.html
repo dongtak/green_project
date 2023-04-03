@@ -10,8 +10,7 @@
 
     <!-- 외부 스크립트 -->
     <script src="./js/mobile_btn.js"></script>
-    <script defer src="./js/faq.js"></script>
-
+   
 
 
     <!-- 외부 폰트 -->
@@ -20,27 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ</title>
 
-    <script>
-        function pwd_check(){
-  const pwd = document.getElementById('pwd').value;
-  const pwd_check = document.getElementById('pwd_check').value;
-  
-  
-  if( pwd.length<8 || pwd.length>12 ){
-    alert('8자~12자 사이로 입력해주세요.')
-    return false;}
     
-  if (pwd !== pwd_check) {
-    alert("비밀번호가 일치하지 않습니다.");
-    return false;
-  }else{
-
-  return true;
-}}
-    </script>
-    <style>
-
-    </style>
 </head>
 
 <body>
@@ -106,15 +85,15 @@
                     </div>
 
                     <div class="qna_write_pwd">
-                        <label for="pwd">비밀번호</label>
-                        <input type="password" id="pwd" name="pwd" placeholder="비밀번호를 입력해주세요." required />
+                        <label for="password">비밀번호</label>
+                        <input type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요." required />
 
                     </div>
 
                     <div class="qna_write_pwd_check">
-                        <label for="pwd_check">비밀번호 확인</label>
-                        <input type="password" id="pwd_check" name="pwd_check" placeholder="비밀번호를 입력해주세요." required />
-                    
+                        <label for="password_check">비밀번호 확인</label>
+                        <input type="password" id="password_check" name="password_check" placeholder="비밀번호를 입력해주세요." required />
+                        <span id="message"></span>
 
                     </div>
 
@@ -127,14 +106,14 @@
                     <br /> <!-- 띄워서 구분하기 -->
                     
                     <!-- 1:1 문의 게시글 등록/취소 버튼-->
-                    <div class="qna_write_btn">
+                    <div class="qna_write_btn"> 
 
                         <a href="./faq.html#qnabox_page">
-                            <input type="button" onclick="if(pwd_check()){ alert('등록하시겠습니까?'); return true; } else { return false; }" value="등록">
+                            <button type="submit" id="submit" >등록</button>
                           </a>
-                        <a href="./faq.html#qnabox_page">
-                            
-                            <input type="button" onclick="alert('취소하시겠습니까?')" value="취소">
+                        <a href="faq.html">
+                    
+                            <input type="button" onclick="qnaReturn();" value="취소">
                         </a>
 
                     </div>
@@ -156,3 +135,27 @@
 </body>
 
 </html>
+
+
+<!-- 외부 스크립트 -->
+<script defer src="./js/qna_write.js"></script>
+
+<!-- <script>
+
+    //Q&A 
+
+const qnaBtn1 = document.querySelector('.qna_write_btn input');
+
+const qnaBtn2 = document.querySelector('.qna_write_btn #submit');
+
+qnaBtn1.addEventListener('click', function() {
+  qnabox.style.display = "block";
+  faqbox.style.display = "none";
+});
+
+qnaBtn2.addEventListener('click', function() {
+  qnabox.style.display = "block";
+  faqbox.style.display = "none";
+});
+
+</script> -->
