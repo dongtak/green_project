@@ -1,6 +1,6 @@
 .blur{
     position: fixed;
-    z-index: 0;
+    z-index: -1;
     width: 100%;
     height: 100vh;
     background: linear-gradient(to bottom right,#000000,#00524e);
@@ -11,7 +11,7 @@
     position: absolute;
     width:600px;
     height:600px;
-    background:linear-gradient(90deg,#397453,#2f2591);
+    background:linear-gradient(90deg,#05662f,#2f2591);
     border-radius:50px;
     left:-10%; 
     top:-20%;   
@@ -24,7 +24,7 @@
     position: absolute;
     width:80vw;
     height:80vh;
-    background:linear-gradient(90deg,#0a8f46,#2f2591);
+    background:linear-gradient(90deg,#01632d,#2965b4);
     border-radius:50%;
     right:-10%; 
     bottom:-20%;

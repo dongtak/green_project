@@ -73,16 +73,14 @@
     padding: 0;
     color: aliceblue;
   }
-  body {
-    background: #000000;
-  }
+
   /* 헤더 */
   header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #000000;
+    background-color: #0000008e;
     color: #ffffff;
     z-index: 9999;
   }
@@ -90,6 +88,7 @@
   /* 헤더 로고 */
   .logo {
     margin: 0;
+    backdrop-filter: blur(10px);
   }
   .logo a {
     text-align: center;
@@ -100,7 +99,7 @@
     line-height: 50px;
   }
   .logo:hover h1{
-    color: #00f884;
+    color: #deeeff;
     background: #000000;
     font-weight: bold;
     transition: 0.3s ease-in-out;
@@ -156,20 +155,7 @@
   input[id="hamburger"]:checked + label {
     z-index: 99;
   }
-  input[id="hamburger"]:checked + label span {
-    animation: colorChange 0.3s infinite;
-  }
-  @keyframes colorChange {
-    0% {
-      background-color: rgb(137, 137, 255);
-    }
-    50% {
-      background-color: rgb(138, 255, 138);
-    }
-    100% {
-      background-color: rgb(255, 37, 91);
-    }
-  }
+
 
   input[id="hamburger"]:checked + label span:nth-child(1) {
     top: 50%;
@@ -182,7 +168,6 @@
     bottom: 50%;
     transform: translateY(50%) rotate(-45deg);
   }
-
 
   input[id="hamburger"]:checked + label + div {
     top: 0%;
@@ -200,6 +185,7 @@
     position: absolute;
     top: 100px;
     width: 100%;
+    backdrop-filter: blur(10px);
   }
   .top_nav .nav_mobile li {
     color: rgb(255, 255, 255);
@@ -211,7 +197,7 @@
     text-align: center;
   }
   .top_nav li a {
-    background: #000000;
+    background: #00000088;
     color: aliceblue;
     height: 80px;
     display: block;
@@ -231,7 +217,7 @@
     padding: 100px 0;
     text-align: center;
     line-height: 30px;
-    background: #000000;
+    background: #00000094;
   }
   .top_pc {
     display: none;
