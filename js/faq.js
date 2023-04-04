@@ -27,10 +27,10 @@ const faqbox = document.querySelector('.faqbox');
 qna.addEventListener('click', function() {
   qnabox.style.display = "block";
   faqbox.style.display = "none";
-  qna.style.color="rgb(138, 145, 151)";
-  qna.style.borderBottom="3px solid rgb(138, 145, 151)";
-  faq.style.color="white";
-  faq.style.borderBottom="none"
+  faq.style.color="rgb(192, 191, 191)";
+  faq.style.borderBottom="none";
+  qna.style.color="white";
+  qna.style.borderBottom="3px solid white"
   
 
 
@@ -39,10 +39,10 @@ qna.addEventListener('click', function() {
 faq.addEventListener('click', function() {
   faqbox.style.display = "block";
   qnabox.style.display = "none";
-  faq.style.color="rgb(138, 145, 151)";
-  faq.style.borderBottom="3px solid rgb(138, 145, 151)";
-  qna.style.color="white";
-  qna.style.borderBottom="none"
+  qna.style.color="rgb(192, 191, 191)";
+  qna.style.borderBottom="none";
+  faq.style.color="white";
+  faq.style.borderBottom="3px solid white"
   
 });
 
