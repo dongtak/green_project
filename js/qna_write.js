@@ -26,15 +26,17 @@ const passwordCheck = document.getElementById("password_check")
   }
 
   // // 비밀번호에 영어 대/소문자, 숫자, 특수문자가 포함되어 있는지 확인
-  const regex = /^(?=.*[!@#$%^&*()\-_=+\\|[\]{};:'",.<>/?]).+$/;
-  if (!regex.test(password)) {
-    messageDiv.innerText =
-      "특수문자 포함 입력";
-      messageDiv.style.visibility = "visible";
-      passwordCheck.style.borderColor = "red";
-      passwordInput.style.borderColor = "red";
-    return false;
-  }
+  // const regex = /^(?=.*[!@#$%^&*()\-_=+\\|[\]{};:'",.<>/?]).+$/;
+  // if (!regex.test(password)) {
+  //   messageDiv.innerText =
+  //     "특수문자 포함 입력";
+  //     messageDiv.style.visibility = "visible";
+  //     passwordCheck.style.borderColor = "red";
+  //     passwordInput.style.borderColor = "red";
+  //   return false;
+  //}
+
+  
   // 비밀번호가 일치하는지 확인
   if (password !== pwdCheck){
     messageDiv.innerHTML = "비밀번호 불일치";
@@ -69,9 +71,9 @@ submitButton.addEventListener('click',function qnaFunction(event) {
     event.stopPropagation();
     return false;
   }
-  window.location.href ="faq.html";
+ 
   alert('문의해주셔서 감사합니다.');
-  
+  // window.onload ="../aritist";
   return true;
   
 
