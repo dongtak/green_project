@@ -15,30 +15,52 @@ section{
 /* FAQ/Q&A 탭메뉴 */
 
 .board_tap {
-    font-size: 30px;
-    margin-bottom: 50px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
+
 }
+
+.board_tap .tap{
+    width: 80%;
+    text-align: center;
+ margin-bottom: 50px;
+}
+
 
 .board_tap li {
     text-align: center;
-    margin: 2rem 0;
-    font-size: 2.5rem;
+    
+    font-size: 2.0rem;
     display: inline-block;
-    margin: 0 30px;
+    margin: 0 10px;
     position: relative;
+    /* color: rgb(210, 209, 209); */
+    padding: 5px;
+    width: 100px;
+    height: 50px;
+    letter-spacing: 2px;
+    font-weight: 900;
 }
+/* 
+.board_tap li .click{
+    border-bottom: 3px solid aliceblue;
+    border-radius: 3px;
+    font-weight: 900;
+} */
+
+
 
 .board_tap li:first-child:after {
     content: "";
-    width: 1px;
+    width: 2px;
     height: 25px;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 10px;
     bottom: 0;
-    margin: 0 35px;
+    margin: 0 28px;
+    
 }
 
 
