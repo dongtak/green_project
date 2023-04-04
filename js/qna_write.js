@@ -38,6 +38,13 @@ function validatePassword() {
     passwordCheck.style.borderColor = "red";
     passwordInput.style.borderColor = "red";
     return false;
+    // 비밀번호가 공백일 경우
+  }else if(password === "", pwdCheck===""){
+    messageDiv.innerHTML = "비밀번호를 입력해주세요";
+    messageDiv.style.visibility = "visible";
+    passwordCheck.style.borderColor = "red";
+    passwordInput.style.borderColor = "red";
+    return false;
   }
 
   // 유효성 검사가 모두 통과한 경우
@@ -52,6 +59,7 @@ submitButton.addEventListener("click", (event) => {
   event.preventDefault();
   if (validatePassword()) {
     alert('문의해주셔서 감사합니다.');
+    window.location.href = "faq.html"
   }
 });
 
