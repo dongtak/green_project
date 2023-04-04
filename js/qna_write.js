@@ -12,7 +12,7 @@ const messageDiv = document.getElementById("message");
 const passwordCheck = document.getElementById("password_check")
 
 // 비밀번호 유효성 검사 함수
-function validatePassword() {
+ function validatePassword() {
   const password = passwordInput.value;
   const pwdCheck = passwordCheck.value;
 
@@ -90,6 +90,16 @@ submitButton.addEventListener('click',function myFunction() {
 
 
 
+function myFunction() {
+  let form = document.getElementById("form");
+  if (form.checkValidity() === true) {
+  validatePassword();
+  form.submit(); // 모든 필수 입력란이 유효한 경우 form을 제출
+  }
+  else {
+  // 값이 유효하지 않은 경우에 대한 처리 (예: 에러 메시지 출력)
+  }
+  }
 
 
 
