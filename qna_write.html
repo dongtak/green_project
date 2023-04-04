@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ</title>
 
-    
+
 </head>
 
 <body>
@@ -83,38 +83,38 @@
                 <h1>1:1 Q&A</h1>
 
                 <!-- 1:1 문의 게시글 등록 form-->
-                <form action="" method="post">
+                <form action="" method="post" id="form">
                 
                     <!-- 1:1 문의 게시글 내용 -->
                 
                     <div class="qna_write_title">
 
                         <label for="title">제목</label>
-                        <input type="text" id="title" name="title" placeholder="제목을 입력해주세요." required />
+                        <input type="text" id="title" name="title" placeholder="제목을 입력해주세요." required="required" />
                     </div>
 
                     <div class="qna_write_writer">
                         <label for="writer">작성자</label>
-                        <input type="text" id="writer" name="writer" placeholder="작성자를 입력해주세요." required />
+                        <input type="text" id="writer" name="writer" placeholder="작성자를 입력해주세요." required="required" />
                     </div>
 
                     <div class="qna_write_pwd">
                         <label for="password">비밀번호</label>
-                        <input type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요." required />
+                        <input type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요." required="required" />
 
                     </div>
 
                     <div class="qna_write_pwd_check">
                         <label for="password_check">비밀번호 확인</label>
-                        <input type="password" id="password_check" name="password_check" placeholder="비밀번호를 입력해주세요." required />
-                        <br class="br"><span id="message"></span>
+                        <input type="password" id="password_check" name="password_check" placeholder="비밀번호를 다시 입력해주세요." required="required" />
+                        <p id="message"></p>
 
                     </div>
 
                 
                     <div class="qna_write_page">
                         <label for="page">문의사항</label>
-                        <input type="text" id="page" name="page" placeholder="문의사항을 입력해주세요." required />
+                        <input type="text" id="page" name="page" placeholder="문의사항을 입력해주세요." required="required" />
                     </div>
 
                     <br /> <!-- 띄워서 구분하기 -->
@@ -122,12 +122,12 @@
                     <!-- 1:1 문의 게시글 등록/취소 버튼-->
                     <div class="qna_write_btn"> 
 
-                        <a href="faq.html#qna_writebox">
-                            <button type="submit" id="submit" >등록</button>
+                        <a href="#">
+                            <button type="submit" id="submit" onclick="myFunction();">등록</button>
                           </a>
                         <a href="faq.html#qna_writebox">
                     
-                            <input type="button" onclick="qnaReturn();" value="취소">
+                            <input type="button" value="취소">
                         </a>
 
                     </div>
@@ -151,7 +151,7 @@
 </html>
 
 
-<!-- 외부 스크립트 -->
+<!-- 외부스크립트 -->
 <script defer src="./js/qna_write.js"></script>
 
 <!-- <script>

@@ -5,7 +5,7 @@ section{
 }
 /* MAP 페이지 부모상자 */
 .map {
-    margin:0 auto;
+    margin:0px auto;
     width: 90%;
     min-width: 360px;
     text-align: center;
@@ -27,7 +27,7 @@ section{
 
 /* 전체 공통 부분 */
 
-li.subway,
+li.train,
 li.bus,
 li.car {
     display: flex;
@@ -37,7 +37,7 @@ li.car {
 }
 
 
-li.subway>div,
+li.train>div,
 li.bus>div,
 li.car>div {
     text-align: start;
@@ -45,7 +45,7 @@ li.car>div {
     /* background-color: rgb(183, 199, 106); 지울 부분 */
 }
 
-li.subway>div>strong,
+li.train>div>strong,
 li.bus>div>strong,
 li.car>div>strong {
 font-size: 20px;
@@ -56,7 +56,7 @@ border-bottom: 1px solid white;
 }
 
 
-li.subway ul,
+li.train ul,
 li.bus ul,
 li.car ul {
     margin: 30px auto;
@@ -65,7 +65,7 @@ li.car ul {
 
 
 
-li.subway ul>li,
+li.train ul>li,
 li.bus ul>li,
 li.car ul>li {
    padding: 2px;
@@ -86,39 +86,6 @@ i{
 margin-top: 10px;
  
 }
-
-
-/* li.subway img,
-li.bus img,
-li.car img {
-    width: 40px;
-    height: 40px;
-    margin: 10px 20px;
-  
-}
-
-
-.map_green li.subway img,
-.map_green li.bus img,
-.map_green li.car img{
-    background-color: #a9f4bd;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.map_blue li.subway img,
-.map_blue li.bus img,
-.map_blue li.car img{
-    background-color: #adcaf7;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    text-align: center;
-} */
-
-
 
 
 

@@ -1,6 +1,9 @@
 /*** FAQ/Q&A 페이지 CSS ***/
 
-
+section{
+    margin: 100px auto;
+    padding: 100px 0;
+}
 /* FAQ/Q&A 페이지 부모상자 */
 .board {
     width: 90%;
@@ -250,13 +253,14 @@
 }
 
 /*** PC 버전 크기일때 ***/
-
-@media all and (min-width:960px) {
-    section {
-        width: 960px;
-        margin: 0 auto;
+@media all and (min-width:480px){
+    section{
+        padding: 0;
     }
+}
+@media all and (min-width:768px) {
 
+    
     .qnabox_list li.num,
     .qnabox_list li.writer,
     .qnabox_list li.counter {
@@ -290,6 +294,5 @@
         display: block;
     }
 
-
-
+   
 }
