@@ -80,9 +80,15 @@ li.car ul>li {
 }
 
 
+i{
+ width: 50px;
+ height: 50px;  
+margin-top: 10px;
+ 
+}
 
 
-li.subway img,
+/* li.subway img,
 li.bus img,
 li.car img {
     width: 40px;
@@ -110,7 +116,7 @@ li.car img {
     height: 50px;
     border-radius: 50%;
     text-align: center;
-}
+} */
 
 
 
@@ -245,7 +251,7 @@ li.car img {
     margin: 0 10px;
     position: relative;
 }
-
+/* 
 .map_tap li:first-child:after {
     content: "";
     width: 1px;
@@ -255,7 +261,7 @@ li.car img {
     top: 10px;
     bottom: 0;
     margin: 0 15px;
-}
+} */
 
 #button_g {
     background-color: #4CAF50;

@@ -33,11 +33,6 @@ faq.addEventListener('click', function() {
 
 
 
-
-
-
-
-
 //Q&A 
 
 // const qnaBtn = document.querySelector('.qna_write_btn input');
