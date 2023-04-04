@@ -11,7 +11,7 @@ margin: 0 auto;
 
 /* 1:1 문의 페이지 큰제목 */
 .qna_writebox >h1{
-/* margin: 30px auto; */
+margin: 40px auto;
 text-align: center;
 font-size: 3.0rem;
 }
@@ -21,10 +21,11 @@ font-size: 3.0rem;
 .qna_write_title,
 .qna_write_writer,
 .qna_write_pwd,
-.qna_write_pwd_check,
-.qna_write_page
+.qna_write_pwd_check
+/* .qna_write_page */
 {
-
+height: 60px;
+line-height: 60px;
 border-bottom: 1px solid rgb(126, 121, 121);
 /* background-color: beige; */
 }
@@ -56,10 +57,9 @@ color: rgb(255, 255, 255);
 display: block;
 width: 80%;
 color: rgb(0, 0, 0);
-/* max-width: 386px; */
+
 height: 40px;
 margin: 10px auto;
-/* margin-left: 10px; */
 border: 1px solid rgb(126, 121, 121);
 }
 
@@ -77,12 +77,18 @@ border: 1px solid rgb(126, 121, 121);
 
 
 
-.qna_write_pwd_check #message{
+.qna_write_pwd_check #message
+{
     color: rgb(255, 0, 0);
     font-size: 15px;
-    padding: 1px;
-    margin-left: 10px;
+    /* padding: 1px; */
+    text-align: center;
+    transform: translate( 20px);
+    /*메세지 위치 맞추기 */
+    visibility: hidden; 
+    bottom:-4px;
 }
+
 
 
 
@@ -141,9 +147,10 @@ form label{
 
 {
 display: inline;
+box-sizing: border-box;
 width: 50%;
 height: 40px;
-margin: 7px auto;
+margin: 10px auto;
 border: 1px solid rgb(126, 121, 121);
 
 }
@@ -162,17 +169,18 @@ section {
     /* margin: 0 auto; */
 }
 
-/* 비밀번호 확인 옆 알림메세지*/
-
-
-.qna_write_pwd_check #message{
-   
-    margin-left: 20px;
-}
-
+.qna_write_pwd_check #message
+{
+    text-align: center;
+    transform: translate( -3%);
+    /*메세지 위치 맞추기 */
+} 
 
 
 
+form label{
+  
+    margin-left: 30px;}
 
 
 }

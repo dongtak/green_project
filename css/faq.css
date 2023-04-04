@@ -253,7 +253,7 @@ section{
 
 /*** PC 버전 크기일때 ***/
 
-@media all and (min-width:480px) {
+@media all and (min-width:768px) {
     
 
     .qnabox_list li.num,
