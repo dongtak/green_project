@@ -15,29 +15,36 @@
         margin: 0rem;
         overflow: hidden;
     }
-    #image-track > .image{
-        width: 40vmin;
-        height: 56vmin;
-        object-fit: cover;
-        object-position: 50% 50%;
-        
-    }
-
-    #image-track > .image:nth-child(2n-1){
-    border: 2px solid lightblue;}
-
-    #image-track > .image:nth-child(2n){
-    border: 2px solid lightgreen;}
 
     #image-track {
         display: flex;
         gap: 2vmin;
-        position: absolute; left: 100%; top: 50%;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translate(-10%, -50%);
+        /* position: relative; */
         /* margin-left: 20%;
         margin-top: 25%; */
-        transform: translate(-10%, -50%);
         /* background-color: lightblue; */
     }
+
+    /* 보더 colour 부분 생략 가능 */ 
+    /* #image-track > .image:nth-child(2n-1){
+    border: 2px solid lightblue;}
+
+    #image-track > .image:nth-child(2n){
+    border: 2px solid lightgreen;} */
+
+    #image-track > .image{
+        width: 40vmin;
+        height: 56vmin;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    
 </style>
 </head>
 
@@ -91,12 +98,13 @@
         if(track.dataset.mouseDownAt === "0") return;
     
         const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-        maxDelta = window.innerWidth / 2;
+        maxDelta = window.innerWidth / 0.5;
     
         const percentage = (mouseDelta / maxDelta) * -100,
         nextPercentage = parseFloat(track.dataset.prevPercentage) + percentage;
-        Math.min(nextPercentage, 0);
-        Math.max(nextPercentage, -100);
+        nextPerc
+        // Math.min(nextPercentage, 0);
+        // Math.max(nextPercentage, -100);
         
         track.dataset.percentage = nextPercentage;
     

@@ -2,6 +2,7 @@
 
 section{
     margin: 100px auto;
+    padding: 25px 0;
 }
 /* MAP 페이지 부모상자 */
 .map {
@@ -271,6 +272,7 @@ hr.divider{
 @media all and (min-width:960px) {
     section {
     max-width: 960px;
+    padding: 0;
     }
 
     .map_green,
