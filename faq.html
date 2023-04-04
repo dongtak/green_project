@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+
+
+
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
     <!-- 외부 스타일 -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/faq.css">
-    <link rel="stylesheet" href="./css/faq_write.css">
-    <link rel="stylesheet" href="./">
+    <link rel="stylesheet" href="./css/blur.css">
+    <!-- <link rel="stylesheet" href="./css/qna_write.css"> -->
+    
     <!-- 외부 스크립트 -->
     <script src="./js/mobile_btn.js"></script>
     <script defer src="./js/faq.js"></script>
@@ -28,11 +36,12 @@
     </style>
   </head>
   <body>
+    <div class="blur"></div>
     <div id="wrapper">
       <!-- 헤더 -->
       <header>
         <div class="logo">
-          <a href=""
+          <a href="index.html"
             ><h1>
               G&B
               <br />
@@ -50,20 +59,29 @@
             <span></span>
           </label>
           <div class="top_nav">
-            <hr
-              style="position: relative; top: 100px; border: solid 1px black"
-            />
+            <hr>
             <ul class="nav_mobile">
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">ARTIST</a></li>
-              <li><a href="#">TICKET</a></li>
-              <li><a href="#">GALLERY</a></li>
-              <li class="info">
-                INFO<a href="#">MAP</a> <a href="#">FAQ/Q&A</a>
-              </li>
-              <li><a href="#">SIGN IN</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="artist.html">ARTIST</a></li>
+              <li><a href="ticket.html">TICKET</a></li>
+              <li><a href="gallery.html">GALLERY</a></li>
+              <li><a href="map.html">MAP</a> </li> 
+               <li><a href="faq.html">FAQ/Q&A</a></li>
+              <li><a href="signin.html">SIGN IN</a></li>
             </ul>
           </div>
+        </div>
+        <div class="top_pc">
+          <a href="about.html">ABOUT</a>
+          <a href="artist.html">ARTIST</a>
+            <!-- <a href="artist_g.html">GREEN</a>
+            <a href="artist_b.html">BLUE</a> -->
+            <a href="ticket.html">TICKET</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="">INFO</a> 
+            <!-- <a href="map.html">MAP</a>
+            <a href="faq.html">FAQ/Q&A</a> -->
+            <a href="signin.html">SIGN IN</a>
         </div>
       </header>
 
@@ -78,7 +96,7 @@
           <div class="board_tap">
               <ul class="tap">
                   <li class="faq">FAQ</li>
-                  <li class="qna">QNA</li>
+                  <li class="qna">Q&A</li>
               </ul>
           </div>
       
@@ -86,46 +104,121 @@
           <!-- FAQ 페이지 박스 -->
 
           <div class="faqbox">
-
-            <!-- FAQ 예매안내/입장안내 부분 -->
+          
+            <!-- FAQ 예매안내/입장안내/환불안내 부분 -->
             <div class="faqbox_q1">
+
                   <h1>예매안내</h1>
-              
-                    <div class="question"><b>Q.</b><span>공연 예매를 하고싶은데 어떻게 하면 되나요?</span>
+
+                  <ul class="faqbox_question">
+                    <li>
+                    <div class="question">
+                      <b>Q.</b><span>공연 예매를 하고싶은데 어떻게 하면 되나요?</span>
                     </div>
                     <div class="answer">
-                       <b>A.</b><span>G&B페스티벌은 G&B페스티벌 홈페이지에서만 독점판매중입니다.
+                       <b>A.</b><span>콘서트 예매는 GB파크 티켓 판매처에서 진행됩니다. 홈페이지를 참고해주세요.
                        </span>
                     </div>
-              
-                    <div class="question"><b>Q.</b><span>티켓 환불 방식은 어떻게 되나요?</span>
+                    </li>
+                    <li>
+                    <div class="question">
+                      <b>Q.</b><span>무통장입금 시 예매자와 입금자가 달라도 되나요?</span>
                     </div>
                     <div class="answer">
-                       <b>A.</b><span>홈페이지에서 가능합니다.</span>
-                    </div>
-              </div>
+                       <b>A.</b>
+                       <span>가상 계좌와 입금 금액이 정확하다면, 예매자와 입금자가 다르셔도 됩니다.</span><br/>
+                       <span>입금 완료 후에는 예매 완료 문자/메일이 발송되오니 확인부탁드립니다.</span>
+                       
+                     </div> 
+                    </li> 
+                  </ul>    
+            </div>
 
               <div class=" faqbox_q2">
-
+               
                   <h1>입장안내</h1>
 
-                    <div class="question"><b>Q.</b><span>입장은 언제부터 가능한가요?</span>
+                  <ul class="faqbox_question">
+
+                    <li>
+                    <div class="question">
+                      <b>Q.</b><span>입장은 언제부터 가능한가요?</span>
                     </div>
                     <div class="answer">
-                     <b>A.</b><span>입장은 5시 30분부터 대기 후 6시부터 입장 가능합니다.<br/>공연 당일, 공연 입장 3시간 전부터 공연안내부스가 운영될 예정이오니 참고바랍니다.</span>
+                     <b>A.</b><span>5시 30분부터 대기 후 6시부터 입장 가능합니다.<br/>공연 입장 3시간 전부터 공연안내부스가 운영되오니 참고바랍니다.</span>
                     </div>
-
-                    <div class="question"><b>Q.</b><span>현장 티켓 수령 방법은 어떻게 되나요?</span>
+                  </li>
+                  <li>
+                    <div class="question">
+                      <b>Q.</b><span>현장 티켓 수령 방법은 어떻게 되나요?</span>
                     </div>
                     <div class="answer">
-                       <b>A.</b><span>공연 당일 현장 티켓 수령 부스가 설치될 예정입니다. 자세한 내용은 추후 공지해드리겠습니다.</span>
+                       <b>A.</b><span>공연 당일 현장에 티켓 수령 부스가 설치될 예정입니다. <br/> 티켓 수령 부스에서 티켓과 팔찌를 교환해드릴 예정입니다.</span>
                     </div>
-
-                      <div class="question"><b>Q.</b><span>공연 시간보다 늦어도 입장이 가능한가요?</span>
+                  </li>
+                  <li>
+                      <div class="question">
+                        <b>Q.</b><span>공연 시간보다 늦어도 입장이 가능한가요?</span>
                       </div>
                         <div class="answer">
-                          <b>A.</b><span>입장 제한은 없으나 입장시 딜레이가 발생할 수 있음을 참고바랍니다.</span>
+                          <b>A.</b><span>입장 제한은 없으나 입장시 딜레이가 발생할 수 있습니다.</span>
                         </div>
+                  </li>
+                  <li>
+                      <div class="question">
+                        <b>Q.</b><span>우천시 공연은 어떻게 진행되나요?</span>
+                      </div>
+                        <div class="answer">
+                          <b>A.</b><span>우천시에도 공연은 정상적으로 진행됩니다.</span>
+                        </div>
+                  </li>
+                  </ul>
+               </div>
+
+              <div class=" faqbox_q3">
+               
+                  <h1>환불 안내</h1>
+
+                  <ul class="faqbox_question">
+
+                    <li>
+                    <div class="question">
+                      <b>Q.</b><span>티켓 환불은 어떻게 가능한가요?</span>
+                    </div>
+                    <div class="answer">
+                     <b>A.</b>
+                     <span>결제 수단에 따른 환불 방법 안내드립니다.</span>
+                      <br/><span>1. 신용카드 결제시 일반적으로 취소완료 3~4일(토,공휴일 제외) 이내 카드 승인 취소가 확인됩니다.</span>
+                      <br/><span>2. 무통장 입금시 환불 받으실 은행명과 계좌번호를 입력해주세요. 해당 계좌로 환불 처리될 예정입니다.</span>
+                      <br/><span>3. G&B 상품권 사용시에는 바로 복원됩니다.</span>
+            
+                    </span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="question">
+                      <b>Q.</b><span>예매 취소 시 수수료가 부과되나요?</span>
+                    </div>
+                    <div class="answer">
+                       <b>A.</b>
+                       <span>취소 일자에 따라 취소 수수료가 다르게 부과됩니다.</span><br/>
+                       <span>예매 후 10일 이내: 없음</span><br/>
+                       <span>예매 후 10일 이내 ~ 관람일 7일 전까지 : 장당 5,000원</span><br/>
+                       <span>관람일 7일 전 ~ 관람일 3일 전까지 : 티켓 금액의 5%</span><br/>
+                       <span>관람일 2일 전 ~ 취소 마감 기한까지 : 티켓 금액의 10%</span>
+                       
+                    </div>
+                  </li>
+                  <li>
+                      <div class="question">
+                        <b>Q.</b><span>콘서트 취소 시 티켓 환불은 어떻게 되나요?</span>
+                      </div>
+                        <div class="answer">
+                          <b>A.</b><span>콘서트 취소 시 티켓 환불은 전액 환불됩니다. </span><br/>
+                          <span>콘서트 일정 변경, 취소 등이 있을 시 빠르게 공지해드리겠습니다.</span>
+                        </div>
+                  </li>
+                  </ul>
                </div>
           </div>
 
@@ -149,9 +242,9 @@
                 <div>
                       <ul>
                           <li class="num">38</li>
-                          <li class="title"><a href="">작성글입니다.</a></li>
+                          <li class="title"><a href="#">작성글입니다.</a></li>
                           <li class="writer">작성자</li>
-                          <li class="date">2023.03.24</li>
+                          <li class="date">2023.03.31</li>
                           <li class="counter">101</li>
                       </ul>
                 </div>
@@ -159,68 +252,68 @@
                 <div>
                       <ul>
                           <li class="num">37</li>
-                          <li class="title"><a href="">작성글입니다.</a></li>
+                          <li class="title"><a href="#">작성글입니다.</a></li>
                           <li class="writer">작성자</li>
-                          <li class="date">2023.03.24</li>
-                          <li class="counter">101</li>
+                          <li class="date">2023.03.29</li>
+                          <li class="counter">133</li>
                       </ul>
                 </div>
       
                 <div>
                       <ul>
                           <li class="num">36</li>
-                          <li class="title"><a href="">작성글입니다.</a></li>
+                          <li class="title"><a href="#">작성글입니다.</a></li>
                           <li class="writer">작성자</li>
-                          <li class="date">2023.03.24</li>
-                          <li class="counter">101</li>
+                          <li class="date">2023.03.28</li>
+                          <li class="counter">112</li>
                       </ul>
                 </div>
       
                 <div>
                       <ul>
                           <li class="num">35</li>
-                          <li class="title"><a href="">작성글입니다.</a></li>
+                          <li class="title"><a href="#">작성글입니다.</a></li>
                           <li class="writer">작성자</li>
-                          <li class="date">2023.03.24</li>
-                          <li class="counter">101</li>
+                          <li class="date">2023.03.28</li>
+                          <li class="counter">135</li>
                       </ul>
                 </div>
       
                 <div>
                       <ul>
                           <li class="num">34</li>
-                          <li class="title"><a href="">작성글입니다.</a></li>
+                          <li class="title"><a href="#">작성글입니다.</a></li>
                           <li class="writer">작성자</li>
-                          <li class="date">2023.03.24</li>
-                          <li class="counter">101</li>
+                          <li class="date">2023.03.28</li>
+                          <li class="counter">121</li>
                       </ul>
                 </div>
 
                 <div>
                       <ul>
                           <li class="num">33</li>
-                          <li class="title"><a href="">작성글입니다.</a></li>
+                          <li class="title"><a href="#">작성글입니다.</a></li>
                           <li class="writer">작성자</li>
-                          <li class="date">2023.03.24</li>
-                          <li class="counter">101</li>
+                          <li class="date">2023.03.27</li>
+                          <li class="counter">126</li>
                       </ul>
                 </div>
                 <div>
                       <ul>
                           <li class="num">32</li>
-                          <li class="title"><a href="">작성글입니다.</a></li>
+                          <li class="title"><a href="#">작성글입니다.</a></li>
                           <li class="writer">작성자</li>
-                          <li class="date">2023.03.24</li>
-                          <li class="counter">101</li>
+                          <li class="date">2023.03.27</li>
+                          <li class="counter">145</li>
                       </ul>
                 </div>
                 <div>
                       <ul>
                           <li class="num">31</li>
-                          <li class="title"><a href="">작성글입니다.</a></li>
+                          <li class="title"><a href="#">작성글입니다.</a></li>
                           <li class="writer">작성자</li>
-                          <li class="date">2023.03.24</li>
-                          <li class="counter">101</li>
+                          <li class="date">2023.03.26</li>
+                          <li class="counter">131</li>
                       </ul>
                 </div>
             
@@ -233,15 +326,15 @@
       
                   <ul class="pagination">
       
-                      <li><a href="#">&laquo;</a></li>
-                      <li><a href="#"><i class="fa-sharp fa-light fa-chevron-left"></i></a></li>
+                      <!-- <li><a href="#">&laquo;</a></li> -->
+                      <li><a href="#"><</a></li>
                       <li><a href="#">1</a></li>
                       <li><a href="#">2</a></li>
                       <li><a href="#">3</a></li>
                       <li><a href="#">4</a></li>
                       <li><a href="#">5</a></li>
-                      <li><a href="#"><i class="fa-light fa-angle-right"></i></a></li>
-                      <li><a href="#">&raquo;</a></li>
+                      <li><a href="#">></a></li>
+                      <!-- <li><a href="#">&raquo;</a></li> -->
       
                   </ul>
       

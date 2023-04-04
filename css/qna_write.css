@@ -1,7 +1,6 @@
 /*** 1:1 문의 페이지 CSS ***/
 
-section{margin-top: 200px;
-}
+
 
 /* 1:1 문의 페이지 부모상자 */
 
@@ -77,10 +76,16 @@ color: rgb(9, 9, 9);
 border: 1px solid rgb(126, 121, 121);
 }
 
+
+
 .qna_write_pwd_check #message{
-    color: red;
+    color: rgb(255, 0, 0);
     font-size: 15px;
+    padding: 1px;
+    margin-left: 220px;
 }
+
+
 
 
 
@@ -89,7 +94,6 @@ border: 1px solid rgb(126, 121, 121);
 
 .qna_write_btn,
 .qna_write_btn>a {
-/* background-color: beige; 지울 부분 */
 width: 100%;
 height: 50px;
 text-align: center;
@@ -102,11 +106,25 @@ width: 60px;
 height: 40px;
 text-align: center;
 margin: 0 10px;
-border: 1px solid black;
+border: 1px solid rgb(255, 255, 255);
 border-radius: 5px;
-color: black;
+color: rgb(255, 255, 255);
 font-size: 15px;
+background: none;
 }
+
+
+
+.qna_write_btn button:hover{
+    color:rgb(235, 56, 56);
+    background-color: aliceblue;
+  }
+
+.qna_write_btn input[type="button"]:hover{
+    color:rgb(235, 56, 56);
+    background-color: aliceblue;
+  }
+
 
 
 /*label 정렬 맞추기 위함*/
@@ -145,6 +163,20 @@ section {
     width: 960px;
     /* margin: 0 auto; */
 }
+
+/* 비밀번호 확인 옆 알림메세지*/
+
+.br{
+    display: none;
+}
+
+.qna_write_pwd_check #message{
+   
+    margin-left: 20px;
+}
+
+
+
 
 
 

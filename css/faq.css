@@ -5,7 +5,8 @@
 .board {
     width: 90%;
     margin: 0 auto;
-    margin-top: 300px;
+   
+    
 }
 
 
@@ -23,7 +24,7 @@
     margin: 2rem 0;
     font-size: 2.5rem;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 30px;
     position: relative;
 }
 
@@ -35,14 +36,14 @@
     position: absolute;
     top: 10px;
     bottom: 0;
-    margin: 0 15px;
+    margin: 0 35px;
 }
 
 
 /** FAQ 페이지 CSS **/
 
 
-/*아코디언 기본값*/
+/*아코디언 기본값 - 답변 숨겨진 상태*/
 
 .faqbox_question li .answer {
     display: none;
@@ -52,18 +53,18 @@
 /* FAQ 페이지 부모상자 */
 .faqbox {
     width: 80%;
-    border: 1px solid black;
     margin: 0 auto;
 }
 
-/* FAQ 중 예매안내(faqbox_q1)/입장안내(faqbox_q2) 공통 부분 */
+/* FAQ 공통 부분 */
 
 .faqbox span {
     margin-left: 10px;
-    line-height: 20px;
+    line-height: 23px;
     color: #343131;
 
 }
+
 
 .question{
     background-color: rgb(253, 253, 253);
@@ -73,17 +74,22 @@
     padding: 20px;
     text-align: left;
     outline: none;
-    margin-bottom: 1px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
     
 }
+
+
+
 .answer{
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(199, 200, 197);
     width: 100%;
     cursor: pointer;
     padding: 20px;
     text-align: left;
     outline: none;
-    
+    border-radius: 5px;
+    margin-bottom: 2px;
 }
 
 .question>b,
@@ -98,7 +104,7 @@
 
 {
     font-size: 25px;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 
@@ -123,10 +129,14 @@
     border-bottom: 1px solid rgb(160, 157, 157);
 }
 
-.qnabox_list div:first-child {
-    border-top: 2px solid black;
+.qnabox_list div:first-child{
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
     font-weight: 600;
 }
+
+
+
 
 .qnabox_list li {
     display: inline-block;
@@ -191,11 +201,16 @@
 
 
 .qnabox_page li:hover {
-    background-color: rgb(172, 172, 233); /* 지울 부분 */
-    color: white;
+    
+    background: #ffffff;
+    font-weight: bold;
+    transition: 0.1s ease-in-out;
+    border-radius:50px;
+   
 }
-
-
+.qnabox_page li>a:hover{
+    color: #000000;
+}
 
 /* Q&A 게시판 하단 글쓰기 버튼 */
 
@@ -229,7 +244,10 @@
     color: white;
 }
 
-
+.qnabox_btn a:hover{
+    color:rgb(235, 56, 56);
+    background-color: aliceblue;
+}
 
 /*** PC 버전 크기일때 ***/
 
