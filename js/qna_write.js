@@ -2,9 +2,6 @@
 //비밀번호 유효성검사********************
 
 
-
-
-
 // HTML 요소 가져오기
 const passwordInput = document.getElementById("password");
 const submitButton = document.getElementById("submit");
@@ -16,42 +13,34 @@ const passwordCheck = document.getElementById("password_check")
   const password = passwordInput.value;
   const pwdCheck = passwordCheck.value;
 
-  // 비밀번호 길이가 8자 이상인지 확인
-  if (password.length < 8) {
-    messageDiv.innerText = "8자 이상 입력";
+  // 비밀번호 길이가 6자 이상인지 확인
+  if (password.length < 6) {
+    messageDiv.innerText = "6자 이상 입력";
     messageDiv.style.visibility = "visible";
     passwordCheck.style.borderColor = "red";
     passwordInput.style.borderColor = "red";
     return false;
   }
 
-  // // 비밀번호에 영어 대/소문자, 숫자, 특수문자가 포함되어 있는지 확인
-  // const regex = /^(?=.*[!@#$%^&*()\-_=+\\|[\]{};:'",.<>/?]).+$/;
-  // if (!regex.test(password)) {
-  //   messageDiv.innerText =
-  //     "특수문자 포함 입력";
-  //     messageDiv.style.visibility = "visible";
-  //     passwordCheck.style.borderColor = "red";
-  //     passwordInput.style.borderColor = "red";
-  //   return false;
-  //}
-
   
   // 비밀번호가 일치하는지 확인
-  if (password !== pwdCheck){
+ if (password !== pwdCheck){
     messageDiv.innerHTML = "비밀번호 불일치";
     messageDiv.style.visibility = "visible";
     passwordCheck.style.borderColor = "red";
     passwordInput.style.borderColor = "red";
     return false;
+  }
+
     // 비밀번호가 공백일 경우
-  }else if(password === "", pwdCheck===""){
+  else if(password === "", pwdCheck===""){
     messageDiv.innerHTML = "비밀번호를 입력해주세요";
     messageDiv.style.visibility = "visible";
     passwordCheck.style.borderColor = "red";
     passwordInput.style.borderColor = "red";
     return false;
   }
+   
 
   // 유효성 검사가 모두 통과한 경우
   // messageDiv.style.visibility = "hidden";
@@ -62,22 +51,27 @@ const passwordCheck = document.getElementById("password_check")
 
 
 
-//제출버튼 클릭시 오류
+//제출버튼 클릭시 오류,폼 데이터 유효성 검사 수행
 
 submitButton.addEventListener('click',function qnaFunction(event) {
   let form = document.getElementById("qnaform");
   if (form.checkValidity() === false || !validatePassword()){
-    event.preventDefault();
-    event.stopPropagation();
+    event.preventDefault(); //유효성 검사가 실패한 경우 폼 제출 중지,이벤트의 기본동작중지,페이지가 새로고침되지않고 사용자가 지정한 동작 처리할수있게
+    event.stopPropagation(); //중복처리방지
     return false;
   }
  
   alert('문의해주셔서 감사합니다.');
-  // window.onload ="../aritist";
+
+  window.location.href="../faq.html";
   return true;
   
 
 });
+
+
+//form 요소가 유효하지 않거나, 비밀번호가 유효하지 않으면, 이벤트를 중지하고 함수를 종료합니다.
+//만약 form 요소가 유효하고, 비밀번호도 유효하면, "문의해주셔서 감사합니다."라는 경고창을 띄우고, true를 반환합니다.
 
 
 
@@ -88,20 +82,14 @@ submitButton.addEventListener('click',function qnaFunction(event) {
 
 function qnaReturn(){
   let result = confirm('취소하시겠습니까?')
+  let answer;
   
   if(result==true){
-    let answer = "확인";
-    
-  //  let qnabox = document.getElementById("qnabox");
-  //   let faqbox = document.getElementById("faqbox"); 
-  //   qnabox.style.display = "block";
-  //     faqbox.style.display = "none";
-  //     history.go(href="faq.html#qna_writebox")
-  
-  
+    answer = "확인";
+
     }else{
    
-    
+      answer = "취소";
     }
   }
   

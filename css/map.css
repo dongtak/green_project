@@ -140,14 +140,14 @@ margin-top: 10px;
     display: inline-block;
     margin: 20px auto;
     width: 90%;
-    box-shadow: 0 0 10px rgba(194, 187, 187, 0.3);
+    /* box-shadow: 0 0 10px rgba(194, 187, 187, 0.3); */
     height: 500px;}
 
 .polaroid iframe{
         position: absolute;
         left: 50%; 
         transform: translate( -50%);
-        width: 90%;
+        width: 70%;
         height: 70%;
         top: 7%;
         border: none;  
@@ -171,10 +171,15 @@ margin-top: 10px;
 .map_green .map_left_address,
 .map_blue .map_left_address 
  {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin-bottom: 10px;
 }
 
+.map_green .map_left_address>h3,
+.map_blue .map_left_address >h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 
 
 /* MAP 페이지 Green 공연장 오시는길 안내 */
@@ -262,8 +267,9 @@ margin-top: 10px;
 
 hr.divider{
     width: 80%;
+    height: 3px;
     margin: 100px auto;
-    background-color: #fff;
+  background-color: #ffffff;
 }
 
 

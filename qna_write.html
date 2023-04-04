@@ -127,11 +127,11 @@
 
                         <a href="faq.html">
                           
-                            <button type="submit" id="submit" onclick="validatePassword();">등록</button>
+                            <button type="submit" id="submit" onclick="validatePassword(); ">등록</button>
                           </a>
                         <a href="faq.html">
                     
-                            <input type="button" value="취소">
+                            <input type="button" value="취소" onclick="qnaReturn();">
                         </a>
 
                     </div>
@@ -159,22 +159,3 @@
 <!-- 외부스크립트 -->
 <script defer src="./js/qna_write.js"></script>
 
-<!-- <script>
-
-    //Q&A 
-
-const qnaBtn1 = document.querySelector('.qna_write_btn input');
-
-const qnaBtn2 = document.querySelector('.qna_write_btn #submit');
-
-qnaBtn1.addEventListener('click', function() {
-  qnabox.style.display = "block";
-  faqbox.style.display = "none";
-});
-
-qnaBtn2.addEventListener('click', function() {
-  qnabox.style.display = "block";
-  faqbox.style.display = "none";
-});
-
-</script> -->
