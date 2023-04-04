@@ -1,7 +1,6 @@
 /*** 1:1 문의 페이지 CSS ***/
 
 
-
 /* 1:1 문의 페이지 부모상자 */
 
 .qna_writebox {
@@ -12,7 +11,7 @@ margin: 0 auto;
 
 /* 1:1 문의 페이지 큰제목 */
 .qna_writebox >h1{
-margin: 30px auto;
+/* margin: 30px auto; */
 text-align: center;
 font-size: 3.0rem;
 }
