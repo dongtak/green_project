@@ -47,16 +47,28 @@ section{
 .form_control{
     width: 96%;
     position: relative;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin: 20px 0;
 }
 
-.form_control:first-child{
+/* .form_control:first-child{
     margin-top: 0px;
+} */
+
+.form_control label{
+    position: absolute;
+    left: 6px;
+    top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: aliceblue;
+    /* transition: all 0.3s ease; */
 }
 
 .form_control input{
     width: 99%;
-    padding: 20px 10px 10px;
+    display: inline-block;
+    padding: 10px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid aliceblue;
@@ -65,19 +77,16 @@ section{
     outline: none;
 }
 
-.form_control label{
-    position: absolute;
-    left: 5px;
-    top: 15px;
-    font-size: 18px;
-    color: aliceblue;
-    transition: all ease 5s ease;
+.form_control p{
+  font-size: 13px;
+  color: red;
+  visibility: hidden;   
 }
 
-/* .form_control label.warning{
+.form_control label.warning{
     color: red !important;
-    animation: warning .3s ease;
-    animation-iteration-count: 3;
+    animation: warning 0.3s ease;
+    animation-iteration-count: 3s;
 }
 
 @keyframes warning {
@@ -85,11 +94,11 @@ section{
     25% {transform: translateX(8px);}
     50% {transform: translateX(-8px);}
     75% {transform: translateX(8px);}
-} */
+}
 
 .form_control input:focus + label,
 .form_control input:valid + label{
-    top: -2px;
+    top: 0px;
     font-size: 13px;
     color: #166cea;
 }
@@ -108,13 +117,14 @@ section{
 
 .btn_control button{
     width:100%;
-    height: 50px;
-    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
     background-color: none;
     background: transparent;
     text-decoration: none;
+    height: 50px;
+    margin-bottom: 10px;
     color: aliceblue;
-    font-size: 20px;
     border: 1px solid aliceblue;
     border-radius: 3px;
     cursor: pointer;
