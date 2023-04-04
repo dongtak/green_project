@@ -272,6 +272,10 @@
       line-height: 100px;
       display: inline-block;
       color: aliceblue;
+      transition: 0.1s ;
+    }
+    .top_pc a:hover{
+      font-size: 1.3em;
     }
     /* PC 로그인 버튼 */
     .top_pc a:last-child{
@@ -288,28 +292,29 @@
     .top_pc a:last-child:hover{
       background: rgb(255, 255, 255);
       color: #f00084;
-    animation: glow 7s ease-in-out infinite alternate;
+    animation: glow 30s infinite ;
+    font-size: 12px;
     }
     @keyframes glow {
      10% {
         box-shadow: 0 -10px 20px #00F260, 0 -10px 18px #0575E6;
-        box-shadow: 5px -7px 17px #00F260, 0 -10px 21px #0575E6;
+        box-shadow: 5px -7px 17px #00F260, 0 -10px 31px #0575E6;
       }
       30% {
-        box-shadow: 4px 0 20px #00F260, 16px 12px 16px #0575E6;
-        box-shadow: 0 0 3px #00F260, 0 0 9px #0575E6;
+        box-shadow: 4px 0 20px #00F260, 16px 12px 30px #0575E6;
+        box-shadow: 0 0px 30px #00F260, 10px 5px 20px #0575E6;
       }
      50% {
-        box-shadow: 0 -12px 16px #00F260, 4px -10px 15px #0575E6;
-        box-shadow: 6px -3px 19px #00F260, 20px -10px 12px #0575E6;
+        box-shadow: 0 -12px 30px #00F260, 4px -10px 20px #0575E6;
+        box-shadow: 6px -3px 20px #00F260, 20px -10px 30px #0575E6;
       }
       70% {
-        box-shadow: 15px -5px 19px #00F260, 0 -8px 20px #0575E6;
-        box-shadow: 1px -6px 21px #00F260, 7px -15px 20px #0575E6;
+        box-shadow: 5px -5px 30px #00F260, 0 -8px 20px #0575E6;
+        box-shadow: 1px -6px 21px #00F260, 7px -15px 40px #0575E6;
       }
       100%{
-        box-shadow: 2px -14px 20px #00F260, 2px -20px 20px #0575E6;
-        box-shadow: 13px -20px 20px #00F260, 5px -2px 20px #0575E6;
+        box-shadow: 2px -7px 30px #00F260, 2px -20px 20px #0575E6;
+        box-shadow: 8px -6px 20px #00F260, 5px -2px 20px #0575E6;
       }
     }
     
