@@ -79,6 +79,33 @@ submitButton.addEventListener('click',function myFunction() {
 
 
 
+
+// Q&A설정**********
+
+
+function qnaReturn(){
+  let result = confirm('취소하시겠습니까?')
+  
+  if(result==true){
+    let answer = "확인";
+    
+  //  let qnabox = document.getElementById("qnabox");
+  //   let faqbox = document.getElementById("faqbox"); 
+  //   qnabox.style.display = "block";
+  //     faqbox.style.display = "none";
+  //     history.go(href="faq.html#qna_writebox")
+  
+  
+    }else{
+   
+    
+    }
+  }
+  
+
+
+
+
 // // 제출 버튼 클릭 시 비밀번호 유효성 검사 실행
 // submitButton.addEventListener("click", (event) => {
 //   event.preventDefault();
@@ -90,16 +117,16 @@ submitButton.addEventListener('click',function myFunction() {
 
 
 
-function myFunction() {
-  let form = document.getElementById("form");
-  if (form.checkValidity() === true) {
-  validatePassword();
-  form.submit(); // 모든 필수 입력란이 유효한 경우 form을 제출
-  }
-  else {
-  // 값이 유효하지 않은 경우에 대한 처리 (예: 에러 메시지 출력)
-  }
-  }
+// function myFunction() {
+//   let form = document.getElementById("form");
+//   if (form.checkValidity() === true) {
+//   validatePassword();
+//   form.submit(); // 모든 필수 입력란이 유효한 경우 form을 제출
+//   }
+//   else {
+//   // 값이 유효하지 않은 경우에 대한 처리 (예: 에러 메시지 출력)
+//   }
+//   }
 
 
 
@@ -138,28 +165,7 @@ function myFunction() {
 
 
 
-// Q&A설정**********
 
-
-function qnaReturn(){
-  let result = confirm('취소하시겠습니까?')
-  
-  if(result==true){
-    let answer = "확인";
-    
-  //  let qnabox = document.getElementById("qnabox");
-  //   let faqbox = document.getElementById("faqbox"); 
-  //   qnabox.style.display = "block";
-  //     faqbox.style.display = "none";
-  //     history.go(href="faq.html#qna_writebox")
-  
-  
-    }else{
-   
-    
-    }
-  }
-  
 
 
   
