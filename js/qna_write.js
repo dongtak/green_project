@@ -1,6 +1,10 @@
 
 //비밀번호 유효성검사********************
 
+
+
+
+
 // HTML 요소 가져오기
 const passwordInput = document.getElementById("password");
 const submitButton = document.getElementById("submit");
@@ -54,14 +58,34 @@ function validatePassword() {
   return true;
 }
 
-// 제출 버튼 클릭 시 비밀번호 유효성 검사 실행
-submitButton.addEventListener("click", (event) => {
-  event.preventDefault();
-  if (validatePassword()) {
-    alert('문의해주셔서 감사합니다.');
-    window.location.href = "faq.html"
+
+
+//제출버튼 클릭시 오류
+
+function myFunction() {
+  var form = document.getElementById("qnaform");
+  if (form.checkValidity() === false || !validatePassword()){
+    event.preventDefault();
+    event.stopPropagation();
+    return false;
   }
-});
+
+  alert('문의해주셔서 감사합니다.');
+  window.location.href = "faq.html"
+  return true;
+
+}
+
+
+
+// // 제출 버튼 클릭 시 비밀번호 유효성 검사 실행
+// submitButton.addEventListener("click", (event) => {
+//   event.preventDefault();
+//   if (validatePassword()) {
+//     alert('문의해주셔서 감사합니다.');
+//     window.location.href = "faq.html"
+//   }
+// });
 
 
 
