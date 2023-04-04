@@ -86,7 +86,7 @@
                 <form id="qnaform" action="" method="post">
                 
                     <!-- 1:1 문의 게시글 내용 -->
-                
+                    
                     <div class="qna_write_title">
 
                         <label for="title">제목</label>
@@ -107,7 +107,7 @@
                     <div class="qna_write_pwd_check">
                         <label for="password_check">비밀번호 확인</label>
                         <input type="password" id="password_check" name="password_check" placeholder="비밀번호를 다시 입력해주세요." required="required" />
-                        <p id="message"></p>
+                        
 
                     </div>
 
@@ -118,20 +118,24 @@
                     </div>
 
                     <br /> <!-- 띄워서 구분하기 -->
+
+                    <p id="message"></p>
                     
                     <!-- 1:1 문의 게시글 등록/취소 버튼-->
                     <div class="qna_write_btn"> 
 
-                        <a href="#">
+                        <a href="faq.html">
+                          
                             <button type="submit" id="submit" onclick="validatePassword();">등록</button>
                           </a>
-                        <a href="faq.html#qna_writebox">
+                        <a href="faq.html">
                     
                             <input type="button" value="취소">
                         </a>
 
                     </div>
-
+                  
+                    
                 </form>
 
 

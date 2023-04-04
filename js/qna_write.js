@@ -62,19 +62,20 @@ function validatePassword() {
 
 //제출버튼 클릭시 오류
 
-function myFunction() {
+submitButton.addEventListener('click',function myFunction() {
   var form = document.getElementById("qnaform");
   if (form.checkValidity() === false || !validatePassword()){
     event.preventDefault();
     event.stopPropagation();
     return false;
   }
-
+  
   alert('문의해주셔서 감사합니다.');
-  window.location.href = "faq.html"
+  window.location.href = "../faq.html";
   return true;
+  
 
-}
+});
 
 
 

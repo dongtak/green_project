@@ -5,15 +5,15 @@
 
 .qna_writebox {
 width: 80%;
-/* background-color: aqua; 지울 부분 */
 margin: 0 auto;
+
 }
 
 /* 1:1 문의 페이지 큰제목 */
 .qna_writebox >h1{
 margin: 40px auto;
 text-align: center;
-font-size: 3.0rem;
+font-size: 3.0em;
 }
 
 /* 1:1 문의 게시글 내용 */
@@ -22,13 +22,30 @@ font-size: 3.0rem;
 .qna_write_writer,
 .qna_write_pwd,
 .qna_write_pwd_check
-/* .qna_write_page */
+
 {
+    width:100%;
 height: 60px;
 line-height: 60px;
 border-bottom: 1px solid rgb(126, 121, 121);
-/* background-color: beige; */
+
+
 }
+
+.qna_write_page{
+
+    width:100%;
+    height: 260px;
+    line-height: 30px;
+    margin-top: 10px;
+    /* border-bottom: 1px solid rgb(126, 121, 121); */
+    
+
+
+}
+
+
+
 
 form{
     border: 5px solid white;
@@ -38,14 +55,14 @@ form{
 form label{
 
 display: inline-block;
-width: 150px;
-margin: 8px auto;
-margin-left: 10px;
+width: 40%;
+text-align: center;
+margin: 3px auto;
 font-weight: bold;
-font-size: 20px;
+font-size: 1.0em;
 color: rgb(255, 255, 255);
-/* line-height: 10px ; */
 }
+
 
 
 
@@ -54,12 +71,14 @@ color: rgb(255, 255, 255);
 .qna_write_pwd>#password,
 .qna_write_pwd_check>#password_check
 {
-display: block;
-width: 80%;
+display: inline-block;
+width: 55%;
 color: rgb(0, 0, 0);
 height: 40px;
 margin: 10px auto;
 border: 1px solid rgb(126, 121, 121);
+
+
 }
 
 
@@ -68,23 +87,24 @@ border: 1px solid rgb(126, 121, 121);
 .qna_write_page>#page{
 display: block;
 width: 90%;
-height: 150px;
+height: 180px;
 margin: 10px auto;
 color: rgb(9, 9, 9);
 border: 1px solid rgb(126, 121, 121);
+
+
 }
 
 
-.qna_write_pwd_check #message
-{
+#message
+{   margin: 15px auto;
     color: rgb(255, 0, 0);
     font-size: 15px;
     /* padding: 1px; */
     text-align: center;
-    transform: translate( 20px);
-    /*메세지 위치 맞추기 */
+    
     visibility: hidden; 
-    bottom:-4px;
+    
 }
 
 
@@ -132,10 +152,10 @@ background: none;
 /*label 정렬 맞추기 위함*/
 @media all and (min-width:480px) {
 
-form label{
-  
-    line-height: 40px;}
 
+form label{
+    font-size: 1.0em;
+}
 
 
 .qna_write_title>#title,
@@ -164,22 +184,7 @@ border: 1px solid rgb(126, 121, 121);
 @media all and (min-width:960px) {
 section {
     width: 960px;
-    /* margin: 0 auto; */
+     margin: 0 auto; 
 }
-
-.qna_write_pwd_check #message
-{
-    text-align: center;
-    transform: translate( -3%);
-    /*메세지 위치 맞추기 */
-} 
-
-
-
-form label{
-  
-    margin-left: 30px;}
-
-
 }
 
