@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        margin: 0rem;
+        overflow: hidden;
+    }
+    #image-track > .image{
+        width: 40vmin;
+        height: 56vmin;
+        object-fit: cover;
+        object-position: 50% 50%;
+        
+    }
+
+    #image-track > .image:nth-child(2n-1){
+    border: 2px solid lightblue;}
+
+    #image-track > .image:nth-child(2n){
+    border: 2px solid lightgreen;}
+
+    #image-track {
+        display: flex;
+        gap: 2vmin;
+        position: absolute; left: 100%; top: 50%;
+        /* margin-left: 20%;
+        margin-top: 25%; */
+        transform: translate(-10%, -50%);
+        /* background-color: lightblue; */
+    }
+</style>
+</head>
+
+<body>
+
+<div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+    <img class="image" src="../images/gallery/gall01.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall02.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall03.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall04.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall05.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall06.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall07.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall08.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall09.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall10.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall11.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall12.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall13.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall14.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall15.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall16.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall17.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall18.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall19.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall20.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall21.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall22.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall23.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall24.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall25.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall26.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall27.jpg" draggable="false"/>
+    <img class="image" src="../images/gallery/gall28.jpg" draggable="false"/>
+</div>
+
+<script>
+    
+    const track = document.getElementById("image-track")
+    
+    window.onmousedown = e => {
+        track.dataset.mouseDownAt = e.clientX;
+    }
+    
+    window.onmouseup = () => {
+        track.dataset.mouseDownAt = "0";
+        track.dataset.prevPercentage = track.dataset.percentage;
+    }
+    
+    window.onmousemove = e => {
+        if(track.dataset.mouseDownAt === "0") return;
+    
+        const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+        maxDelta = window.innerWidth / 2;
+    
+        const percentage = (mouseDelta / maxDelta) * -100,
+        nextPercentage = parseFloat(track.dataset.prevPercentage) + percentage;
+        Math.min(nextPercentage, 0);
+        Math.max(nextPercentage, -100);
+        
+        track.dataset.percentage = nextPercentage;
+    
+        track.style.transform = `translate(${nextPercentage}%, -50%)`;
+    
+        track.animate({
+            transform: `translate(${nextPercentage}%, -50%)`
+        }, {duration: 300, fill: "forwards"});
+    
+        image.style.objectPosition = `${nextPercentage + 100}% 50%`;
+    
+        image.animate({
+            objectPosition: `${100 + nextPercentage}% center`
+        }, {duration: 300, fill: "forwards"});
+        
+    }
+
+    for(const image of track.getElementsByClassName("image")){
+        image.style.objectPosition = `${nextPercentage + 100} 50%`;}       
+
+       </script>
+
+</body>
+</html>
