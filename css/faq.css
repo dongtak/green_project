@@ -2,7 +2,6 @@
 
 section{
     margin: 100px auto;
-    padding: 100px 0;
 }
 /* FAQ/Q&A 페이지 부모상자 */
 .board {
@@ -259,11 +258,7 @@ section{
 }
 
 /*** PC 버전 크기일때 ***/
-@media all and (min-width:480px){
-    section{
-        padding: 0;
-    }
-}
+
 @media all and (min-width:768px) {
     
 
@@ -313,5 +308,4 @@ section{
         display: block;
     }
 
-   
 }
