@@ -17,24 +17,24 @@ const passwordCheck = document.getElementById("password_check")
   const pwdCheck = passwordCheck.value;
 
   // 비밀번호 길이가 8자 이상인지 확인
-  // if (password.length < 8) {
-  //   messageDiv.innerText = "8자 이상 입력";
-  //   // messageDiv.style.visibility = "visible";
-  //   // passwordCheck.style.borderColor = "red";
-  //   // passwordInput.style.borderColor = "red";
-  //   return false;
-  // }
+  if (password.length < 8) {
+    messageDiv.innerText = "8자 이상 입력";
+    messageDiv.style.visibility = "visible";
+    passwordCheck.style.borderColor = "red";
+    passwordInput.style.borderColor = "red";
+    return false;
+  }
 
   // // 비밀번호에 영어 대/소문자, 숫자, 특수문자가 포함되어 있는지 확인
-  // const regex = /^(?=.*[!@#$%^&*()\-_=+\\|[\]{};:'",.<>/?]).+$/;
-  // if (!regex.test(password)) {
-  //   messageDiv.innerText =
-  //     "특수문자 포함 입력";
-  //     // messageDiv.style.visibility = "visible";
-  //     // passwordCheck.style.borderColor = "red";
-  //     // passwordInput.style.borderColor = "red";
-  //   return false;
-  // }
+  const regex = /^(?=.*[!@#$%^&*()\-_=+\\|[\]{};:'",.<>/?]).+$/;
+  if (!regex.test(password)) {
+    messageDiv.innerText =
+      "특수문자 포함 입력";
+      messageDiv.style.visibility = "visible";
+      passwordCheck.style.borderColor = "red";
+      passwordInput.style.borderColor = "red";
+    return false;
+  }
   // 비밀번호가 일치하는지 확인
   if (password !== pwdCheck){
     messageDiv.innerHTML = "비밀번호 불일치";
@@ -52,9 +52,9 @@ const passwordCheck = document.getElementById("password_check")
   }
 
   // 유효성 검사가 모두 통과한 경우
-  messageDiv.style.visibility = "hidden";
-  passwordCheck.style.borderColor = "initial";
-  passwordInput.style.borderColor = "initial";
+  // messageDiv.style.visibility = "hidden";
+  // passwordCheck.style.borderColor = "initial";
+  // passwordInput.style.borderColor = "initial";
   return true;
 }
 
@@ -62,20 +62,21 @@ const passwordCheck = document.getElementById("password_check")
 
 //제출버튼 클릭시 오류
 
-submitButton.addEventListener('click',function myFunction() {
-  var form = document.getElementById("qnaform");
+submitButton.addEventListener('click',function qnaFunction(event) {
+  let form = document.getElementById("qnaform");
   if (form.checkValidity() === false || !validatePassword()){
     event.preventDefault();
     event.stopPropagation();
     return false;
   }
-  
+  window.location.href ="faq.html";
   alert('문의해주셔서 감사합니다.');
-  window.location.href = "../faq.html";
+  
   return true;
   
 
 });
+
 
 
 

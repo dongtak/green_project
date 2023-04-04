@@ -138,13 +138,13 @@ section{
 
 /* Q&A 페이지 부모상자 */
 /* 처음 출력되는 페이지는 FAQ 페이지이므로 Q&A 페이지는 안보이게 설정 */
-.qnabox {
+#qnabox {
     display: none;
 }
 
 /* Q&A 게시판 */
 
-.qnabox{
+#qnabox{
     width: 80%;
     margin: 0 auto;
 }
@@ -292,7 +292,7 @@ section{
 
     /*q&a게시판 설정*/
 
-    .qnabox{
+    #qnabox{
         width: 80%;
         
     }
