@@ -1,403 +1,255 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <!-- 외부 스타일 -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/blur.css">
-    <!-- 외부 스크립트 -->
-    <script src="./js/mobile_btn.js"></script>
-    <!-- 외부 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GALLERY</title>
+
+<head>
+  <!-- 외부 스타일 -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/blur.css">
+  <!-- 외부 스크립트 -->
+  <script src="./js/mobile_btn.js"></script>
+  <!-- 외부 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap"
+    rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GALLERY</title>
 
 
-    <script>
-    document.addEventListener('DOMContentLoaded',function(){ 
-        hamburger_btn();
-     });
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      hamburger_btn();
+    });
 
 
-    </script>
-    <style>
+  </script>
+  <style>
+    /* 모바일용 */
 
-      /* 모바일용 */
+    @media all and (max-width:800px) {
 
-      @media all and (max-width:800px){
-    
-        .container {
-         
-         width: 70%;
-         margin-left: 15%;
-         margin-top: 100px;
-         display: inline-block;
-     }
-
-     .long img{
-            width: 47%;
-            margin-right: 1%;
-            margin-left: 1.33333%;
-            margin-top: 2.2%;
-            float: left;
-            height: auto;         
-        }
-
-     .short img {
-      width: 47%;
-      margin-right: 1%;
-      margin-left: 1.33333%;
-      margin-top: 2.2%;
-            float: left;
-            height: auto;   
-     }
-
-     #middle, #end, #dis{
-     
-  
-          display: none;
-        
-        }
-      }
-      
-      /* PC용 */
-      @media all and (min-width:800px){
-
-        .container {
-         
-            width: 70%;
-            margin-left: 15%;
-            margin-top: 100px;
-            display: inline-block;
-        }
- 
-        .line {
-            width: 90%;
-            margin-bottom: 1%;
-            float: left;         
-        }
- 
-        .short {
-            width: 38.85%;
-            margin-right: 1.15%;
-            float: left; 
-        }
- 
-        .short img{
-            width: 100%;
-        }
- 
-        .long{
-            width: 60%;     
-            float: left;
-        }
- 
-        .long img{
-            width: 31.33333%;
-            margin-right: 2%;
-            float: left;
-            height: auto;         
-        }
- 
-        .long img:nth-child(n+4){
-            margin-top: 1.5%;
-        }
-
-        #middle{
-          width: 98.8%;
-          margin-top: 1.2%;
-        
-        }
-
-        #end{
-          width: 109.8%;
-          margin-top: 1.2%;
-        
-        }
+      .container {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 100px;
+        display: inline-block;
       }
 
+      .long img {
+        width: 47%;
+        margin-right: 1%;
+        margin-left: 1.33333%;
+        margin-top: 2.2%;
+        float: left;
+        height: auto;
+      }
 
-      /* 모달창 (삭제가능) */
+      .short img {
+        width: 47%;
+        margin-right: 1%;
+        margin-left: 1.33333%;
+        margin-top: 2.2%;
+        float: left;
+        height: auto;
+      }
 
+      #middle,
+      #end,
+      #dis {
+        display: none;
+      }
+    }
 
-      /* #myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-} */
+    /* PC용 */
+    @media all and (min-width:800px) {
 
-#myImg:hover {opacity: 0.7;}
+      .container {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 100px;
+        display: inline-block;
+      }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 200px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
+      .line {
+        width: 90%;
+        margin-bottom: 1%;
+        float: left;
+      }
 
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
+      .short {
+        width: 38.85%;
+        margin-right: 1.15%;
+        float: left;
+      }
 
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: black;
-  padding: 10px 0;
-  height: 150px;
-  /* background-color: pink; */
-}
+      .short img {
+        width: 100%;
+      }
 
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
+      .long {
+        width: 60%;
+        float: left;
+      }
 
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
+      .long img {
+        width: 31.33333%;
+        margin-right: 2%;
+        float: left;
+        height: auto;
+      }
 
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
+      .long img:nth-child(n+4) {
+        margin-top: 1.5%;
+      }
 
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
+      #middle {
+        width: 98.8%;
+        margin-top: 1.2%;
+      }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
+      #end {
+        width: 109.8%;
+        margin-top: 1.2%;
+      }
+    }
 
-/* 버튼 */
+    img:hover {
+      opacity: 0.7;
+    }
 
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 4%;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-  background-color: pink;
-}
+  </style>
+</head>
 
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 800px){
-  .modal-content {
-    width: 100%;
-  }
-}
-
- 
-    </style>
-  </head>
-
-  <body>
-    <div class="blur"></div>
-    <div id="wrapper">
-      <!-- 헤더 -->
-      <header>
-        <div class="logo">
-          <a href="index.html">
-            <h1>
-              G&B
-              <br />
-              FESTIVAL
-            </h1>
-          </a>
+<body>
+  <div class="blur"></div>
+  <div id="wrapper">
+    <!-- 헤더 -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <h1>
+            G&B
+            <br />
+            FESTIVAL
+          </h1>
+        </a>
+      </div>
+      <!-- 모바일 버튼 -->
+      <div class="mobile_btn">
+        <!-- 햄버거버튼 -->
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="top_nav">
+          <hr>
+          <ul class="nav_mobile">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="artist.html">ARTIST</a></li>
+            <li><a href="ticket.html">TICKET</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="map.html">MAP</a> </li>
+            <li><a href="faq.html">FAQ/Q&A</a></li>
+            <li><a href="signin.html">SIGN IN</a></li>
+          </ul>
         </div>
-        <!-- 모바일 버튼 -->
-        <div class="mobile_btn">
-          <!-- 햄버거버튼 -->
-          <input type="checkbox" id="hamburger" />
-          <label for="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <div class="top_nav">
-            <hr>
-            <ul class="nav_mobile">
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="artist.html">ARTIST</a></li>
-              <li><a href="ticket.html">TICKET</a></li>
-              <li><a href="gallery.html">GALLERY</a></li>
-              <li><a href="map.html">MAP</a> </li> 
-               <li><a href="faq.html">FAQ/Q&A</a></li>
-              <li><a href="signin.html">SIGN IN</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="top_pc">
-          <a href="about.html">ABOUT</a>
-          <a href="artist.html">ARTIST</a>
-            <!-- <a href="artist_g.html">GREEN</a>
+      </div>
+      <div class="top_pc">
+        <a href="about.html">ABOUT</a>
+        <a href="artist.html">ARTIST</a>
+        <!-- <a href="artist_g.html">GREEN</a>
             <a href="artist_b.html">BLUE</a> -->
-            <a href="ticket.html">TICKET</a>
-            <a href="gallery.html">GALLERY</a>
-            <a href="">INFO</a> 
-            <!-- <a href="map.html">MAP</a>
+        <a href="ticket.html">TICKET</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="">INFO</a>
+        <!-- <a href="map.html">MAP</a>
             <a href="faq.html">FAQ/Q&A</a> -->
-            <a href="signin.html">SIGN IN</a>
-        </div>
-        
-  
-      </header>
-   
-          <div class="container">
-              <ul>
-                  <li class="line">
-                  <li class="short">
-                      <img src="./images/gallery/gall01.jpg" id="myImg">
-                      <div id="myModal" class="modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img01">
-                        <div id="caption"><h1>Guitar Player</h1></div>
-                        <a class="prev" onclick="plusSlides(-1)">❮</a>
-                        <a class="next" onclick="plusSlides(1)">❯</a>
-                      </div>
-                      <script>
-                        // Get the modal
-                        var modal = document.getElementById("myModal");
-                        
-                        // Get the image and insert it inside the modal - use its "alt" text as a caption
-                        var img = document.getElementById("myImg");
-                        var modalImg = document.getElementById("img01");
-                        var captionText = document.getElementById("caption");
-                        img.onclick = function(){
-                          modal.style.display = "block";
-                          modalImg.src = this.src;
-                          captionText.innerHTML = this.alt;
-                        }
-                        
-                        // Get the <span> element that closes the modal
-                        var span = document.getElementsByClassName("close")[0];
-                        
-                        // When the user clicks on <span> (x), close the modal
-                        span.onclick = function() { 
-                          modal.style.display = "none";
-                        }
-                        </script>
-                  </li>
+        <a href="signin.html">SIGN IN</a>
+      </div>
+    </header>
 
-                  <li class="long">
-                      <img src="./images/gallery/gall02.jpg">
-                      <img src="./images/gallery/gall03.jpg">
-                      <img src="./images/gallery/gall04.jpg">
-                      <img src="./images/gallery/gall05.jpg">
-                      <img src="./images/gallery/gall06.jpg">
-                      <img src="./images/gallery/gall07.jpg" id="dis"></li>
-                  </li>
-   
-   
-                  <li class="line">
-                  <li class="long">
-                      <img src="./images/gallery/gall08.jpg">
-                      <img src="./images/gallery/gall09.jpg">
-                      <img src="./images/gallery/gall10.jpg">
-                      <img src="./images/gallery/gall11.jpg">
-                      <img src="./images/gallery/gall12.jpg">
-                      <img src="./images/gallery/gall13.jpg"></li>
-                  <li class="short">
-                      <img src="./images/gallery/gall14.jpg"></li>
-                  </li>
-                 
-                    <img src="./images/gallery/gall_middle.jpg" id="middle">
-                
-   
-                  <li class="line">
-                  <li class="short">
-                      <img src="./images/gallery/gall15.jpg"></li>
-                  <li class="long">
-                      <img src="./images/gallery/gall16.jpg">
-                      <img src="./images/gallery/gall17.jpg">
-                      <img src="./images/gallery/gall18.jpg">
-                      <img src="./images/gallery/gall19.jpg">
-                      <img src="./images/gallery/gall20.jpg" id="dis">
-                      <img src="./images/gallery/gall21.jpg"></li>
-                  </li>
-                  <li class="line">
+    <div class="container">
+      <ul>
+        <li class="line">
+        <li class="short">
+          <img src="./images/gallery/gall01.jpg" id="myImg">
+        </li>
 
-                      <li class="long">
-                          <img src="./images/gallery/gall22.jpg" id="delete">
-                          <img src="./images/gallery/gall23.jpg">
-                          <img src="./images/gallery/gall24.jpg">
-                          <img src="./images/gallery/gall25.jpg" id="dis">
-                          <img src="./images/gallery/gall26.jpg" id="dis">
-                          <img src="./images/gallery/gall27.jpg" id="dis"></li>
-                          <li class="short">
-                              <img src="./images/gallery/gall28.jpg" id="dis"></li>
-                      </li>
+        <li class="long">
+          <img src="./images/gallery/gall02.jpg">
+          <img src="./images/gallery/gall03.jpg">
+          <img src="./images/gallery/gall04.jpg">
+          <img src="./images/gallery/gall05.jpg">
+          <img src="./images/gallery/gall06.jpg">
+          <img src="./images/gallery/gall07.jpg" id="dis">
+        </li>
+        </li>
 
 
-                      <li class="line">
-                        <img src="./images/gallery/gall_end.jpg" id="end">
-                      </li> 
+        <li class="line">
+        <li class="long">
+          <img src="./images/gallery/gall08.jpg">
+          <img src="./images/gallery/gall09.jpg">
+          <img src="./images/gallery/gall10.jpg">
+          <img src="./images/gallery/gall11.jpg">
+          <img src="./images/gallery/gall12.jpg">
+          <img src="./images/gallery/gall13.jpg">
+        </li>
+        <li class="short">
+          <img src="./images/gallery/gall14.jpg">
+        </li>
+        </li>
 
-          </div>
+        <img src="./images/gallery/gall_middle.jpg" id="middle">
 
-      </section>
 
-      <footer>
-        <h1>G&B<br />FESTIVAL</h1>
-        <p>&copy; Copyright</p>
-      </footer>
+        <li class="line">
+        <li class="short">
+          <img src="./images/gallery/gall15.jpg">
+        </li>
+        <li class="long">
+          <img src="./images/gallery/gall16.jpg">
+          <img src="./images/gallery/gall17.jpg">
+          <img src="./images/gallery/gall18.jpg">
+          <img src="./images/gallery/gall19.jpg">
+          <img src="./images/gallery/gall20.jpg" id="dis">
+          <img src="./images/gallery/gall21.jpg">
+        </li>
+        </li>
+        <li class="line">
+
+        <li class="long">
+          <img src="./images/gallery/gall22.jpg" id="delete">
+          <img src="./images/gallery/gall23.jpg">
+          <img src="./images/gallery/gall24.jpg">
+          <img src="./images/gallery/gall25.jpg" id="dis">
+          <img src="./images/gallery/gall26.jpg" id="dis">
+          <img src="./images/gallery/gall27.jpg" id="dis">
+        </li>
+        <li class="short">
+          <img src="./images/gallery/gall28.jpg" id="dis">
+        </li>
+        </li>
+
+
+        <li class="line">
+          <img src="./images/gallery/gall_end.jpg" id="end">
+        </li>
     </div>
-  </body>
+    </section>
+</body>
+
+<footer>
+  <h1>G&B<br />FESTIVAL</h1>
+  <p>&copy; Copyright</p>
+</footer>
+</div>
+
 </html>
