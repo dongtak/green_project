@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Index 페이지</title>
+    <style>
+      /* about 페이지를 나타내는 클래스 */
+      .about {
+        position: fixed;
+        top: 0;
+        right: -100%; /* 오른쪽에서 시작하도록 설정 */
+        width: 100%;
+        height: 100%;
+        background-color: #000000; /* 배경 색상 설정 */
+        transition: all 0.5s ; /* 전환 효과 설정 */
+      }
+      
+      /* about 페이지가 나타날 때 오른쪽으로 이동하도록 설정 */
+      .about.show {
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Index 페이지</h1>
+    <p><a href="../about.html" id="about-link">About 페이지로 이동</a></p>
+    
+    <!-- about 페이지 -->
+    <div class="about"></div>
+    
+    <script>
+        // about 페이지로 이동하는 링크를 클릭했을 때 이벤트 핸들러 등록
+        var aboutLink = document.getElementById('about-link');
+        aboutLink.addEventListener('click', function(event) {
+          event.preventDefault(); // 링크 기본 동작 방지
+          
+          var aboutPage = document.querySelector('.about');
+          aboutPage.classList.add('show'); // about 페이지 보이도록 설정
+          
+          // 애니메이션 종료 후 about.html 페이지로 이동하는 이벤트 핸들러 등록
+          aboutPage.addEventListener('transitionend', function() {
+            location.href = '../about.html';
+          });
+        });
+      </script>
+  </body>
+</html>
