@@ -48,10 +48,11 @@ vertical-align:top;
 
 hr{
 display:block;
-height:2px;
-border:0;
+height:0px;
+border:0px;
 margin:0;
 padding:0;
+background: #ffffff;
 }
 
 input, textarea{
