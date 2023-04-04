@@ -14,6 +14,7 @@ a{
 
 section{
     margin: 100px auto;
+    padding: 100px 0;
     color: aliceblue;
     /* background-color: lightgreen; */
     width: 100%;
@@ -160,6 +161,7 @@ section{
 @media all and (min-width:480px) {
     section {
         max-width: 960px;
+        padding: 0;
     }
     .login_form{
         position: relative;
