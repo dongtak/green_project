@@ -27,7 +27,7 @@
   </script>
   <style>
     /* 모바일용 */
-    
+
     .artist_title_container {
       width: 50%;
       height: 150px;
@@ -88,9 +88,9 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 10px;
-      width: 50%;
+      width: 70%;
       margin-top: 2%;
-      margin-left: 25%;
+      margin-left: 15%;
       margin-bottom: 10%;
       box-sizing: border-box;
       /* border: 5px solid white; */
@@ -98,7 +98,7 @@
 
     .container img {
       width: 100%;
-      height: auto;
+      margin-bottom: 2%;
     }
 
     .container img:hover {
@@ -108,18 +108,20 @@
     }
 
     .text {
-        text-align: center;
-        font-size: 10px;
-        font-weight: 300;
-        margin-top: 3px;
-        margin-bottom: 4px;
-      }
-    
-    
+      text-align: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+      height: 30px;
+      line-height: 30px;
+      background-color: black;
+    }
+    h3 {
+      color: white;
+    }
 
     /* PC용 */
 
-    @media all and (min-width:560px){ 
+    @media all and (min-width:800px) {
       .artist_title_container {
         width: 50%;
         height: 150px;
@@ -181,27 +183,20 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
-        width: 50%;
-        margin-left: 25%;
+        width: 70%;
+        margin-left: 15%;
         box-sizing: border-box;
-        /* border: 5px solid white; */
       }
 
-      .container li {
-        width: 100%;
-      }
-    
       .text {
         text-align: center;
-        margin-top: 3px;
-        margin-bottom: 4px;
-        font-size: 13px;
-        font-weight: 500;
+        font-weight: 800;
+        font-size: 1.1rem;
+        height: 30px;
+        line-height: 30px;
+        background-color: black;
       }
-    }
-      
-
-  
+  }
   </style>
 </head>
 
@@ -236,8 +231,8 @@
             <li><a href="artist.html">ARTIST</a></li>
             <li><a href="ticket.html">TICKET</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="map.html">MAP</a> </li> 
-             <li><a href="faq.html">FAQ/Q&A</a></li>
+            <li><a href="map.html">MAP</a> </li>
+            <li><a href="faq.html">FAQ/Q&A</a></li>
             <li><a href="signin.html">SIGN IN</a></li>
           </ul>
         </div>
@@ -245,16 +240,16 @@
       <div class="top_pc">
         <a href="about.html">ABOUT</a>
         <a href="artist.html">ARTIST</a>
-          <!-- <a href="artist_g.html">GREEN</a>
+        <!-- <a href="artist_g.html">GREEN</a>
           <a href="artist_b.html">BLUE</a> -->
-          <a href="ticket.html">TICKET</a>
-          <a href="gallery.html">GALLERY</a>
-          <a href="">INFO</a> 
-          <!-- <a href="map.html">MAP</a>
+        <a href="ticket.html">TICKET</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="">INFO</a>
+        <!-- <a href="map.html">MAP</a>
           <a href="faq.html">FAQ/Q&A</a> -->
-          <a href="signin.html">SIGN IN</a>
+        <a href="signin.html">SIGN IN</a>
       </div>
-      
+
 
     </header>
 
@@ -282,12 +277,12 @@
           <h3 class="text">Paul McCartney</h3>
         </a>
 
-  
+
         <a href="https://www.adele.com/" target="_blank">
           <img id="b1" src="./images/artist(blue)/b1.jpg">
           <h3 class="text">Adele</h3>
         </a>
-    
+
         <a href="https://newjeans.kr/" target="_blank">
           <img id="g2" src="./images/artist(green)/g2.jpg">
           <h3 class="text">NewJeans</h3>
@@ -301,75 +296,72 @@
         <a href="https://www.radiohead.com/" target="_blank">
           <img id="g3" src="./images/artist(green)/g3.jpg">
           <h3 class="text">Radiohead</h3>
-          </a>
+        </a>
 
         <a href="https://www.coldplay.com/" target="_blank">
           <img id="b3" src="./images/artist(blue)/b3.jpg">
           <h3 class="text">Coldplay</h3>
-          </a>
+        </a>
 
         <a href="https://www.billieeilish.com/" target="_blank">
           <img src="./images/artist(green)/g4.jpg">
           <h3 class="text">Billie Eilish</h3>
-          </a>
+        </a>
 
         <a href="https://itzy.jype.com/" target="_blank">
           <img id="b4" src="./images/artist(blue)/b4.jpg">
           <h3 class="text">ITZY</h3>
-          </a>
+        </a>
 
         <a href="https://slipknot1.com/" target="_blank">
           <img id="g5" src="./images/artist(green)/g5.jpg">
           <h3 class="text">SLIPKNOT</h3>
-          </a>
+        </a>
         <a href="https://www.postmalone.com/" target="_blank">
           <img id="b5" src="./images/artist(blue)/b5.jpg">
           <h3 class="text">Post Malone</h3>
-          </a>
+        </a>
 
         <a href="https://beastieboys.com/" target="_blank">
           <img id="g6" src="./images/artist(green)/g6.jpg">
           <h3 class="text">Beastie Boys</h3>
-          </a>
+        </a>
 
         <a href="https://the1975.com/" target="_blank">
           <img id="b6" src="./images/artist(blue)/b6.jpg">
           <h3 class="text">The 1975</h3>
-          </a>
+        </a>
 
         <a href="https://www.youtube.com/user/PalmyOfficialChannel" target="_blank">
           <img id="g7" src="./images/artist(green)/g7.jpg">
           <h3 class="text">Palmy</h3>
-            </a>
+        </a>
 
         <a href="https://www.smtown.com/artist/musician/10766" target="_blank">
           <img id="b7" src="./images/artist(blue)/b7.jpg">
           <h3 class="text">Aespa</h3>
-          </a>
+        </a>
 
         <a href="https://greenday.com/" target="_blank">
           <img id="g8" src="./images/artist(green)/g8.jpg">
           <h3 class="text">Greenday</h3>
-          </a>
+        </a>
 
         <a href="https://sigurros.com/" target="_blank">
           <img id="b8" src="./images/artist(blue)/b8.jpg">
           <h3 class="text">Sigur Ros</h3>
-          </a>
+        </a>
 
         <a href="https://www.aimyong.net/" target="_blank">
           <img id="g9" src="./images/artist(green)/g9.jpg">
           <h3 class="text">Aimyong</h3>
-          </a>
+        </a>
 
         <a href="https://soundcloud.com/250braingrain" target="_blank">
           <img id="b9" src="./images/artist(blue)/b9.jpg">
           <h3 class="text">250</h3>
-          </a>
-      
-     </div>
- 
-
+        </a>
+      </div>
     </section>
 
     <footer>

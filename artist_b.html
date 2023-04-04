@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <!-- 외부 스타일 -->
   <link rel="stylesheet" href="./css/reset.css" />
@@ -10,22 +11,24 @@
   <!-- 외부 폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap"
+    rel="stylesheet">
+
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ARTIST</title>
 
   <script>
-  document.addEventListener('DOMContentLoaded',function(){ 
+    document.addEventListener('DOMContentLoaded', function () {
       hamburger_btn();
-   });
+    });
   </script>
   <style>
-      /* 모바일용 */
-    
-      .artist_title_container {
+    /* 모바일용 */
+
+    .artist_title_container {
       width: 50%;
       height: 150px;
       margin-left: 25%;
@@ -85,17 +88,17 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 10px;
-      width: 50%;
+      width: 70%;
       margin-top: 2%;
-      margin-left: 25%;
+      margin-left: 15%;
       margin-bottom: 10%;
       box-sizing: border-box;
-      border: 5px solid lightblue;
+      /* border: 5px solid lightblue; */
     }
 
     .container img {
       width: 100%;
-      height: auto;
+      margin-bottom: 2%;
     }
 
     .container img:hover {
@@ -105,17 +108,21 @@
     }
 
     .text {
-        text-align: center;
-        font-size: 10px;
-        font-weight: 300;
-        margin-top: 3px;
-        margin-bottom: 4px;
-      }
-    
+      text-align: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+      height: 30px;
+      line-height: 30px;
+      background-color: lightblue;
+    }
+
+    h3 {
+      color: black;
+    }
 
     /* PC용 */
 
-    @media all and (min-width:560px){ 
+    @media all and (min-width:800px) {
       .artist_title_container {
         width: 50%;
         height: 150px;
@@ -177,27 +184,24 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
-        width: 50%;
-        margin-left: 25%;
+        width: 70%;
+        margin-left: 15%;
         box-sizing: border-box;
-        border: 5px solid lightblue;
+        /* border: 5px solid lightblue; */
       }
 
-      .container li {
-        width: 100%;
-      }
-    
       .text {
         text-align: center;
-        margin-top: 3px;
-        margin-bottom: 4px;
-        font-size: 13px;
-        font-weight: 500;
+        font-weight: 800;
+        font-size: 1.1rem;
+        height: 30px;
+        line-height: 30px;
+        background-color: lightblue;
       }
     }
-
   </style>
 </head>
+
 <body>
   <div class="blur"></div>
   <div id="wrapper">
@@ -228,8 +232,8 @@
             <li><a href="artist.html">ARTIST</a></li>
             <li><a href="ticket.html">TICKET</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="map.html">MAP</a> </li> 
-             <li><a href="faq.html">FAQ/Q&A</a></li>
+            <li><a href="map.html">MAP</a> </li>
+            <li><a href="faq.html">FAQ/Q&A</a></li>
             <li><a href="signin.html">SIGN IN</a></li>
           </ul>
         </div>
@@ -237,17 +241,15 @@
       <div class="top_pc">
         <a href="about.html">ABOUT</a>
         <a href="artist.html">ARTIST</a>
-          <!-- <a href="artist_g.html">GREEN</a>
+        <!-- <a href="artist_g.html">GREEN</a>
           <a href="artist_b.html">BLUE</a> -->
-          <a href="ticket.html">TICKET</a>
-          <a href="gallery.html">GALLERY</a>
-          <a href="">INFO</a> 
-          <!-- <a href="map.html">MAP</a>
+        <a href="ticket.html">TICKET</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="">INFO</a>
+        <!-- <a href="map.html">MAP</a>
           <a href="faq.html">FAQ/Q&A</a> -->
-          <a href="signin.html">SIGN IN</a>
+        <a href="signin.html">SIGN IN</a>
       </div>
-      
-
     </header>
 
     <section>
@@ -256,29 +258,73 @@
 
       <div class="artist_title_container" style="margin-top: 100px">
         <div class="artist_title_box">
-            <ul>
-                <li><a href="./artist.html" id="button_a"><h1 style="color:white">ARTIST</h1></a></li>
-                <a href="./artist_g.html" id="button_g">G</a>
-                <a href="./artist_b.html" id="button_b">B</a>
-            </ul>
+          <ul>
+            <li><a href="./artist.html" id="button_a">
+                <h1 style="color:white">ARTIST</h1>
+              </a></li>
+            <a href="./artist_g.html" id="button_g">G</a>
+            <a href="./artist_b.html" id="button_b">B</a>
+          </ul>
         </div>
-    </div>
+      </div>
 
 
-    <div class="container">
-    
-      <a href="https://www.adele.com/" target="_blank"><img id="b1" src="./images/artist(blue)/b1.jpg"></a>
-      <a href="https://redhotchilipeppers.com/" target="_blank"> <img id="b2" src="./images/artist(blue)/b2.jpg"></a>
-      <a href="https://www.coldplay.com/" target="_blank"><img id="b3" src="./images/artist(blue)/b3.jpg"></a>
-      <a href="https://itzy.jype.com/" target="_blank"><img id="b4" src="./images/artist(blue)/b4.jpg"></a>
-      <a href="https://www.postmalone.com/" target="_blank"><img id="b5" src="./images/artist(blue)/b5.jpg"></a>
-      <a href="https://the1975.com/" target="_blank"><img id="b6" src="./images/artist(blue)/b6.jpg"></a>
-      <a href="https://www.smtown.com/artist/musician/10766" target="_blank"><img id="b7" src="./images/artist(blue)/b7.jpg"></a>
-      <a href="https://sigurros.com/" target="_blank"><img id="b8" src="./images/artist(blue)/b8.jpg"></a>
-      <a href="https://soundcloud.com/250braingrain" target="_blank"><img id="b9" src="./images/artist(blue)/b9.jpg"></a>
+      <div class="container">
 
-    </div>
 
+
+        <a href="https://www.adele.com/" target="_blank">
+          <img id="b1" src="./images/artist(blue)/b1.jpg">
+          <h3 class="text">Adele</h3>
+        </a>
+
+
+        <a href="https://redhotchilipeppers.com/" target="_blank">
+          <img id="b2" src="./images/artist(blue)/b2.jpg">
+          <h3 class="text">R.H.C.P</h3>
+        </a>
+
+
+        <a href="https://www.coldplay.com/" target="_blank">
+          <img id="b3" src="./images/artist(blue)/b3.jpg">
+          <h3 class="text">Coldplay</h3>
+        </a>
+
+
+        <a href="https://itzy.jype.com/" target="_blank">
+          <img id="b4" src="./images/artist(blue)/b4.jpg">
+          <h3 class="text">ITZY</h3>
+        </a>
+
+        <a href="https://www.postmalone.com/" target="_blank">
+          <img id="b5" src="./images/artist(blue)/b5.jpg">
+          <h3 class="text">Post Malone</h3>
+        </a>
+
+
+        <a href="https://the1975.com/" target="_blank">
+          <img id="b6" src="./images/artist(blue)/b6.jpg">
+          <h3 class="text">The 1975</h3>
+        </a>
+
+
+        <a href="https://www.smtown.com/artist/musician/10766" target="_blank">
+          <img id="b7" src="./images/artist(blue)/b7.jpg">
+          <h3 class="text">Aespa</h3>
+        </a>
+
+
+        <a href="https://sigurros.com/" target="_blank">
+          <img id="b8" src="./images/artist(blue)/b8.jpg">
+          <h3 class="text">Sigur Ros</h3>
+        </a>
+
+
+        <a href="https://soundcloud.com/250braingrain" target="_blank">
+          <img id="b9" src="./images/artist(blue)/b9.jpg">
+          <h3 class="text">250</h3>
+        </a>
+      </div>
     </section>
 
     <footer>
@@ -287,4 +333,5 @@
     </footer>
   </div>
 </body>
+
 </html>
