@@ -22,7 +22,7 @@
      <script src="<c:url value='/Bootstrap/js/bootstrap.min.js'/>"
       rel="stylesheet"></script>
 
-      <script>
+      <!-- <script>
         $(function() {
           $('#select').change(function() {
             if ($('#select').val() == 'directly') {
@@ -34,7 +34,7 @@
               }
           })
       });
-      </script>
+      </script> -->
 </head>
 <body>
   <div class="blur"></div>
@@ -97,10 +97,13 @@
       <div class="container">
         <h1>회원가입</h1> <!-- 제목 -->
         <form action="" method="post">
-         <label for="id">ID :<input type="text" name="id" placeholder="아이디를 입력해 주세요." required></label>
-         <label for="" >PW :<input type="password" placeholder="비밀번호를 입력해 주세요." required></label>
-         <label for="" >PW확인 :<input type="password" placeholder="비밀번호를 한 번 더 입력해 주세요." required></label>
-         <label for="" >E-MAIL :<br><input type="text" id="emailId" name="email" value="" placeholder="이메일을 입력해 주세요." required><span class="spans">@</span>
+         <label for="username">ID :<input type="text" id="username" name="username" placeholder="아이디를 입력해 주세요." required></label>
+                                   <div class="error"></div>
+         <label for="password" >PW :<input type="password" id="password" name="password" placeholder="비밀번호를 입력해 주세요." required></label>
+                                    <div class="error"></div>
+         <label for="password2" >PW확인 :<input type="password" placeholder="비밀번호를 한 번 더 입력해 주세요." required></label>
+                                 <div class="error"></div>
+         <label for="email" >E-MAIL :<br><input type="text" id="emailId" name="email" value="" placeholder="이메일을 입력해 주세요." required><span class="spans">@</span>
                                 <input type="textEmail" placeholder="이메일을 선택하세요." required>
                                 <!-- <select id="select">
                                   <option value="" disabled selected>E-Mail 선택</option>
@@ -110,9 +113,12 @@
                                   <option value="nate.com" >nate.com</option>
                                   <option value="directly" id="textEmail">직접 입력하기</option>
                                 </select> -->
-         </label>
-         <label for="" >PHONE :<br><input type="text" class="aa" maxlength="3"><span class="spans">&nbsp;&nbsp;-</span>&nbsp;
+        </label>
+         <div class="error"></div>
+
+         <label for="phone" >PHONE :<br><input type="text" class="aa" maxlength="3"><span class="spans">&nbsp;&nbsp;-</span>&nbsp;
          <input type="text"  class="aa" maxlength="4"><span class="spans">&nbsp;&nbsp;-</span>&nbsp; <input type="text"  class="aa" maxlength="4" required></label>
+         <div class="error"></div>
          
           <div class="checkbox1"> 
           <input type="checkbox" id="c1" name="cc" />

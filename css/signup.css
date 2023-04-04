@@ -12,11 +12,15 @@ section{
 }
 .container{
   /* background: #ff3a3a; */
-  width: 100%;
+  /* width: 100%; */
   margin-top: -100px;
+  margin: 20vh auto 0 auto;
+  padding: 20px;
   /* background-color: #979797; */
   border: 1px solid aliceblue;
+  border-radius: 3px;
   overflow:auto;
+  font-size: 20px;
   
 }
 .container h1{
@@ -31,14 +35,14 @@ section{
   margin-top: 50px;
   
 }
-form{
+#form {
   width: 90%;
   margin: 0 auto;
   /* background: #c8ff00; */
   height: 600px;
   text-align: center;
 }
-form label{
+#form label{
   text-align: left;
   display: inline-block;
   width: 50%;
@@ -47,8 +51,8 @@ form label{
 }
 
 label>input{
-  display: inline-block;
-  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
 }
 
 #select{
@@ -78,8 +82,29 @@ form input{
   font-size: 1.0rem;
   height: 30px;
   line-height: 30px;
+  border: 2px solid#f0f0f0;
+  display: inline-block;
   border-radius: 3px;
   color: black;
+  width: 100%;
+}
+
+form input:focus {
+  outline: 0;
+}
+
+form.success input {
+  border-color: #09c372;
+}
+
+form.error input {
+  border-color: #ff3860;
+}
+
+form .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
 }
 
 form div{
@@ -224,7 +249,7 @@ display: none;
   background-color: none;
   background: transparent;
   text-decoration: none;
-  color: bisque;
+  color: aliceblue;
   width: 25%;
   height: 40px;
   font-size: 16px;
