@@ -1,6 +1,10 @@
 
 //비밀번호 유효성검사********************
 
+
+
+
+
 // HTML 요소 가져오기
 const passwordInput = document.getElementById("password");
 const submitButton = document.getElementById("submit");
