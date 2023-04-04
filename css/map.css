@@ -1,7 +1,7 @@
 /*** MAP 페이지 CSS ***/
 
 section{
-    margin-top: 100px;
+    margin: 100px auto;
 }
 /* MAP 페이지 부모상자 */
 .map {
@@ -14,9 +14,9 @@ section{
 
 /* MAP 페이지 큰제목 */
 .map>h1 {
-    margin-bottom: 50px;
-    font-size: 3.0rem;
-    padding: 10px 0;
+    font-size: 50px;
+    height: 100px;
+    line-height: 100px;
 }
 
 .map_wrap {
@@ -176,9 +176,6 @@ margin-top: 10px;
 
 
 
-
-
-
 /* MAP 페이지 Green 공연장 오시는길 안내 */
 
 
@@ -269,15 +266,11 @@ hr.divider{
 }
 
 
-
-
-
 /*** PC 버전 크기일때 ***/
 
 @media all and (min-width:960px) {
     section {
-        width: 960px;
-        margin: 0 auto;
+    max-width: 960px;
     }
 
     .map_green,
