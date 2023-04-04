@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/blur.css">
     <!-- 외부 스크립트 -->
     <script src="./js/mobile_btn.js"></script>
+    
     <!-- 외부 폰트 -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,23 +19,6 @@
           hamburger_btn();
        });
       </script>
-
-     <script src="<c:url value='/Bootstrap/js/bootstrap.min.js'/>"
-      rel="stylesheet"></script>
-
-      <!-- <script>
-        $(function() {
-          $('#select').change(function() {
-            if ($('#select').val() == 'directly') {
-                $('#textEmail').attr("disabled", false);
-                $('#textEmail').val("");
-                $('#textEmail').focus();
-              } else {
-                $('#textEmail').val($('#select').val());
-              }
-          })
-      });
-      </script> -->
 </head>
 <body>
   <div class="blur"></div>
@@ -76,20 +60,32 @@
         </div>
         <div class="top_pc">
           <a href="about.html">ABOUT</a>
-          <a href="artist.html">ARTIST</a>
-          <ul class="submenu">
-            <li><a href="artist_g.html">GREEN</a></li>
-            <li><a href="artist_b.html">BLUE</a></li>
-          </ul>
-          <a href="ticket.html">TICKET</a>
-          <a href="gallery.html">GALLERY</a>
-          <a href="">INFO</a>
-          <ul class="submenu">
-            <li><a href="map.html">MAP</a></li>
-            <li><a href="faq.html">FAQ/Q&A</a></li>
-          </ul>
-          <a href="signin.html">SIGN IN</a>
+  
+  
+          <div class="dropdown">
+            <a class="dropbtn" href="artist.html">ARTIST</a>
+            <div class="dropdown-content">
+              <a href="artist_g.html">GREEN</a>
+              <a href="artist_b.html">BLUE</a>
+            </div>
+            </div>
+  
+            <a href="ticket.html">TICKET</a>
+            <a href="gallery.html">GALLERY</a>
+  
+  
+            <div class="dropdown">
+              <a class="dropbtn">INFO</a>
+              <div class="dropdown-content">
+            <a href="map.html">MAP</a>
+            <a href="faq.html">FAQ/Q&A</a>
+          </div>
+          </div>
+  
+  
+            <a href="signin.html">SIGN IN</a>
         </div>
+        
   
       </header>
       <section>
@@ -97,14 +93,12 @@
       <div class="container">
         <h1>회원가입</h1> <!-- 제목 -->
         <form action="" method="post">
-         <label for="username">ID :<input type="text" id="username" name="username" placeholder="아이디를 입력해 주세요." required></label>
-                                   <div class="error"></div>
-         <label for="password" >PW :<input type="password" id="password" name="password" placeholder="비밀번호를 입력해 주세요." required></label>
-                                    <div class="error"></div>
-         <label for="password2" >PW확인 :<input type="password" placeholder="비밀번호를 한 번 더 입력해 주세요." required></label>
-                                 <div class="error"></div>
-         <label for="email" >E-MAIL :<br><input type="text" id="emailId" name="email" value="" placeholder="이메일을 입력해 주세요." required><span class="spans">@</span>
-                                <input type="textEmail" placeholder="이메일을 선택하세요." required>
+          <label for="name">이름 :<input type="text" id="name" placeholder="이름을 입력해 주세요."></label>
+         <label for="id">ID :<input type="text" id="id" placeholder="4~12자의 영문 대소문자와 숫자로만 입력" ></label>
+         <label for="password" >PW :<input type="password" placeholder="4~12자의 영문 대소문자와 숫자로만 입력" ></label>
+         <label for="" >PW확인 :<input type="password" placeholder="비밀번호 확인" ></label>
+         <label for="" >E-MAIL :<br><input type="text" id="emailId" name="email" value="" placeholder="이메일 주소" ><span class="spans">@</span>
+                                <input type="textEmail" placeholder="예) id@domain.com" >
                                 <!-- <select id="select">
                                   <option value="" disabled selected>E-Mail 선택</option>
                                   <option value="naver.com" id="naver.com">naver.com</option>
@@ -113,12 +107,9 @@
                                   <option value="nate.com" >nate.com</option>
                                   <option value="directly" id="textEmail">직접 입력하기</option>
                                 </select> -->
-        </label>
-         <div class="error"></div>
-
-         <label for="phone" >PHONE :<br><input type="text" class="aa" maxlength="3"><span class="spans">&nbsp;&nbsp;-</span>&nbsp;
-         <input type="text"  class="aa" maxlength="4"><span class="spans">&nbsp;&nbsp;-</span>&nbsp; <input type="text"  class="aa" maxlength="4" required></label>
-         <div class="error"></div>
+         </label>
+         <label for="" >PHONE :<br><input type="text" class="aa" maxlength="3"><span class="spans">&nbsp;&nbsp;-</span>&nbsp;
+         <input type="text"  class="aa" maxlength="4"><span class="spans">&nbsp;&nbsp;-</span>&nbsp; <input type="text"  class="aa" maxlength="4" ></label>
          
           <div class="checkbox1"> 
           <input type="checkbox" id="c1" name="cc" />
@@ -210,8 +201,10 @@
 
 
       </div> -->
-
-         <button class="Btn_signup">회원가입</button> 
+      <div class="button">
+         <button class="Btn_signup">회원가입</button>
+        <!-- 누르면 회원가입 -->
+        </div>
         </form>
       </section>
 
@@ -220,5 +213,60 @@
         <p>&copy; Copyright</p>
       </footer>
     </div>
+
+  
+   <script> 
+   function validate() {
+    var re = /^[a-zA-Z0-9]{4,12}$/ // 아이디와 패스워드가 적합한지 검사할 정규식
+    var re2 = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+    // 이메일이 적합한지 검사할 정규식
+
+    var id = document.getElementById("id");
+    var pw = document.getElementById("pw");
+    var email = document.getElementById("email");
+
+
+    if(!check(re,id,"아이디는 4~12자의 영문 대소문자와 숫자로만 입력")) {
+        return false;
+    }
+
+    if(!check(re,pw,"패스워드는 4~12자의 영문 대소문자와 숫자로만 입력")) {
+        return false;
+    }
+
+    if(join.pw.value != join.checkpw.value) {
+        alert("비밀번호가 다릅니다. 다시 확인해 주세요.");
+        join.checkpw.value = "";
+        join.checkpw.focus();
+        return false;
+    }
+
+    if(email.value=="") {
+        alert("이메일을 입력해 주세요");
+        email.focus();
+        return false;
+    }
+
+    if(!check(re2, email, "적합하지 않은 이메일 형식입니다.")) {
+        return false;
+    }
+
+    if(join.name.value=="") {
+        alert("이름을 입력해 주세요");
+        join.name.focus();
+        return false;
+    }
+
+function check(re, what, message) {
+    if(re.test(what.value)) {
+        return true;
+    }
+    alert(message);
+    what.value = "";
+    what.focus();
+    //return false;
+}
+}
+</script>
 </body>
 </html>
