@@ -5,7 +5,7 @@ section{
 }
 /* MAP 페이지 부모상자 */
 .map {
-    margin:0 auto;
+    margin:0px auto;
     width: 90%;
     min-width: 360px;
     text-align: center;
