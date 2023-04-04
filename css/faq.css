@@ -2,7 +2,6 @@
 
 section{
     margin: 100px auto;
-    padding: 100px 0;
 }
 /* FAQ/Q&A 페이지 부모상자 */
 .board {
@@ -16,30 +15,52 @@ section{
 /* FAQ/Q&A 탭메뉴 */
 
 .board_tap {
-    font-size: 30px;
-    margin-bottom: 50px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
+
 }
+
+.board_tap .tap{
+    width: 80%;
+    text-align: center;
+ margin-bottom: 50px;
+}
+
 
 .board_tap li {
     text-align: center;
-    margin: 2rem 0;
-    font-size: 2.5rem;
+    
+    font-size: 2.0rem;
     display: inline-block;
-    margin: 0 30px;
+    margin: 0 10px;
     position: relative;
+    color: rgb(192, 191, 191);
+    padding: 5px;
+    width: 100px;
+    height: 50px;
+    letter-spacing: 2px;
+    font-weight: 900;
 }
+/* 
+.board_tap li .click{
+    border-bottom: 3px solid aliceblue;
+    border-radius: 3px;
+    font-weight: 900;
+} */
+
+
 
 .board_tap li:first-child:after {
     content: "";
-    width: 1px;
+    width: 2px;
     height: 25px;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 10px;
     bottom: 0;
-    margin: 0 35px;
+    margin: 0 28px;
+    
 }
 
 
@@ -117,11 +138,16 @@ section{
 
 /* Q&A 페이지 부모상자 */
 /* 처음 출력되는 페이지는 FAQ 페이지이므로 Q&A 페이지는 안보이게 설정 */
-.qnabox {
+#qnabox {
     display: none;
 }
 
 /* Q&A 게시판 */
+
+#qnabox{
+    width: 80%;
+    margin: 0 auto;
+}
 
 .qnabox_list {
     width: 100%;
@@ -153,11 +179,11 @@ section{
 /* 게시판 메뉴별 너비 설정 - 모바일 버전일때는 제목과 작성일만 보이게 */
 
 .qnabox_list li.title {
-    width: 70%;
+    width: 65%;
 }
 
 .qnabox_list li.date {
-    width: 20%;
+    width: 25%;
 }
 
 .qnabox_list li.num,
@@ -187,9 +213,9 @@ section{
 
 .qnabox_page li {
     display: inline-block;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     font-size: 17px;
     
 }
@@ -218,6 +244,7 @@ section{
 /* Q&A 게시판 하단 글쓰기 버튼 */
 
 .qnabox_btn {
+    margin-top: 20px;
     position: relative
 }
 
@@ -253,14 +280,23 @@ section{
 }
 
 /*** PC 버전 크기일때 ***/
-@media all and (min-width:480px){
-    section{
-        padding: 0;
-    }
-}
-@media all and (min-width:768px) {
 
+@media all and (min-width:768px) {
     
+
+    /* faq 설정 */
+    .faqbox{
+        width: 60%;
+    }
+
+
+    /*q&a게시판 설정*/
+
+    #qnabox{
+        width: 80%;
+        
+    }
+
     .qnabox_list li.num,
     .qnabox_list li.writer,
     .qnabox_list li.counter {
@@ -274,15 +310,15 @@ section{
     }
 
     .qnabox_list li.title {
-        width: 60%;
+        width: 55%;
     }
 
     .qnabox_list li.writer {
-        width: 10%;
+        width: 12%;
     }
 
     .qnabox_list li.date {
-        width: 10%;
+        width: 12%;
     }
 
     .qnabox_list li.counter {
@@ -294,5 +330,4 @@ section{
         display: block;
     }
 
-   
 }

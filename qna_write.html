@@ -83,55 +83,60 @@
                 <h1>1:1 Q&A</h1>
 
                 <!-- 1:1 문의 게시글 등록 form-->
-                <form action="" method="post" id="form">
+                <form action="" method="post" id="qnaform">
                 
                     <!-- 1:1 문의 게시글 내용 -->
-                
+                    
                     <div class="qna_write_title">
 
                         <label for="title">제목</label>
-                        <input type="text" id="title" name="title" placeholder="제목을 입력해주세요." required="required" />
+                        <input type="text" id="title" name="title" placeholder="제목을 입력해주세요." required />
                     </div>
 
                     <div class="qna_write_writer">
                         <label for="writer">작성자</label>
-                        <input type="text" id="writer" name="writer" placeholder="작성자를 입력해주세요." required="required" />
+                        <input type="text" id="writer" name="writer" placeholder="작성자를 입력해주세요." required />
                     </div>
 
                     <div class="qna_write_pwd">
                         <label for="password">비밀번호</label>
-                        <input type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요." required="required" />
+                        <input type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요." required />
 
                     </div>
 
                     <div class="qna_write_pwd_check">
                         <label for="password_check">비밀번호 확인</label>
-                        <input type="password" id="password_check" name="password_check" placeholder="비밀번호를 다시 입력해주세요." required="required" />
-                        <p id="message"></p>
+                        <input type="password" id="password_check" name="password_check" placeholder="비밀번호를 다시 입력해주세요." required />
+                        
 
                     </div>
 
                 
                     <div class="qna_write_page">
                         <label for="page">문의사항</label>
-                        <input type="text" id="page" name="page" placeholder="문의사항을 입력해주세요." required="required" />
+                        <input type="text" id="page" name="page" placeholder="문의사항을 입력해주세요." required />
                     </div>
 
                     <br /> <!-- 띄워서 구분하기 -->
+
+                    <!-- 비밀번호 오류메세지 -->
+                    <p id="message"></p>
                     
                     <!-- 1:1 문의 게시글 등록/취소 버튼-->
                     <div class="qna_write_btn"> 
 
-                        <a href="#">
-                            <button type="submit" id="submit" onclick="myFunction();">등록</button>
+                        <a href="faq.html">
+                          
+                            <button type="submit" id="submit" onclick="validatePassword();">등록</button>
                           </a>
-                        <a href="faq.html#qna_writebox">
+                        <a href="faq.html">
                     
                             <input type="button" value="취소">
                         </a>
 
                     </div>
-
+                  
+                    
                 </form>
 
 

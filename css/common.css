@@ -1,3 +1,53 @@
+/* top_nav */
+
+#wrapper {
+  min-width: 360px;
+}
+.dropbtn {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  font-size: 16px;
+  cursor: pointer;
+  color: aliceblue;
+    transition: 0.1s ;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+
 /* 썸네일 */
 #thumbnail {
     position: fixed;
@@ -253,9 +303,7 @@
       right: 0;
       font-size: 1rem;
     }
-    .top_pc ul {
-      display: none;
-    }
+
 
 
     .artist_menu a,.info_menu a{
@@ -272,10 +320,13 @@
       line-height: 100px;
       display: inline-block;
       color: aliceblue;
+      transition: 0.1s ;
+    }
+    .top_pc>a:hover{
+      font-size: 1.3em;
     }
     /* PC 로그인 버튼 */
-    .top_pc a:nth-child(6){
-      background: #0026ff;
+    .top_pc>a:last-child{
       overflow: hidden;
       font-size: 12px;
       text-align: center;
@@ -283,6 +334,36 @@
       margin: auto 0;
       margin-right: 10px;
       line-height: 40px;
+      border: 1px solid white;
+      border-radius: 30px;
+    }
+    .top_pc>a:last-child:hover{
+      background: rgb(255, 255, 255);
+      color: #f00084;
+    animation: glow 30s infinite ;
+    font-size: 12px;
+    }
+    @keyframes glow {
+     10% {
+        box-shadow: 0 -10px 20px #00F260, 0 -10px 18px #0575E6;
+        box-shadow: 5px -7px 17px #00F260, 0 -10px 31px #0575E6;
+      }
+      30% {
+        box-shadow: 4px 0 20px #00F260, 16px 12px 30px #0575E6;
+        box-shadow: 0 0px 30px #00F260, 10px 5px 20px #0575E6;
+      }
+     50% {
+        box-shadow: 0 -12px 30px #00F260, 4px -10px 20px #0575E6;
+        box-shadow: 6px -3px 20px #00F260, 20px -10px 30px #0575E6;
+      }
+      70% {
+        box-shadow: 5px -5px 30px #00F260, 0 -8px 20px #0575E6;
+        box-shadow: 1px -6px 21px #00F260, 7px -15px 40px #0575E6;
+      }
+      100%{
+        box-shadow: 2px -7px 30px #00F260, 2px -20px 20px #0575E6;
+        box-shadow: 8px -6px 20px #00F260, 5px -2px 20px #0575E6;
+      }
     }
     
 

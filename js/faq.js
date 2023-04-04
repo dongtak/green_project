@@ -11,11 +11,10 @@ $(document).ready(function() {
 
 
 
-
 // FAQ,Q&A 탭메뉴 설정**********
 
 const qna = document.querySelector('.qna');
-const qnabox = document.querySelector('.qnabox');
+const qnabox = document.querySelector('#qnabox');
 const faq= document.querySelector('.faq');
 const faqbox = document.querySelector('.faqbox');
 
@@ -23,25 +22,24 @@ const faqbox = document.querySelector('.faqbox');
 qna.addEventListener('click', function() {
   qnabox.style.display = "block";
   faqbox.style.display = "none";
+  faq.style.color="rgb(192, 191, 191)";
+  faq.style.borderBottom="none";
+  qna.style.color="white";
+  qna.style.borderBottom="3px solid white"
+
 });
+
+
 
 faq.addEventListener('click', function() {
   faqbox.style.display = "block";
   qnabox.style.display = "none";
+  qna.style.color="rgb(192, 191, 191)";
+  qna.style.borderBottom="none";
+  faq.style.color="white";
+  faq.style.borderBottom="3px solid white"
+  
 });
-
-
-
-
-//Q&A 
-
-// const qnaBtn = document.querySelector('.qna_write_btn input');
-
-// qnaBtn.addEventListener('click', function() {
-//   qnabox.style.display = "block";
-//   faqbox.style.display = "none";
-// });
-
 
 
 
