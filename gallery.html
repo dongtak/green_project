@@ -32,11 +32,12 @@
     /* 모바일용 */
 
     @media all and (max-width:800px) {
-
+      section{
+        padding: 125px 0;
+      }
       .container {
         width: 70%;
         margin-left: 15%;
-        margin-top: 100px;
         display: inline-block;
       }
 
@@ -66,7 +67,8 @@
       .container h1{
         font-size: 50px;
         text-align: center;
-        margin: 25px 0;
+        margin: 0 auto;
+        margin-bottom: 50px;
         height: 100px;
         line-height: 100px;
       }
@@ -74,14 +76,22 @@
 
     /* PC용 */
     @media all and (min-width:800px) {
-      
+      section{
+        padding: 125px 0;
+      }
       .container {
         width: 70%;
         margin-left: 15%;
-        margin-top: 100px;
         display: inline-block;
       }
-
+      .container h1{
+        font-size: 50px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        height: 100px;
+        line-height: 100px;
+      }
       .line {
         width: 90%;
         margin-bottom: 1%;
@@ -172,13 +182,13 @@
         <a href="about.html">ABOUT</a>
 
 
-        <div class="dropdown">
+        <!-- <div class="dropdown"> -->
           <a class="dropbtn" href="artist.html">ARTIST</a>
-          <div class="dropdown-content">
+          <!-- <div class="dropdown-content">
             <a href="artist_g.html">GREEN</a>
             <a href="artist_b.html">BLUE</a>
-          </div>
-          </div>
+          </div> -->
+          <!-- </div> -->
 
           <a href="ticket.html">TICKET</a>
           <a href="gallery.html">GALLERY</a>
@@ -198,7 +208,7 @@
       
 
     </header>
-
+    <section>
     <div class="container">
       <h1>GALLERY</h1>
       <ul>
