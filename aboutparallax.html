@@ -114,9 +114,9 @@
       <style>
 
 
-section{
+/* section{
     padding: 125px 0;
-  }
+  } */
   .about{
     text-align: center;
     padding-bottom:100px;
@@ -129,22 +129,6 @@ section{
   }
 
 
-
-
-        .parallax {
-          margin-bottom: 50px;
-        }
-
-        .parallax>h1 {
-          text-align: center;
-          font-size: 50px;
-          height: 100px;
-          line-height: 100px;
-          margin-bottom: 50px;
-        }
-
-
-
         .title1 {
           background-image: url(./images/gallery/gall01.jpg);
         }
@@ -153,9 +137,9 @@ section{
           background-image: url(./images/gallery/gall03.jpg);
         }
 
-        .title3 {
+        /* .title3 {
           background-image: url(./images/gallery/gall04.jpg);
-        }
+        } */
 
 
 
@@ -175,9 +159,10 @@ section{
 
 
         .container .content1,
-        .container .content2,
-        .container .content3 {
-          width: 100%;
+        .container .content2
+        /* ,.container .content3  */
+        {
+          width: 50%;
           /* top: 50%; */
           /* left: 50%; */
           /* transform: translateX(-50%) translateY(-50%); */
@@ -188,10 +173,22 @@ section{
           text-align: center;
         }
 
-        .container .content1>h1,
-        .container .content2>h1,
-        .container .content3 {
 
+        .container .content2{
+          top: 50%;
+          left: 20%;
+          transform: translateX(-40%) translateY(-50%);
+        }
+
+        .container .content1{
+          top: 50%;
+          left: 50%;
+          transform: translateY(-50%);
+        }
+
+
+        .container .content1>h1,
+        .container .content2>h1{
           font-size: 50px;
         }
 
@@ -215,13 +212,15 @@ section{
         <div class="about">
           <h1>ABOUT</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aut ea officia saepe corporis sit, qui dolor eligendi! Enim illum voluptas quia sequi eveniet temporibus aut nam inventore et nisi?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aut ea officia saepe corporis sit, qui dolor eligendi! Enim illum voluptas quia sequi eveniet temporibus aut nam inventore et nisi?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aut ea officia saepe corporis sit, qui dolor eligendi! Enim illum voluptas quia sequi eveniet temporibus aut nam inventore et nisi?</p>
         </div>
 
         <div class="container title1">
           <div class="content1">
 
             <h1>
-              fact that a reader will be distracted by the readable content
+              GREEN
             </h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -236,7 +235,7 @@ section{
           <div class="content2">
 
             <h1>
-              fact that a reader will be distracted by the readable content
+              BLUE
             </h1>
             <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -247,7 +246,7 @@ section{
 
         </div>
 
-        <div class="container title3">
+        <!-- <div class="container title3">
           <div class="content3">
 
             <h1>
@@ -259,9 +258,9 @@ section{
               scrambled it to make a type specimen book.
             </p>
          
-          </div>
+          </div> 
 
-        </div>
+        </div>-->
 
 
       </div>

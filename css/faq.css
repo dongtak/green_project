@@ -94,7 +94,7 @@ color: rgb(72, 32, 250); /*정해진 색으로!*/
 /* FAQ 공통 부분 */
 
 .faqbox span {
-    margin-left: 10px;
+    margin-left: 6px;
     line-height: 23px;
     color: #343131;
 
@@ -191,7 +191,7 @@ color: rgb(72, 32, 250); /*정해진 색으로!*/
 /* 게시판 메뉴별 너비 설정 - 모바일 버전일때는 제목과 작성일만 보이게 */
 
 .qnabox_list li.title {
-    width: 65%;
+    width: 70%;
 }
 
 .qnabox_list li.date {
@@ -343,14 +343,10 @@ color: rgb(72, 32, 250); /*정해진 색으로!*/
 
 /* input상자 맞추기 위함*/
 @media all and (max-width:440px) {
-    /* .qnabox_btn_box {
-        width: 100%;
-    } */
+  
 .qnabox_btn_box .qna_write{
    text-align: center;
 }
-/* .qnabox_btn_box a{
-    margin-left: 150px;
-} */
 
 }
+
