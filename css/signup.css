@@ -4,13 +4,10 @@
     box-sizing: border-box;
 }
 
-@media all and (min-width:360px){
-
 section{
-  margin-top: 100px;
+padding-top: 300px;
   /* color: aliceblue; */
-  margin-left: 20px;
-  margin-right: 20px;
+
 }
 .container{
   /* background: #ff3a3a; */
@@ -256,15 +253,16 @@ footer{
  padding: 70px;
 }
 
+
+
+/* 태블릿, pc 버젼 */
+@media all and (min-width: 480px){
+section{
+  padding: 100px 0;
 }
-
-
-/* 태블릿, px 버젼 */
-@media all and (min-width: 780px){
-.container{
-  width: 700px;
+  .container{
+  max-width: 700px;
   margin: 0 auto;
-  margin-top: -100px;
 }
 
 form{
