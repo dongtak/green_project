@@ -33,8 +33,6 @@ section{
 .login_form h1{
     font-size: 32px;
     color: aliceblue;
-    border: 1px solid aliceblue;
-    width: 55%;
     height: 80px;
     margin: 0 auto;
     text-align: center;
