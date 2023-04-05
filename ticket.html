@@ -21,70 +21,12 @@
   <title>TICKET</title>
 
   <style>
-    section {
-      margin-top: 100px;
+        section {
+      margin-top: 125px;
     }
 
-    a {
-      color: aliceblue;
-    }
-
-    .ticket h1 {
-      font-size: 50px;
-      height: 100px;
-      line-height: 100px;
-      text-align: center;
-    }
-
-    .ticket_btn {
-      /* background: #15ff00; */
-      text-align: center;
-      margin: 20px auto;
-    }
-
-    .ticket_btn a {
-
-      width: 70vw;
-      /* background: #ffffff;
-      color: #000; */
-      border: 1px solid white;
-      display: inline-block;
-      font-size: 20px;
-      height: 60px;
-      line-height: 30px;
-      margin-bottom: 60px;
-      transition: 0.3s;
-    }
-
-    .ticket_btn a:hover{
-        color: crimson;
-        background: #ffffff;
-      }
-/* 오퍼 */
-
-.ticket h2{
-  display: inline-block;
-  margin: 20px;
-  
-}
-
-  
-    .offer_img {
-      width: 100%;
-      height: 100px;
-      transition: 0.2s;
-    
-    }
-  
-   
-
-
-    .offer:hover .offer_img{
-        height: 250px;
-
-      }
       /* 모바일용 */
-      @media all and (max-width: 480px) {
+          @media all and (max-width: 480px) {
         section {
           padding-top: 125px;
           margin: 0;
@@ -106,9 +48,11 @@
 .general .offer:nth-child(2) , .offer:nth-child(6){
       border-bottom:1px solid #ffffff;
     }
-    .offer{
+ 
+    .offer div{
       border-top:1px solid white;
     }
+ 
 @keyframes fadeInLeft{
     0%{
       color: #ffffff00;
@@ -121,7 +65,114 @@
         height: 250px;
     }
   }
+  h2 {
+      border-top: none;
+    }
 }
+h2 {
+      border-top: none;
+    }
+  
+
+    a {
+      color: aliceblue;
+    }
+
+    .ticket h1 {
+      font-size: 50px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+    }
+
+    .ticket_btn {
+      /* background: #15ff00; */
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    /* .ticket_btn a {
+
+      width: 70vw;
+      border: 1px solid white;
+      display: inline-block;
+      font-size: 20px;
+      height: 60px;
+      line-height: 30px;
+      margin-bottom: 60px;
+      transition: 0.3s;
+    } */
+/* 
+    .ticket_btn a:hover{
+        color: crimson;
+        background: #ffffff;
+      } */
+      .ticket_btn{
+       display: flex;
+       justify-content: space-evenly;
+
+      }
+      .ticket_btn a {
+    position: relative;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    padding: 1em 2em;
+}
+.ticket_btn a:before,
+.ticket_btn a:after{
+    height:90px;
+    width:45px;
+    content: '';
+    position: absolute;
+    top: 0.9em;
+    top: calc(0.9em - 1px);
+    height: 1.2em;
+    width: 0.6em;
+   
+    border: 2px solid white;
+}
+.ticket_btn a:before {
+    left: -2px;
+    border-radius: 0 1em 1em 0;
+    border-left-color: rgb(189, 189, 189);
+}
+.ticket_btn a:after {
+    right: -2px;
+    border-radius: 1em 0 0 1em;
+    border-right-color: rgb(189, 189, 189);
+}
+/* 오퍼 */
+
+.ticket h2{
+  display: inline-block;
+  margin: 20px;
+  
+}
+.offer_pc,.grade_pc {
+    display:none;
+  }
+  
+    .offer_img {
+      width: 100%;
+      height: 100px;
+      transition: 0.2s;
+    
+    }
+  
+    .offer_slider{
+      display: none;
+    }
+
+
+    .offer:hover .offer_img{
+        height: 250px;
+
+      }
+    
+
 
     /* 오퍼 설명 */
     .offer_img::before {
@@ -170,9 +221,11 @@
     .grade_pc{
       display: none;
     }
-
+/* PC화면 */
     @media all and (min-width: 480px) {
-
+      .offer_slider{
+        display: block;
+      }
 
       .ticket {
         text-align: center;
@@ -182,7 +235,6 @@
       .ticket_btn {
         font-weight: bold;
         width: 80%;
-        /* background: #ff9900; */
         margin: auto;
         display: flex;
       }
@@ -200,19 +252,78 @@
      
 
    
-      .ticket h2{
-        margin-top: 100px;
-      }
+
       /* 오퍼 스타일 */
 
       .general,
       .premium {
         margin-top: 100px;
+        padding-bottom: 200px;
         /* background: rgb(0, 0, 0); */
       }
+      .premium{
+        margin-top: 200px;
+      }
 
+      .ticket_btn a {
+    padding: 0;
+    height: auto;
+    width: 40%;
+}
+.ticket_btn a:before,
+.ticket_btn a:after{
+    height:90px;
+    width:45px;
+    content: '';
+    position: absolute;
+    top: 0.9em;
+    top: calc(0.9em - 1px);
+    height: 1.2em;
+    width: 0.6em;
+   
+    border: 2px solid white;
+}
+.ticket_btn a:before {
+    left: -2px;
+    border-radius: 0 1em 1em 0;
+    border-left-color: rgb(189, 189, 189);
+}
+.ticket_btn a:after {
+    right: -2px;
+    border-radius: 1em 0 0 1em;
+    border-right-color: rgb(189, 189, 189);
+}
+.ticket_btn a:hover
+{
+background: #ffffff;
+}
+.ticket_btn a:hover:after,
+.ticket_btn a:hover:before {
+  background: #fd010100;
+}
+
+
+/* 슬라이더 */
+#image-track {
+            display: flex;
+            gap: 2vmin;
+            position: absolute;
+            left: 30%;
+            transform: translate(0%, -50%);
+            user-select: none;
+        }
+
+        #image-track>.image {
+            width:25vmin;
+            height: 56vmin;
+            object-fit: cover;
+            object-position: 50% center;
+        }
+
+        img:hover {
+      opacity: 0.5;
+     }
       .offers {
-        /* background: #fffb00; */
         height: 120px;
         margin: 100px auto;
         display: flex;
@@ -229,16 +340,6 @@
         background: #ffffff;
         overflow: hidden;
 }
-  .offer_bar::before{
-    content: "";
-    display: block;
-    visibility: visible;
-    position: relative;
-    top: 100px;
-    width: 100%;
-    height: 500px;
-    background: #fd0101;
-  }
 
 
       .offer {
@@ -313,8 +414,10 @@
         color: aliceblue;
         width: 120px;
         height: 60px;
-        background: blue;
         margin-bottom: 120px;
+      }
+      .offers,.offer_bar{
+        display: none;
       }
     }
   </style>
@@ -416,6 +519,27 @@
             </div>
           </div>
           <div class="offer_bar"></div>
+          </div>
+          <div class="offer_slider">
+            <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+             
+          </div>
         </div>
 
 
@@ -423,11 +547,11 @@
           <div class="grade">
             <a href="">PREMIUM</a>
           </div>
+         
           <div class="ticket_btn">
             <a href="">1DAY<br>149,000</a>
             <a href="">2DAY<br>199,000</a>
           </div>
-          <h2>OFFERS FOR PREMIUM</h2>
           <div class="offers">
             <div class="offer">
               <div class="offer_img">
@@ -451,6 +575,9 @@
           </div>
           <div class="offer_bar"></div>
         </div>
+        <div class="grade_pc">
+          <a href="">PREMIUM</a>
+        </div>
       </div>
 
     </section>
@@ -460,5 +587,44 @@
     </footer>
     </div>
 </body>
+<script>
 
+const track = document.getElementById("image-track");
+
+const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+
+const handleOnUp = () => {
+    track.dataset.mouseDownAt = "0";
+    track.dataset.prevPercentage = track.dataset.percentage;
+}
+
+const handleOnMove = e => {
+    if (track.dataset.mouseDownAt === "0") return;
+
+    const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+        maxDelta = window.innerWidth / 2;
+
+    const percentage = (mouseDelta / maxDelta) * -100,
+        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+
+    track.dataset.percentage = nextPercentage;
+
+    track.animate({
+        transform: `translate(${nextPercentage}%, -50%)`
+    }, { duration: 1200, fill: "forwards" });
+
+    for (const image of track.getElementsByClassName("image")) {
+        image.animate({
+            objectPosition: `${100 + nextPercentage}% center`
+        }, { duration: 1200, fill: "forwards" });
+    }
+}
+window.onmousedown = e => handleOnDown(e);
+window.ontouchstart = e => handleOnDown(e.touches[0]);
+window.onmouseup = e => handleOnUp(e);
+window.ontouchend = e => handleOnUp(e.touches[0]);
+window.onmousemove = e => handleOnMove(e);
+window.ontouchmove = e => handleOnMove(e.touches[0]);
+</script>
 </html>
