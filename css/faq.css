@@ -43,6 +43,12 @@ section{
 }
 
 
+.board_tap li.qna{
+    color:rgb(192, 191, 191);
+}
+
+
+
 .board_tap li.faq:hover{
 cursor: pointer;
 color: aqua; /*정해진 색으로!*/
@@ -51,15 +57,6 @@ color: aqua; /*정해진 색으로!*/
 cursor: pointer;
 color: rgb(72, 32, 250); /*정해진 색으로!*/
 }
-
-
-/* 
-.board_tap li .click{
-    border-bottom: 3px solid aliceblue;
-    border-radius: 3px;
-    font-weight: 900;
-} */
-
 
 
 .board_tap li:first-child:after {
@@ -143,6 +140,7 @@ color: rgb(72, 32, 250); /*정해진 색으로!*/
 {
     font-size: 25px;
     margin: 30px 0;
+    letter-spacing: 1px;
 }
 
 

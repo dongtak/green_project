@@ -24,7 +24,7 @@ const passwordCheck = document.getElementById("password_check")
 
   
   // 비밀번호가 일치하는지 확인, 비밀번호 불일치시 메세지출력,상자 테두리 빨간색으로 보이게
- if (password !== pwdCheck){
+  if (password !== pwdCheck){
     messageDiv.innerHTML = "비밀번호 불일치";
     messageDiv.style.visibility = "visible";
     passwordCheck.style.borderColor = "red";
@@ -32,14 +32,21 @@ const passwordCheck = document.getElementById("password_check")
     return false;
   }
 
-    // 비밀번호가 공백일 경우, 메세지 출력, 상자 테두리 빨간색으로 보이게
-  else if(password === "", pwdCheck===""){
-    messageDiv.innerHTML = "비밀번호를 입력해주세요";
-    messageDiv.style.visibility = "visible";
-    passwordCheck.style.borderColor = "red";
-    passwordInput.style.borderColor = "red";
-    return false;
+ else if (password == pwdCheck){
+    messageDiv.style.visibility = "hidden";
+    passwordCheck.style.borderColor = "initial";
+    passwordInput.style.borderColor = "initial";
+    
   }
+
+    // 비밀번호가 공백일 경우, 메세지 출력, 상자 테두리 빨간색으로 보이게
+  // else if(password === "", pwdCheck===""){
+  //   messageDiv.innerHTML = "비밀번호를 입력해주세요";
+  //   messageDiv.style.visibility = "visible";
+  //   passwordCheck.style.borderColor = "red";
+  //   passwordInput.style.borderColor = "red";
+  //   return false;
+  // }
    
   return true;
 }
@@ -50,7 +57,7 @@ const passwordCheck = document.getElementById("password_check")
 //제출버튼 클릭시 오류,폼 데이터 유효성 검사 수행
 
 ////////////기존 내용
-// submitButton.addEventListener('click',
+submitButton.addEventListener('click',
 
 
 function qnaFunction(event) {
@@ -63,12 +70,12 @@ function qnaFunction(event) {
  
   alert('문의해주셔서 감사합니다.');
 
-  window.location.href="faq.html";
+  // window.location.href="faq.html";
 
   return true;
   
 
-}
+});
 
 
 
@@ -86,48 +93,6 @@ function qnaReturn(){
     }
   }
   
-////////기존내용
-
-
-// submitButton.addEventListener("click", function(event) {
-//   event.preventDefault();
-//   event.stopPropagation();
-//   if (validatePassword()) {
-//     qnaFunction(event);
-//   }
-// });
-
-// function qnaFunction(event) {
-//   let form = document.getElementById("qnaform");
-//   if (form.checkValidity() === false || !validatePassword()){
-//     return false;
-//   }
-//   alert('문의해주셔서 감사합니다.');
-//   window.location.href="faq.html";
-//   return true;
-// }
-
-// function  {
-//   
-//   return true;
-// }
-
-
-
-
-
-
-
-
-
-
-// );
-
-// function validateAndSubmit(event) {
-//   if (validatePassword()) { // validatePassword() 함수가 true를 반환하는 경우에만 폼 제출
-//     qnaFunction(event); // qnaFunction() 함수 호출
-//   }
-// }
 
 
 
@@ -143,69 +108,3 @@ function qnaReturn(){
 
 
 
-
-
-
-// // 제출 버튼 클릭 시 비밀번호 유효성 검사 실행
-// submitButton.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   if (validatePassword()) {
-//     alert('문의해주셔서 감사합니다.');
-//     window.location.href = "faq.html"
-//   }
-// });
-
-
-
-// function myFunction() {
-//   let form = document.getElementById("form");
-//   if (form.checkValidity() === true) {
-//   validatePassword();
-//   form.submit(); // 모든 필수 입력란이 유효한 경우 form을 제출
-//   }
-//   else {
-//   // 값이 유효하지 않은 경우에 대한 처리 (예: 에러 메시지 출력)
-//   }
-//   }
-
-
-
-
-
-
-//비밀번호가 일치하는지 확인
-// if (password !== pwdCheck){
-//     messageDiv.innerHTML = "비밀번호 불일치";
-//     messageDiv.style.visibility = "visible";
-//     passwordCheck.style.borderColor = "red";
-//     passwordInput.style.borderColor = "red";
-    
-//     return false;
-
-// }else{
-
-//  alert('문의해주셔서 감사합니다.')
-//   return true;
-  
-// }};
-
-// // 제출 버튼 클릭 시 비밀번호 유효성 검사 실행
-// submitButton.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   validatePassword();
-
-  
-//     passwordCheck.style.borderColor = "initial";
-//     passwordInput.style.borderColor = "initial";
-// });
-
-
-
-
-
-
-
-
-
-
-  
