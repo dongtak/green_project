@@ -237,7 +237,7 @@ transition: 0.3s ease-in;
     }
     .main_lineup_scroll{
      margin-top: 80px;
-      max-width: 60%;
+      max-width: 80%;
       margin-bottom: 100px;
       overflow: hidden;
       height: 100%;
@@ -247,7 +247,7 @@ transition: 0.3s ease-in;
     .main_lineup_scroll h3{
       font-size: 64px;
       position: relative;
-      z-index: 2;
+      z-index:999;
       text-align: start;
     }
     .main_lineup_scroll img{
@@ -282,15 +282,24 @@ transition: 0.3s ease-in;
         width: 24%;
 
       }
+      .main_lineup_scroll {
+        transition: 0.3 ease-in-out;
+      }
+      .main_lineup_scroll{
+        margin-left: 10%;
+      }
+      .main_lineup_scroll img{
+        right: 25%;
+      }
     }
   </style>
 </head>
 
 <!-- 썸네일
     홈페이지 접속 시 2초간 출력 -->
-<!-- <div id="thumbnail">
+<div id="thumbnail">
   <h1>GREEN AND BLUE</h1>
-</div> -->
+</div>
 
 <body>
   <div class="blur"></div>
