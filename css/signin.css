@@ -159,7 +159,7 @@ section{
 @media all and (min-width:480px) {
     section {
         max-width: 960px;
-        padding: 0;
+        padding: 125px 0;
     }
     .login_form{
         position: relative;
@@ -171,7 +171,6 @@ section{
     .login_form h1{
         font-size: 32px;
         color: aliceblue;
-        border: 1px solid aliceblue;
         width: 55%;
         height: 75px;
         margin-left: 22%;

@@ -148,8 +148,9 @@ h2 {
 
 .general h2{
   display: inline-block;
-  margin-top: 100px;
   
+  margin:20px 0;
+  margin-top: 100px;
 }
 .offer_pc,.grade_pc {
     display:none;
@@ -221,8 +222,20 @@ h2 {
     .grade_pc{
       display: none;
     }
+    .ticket_btn a:hover
+{
+border: 2px solid chartreuse;
+color: chartreuse;
+}
+.ticket_btn a:hover:after,
+.ticket_btn a:hover:before {
+border: 2px solid chartreuse;
+}
 /* PC화면 */
     @media all and (min-width: 480px) {
+      .premium h2{
+        display: none;
+      }
       .offer_slider{
         display: block;
       }
@@ -293,14 +306,7 @@ h2 {
     border-radius: 1em 0 0 1em;
     border-right-color: rgb(189, 189, 189);
 }
-.ticket_btn a:hover
-{
-background: #ffffff;
-}
-.ticket_btn a:hover:after,
-.ticket_btn a:hover:before {
-  background: #fd010100;
-}
+
 
 
 /* 슬라이더 */
@@ -315,7 +321,7 @@ background: #ffffff;
 
         #image-track>.image {
             width:25vmin;
-            height: 42vmin;
+            height: 45vmin;
             object-fit: cover;
             object-position: 50% center;
         }
@@ -417,7 +423,6 @@ background: #ffffff;
         color: aliceblue;
         width: 120px;
         height: 60px;
-        margin-bottom: 120px;
       }
       .offers,.offer_bar{
         display: none;
@@ -508,8 +513,8 @@ background: #ffffff;
             <a href="">GENERAL</a>
           </div>
           <div class="ticket_btn">
-            <a href="">1DAY<br>99,000</a>
-            <a href="">2DAY<br>149,000</a>
+            <a href="">1DAY<br>&#8361; 99,000</a>
+            <a href="">2DAY<br>&#8361; 149,000</a>
           </div>
           <h2>OFFERS FOR GENERAL</h2>
           <div class="offers">
@@ -526,15 +531,15 @@ background: #ffffff;
           <div class="offer_slider">
             <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
               <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
-              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
-              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
-              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
-              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
-              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
-              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
-              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
-              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
-              <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall02.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall03.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall04.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall05.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall06.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall07.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall08.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall09.jpg" draggable="false"/>
+              <img class="image" src="./images/gallery/gall0.jpg" draggable="false"/>
               <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
               <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
               <img class="image" src="./images/gallery/gall01.jpg" draggable="false"/>
@@ -552,9 +557,10 @@ background: #ffffff;
           </div>
          
           <div class="ticket_btn">
-            <a href="">1DAY<br>149,000</a>
-            <a href="">2DAY<br>199,000</a>
+            <a href="">1DAY<br>&#8361; 149,000</a>
+            <a href="">2DAY<br>&#8361; 199,000</a>
           </div>
+          <h2>OFFERS FOR GENERAL</h2>
           <div class="offers">
             <div class="offer">
               <div class="offer_img">
