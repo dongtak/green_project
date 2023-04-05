@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <!-- 외부 스타일 -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/blur.css">
+  <!-- 외부 스크립트 -->
+  <script src="./js/mobile_btn.js"></script>
+  <!-- 외부 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap"
+    rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABOUT</title>
+  <!-- <style>
+    section {
+      padding: 125px 0;
+    }
+
+    .about {
+      text-align: center;
+      padding-bottom: 100px;
+    }
+
+    .about h1 {
+      font-size: 50px;
+      height: 100px;
+      line-height: 100px;
+      margin-bottom: 50px;
+    }
+  </style> -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      hamburger_btn();
+    });
+  </script>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="blur"></div>
+  <div id="wrapper">
+    <!-- 헤더 -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <h1>
+            G&B
+            <br />
+            FESTIVAL
+          </h1>
+        </a>
+      </div>
+      <!-- 모바일 버튼 -->
+      <div class="mobile_btn">
+        <!-- 햄버거버튼 -->
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="top_nav">
+          <hr>
+          <ul class="nav_mobile">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="artist.html">ARTIST</a></li>
+            <li><a href="ticket.html">TICKET</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="map.html">MAP</a> </li>
+            <li><a href="faq.html">FAQ/Q&A</a></li>
+            <li><a href="signin.html">SIGN IN</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="top_pc">
+        <a href="about.html">ABOUT</a>
+
+
+        <div class="dropdown">
+          <a class="dropbtn" href="artist.html">ARTIST</a>
+          <div class="dropdown-content">
+            <a href="artist_g.html">GREEN</a>
+            <a href="artist_b.html">BLUE</a>
+          </div>
+        </div>
+
+        <a href="ticket.html">TICKET</a>
+        <a href="gallery.html">GALLERY</a>
+
+
+        <div class="dropdown">
+          <a class="dropbtn">INFO</a>
+          <div class="dropdown-content">
+            <a href="map.html">MAP</a>
+            <a href="faq.html">FAQ/Q&A</a>
+          </div>
+        </div>
+
+
+        <a href="signin.html">SIGN IN</a>
+      </div>
+
+
+      <style>
+        .parallax {
+          margin-bottom: 50px;
+        }
+
+        .parallax>h1 {
+          text-align: center;
+          font-size: 50px;
+          height: 100px;
+          line-height: 100px;
+          margin-bottom: 50px;
+        }
+
+
+
+        .title1 {
+          background-image: url(./images/gallery/gall01.jpg);
+        }
+
+        .title2 {
+          background-image: url(./images/gallery/gall03.jpg);
+        }
+
+        .title3 {
+          background-image: url(./images/gallery/gall04.jpg);
+        }
+
+
+
+
+
+
+        .container {
+          margin: 0 auto;
+          width: 90%;
+          height: 100vh;
+          /* 부모크기 상관없이 화면크기 기준 100% */
+          overflow: hidden;
+          background-attachment: fixed;
+          background-size: cover;
+          /*이미지 꽉채우기*/
+        }
+
+
+        .container .content1,
+        .container .content2,
+        .container .content3 {
+          width: 100%;
+          /* top: 50%; */
+          /* left: 50%; */
+          /* transform: translateX(-50%) translateY(-50%); */
+          border: 5px solid yellow;
+          position: relative; /* 자신을 기준으로 배치*/
+          color: white;
+          font-size: 30px;
+          text-align: center;
+        }
+
+        .container .content1>h1,
+        .container .content2>h1,
+        .container .content3 {
+
+          font-size: 50px;
+        }
+
+
+
+      </style>
+
+
+
+
+
+    </header>
+
+    <section>
+      <!-- 컨텐츠 여기 넣어주세요 -->
+
+
+
+
+      <div class="parallax">
+        <h1>ABOUT</h1>
+
+        <div class="container title1">
+          <div class="content1">
+
+            <h1>
+              fact that a reader will be distracted by the readable content
+            </h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="container title2">
+          <div class="content2">
+
+            <h1>
+              fact that a reader will be distracted by the readable content
+            </h1>
+            <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+          </div>
+
+        </div>
+
+        <div class="container title3">
+          <div class="content3">
+
+            <h1>
+              fact that a reader will be distracted by the readable content
+            </h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
+         
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <footer>
+      <h1>G&B<br />FESTIVAL</h1>
+      <p>&copy; Copyright</p>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -213,11 +213,11 @@ transition: 0.3s ease-in;
       z-index: 2;
     }
     .main_lineup_scroll img{
-      /* display: none; */
-      position: static;
+      display: none;
+      position: fixed;
       background: #000;
-      width: 100px;
-      height: 100px;
+      top: 50%;
+      right: 10%;
       transform: scale(1.5);
       z-index: 1;
     }
@@ -245,9 +245,9 @@ transition: 0.3s ease-in;
 
 <!-- 썸네일
     홈페이지 접속 시 2초간 출력 -->
-<!-- <div id="thumbnail">
+<div id="thumbnail">
   <h1>GREEN AND BLUE</h1>
-</div> -->
+</div>
 
 <body>
   <div class="blur"></div>
@@ -356,29 +356,8 @@ transition: 0.3s ease-in;
         </ul>
       </div>
     </section>
-    <section>
-      <h1 id="lineup">LINE UP</h1>
-      <div class="main_lineup">
-        <a href="artist_g.html">
-          <img
-            src="./images/main/DALL·E 2023-04-02 15.27.17 - An expressive oil painting of greenish mountain and bluish ocean side, with an explosion of a nebula.png"
-            alt="">
-        </a>
-        <a href="artist_b.html">
-          <img
-            src="./images/main/DALL·E 2023-04-02 15.44.38 - An expressive oil painting of greenish mountain and bluish ocean side, with beautiful supernova explosion, high quality.png"
-            alt="">
-        </a>
-      </div>
-    </section>
-    <section>
-      <!-- 티켓 번들 -->
-      <div class="main_ticket_bundle">
-        <a href="ticket.html">1DAY</a>
-          <a href="ticket.html">2DAY</a>
-          <a href="ticket.html">PREMIUM</a>
-      </div>
-    </section>
+    
+    
     <section>
       <div class="main_lineup_scroll">
       <a href="https://www.paulmccartney.com/" target="_blank">
@@ -471,6 +450,36 @@ transition: 0.3s ease-in;
         <h3 class="text">250</h3>
       </a>
     </div>
+    </section>
+
+    <section>
+      <h1 id="lineup">LINE UP</h1>
+      
+      <div class="main_lineup">
+        <a href="artist_g.html">
+          <img
+            src="./images/main/DALL·E 2023-04-02 15.27.17 - An expressive oil painting of greenish mountain and bluish ocean side, with an explosion of a nebula.png"
+            alt="">
+        </a>
+        <a href="artist_b.html">
+          <img
+            src="./images/main/DALL·E 2023-04-02 15.44.38 - An expressive oil painting of greenish mountain and bluish ocean side, with beautiful supernova explosion, high quality.png"
+            alt="">
+        </a>
+      </div>
+
+
+
+
+    </section>
+
+    <section>
+      <!-- 티켓 번들 -->
+      <div class="main_ticket_bundle">
+        <a href="ticket.html">1DAY</a>
+          <a href="ticket.html">2DAY</a>
+          <a href="ticket.html">PREMIUM</a>
+      </div>
     </section>
     <footer>
       <h1>G&B<br />FESTIVAL</h1>

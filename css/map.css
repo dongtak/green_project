@@ -2,12 +2,13 @@
 
 section{
     padding: 125px 0;
+    margin: 0 auto;
     
 }
 /* MAP 페이지 부모상자 */
 .map {
     margin:0px auto;
-    width: 90%;
+    width: 70%;
     min-width: 360px;
     text-align: center;
     /* background-color: rgb(198, 241, 241); 지울 부분 */
@@ -32,10 +33,20 @@ li.train,
 li.bus,
 li.car {
     display: flex;
-    
-    /* background-color: antiquewhite;  */
+    /* padding-left: 30px; */
     
 }
+
+
+.transfer_title{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 900;
+   padding-bottom:20px;
+   border-bottom: 1px solid white;
+  color: #ffffff;
+
+} 
 
 
 li.train>div,
@@ -43,7 +54,7 @@ li.bus>div,
 li.car>div {
     text-align: start;
     margin-top: 10px;
-    /* background-color: rgb(183, 199, 106); 지울 부분 */
+    width: 100%;
 }
 
 li.train>div>strong,
@@ -52,15 +63,13 @@ li.car>div>strong {
 font-size: 20px;
 margin-left: 10px;
 
-border-bottom: 1px solid white;
-
 }
 
 
 li.train ul,
 li.bus ul,
 li.car ul {
-    margin: 30px auto;
+    margin: 20px auto;
     color: black;
 }
 
@@ -71,7 +80,6 @@ li.bus ul>li,
 li.car ul>li {
    padding: 2px;
    color: white;
-
   
 }
 
@@ -147,10 +155,11 @@ margin-top: 10px;
         position: absolute;
         left: 50%; 
         transform: translate( -50%);
-        width: 70%;
+        width: 80%;
         height: 70%;
         top: 7%;
         border: none;  
+        
     }
 
     
@@ -168,12 +177,12 @@ margin-top: 10px;
     }    
 
 
-.map_green .map_left_address,
+/* .map_green .map_left_address,
 .map_blue .map_left_address 
  {
-    /* border: 1px solid white; */
-    margin-bottom: 10px;
-}
+     border: 1px solid white; 
+    margin-bottom: 10px; }*/
+
 
 .map_green .map_left_address>h3,
 .map_blue .map_left_address >h3{
@@ -214,11 +223,11 @@ margin-top: 10px;
 
 .map_tap li {
     text-align: center;
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
     font-size: 2.5rem;
     color: rgb(255, 255, 255);
     display: inline-block;
-    margin: 0 10px;
+    /* margin: 0 10px; */
     position: relative;
 }
 /* 
@@ -275,24 +284,28 @@ hr.divider{
 
 /*** PC 버전 크기일때 ***/
 
-@media all and (min-width:960px) {
+@media all and (max-width:960px) {
     section {
-    max-width: 960px;
+    margin: 0 auto;
     padding: 0;
     }
 
-    .map_green,
+  
+
+
+    /* .map_green,
     .map_blue {
         display: flex;
+        flex-direction: column;
 
-    }
+    } */
 
-    .map_right,
+    /* .map_right,
     .map_left {
-        width: 50%;
+        width: 100%;
         margin-right: 20px;
        
-    }
+    } */
 
 
    

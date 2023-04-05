@@ -5,11 +5,6 @@
 }
 
 
-
-
-
-
-
 /* 썸네일 */
 #thumbnail {
     position: fixed;
@@ -18,7 +13,7 @@
     width: 100%;
     height: 100%;
     background-color: #000000;
-    animation: fadeOut 2s forwards;
+    animation: fadeOut 5s forwards;
   }
   #thumbnail h1{
     color: rgb(255, 255, 255);
@@ -28,7 +23,7 @@
     width: 50px;
     text-align: center;
     font-size: 24px;
-    animation: logo 2s ease;
+    animation: logo 5s ease;
   }
   /* 썸네일 로고방향으로 */
   @keyframes logo{
@@ -36,16 +31,26 @@
         top: 45%;
         left: 48%;
           text-shadow: 
-          0px 0px 20px #00ffaa,
+          0px 0px 40px #00ffaa,
           0px 10px 40px #00aeff,
           0px -10px 60px #ffffff,
           0px 0px 80px #ffffff;
+        
     }
     40%{
         top: 45%;
         left: 48%;
     }
     100%{
+      text-shadow: 
+      0px 0px 40px #00ffaa,
+      0px 10px 40px #00aeff,
+      0px -10px 60px #ffffff,
+      0px 0px 80px #ffffff, 
+      0px 0px 80px #00ffaa,
+      0px 10px 80px #00aeff,
+      0px -10px 80px #ffffff,
+      0px 0px 80px #ffffff;
         top: 1%;
         left: 1%;
 
@@ -65,7 +70,7 @@
       
     }
     80%{
-      background: #5dc7ac;
+      background: #7bffde;
     }
     90%{
       background: #ff0000;

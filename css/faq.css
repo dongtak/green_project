@@ -5,7 +5,7 @@ section{
 }
 /* FAQ/Q&A 페이지 부모상자 */
 .board {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
    
     
@@ -30,7 +30,6 @@ section{
 
 .board_tap li {
     text-align: center;
-    
     font-size: 2.0rem;
     display: inline-block;
     margin: 0 10px;
@@ -42,6 +41,18 @@ section{
     letter-spacing: 2px;
     font-weight: 900;
 }
+
+
+.board_tap li.faq:hover{
+cursor: pointer;
+color: aqua; /*정해진 색으로!*/
+}
+.board_tap li.qna:hover{
+cursor: pointer;
+color: rgb(72, 32, 250); /*정해진 색으로!*/
+}
+
+
 /* 
 .board_tap li .click{
     border-bottom: 3px solid aliceblue;
@@ -76,7 +87,10 @@ section{
 
 /* FAQ 페이지 부모상자 */
 .faqbox {
-    width: 80%;
+        width: 100%;
+        max-width: 768px;
+        
+
     margin: 0 auto;
 }
 
@@ -255,9 +269,11 @@ section{
 
 
 .qnabox_btn input {
-    width: 200px;
+    width:60%;
+    max-width: 200px;
     height: 30px;
     margin: 5px 3px;
+    
 }
 
 
@@ -283,12 +299,6 @@ section{
 
 @media all and (min-width:768px) {
     
-
-    /* faq 설정 */
-    .faqbox{
-        width: 60%;
-    }
-
 
     /*q&a게시판 설정*/
 
@@ -329,5 +339,20 @@ section{
     .answer {
         display: block;
     }
+
+}
+
+
+/* input상자 맞추기 위함*/
+@media all and (max-width:440px) {
+    /* .qnabox_btn_box {
+        width: 100%;
+    } */
+.qnabox_btn_box .qna_write{
+   text-align: center;
+}
+/* .qnabox_btn_box a{
+    margin-left: 150px;
+} */
 
 }
