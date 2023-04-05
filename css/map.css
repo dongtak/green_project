@@ -270,10 +270,10 @@ hr.divider {
 
 /*** PC 버전 크기일때 ***/
 
-@media all and (max-width:960px) {
+@media all and (min-width:480px) {
     section {
         margin: 0 auto;
-        padding: 0;
+        padding: 125px 0;
     }
 
 

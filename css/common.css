@@ -291,6 +291,7 @@
      
     }
     .top_pc>a:hover{
+      color: #a1a1a1;
       border-bottom:3px solid #deeeff;
     }
     /* PC 로그인 버튼 */
@@ -303,6 +304,8 @@
       line-height: 40px;
       border: 1px solid white;
       border-radius: 30px;
+      max-width: 80px;
+      min-width: 46px;
     }
     .top_pc>a:last-child:hover{
       background: rgb(255, 255, 255);
@@ -342,7 +345,7 @@
     }
     a.dropbtn{
       width: 100%;
-      height: 100%;
+      height: 100px;
     }
     
     .dropdown {
@@ -359,18 +362,27 @@
     }
     
     .dropdown-content a {
-      height: 60px;
+      height: 50px;
       width: 100%;
-      line-height: 60px;
+      line-height: 50px;
       text-decoration: none;
       display: block;
       margin: 0 auto;
 
     }
-    
-    .dropdown-content a:hover {background-color: #ffffff;
+   
+    .dropdown:hover{
+      border-bottom: 3px solid aliceblue;
+      transition: 0.2s ease-in-out;
+      color: #8a8a8a;
+    }
+    .dropdown:hover>a{
+      color: #8a8a8a;
+    }
+    .dropdown-content a:hover {
+      /* background-color: #ffffff; */
     transition: 0.3s ease-in-out;
-    color: #000;
+    color: #8a8a8a;
  }
     
     .dropdown:hover .dropdown-content {
