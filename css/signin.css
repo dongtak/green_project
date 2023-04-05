@@ -13,8 +13,7 @@ a{
 }
 
 section{
-    margin: 100px auto;
-    padding: 100px 0;
+    padding: 125px 0;
     color: aliceblue;
     /* background-color: lightgreen; */
     width: 100%;
@@ -206,7 +205,8 @@ section{
         
     }
     .form_control p{
-        /* display: none; */
+        width: 70%;
+        margin: 0 auto;
     }
 
     .btn_control {

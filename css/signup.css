@@ -4,18 +4,14 @@
     box-sizing: border-box;
 }
 
-@media all and (min-width:360px){
-
 section{
-  margin-top: 100px;
+padding-top: 125px;
   /* color: aliceblue; */
-  margin-left: 20px;
-  margin-right: 20px;
+margin: 0;
 }
 .container{
   /* background: #ff3a3a; */
   width: 100%;
-  margin-top: -100px;
   /* background-color: #979797; */
   border: 1px solid aliceblue;
   /* overflow:auto; */
@@ -256,15 +252,16 @@ footer{
  padding: 70px;
 }
 
+
+
+/* 태블릿, pc 버젼 */
+@media all and (min-width: 480px){
+section{
+  padding: 100px 0;
 }
-
-
-/* 태블릿, px 버젼 */
-@media all and (min-width: 780px){
-.container{
-  width: 700px;
+  .container{
+  max-width: 700px;
   margin: 0 auto;
-  margin-top: -100px;
 }
 
 form{

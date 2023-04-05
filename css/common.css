@@ -3,44 +3,6 @@
 #wrapper {
   min-width: 360px;
 }
-.dropbtn {
-  text-align: center;
-  color: white;
-  line-height: 100px;
-  font-size: 16px;
-  cursor: pointer;
-  color: aliceblue;
-    transition: 0.1s ;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 100%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  height: 60px;
-  width: 60px;
-  line-height: 60px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 
 
@@ -302,6 +264,7 @@
       top: 0;
       right: 0;
       font-size: 1rem;
+      text-align: center;
     }
 
 
@@ -321,16 +284,17 @@
       display: inline-block;
       color: aliceblue;
       transition: 0.1s ;
+      width: 100%;
+     
     }
     .top_pc>a:hover{
-      font-size: 1.3em;
+      border-bottom:3px solid #deeeff;
     }
     /* PC 로그인 버튼 */
     .top_pc>a:last-child{
       overflow: hidden;
       font-size: 12px;
       text-align: center;
-      width: 80px;
       margin: auto 0;
       margin-right: 10px;
       line-height: 40px;
@@ -364,6 +328,50 @@
         box-shadow: 2px -7px 30px #00F260, 2px -20px 20px #0575E6;
         box-shadow: 8px -6px 20px #00F260, 5px -2px 20px #0575E6;
       }
+    }
+    .dropbtn {
+      text-align: center;
+      line-height: 100px;
+      cursor: pointer;
+      color: aliceblue;
+        transition: 0.3s ;
+        height: 100px;
+    }
+    a.dropbtn{
+      width: 100%;
+      height: 100%;
+    }
+    
+    .dropdown {
+      width: 100%;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 100%;
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      height: 60px;
+      width: 100%;
+      line-height: 60px;
+      text-decoration: none;
+      display: block;
+      margin: 0 auto;
+
+    }
+    
+    .dropdown-content a:hover {background-color: #ffffff;
+    transition: 0.3s ease-in-out;
+    color: #000;
+ }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
     
 
