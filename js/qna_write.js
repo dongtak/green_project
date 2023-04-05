@@ -63,7 +63,7 @@ submitButton.addEventListener('click',function qnaFunction(event) {
  
   alert('문의해주셔서 감사합니다.');
 
-  window.location.href="../faq.html";
+  window.location.href="faq.html";
   return true;
   
 
@@ -82,14 +82,16 @@ submitButton.addEventListener('click',function qnaFunction(event) {
 
 function qnaReturn(){
   let result = confirm('취소하시겠습니까?')
-  let answer;
+  
   
   if(result==true){
-    answer = "확인";
+    let answer = "확인";
+    window.location.href="faq.html";
 
     }else{
    
-      answer = "취소";
+  
+      
     }
   }
   
