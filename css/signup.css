@@ -5,14 +5,13 @@
 }
 
 section{
-padding-top: 300px;
+padding-top: 125px;
   /* color: aliceblue; */
-
+margin: 0;
 }
 .container{
   /* background: #ff3a3a; */
   width: 100%;
-  margin-top: -100px;
   /* background-color: #979797; */
   border: 1px solid aliceblue;
   /* overflow:auto; */
