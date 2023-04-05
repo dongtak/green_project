@@ -4,16 +4,16 @@
 /* 1:1 문의 페이지 부모상자 */
 
 .qna_writebox {
-width: 70%;
-margin: 0 auto;
+    width: 70%;
+    margin: 0 auto;
 
 }
 
 /* 1:1 문의 페이지 큰제목 */
-.qna_writebox >h1{
-margin: 40px auto;
-text-align: center;
-font-size: 3.0em;
+.qna_writebox>h1 {
+    margin: 40px auto;
+    text-align: center;
+    font-size: 3.0em;
 }
 
 /* 1:1 문의 게시글 내용 */
@@ -21,131 +21,105 @@ font-size: 3.0em;
 .qna_write_title,
 .qna_write_writer,
 .qna_write_pwd,
-.qna_write_pwd_check
-
-{
-    width:100%;
-height: 60px;
-line-height: 60px;
-border-bottom: 1px solid rgb(126, 121, 121);
-
-
+.qna_write_pwd_check {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid rgb(126, 121, 121);
 }
 
-.qna_write_page{
-
-    width:100%;
+.qna_write_page {
+    width: 100%;
     height: 260px;
     line-height: 30px;
     margin-top: 10px;
-    /* border-bottom: 1px solid rgb(126, 121, 121); */
-    
-
-
 }
 
 
-
-
-form{
-    border: 5px solid white;
-    color: white;
+form {
+    border: 1px solid aliceblue;
+    border-radius: 3px;
 }
 
-form label{
-
-display: inline-block;
-width: 40%;
-text-align: center;
-margin: 3px auto;
-font-weight: bold;
-font-size: 1.0em;
-color: rgb(255, 255, 255);
+form label {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 15px;
+    color: aliceblue;
 }
-
-
 
 
 .qna_write_title>#title,
 .qna_write_writer>#writer,
 .qna_write_pwd>#password,
-.qna_write_pwd_check>#password_check
-{
-display: inline-block;
-width: 55%;
-color: rgb(0, 0, 0);
-height: 40px;
-margin: 10px auto;
-border: 1px solid rgb(126, 121, 121);
-
-
+.qna_write_pwd_check>#password_check {
+    display: inline-block;
+    width: 55%;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    margin: 10px auto;
+    border: 1px solid rgb(126, 121, 121);
 }
 
 
-
-
-.qna_write_page>#page{
-display: block;
-width: 90%;
-height: 180px;
-margin: 10px auto;
-color: rgb(9, 9, 9);
-border: 1px solid rgb(126, 121, 121);
-
-
+.qna_write_page>#page {
+    display: block;
+    width: 90%;
+    height: 180px;
+    margin: 10px auto;
+    color: rgb(9, 9, 9);
+    border: 1px solid rgb(126, 121, 121);
 }
 
+/* 비밀번호 오류 메세지 */
 
-#message
-{   margin: 15px auto;
+
+#message {
+    margin: 15px auto;
     color: rgb(255, 0, 0);
     font-size: 15px;
-    /* padding: 1px; */
     text-align: center;
-    
-    visibility: hidden; 
-    
+    visibility: hidden;
+
 }
-
-
-
 
 
 /* 1:1 문의 게시글 등록/취소 버튼 */
 
-
 .qna_write_btn,
 .qna_write_btn>a {
-width: 100%;
-height: 50px;
-text-align: center;
+    width: 100%;
+    height: 50px;
+    text-align: center;
 }
 
 .qna_write_btn button,
-.qna_write_btn input 
-{
-width: 60px;
-height: 40px;
-text-align: center;
-margin: 0 10px;
-border: 1px solid rgb(255, 255, 255);
-border-radius: 5px;
-color: rgb(255, 255, 255);
-font-size: 15px;
-background: none;
+.qna_write_btn input {
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid aliceblue;;
+    border-radius: 5px;
+    color: aliceblue;;
+    font-size: 15px;
+    background: none;
 }
 
+/* 1:1 문의 게시글 등록/취소 버튼 호버시 효과 */
 
-
-.qna_write_btn button:hover{
-    color:rgb(235, 56, 56);
+.qna_write_btn button:hover {
+    color: rgb(235, 56, 56);
     background-color: aliceblue;
-  }
+}
 
-.qna_write_btn input[type="button"]:hover{
-    color:rgb(235, 56, 56);
+.qna_write_btn input[type="button"]:hover {
+    color: rgb(235, 56, 56);
     background-color: aliceblue;
-  }
+}
 
 
 
@@ -153,25 +127,18 @@ background: none;
 @media all and (min-width:480px) {
 
 
-form label{
-    font-size: 1.0em;
-}
+    .qna_write_title>#title,
+    .qna_write_writer>#writer,
+    .qna_write_pwd>#password,
+    .qna_write_pwd_check>#password_check {
+        display: inline;
+        box-sizing: border-box;
+        width: 50%;
+        height: 40px;
+        margin: 10px auto;
+        border: 1px solid rgb(126, 121, 121);
 
-
-.qna_write_title>#title,
-.qna_write_writer>#writer,
-.qna_write_pwd>#password,
-.qna_write_pwd_check>#password_check
-
-{
-display: inline;
-box-sizing: border-box;
-width: 50%;
-height: 40px;
-margin: 10px auto;
-border: 1px solid rgb(126, 121, 121);
-
-}
+    }
 
 
 }
@@ -183,9 +150,8 @@ border: 1px solid rgb(126, 121, 121);
 /*** PC 버전 크기일때 ***/
 
 @media all and (min-width:960px) {
-section {
-    width: 960px;
-     margin: 0 auto; 
+    section {
+        width: 960px;
+        margin: 0 auto;
+    }
 }
-}
-
