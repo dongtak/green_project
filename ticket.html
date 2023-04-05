@@ -148,8 +148,9 @@ h2 {
 
 .general h2{
   display: inline-block;
-  margin-top: 100px;
   
+  margin:20px 0;
+  margin-top: 100px;
 }
 .offer_pc,.grade_pc {
     display:none;
@@ -232,6 +233,9 @@ border: 2px solid chartreuse;
 }
 /* PC화면 */
     @media all and (min-width: 480px) {
+      .premium h2{
+        display: none;
+      }
       .offer_slider{
         display: block;
       }
@@ -419,7 +423,6 @@ border: 2px solid chartreuse;
         color: aliceblue;
         width: 120px;
         height: 60px;
-        margin-bottom: 120px;
       }
       .offers,.offer_bar{
         display: none;
@@ -557,6 +560,7 @@ border: 2px solid chartreuse;
             <a href="">1DAY<br>&#8361; 149,000</a>
             <a href="">2DAY<br>&#8361; 199,000</a>
           </div>
+          <h2>OFFERS FOR GENERAL</h2>
           <div class="offers">
             <div class="offer">
               <div class="offer_img">
