@@ -35,7 +35,7 @@
     height: 100px;
     backdrop-filter: blur(10px);
   }
-  .logo img{
+  .logo img, footer img{
     width: 100px;
     height: 100px;
     filter: invert(100%);

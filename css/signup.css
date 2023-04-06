@@ -4,11 +4,17 @@
     box-sizing: border-box;
 }
 
+
+/* 가장 큰 */
 section{
-padding-top: 125px;
+  padding: 125px 0;
+  padding-top: 225px;
   /* color: aliceblue; */
-margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+
+/* 회원가입 컨테이너 */
 .container{
   /* background: #ff3a3a; */
   width: 100%;
@@ -17,6 +23,7 @@ margin: 0;
   /* overflow:auto; */
   
 }
+/* 회원가입 컨테이너 제목(로고) 부분 */
 .container h1{
   width: 250px;
   height: 1 0px;
@@ -29,6 +36,8 @@ margin: 0;
   margin-top: 50px;
   
 }
+
+/* 입력하는 칸들을 묶은 중간 폼 박스 */
 form{
   width: 100%;
   margin: 0 auto;
@@ -37,52 +46,51 @@ form{
   height: 660px;
   text-align: center;
 }
+
+/* input 위에 보여지는 텍스트 */
 form label{
   text-align: left;
+  /* display: block; */
   display: inline-block;
   width: 70%;
   margin-top: 20px;
   color:aliceblue;
 }
 
+/* 텍스트를 적는 부분 (input) */
 label>input{
   display: inline-block;
   margin-top: 12px;
 }
 
-#select{
-  color: black;
-  float: right;
-  
+/* input칸 밑에 주석글 */
+.small{
+  font-size: 10px;
+  display:block; /* 줄바꿈 */
+  margin-top: 6px;
 }
 
-label .spans{
+label .spans{ /* 휴대폰 번호 중간에 " - "  */
   transform: translateY(100%);
   
 }
 
-form label:nth-child(1) input{
+form label:nth-child(1) input{ /* 이름 칸 */
   width: 100%;
   
 }
 
-form label:nth-child(4) input{
+form label:nth-child(5) input{ /* Email 칸 */
   width: 100%;
-  /* display: inline-block; */
+  margin-bottom: 5px;
 }
 
-form label:nth-child(5) input{
-  width: 44.9%;
+form label:nth-child(6) input{ /* 휴대폰 번호 칸 */
+  width: 24.6%;
+  text-align: center;
 }
 
-form label:nth-child(6) input {
- 
-  margin-inline: 0px;
-  margin-left: 0px;
-  width: 24.1%;
-  height: 30px;
-}
-
+/* 텍스트를 적는 부분 (input) */
 form input{
   font-size: 1.0rem;
   height: 30px;
@@ -98,13 +106,14 @@ form div{
   justify-content: space-evenly;
 }
 
-.aa {
+/* phone class */
+/* .aa {
   width: 30%;
   height: 30px;
   text-align: center;
   line-height: 30px;
 
-}
+} */
 
 /* 구독, 수신 [체크박스] */
 div.checkbox1{
@@ -229,12 +238,31 @@ display: none;
 } */
 
 /* 로그인 버튼 */
-.Btn_signup{
+.btn_signup{
   background-color: none;
   background: transparent;
   text-decoration: none;
-  color: bisque;
+  color: aliceblue;
   width: 45%;
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid aliceblue;
+  border-radius: 3px;
+  cursor: pointer;
+  
+}
+
+.btn_signup:hover{
+  color:rgb(235, 56, 56);
+  background-color: aliceblue;
+}
+
+.btn_reset{
+  background-color: none;
+  background: transparent;
+  text-decoration: none;
+  color: aliceblue;
+  width: 25%;
   height: 40px;
   font-size: 16px;
   border: 1px solid aliceblue;
@@ -242,7 +270,7 @@ display: none;
   cursor: pointer;
 }
 
-.Btn_signup:hover{
+.btn_reset:hover{
   color:rgb(235, 56, 56);
   background-color: aliceblue;
 }
@@ -254,14 +282,13 @@ footer{
 
 
 
+
 /* 태블릿, pc 버젼 */
-@media all and (min-width: 480px){
-section{
-  padding: 100px 0;
-}
-  .container{
-  max-width: 700px;
+@media all and (min-width: 780px){
+.container{
+  width: 700px;
   margin: 0 auto;
+  margin-top: -100px;
 }
 
 form{
@@ -273,31 +300,19 @@ form{
   text-align: center;
 }
 
-form label:nth-child(4) input{
-  width: 100%;
-  /* display: inline-block; */
-}
-
 form label:nth-child(5) input{
-  width: 47.5%;
+  width: 100%;
 }
 
 form label:nth-child(6) input{
   margin-inline: 0px;
   margin-left: 0px;
-  width: 23%;
+  width: 29.3%;
   height: 30px;
-}
-.aa {
-  width: 30%;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
 }
 
 label .spans{
   transform: translateY(100%);
-  
 }
 
 .checkbox1 label{
@@ -307,7 +322,7 @@ label .spans{
   font-size: 1rem;
 }
 
-.Btn_signup{
+.btn_signup{
   background-color: none;
   background: transparent;
   text-decoration: none;
@@ -319,4 +334,18 @@ label .spans{
   border-radius: 3px;
   cursor: pointer;
 }
+
+.btn_reset{
+  background-color: none;
+  background: transparent;
+  text-decoration: none;
+  color: aliceblue;
+  width: 25%;
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid aliceblue;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
 }
