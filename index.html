@@ -63,6 +63,7 @@
     .main_about {
       /* background: #aaaaaa; */
       margin: 120px auto;
+      margin-bottom: 100px;
       width: 80vw;
       text-align: center;
     }
@@ -111,6 +112,7 @@
       display: none;
     }
     .main_lineup_scroll{
+      margin-top: 50px;
       text-align: center;
       font-size: 48px;
       margin-bottom: 50px;
@@ -175,12 +177,9 @@ color: #f00084;
 box-shadow: 2px 2px 100px #00F260, 2px 2px 100px #0575E6;
 transition: 0.3s ease-in;
 }
-hr{
-  height: 0;
-}
     /* PC 화면 */
     @media all and (min-width:480px) {
-      
+
         section{
           width: 80%;
           margin: 0 auto;
@@ -189,6 +188,9 @@ hr{
           width: 100%;
         }
         
+        .main_about{
+          margin: 50px auto;
+        }
       
       /* 메인 동영상 */
       #main_vid {
@@ -197,7 +199,7 @@ hr{
 
       /* 최초 티켓 버튼 */
       .main_ticket_btn {
-        margin-top: 100px;
+        margin-top: 50px;
       }
 
       /* 라인업 */
@@ -212,7 +214,7 @@ hr{
         margin-left: 5%;
     
       }
-
+      
 
       /* 하단 티켓 번들 */
       .main_ticket_bundle{
@@ -237,16 +239,20 @@ hr{
     }
 
     .lineup_h1{
+      width: 250px;
       position: relative;
     }
     #lineup {
+      padding: 0;
+      margin: 0 auto;
       text-align: start;
       -webkit-text-stroke: 1px rgb(255, 255, 255);
     }
-    hr{
-      margin: 0;
-    width: 320px;
-  
+    .lineup_h1 hr{
+      
+      width: 100%;
+     
+      margin-top: 10px;
     }
     .main_lineup_scroll{
      margin-top: 80px;
@@ -312,11 +318,12 @@ hr{
 
 <!-- 썸네일
     홈페이지 접속 시 2초간 출력 -->
-<!-- <div id="thumbnail">
+<div id="thumbnail">
  
-  <h1>GREEN<br>AND<br>BLUE</h1>
+  <img src="./images/favicon/logo.png" alt="">
+  <!-- <h1>GREEN<br>AND<br>BLUE</h1> -->
 
-</div> -->
+</div>
 
 <body>
   <div class="blur"></div>
@@ -325,7 +332,7 @@ hr{
     <header>
       <div class="logo">
         <a href="index.html">
-          <img src="./images/favicon/f02.png">
+          <img src="./images/favicon/logo.png">
           <!-- <h1>
             G&B
             <br />

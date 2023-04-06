@@ -1,21 +1,32 @@
 /* top_nav */
-
+.top_nav>hr{
+  display: none;
+}
 #wrapper {
   min-width: 360px;
 }
 
 
-/* 썸네일 */
+/* 썸네일 PC*/
+
+
+/* 모바일 썸네일 */
 #thumbnail {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    animation: fadeOut 5s forwards;
-  }
-  #thumbnail h1{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  animation: fadeOut 2s forwards;
+}
+#thumbnail img{
+  position: fixed;
+  width: 220px;
+  height: 220px;
+
+    
+  animation: logo_mobile 2s ease-in-out;
+}
+  /* #thumbnail h1{
     color: rgb(255, 255, 255);
     position: fixed;
     top: 45%;
@@ -26,12 +37,28 @@
     animation: logo 5s ease;
 
     line-height: 18px;
-  }
+  } */
   /* 썸네일 로고방향으로 */
+  @keyframes logo_mobile{
+    0%{
+      top: 40%;
+      left: 25%;
+        
+    }
+    40%{
+
+    }
+    50%{
+    }
+    100%{
+      top: 40%;
+      left: 25%;
+    }
+  }
   @keyframes logo{
     0%{
-        top: 45%;
-        left: 48%;
+        top: 40%;
+        left: 43%;
           text-shadow: 
           0px 0px 40px #00ffaa,
           0px 10px 40px #00aeff,
@@ -40,10 +67,16 @@
         
     }
     40%{
-        top: 45%;
-        left: 48%;
+        top: 40%;
+        left: 43%;
+    }
+    50%{
+      width: 220px;
+      height: 220px;
     }
     100%{
+      width: 100px;
+      height: 100px;
       text-shadow: 
       0px 0px 80px #00ffaa,
       0px 10px 80px #00aeff,
@@ -80,7 +113,22 @@
       pointer-events: none;
     }
   }
-
+  @media all and (min-width:480px){
+    #thumbnail {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      animation: fadeOut 5s forwards;
+    }
+    #thumbnail img{
+      position: fixed;
+      width: 220px;
+      height: 220px;
+      animation: logo 5s ease;
+    }
+    
+  }
 
   
 * {
@@ -108,10 +156,10 @@
     backdrop-filter: blur(10px);
   }
   .logo img{
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     filter: invert(100%);
-    margin-top: 15px;
+    margin-left: 10px;
   }
   .logo a {
     text-align: center;
