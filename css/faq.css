@@ -373,8 +373,9 @@ color: #add8e6; /*정해진 색으로!*/
 
 @media all and (max-width:389px){
     .faqbox{margin-top: 150px;}
-    .qnabox{margin-top: 150px;}
+    #qnabox{margin-top: 150px;}
 }
+
 
 
 
