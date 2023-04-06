@@ -25,65 +25,9 @@
       margin-top: 125px;
     }
 
-      /* 모바일용 */
-          @media all and (max-width: 480px) {
-        section {
-          padding-top: 125px;
-          margin: 0;
-        }
-      .offer:hover .offer_img:before{
-    content: '셔틀버스';
-    position: absolute;
-    height: 250px;
-    line-height: 250px;
-    width: 100%;
-    background:linear-gradient(to right,rgba(0, 0, 0, 0.623), rgba(255, 255, 255, 0));
-    z-index: 0;
-    animation: fadeInLeft 0.2s ease forwards;
-   
-}
-.offer:hover .offer_img::after{
-  display: block;
-}
-.general .offer:nth-child(2) , .offer:nth-child(6){
-      border-bottom:1px solid #ffffff;
-    }
- 
-    .offer div{
-      border-top:1px solid white;
-    }
- 
-@keyframes fadeInLeft{
-    0%{
-      color: #ffffff00;
-        width: 0;
-        height: 100px;
-    }
-    100%{
-      color: #ffffff;
-        width: 100%;
-        height: 250px;
-    }
-  }
-  h2 {
-      border-top: none;
-    }
-    .premium h2{     
-      margin: 20px;
-      margin-top: 100px;
-    }
-    .premium .grade,  .grade{
-      position: relative;
-      background: #00000093;
-      margin-top: 100px;
-    }
-section>h2{
-  display: none;
-}
-}
+  
 
 .premium .grade a{
-   transform: translate(-50%,-50%);
    /* font-family: 'Times New Roman',serif; */
    /* letter-spacing: 5px; */
    background-image: linear-gradient(
@@ -101,7 +45,6 @@ section>h2{
    -webkit-background-clip:text;
 }
  .grade a{
-  transform: translate(-50%,-50%);
    /* font-family: 'Times New Roman',serif; */
    /* letter-spacing: 5px; */
    font-size: 36px;
@@ -259,16 +202,16 @@ section>h2{
 
     /* 오퍼 설명 */
     .offer_img::before {
-      content: "셔틀버스";
+      /* content: "셔틀버스"; */
       font-size: inherit;
       
     }
 
-    .offer_img::after {
+    /* .offer_img::after {
       display: none;
       content: "설명";
       font-size: 1rem;
-    }
+    } */
 
     .offer:nth-child(1) .offer_img {
       background: url("./images/ticket/offer1.jpg") right/cover;
@@ -298,12 +241,11 @@ section>h2{
       height: 2px;
     }
     .grade {
-      width: 90%;
-      display: flex;
+      width: 72%;
       text-align: center;
       justify-content: center;
       line-height: 60px;
-      /* margin: 0 auto; */
+      margin: 100px auto;
       margin-bottom: 50px;
       font-size: 24px;
     }
@@ -313,7 +255,91 @@ section>h2{
     .grade_pc{
       display: none;
     }
+    .general .grade>hr{
+  background:  linear-gradient(to right,rgb(255, 255, 255) 20.1%, rgb(198, 206, 255)100.2%);
+}
+.premium .grade>hr{
+  background: linear-gradient(to right,rgb(234, 234, 234) 22.3%, rgb(201, 234, 211) 56.6%, rgb(255, 180, 189) 90.9%
+	);
+}
 
+        /* 모바일용 */
+        @media all and (max-width: 480px) {
+        section {
+          padding-top: 125px;
+          margin: 0;
+        }
+      .offer:hover .offer_img:before{
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.623), rgba(255, 255, 255, 0));
+    z-index: 0;
+    font-size: 44px;
+    animation: fadeInLeft 0.2s ease forwards;
+
+}
+.offer:nth-child(1):hover .offer_img:before{
+  content: 'Shuttle Bus';
+}
+.offer:nth-child(2):hover .offer_img:before{
+  content: 'Welcome Drinks';
+}
+.offer:nth-child(3):hover .offer_img:before{
+  content: '5 Stars Buffet';
+}
+.offer:nth-child(4):hover .offer_img:before{
+  content: 'Exclusive Campsite';
+}
+.offer:nth-child(5):hover .offer_img:before{
+  content: 'Premium Zone';
+}
+.offer:nth-child(6):hover .offer_img:before{
+  content: '존나 버스';
+}
+
+.offer:hover .offer_img::after{
+  display: block;
+}
+.general .offer:nth-child(2) , .offer:nth-child(6){
+      border-bottom:1px solid #ffffff;
+    }
+ 
+    .offer div{
+      border-top:1px solid white;
+    }
+ 
+@keyframes fadeInLeft{
+    0%{
+      color: #ffffff00;
+        width: 0;
+        height: 100px;
+    }
+    100%{
+      color: #ffffff;
+        width: 100%;
+        height: 250px;
+    }
+  }
+  h2 {
+      border-top: none;
+    }
+    .premium h2{     
+      margin: 20px;
+      margin-top: 100px;
+    }
+    .premium .grade,  .grade{
+      position: relative;
+      margin-top: 100px;
+    }
+section>h2{
+  display: none;
+}
+
+.grade{
+  width: 81%;
+}
+}
 /* PC화면 */
     @media all and (min-width: 480px) {
       .premium h2{
