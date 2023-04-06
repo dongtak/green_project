@@ -12,7 +12,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000;
+    background-color: #ffffff;
     animation: fadeOut 5s forwards;
   }
   #thumbnail h1{
@@ -61,7 +61,7 @@
       opacity: 1;
     }
     50%{
-      background: #000;
+      /* background: #000; */
     }
     70%{
       opacity: 1;
@@ -102,8 +102,16 @@
 
   /* 헤더 로고 */
   .logo {
-    margin: 0;
+    text-align: start;
+    width: 100px;
+    height: 100px;
     backdrop-filter: blur(10px);
+  }
+  .logo img{
+    width: 70px;
+    height: 70px;
+    filter: invert(100%);
+    margin-top: 15px;
   }
   .logo a {
     text-align: center;
@@ -111,7 +119,7 @@
     width: 100px;
     height: 100px;
     /* background: #000000; */
-    line-height: 50px;
+    line-height: 100px;
   }
   .logo:hover h1{
     color: #deeeff;
@@ -302,7 +310,7 @@
       margin: auto 0;
       margin-right: 10px;
       line-height: 40px;
-      border: 1px solid white;
+      border: 2px solid white;
       border-radius: 30px;
       max-width: 80px;
       min-width: 46px;
