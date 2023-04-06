@@ -691,7 +691,7 @@ section>h2{
           <img class="image" src="./images/gallery/gall10.jpg" draggable="false"/>
           <img class="image" src="./images/gallery/gall17.jpg" draggable="false"/>
           <img class="image" src="./images/gallery/gall24.jpg" draggable="false"/>
-          <img class="image" src="./images/gallery/gall41.jpg" draggable="false"/>
+          <img class="image" src="./images/gallery/gall15.jpg" draggable="false"/>
           <img class="image" src="./images/gallery/gall08.jpg" draggable="false"/>
           <img class="image" src="./images/gallery/gall09.jpg" draggable="false"/>
           <img class="image" src="./images/gallery/gall20.jpg" draggable="false"/>
@@ -725,11 +725,11 @@ const handleOnMove = e => {
     if (track.dataset.mouseDownAt === "0") return;
 
     const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-        maxDelta = window.innerWidth / 2;
+        maxDelta = window.innerWidth / 1;
 
     const percentage = (mouseDelta / maxDelta) * -100,
         nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -80);
 
     track.dataset.percentage = nextPercentage;
 
