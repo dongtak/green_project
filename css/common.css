@@ -178,7 +178,7 @@
 
   
   /* PC화면 */
-  @media all and (min-width: 480px) {
+  @media all and (min-width: 481px) {
     header {
       position: static;
      

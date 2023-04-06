@@ -124,7 +124,7 @@ form label {
 
 
 /*label 정렬 맞추기 위함*/
-@media all and (min-width:480px) {
+@media all and (min-width:481px) {
 
 
     .qna_write_title>#title,

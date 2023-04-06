@@ -157,7 +157,7 @@ section{
     background-color: aliceblue;
 }
 
-@media all and (min-width:480px) {
+@media all and (min-width:481px) {
     section {
         max-width: 960px;
         padding: 125px 0;
