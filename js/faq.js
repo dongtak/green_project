@@ -25,7 +25,7 @@ const faqbox = document.querySelector('.faqbox');
 qna.addEventListener('click', function() {
   qnabox.style.display = "block";
   faqbox.style.display = "none";
-  faq.style.color="rgb(192, 191, 191)";
+  faq.style.color="rgb(177, 177, 177)";
   faq.style.borderBottom="none";
   qna.style.color="white";
   qna.style.borderBottom="3px solid white"
@@ -38,7 +38,7 @@ qna.addEventListener('click', function() {
 faq.addEventListener('click', function() {
   faqbox.style.display = "block";
   qnabox.style.display = "none";
-  qna.style.color="rgb(192, 191, 191)";
+  qna.style.color="rgb(177, 177, 177)";
   qna.style.borderBottom="none";
   faq.style.color="white";
   faq.style.borderBottom="3px solid white"
