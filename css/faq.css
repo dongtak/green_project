@@ -51,11 +51,11 @@ section{
 
 .board_tap li.faq:hover{
 cursor: pointer;
-color: aqua; /*정해진 색으로!*/
+color: #79efb0; /*정해진 색으로!*/
 }
 .board_tap li.qna:hover{
 cursor: pointer;
-color: rgb(72, 32, 250); /*정해진 색으로!*/
+color: #add8e6; /*정해진 색으로!*/
 }
 
 
@@ -102,7 +102,7 @@ color: rgb(72, 32, 250); /*정해진 색으로!*/
 
 
 .question{
-    background-color: rgb(253, 253, 253);
+    background-color: aliceblue;
     color: #343131;
     width: 100%;
     cursor: pointer;
@@ -124,7 +124,8 @@ color: rgb(72, 32, 250); /*정해진 색으로!*/
     text-align: left;
     outline: none;
     border-radius: 5px;
-    margin-bottom: 2px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    /* margin-bottom: 2px; */
 }
 
 .question>b,
