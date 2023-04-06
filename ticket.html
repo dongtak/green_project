@@ -73,10 +73,74 @@
       margin: 20px;
       margin-top: 100px;
     }
+    .premium .grade, .general .grade{
+      position: relative;
+      background: #00000093;
+      margin-top: 100px;
+    }
+    .grade a{
+      font-weight: 600;
+    }
 }
 
+.premium .grade a{
+   transform: translate(-50%,-50%);
+   /* font-family: 'Times New Roman',serif; */
+   /* letter-spacing: 5px; */
+   font-size: 24px;
+   background-image: linear-gradient(
+	to right,
+	/* #462323 0,
+       	#cb9b51 22%, 
+	#f6e27a 45%,
+	#f6f2c0 50%,
+	#f6e27a 55%,
+	#cb9b51 78%,
+	#462523 100% */
+  rgb(234, 234, 234) 22.3%, rgb(201, 234, 211) 56.6%, rgb(255, 180, 189) 90.9%
+	);
+   color:transparent;
+   -webkit-background-clip:text;
+}
+.general .grade a{
+  transform: translate(-50%,-50%);
+   /* font-family: 'Times New Roman',serif; */
+   /* letter-spacing: 5px; */
+   font-size: 24px;
+   background-image: linear-gradient(to right, rgb(245, 239, 249) 20.1%, rgb(183, 190, 233)100.2%);
+   color:transparent;
+   -webkit-background-clip:text;
   
+}
 
+.general .ticket_btn a:hover
+{
+  font-weight: 800;
+  color: transparent;
+  background-image: linear-gradient(to right,  rgb(245, 239, 249) 20.1%, rgb(183, 190, 233) 100.2%);
+  -webkit-background-clip: text;
+  border: 2px solid #b2bdc7;
+}
+.general .ticket_btn a:hover:after,
+.general .ticket_btn a:hover:before {
+  border: 2px solid #a5aeb8;
+}
+.premium .ticket_btn a:hover
+{
+  font-weight: 800;
+  color: transparent;
+  background-image: linear-gradient(to right, rgb(234, 234, 234) 30.3%,
+   rgb(201, 234, 211) 56.6%, rgb(255, 180, 189) 70.9%);
+  -webkit-background-clip: text;
+  border: 2px solid rgb(234, 234, 234);
+}
+
+.premium .ticket_btn a:hover:before {
+  border: 2px solid rgb(201, 234, 211);
+}
+.premium .ticket_btn a:hover:after {
+  border: 2px solid rgb(255, 180, 189) ;
+}
     a {
       color: aliceblue;
     }
@@ -94,22 +158,6 @@
       margin: 20px auto;
     }
 
-    /* .ticket_btn a {
-
-      width: 70vw;
-      border: 1px solid white;
-      display: inline-block;
-      font-size: 20px;
-      height: 60px;
-      line-height: 30px;
-      margin-bottom: 60px;
-      transition: 0.3s;
-    } */
-/* 
-    .ticket_btn a:hover{
-        color: crimson;
-        background: #ffffff;
-      } */
       .ticket_btn{
        display: flex;
        justify-content: space-evenly;
@@ -216,23 +264,15 @@
 
     .grade {
       text-align: center;
-      width: 100px;
-      height: 60px;
       line-height: 60px;
       margin: 0 auto;
+      margin-bottom: 50px;
+      
     }
     .grade_pc{
       display: none;
     }
-    .ticket_btn a:hover
-{
-border: 2px solid chartreuse;
-color: chartreuse;
-}
-.ticket_btn a:hover:after,
-.ticket_btn a:hover:before {
-border: 2px solid chartreuse;
-}
+
 /* PC화면 */
     @media all and (min-width: 480px) {
       .premium h2{
@@ -265,10 +305,6 @@ border: 2px solid chartreuse;
       }
 
      
-
-   
-
-      /* 오퍼 스타일 */
 
       .general {
         margin-top: 100px;
@@ -310,7 +346,7 @@ border: 2px solid chartreuse;
 
 
 
-/* 슬라이더 */
+/* 슬라이더(PC) */
 #image-track {
             display: flex;
             gap: 2vmin;
@@ -331,7 +367,7 @@ border: 2px solid chartreuse;
       opacity: 0.5;
      }
 
-
+      /* 오퍼 스타일 */
      /* 삭제된 기능 */
       .offers {
         height: 120px;
