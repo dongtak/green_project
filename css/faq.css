@@ -345,7 +345,15 @@ color: #add8e6; /*정해진 색으로!*/
     }
 
 }
-
+@media all and (min-width:406px)
+{
+    .faqbox{
+        padding-top: 0;
+    }
+    #qnabox{
+        padding-top: 0;
+    }
+}
 
 /* input상자 맞추기 위함*/
 @media all and (max-width:440px) {
