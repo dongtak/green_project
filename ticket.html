@@ -119,10 +119,11 @@ section>h2{
   border: 2px solid rgb(234, 234, 234);
 }
 .general .ticket_btn a:hover{
-  animation: glow_g 6s ease-in-out;
+  animation: glow_g 6s ease-in-out infinite;
 }
 .premium .ticket_btn a
 {
+  font-weight: 600;
   color: transparent;
   background-image: linear-gradient(to right, rgb(234, 234, 234) 30.3%,
    rgb(201, 234, 211) 56.6%, rgb(255, 180, 189) 70.9%);
@@ -131,7 +132,9 @@ section>h2{
   
 }
 .premium .ticket_btn a:hover{
-  animation: glow 6s ease-in-out;
+  animation: glow 6s ease-in-out infinite;
+
+
 }
 .premium .ticket_btn a:hover:before {
   border: 2px solid rgb(201, 234, 211);
@@ -290,11 +293,17 @@ section>h2{
     .offer:nth-child(6) .offer_img {
       background: url("./images/ticket/offer1.jpg") right/cover;
     }
-
+    .grade hr{
+      background: #ffffff;
+      height: 2px;
+    }
     .grade {
+      width: 90%;
+      display: flex;
       text-align: center;
+      justify-content: center;
       line-height: 60px;
-      margin: 0 auto;
+      /* margin: 0 auto; */
       margin-bottom: 50px;
       font-size: 24px;
     }
@@ -585,7 +594,7 @@ section>h2{
         <h1>TICKET</h1>
         <div class="general">
           <div class="grade">
-            <a href="">GENERAL</a>
+            <hr><a href="">GENERAL</a><hr>
           </div>
           <div class="ticket_btn">
             <a href="">1 DAY<br>&#8361; 99,000</a>
@@ -608,7 +617,7 @@ section>h2{
 
         <div class="premium">
           <div class="grade">
-            <a href="">PREMIUM</a>
+            <hr><a href="">PREMIUM</a><hr>
           </div>
          
           <div class="ticket_btn">
