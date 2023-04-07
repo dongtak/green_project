@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-      <!-- 파비콘 -->
-  <link rel="shortcut icon" href="./images/favicon/logo.png" type="image/x-icon">
     <!-- 외부 스타일 -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css"/>
@@ -19,6 +17,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIGN UP</title>
     <script>
+      document.addEventListener('DOMContentLoaded',function(){ 
+          hamburger_btn();
+       });
       </script>
 </head>
 <body>
@@ -111,8 +112,8 @@
                                   <option value="directly" id="textEmail">직접 입력하기</option>
                                 </select> -->
          </label>
-         <label for="phone" >PHONE :<br><input type="text" class="aa" id="phone" name="phone" maxlength="3"><span class="spans">&nbsp;&nbsp;-</span>&nbsp;
-         <input type="text"  class="aa" id="phone" name="phone" maxlength="4"><span class="spans">&nbsp;&nbsp;-</span>&nbsp; <input type="text"  class="aa" id="phone" name="phone" maxlength="4" ></label>
+         <label for="phone" >PHONE :<br><input type="phone" class="aa" id="phone-first" name="phone-first" maxlength="3" ><span class="spans">&nbsp;&nbsp;-</span>&nbsp;
+         <input type="text"  class="aa" id="phone-second" name="phone-second" maxlength="4" ><span class="spans">&nbsp;&nbsp;-</span>&nbsp; <input type="text"  class="aa" id="phone-third" name="phone-third" maxlength="4"  ></label>
          
           <div class="checkbox1"> 
           <input type="checkbox" id="c1" name="cc" />

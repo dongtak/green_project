@@ -2,11 +2,20 @@ function checkz(){
     var getName = RegExp(/^[가-힣]+$/);
     var getCheck= RegExp(/^[a-zA-Z0-9]{4,12}$/);
     var getMail = RegExp(/^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/);
-    var phone1 = $("#phone1").val();
-    var phone2 = $("#phone2").val();
-    var phone3 = $("#phone3").val();
-    var getPhone = RegExp(/^\d{3}\d{3,4}\d{4}$/);
-    var getPhone = RegExp(/^(01[016789]{3})[0-9]{3,4}[0-9]{4}$/);
+    // var phone1 = $("#phone.aa1").val();
+    // var phone2 = $("#phone.aa2").val();
+    // var phone3 = $("#phone.aa3").val();
+    // var phoneNumber = phone1 + phone2 + phone3;
+    // var getPhone = RegExp(/^(01[016789]{3})[0-9]{3,4}[0-9]{4}$/);
+    // var getPhone = RegExp(/^(01[016789]{1})(\d{3,4})(\d{4})$/);
+    // var phonenum = $('#phone').val();
+    // var regPhone = /(01[0|1|6|9|7])[-](\d{3}|\d{4})[-](\d{4}$)/g;
+    var phoneFirst = $('#phone-first').val();
+    var phoneSecond = $('#phone-second').val();
+    var phoneThird = $('#phone-third').val();
+    var regPhone = /(01[0|1|6|9|7])[-](\d{3}|\d{4})[-](\d{4}$)/g;
+    var phone = phoneFirst + '-' + phoneSecond + '-' + phoneThird;
+    
 
     //이름 유효성
     if (!getName.test($("#name").val())){
@@ -50,7 +59,7 @@ function checkz(){
 
     //비밀번호 똑같은지 재확인
     if($("#pwd").val() != ($("#pwd2").val())){
-        alert("비밀번호가 틀렸습니다");
+        alert("비밀번호가 일치하지 않습니다. ");
         $("#pwd").val("");
         $("#pwd2").val("");
         $("#pwd").focus();
@@ -71,22 +80,69 @@ function checkz(){
         $("#email").focus();
         return false;
     }
-    // 휴대폰 번호 검사
-    // if(!getPhone.test($("#phone").val())){
+
+    if (!regPhone.test(phone)) {
+        alert('잘못된 휴대폰 번호입니다.');
+        $('#phone-first').focus();
+        return false;
+      }
+
+    // if (isuidValid && ispwdValid && ispwdConfirmationValid && isPhoneValid) {
+    //     // 모든 조건이 충족되었을 때 index.html 페이지로 이동합니다.
+    //     window.location.href = "index.html";
+    // }
+      
+
+    // if(!regPhone.test(phonenum)){
+
+    //     alert('잘못된 휴대폰 번호입니다.');
+      
+    //     $('#phone').focus();
+      
+    //     return false;    
+      
+    //    }
+    // if (!getPhone.test("#phone.aa")) {   
     //     alert("휴대폰 번호가 옳바르지 않습니다!");
-    //     $("#phone").val("");
-    //     $("#phone").focus();
+    //     $("##phone.aa1").val("");
+    //     $("##phone.aa2").val("");
+    //     $("#phone.aa3").val("");
+    //     $("#phone.aa1").focus();
     //     return false;
     // }
-
-    //휴대폰 번호 검사
-    if (!getPhone.test(phone1 + phone2 + phone3)) {
-        alert("휴대폰 번호가 옳바르지 않습니다!");
-        $("#phone1").val("");
-        $("#phone2").val("");
-        $("#phone3").val("");
-        $("#phone1").focus();
-        return false;
-    }
-
+    // return false;
 }
+
+// // 전화번호
+
+// $("#phone").val($("#phone1").val() + $("#phone2").val() + $("#phone3").val());
+
+// if ($("#phone").val() == "" || $("#phone").val().length != 11 || isNaN($("#phone").val())) {
+
+//      alert("휴대폰번호를 정확히 입력해 주세요");
+
+//      return false;
+
+// }
+
+// if (isNaN($("#phone").val())) {
+
+//      alert("휴대폰번호를 숫자로만 입력해 주세요");
+
+//      return false;
+
+// }
+
+// for (var i=0; i<$("#phone").val().length; i++)  {
+
+//      var chk = $("#phone").val().substring(i,i+1);
+
+//      if(chk == " "){
+
+//           alert("휴대폰번호를 정확히 입력해주세요");
+
+//           return false;
+
+//      }
+
+// }
