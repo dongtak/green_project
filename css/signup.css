@@ -286,6 +286,9 @@ footer{
 /* 태블릿, pc 버젼 */
 @media all and (min-width: 780px){
 
+  section{
+    padding-top: 125px;
+  }
 .container{
   width: 700px;
   margin: 0 auto;
