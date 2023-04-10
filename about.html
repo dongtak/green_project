@@ -122,7 +122,27 @@
 
     }
 
-
+    .scroll{
+        background: none;
+        width: auto;
+        position: fixed;
+        bottom: 10%;
+        right: 10%;
+    }
+    .scroll button{
+      background: none;
+      border: 1px solid white;
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+    }
+    .scroll button:hover{
+      background: aliceblue;
+      color: #f00084;
+      box-shadow: 2px 2px 100px #00F260, 2px 2px 100px #0575E6;
+      transition: 0.3s ease-in;
+      cursor:grab;
+    }
 
     @media all and (max-width:481px) {
       .container .content1 {
@@ -308,7 +328,9 @@
 
 
       </div>
-
+      <div class="scroll">
+        <button class="scrollTo" onclick="toTop();">맨 위로</button>
+      </div>
     </section>
 
     <footer>
@@ -317,5 +339,9 @@
     </footer>
   </div>
 </body>
-
+<script>
+  function toTop(){//scrollTo top 구현
+    window.scrollTo({top:0,left:0,behavior:"smooth"});
+  };
+</script>
 </html>
