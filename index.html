@@ -3,7 +3,7 @@
 
 <head>
   <!-- 파비콘 -->
-<link rel="shortcut icon" href="./images/favicon/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/favicon/logo.png" type="image/x-icon">
   <!-- 외부 스타일 -->
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/common.css">
@@ -30,25 +30,26 @@
 
   </script>
   <style>
+    /* 모바일 썸네일 */
+    #thumbnail {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      animation: fadeOut 2s forwards;
+    }
 
-/* 모바일 썸네일 */
-#thumbnail {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  animation: fadeOut 2s forwards;
-}
-#thumbnail img{
+    #thumbnail img {
 
-  position: fixed;
-  width: 220px;
-  height: 220px;
+      position: fixed;
+      width: 220px;
+      height: 220px;
 
-    
-  animation: logo_mobile 2s ease-in-out;
-}
-  /* #thumbnail h1{
+
+      animation: logo_mobile 2s ease-in-out;
+    }
+
+    /* #thumbnail h1{
     color: rgb(255, 255, 255);
     position: fixed;
     top: 45%;
@@ -60,100 +61,93 @@
 
     line-height: 18px;
   } */
-  /* 썸네일 로고방향으로 */
-  @keyframes logo_mobile{
-    0%{
-      top: 40%;
-      left: 25%;
-        
-    }
-    40%{
+    /* 썸네일 로고방향으로 */
+    @keyframes logo_mobile {
+      0% {
+        top: 40%;
+        left: 25%;
 
+      }
+
+      40% {}
+
+      50% {}
+
+      100% {
+        top: 40%;
+        left: 25%;
+      }
     }
-    50%{
-    }
-    100%{
-      top: 40%;
-      left: 25%;
-    }
-  }
-  @keyframes logo{
-    0%{
+
+    @keyframes logo {
+      0% {
         top: 40%;
         left: 43%;
-          text-shadow: 
+        text-shadow:
           0px 0px 40px #00ffaa,
           0px 10px 40px #00aeff,
           0px -10px 60px #ffffff,
           0px 0px 80px #ffffff;
-        
-    }
-    40%{
+
+      }
+
+      40% {
         top: 40%;
         left: 43%;
-    }
-    50%{
-      width: 220px;
-      height: 220px;
-    }
-    100%{
-      width: 100px;
-      height: 100px;
-      text-shadow: 
-      0px 0px 80px #00ffaa,
-      0px 10px 80px #00aeff,
-      0px -10px 80px #ffffff,
-      0px 0px 80px #ffffff;
+      }
+
+      50% {
+        width: 220px;
+        height: 220px;
+      }
+
+      100% {
+        width: 100px;
+        height: 100px;
+        text-shadow:
+          0px 0px 80px #00ffaa,
+          0px 10px 80px #00aeff,
+          0px -10px 80px #ffffff,
+          0px 0px 80px #ffffff;
         top: 1%;
         left: 1%;
 
+      }
     }
-  }
-  /* 사이트 접속시 썸네일 */
-  @keyframes fadeOut {
-    0% {
 
-      z-index:999;
-      opacity: 1;
+    /* 사이트 접속시 썸네일 */
+    @keyframes fadeOut {
+      0% {
+
+        z-index: 999;
+        opacity: 1;
+      }
+
+      50% {
+        /* background: #000; */
+      }
+
+      70% {
+        opacity: 1;
+
+      }
+
+      80% {
+        background: #5dc7ac;
+      }
+
+      90% {
+        background: #ff0000;
+      }
+
+      100% {
+        opacity: 0;
+        display: none;
+        z-index: 9999;
+        pointer-events: none;
+      }
     }
-    50%{
-      /* background: #000; */
-    }
-    70%{
-      opacity: 1;
-      
-    }
-    80%{
-      background: #5dc7ac;
-    }
-    90%{
-      background: #ff0000;
-    }
-    100% {
-      opacity: 0;
-      display: none;
-      z-index:9999;
-      pointer-events: none;
-    }
-  }
-  
-/* 썸네일 PC*/
-  @media all and (min-width:481px){
-    #thumbnail {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background-color: #ffffff;
-      animation: fadeOut 5s forwards;
-    }
-    #thumbnail img{
-      position: fixed;
-      width: 220px;
-      height: 220px;
-      animation: logo 5s ease;
-    }
-    
-  }
+
 
     /* 메인 동영상 */
     #main_vid {
@@ -163,7 +157,7 @@
       top: 100px;
       width: 100%;
     }
-    
+
 
     /* 메인 티켓 버튼*/
     .main_ticket_btn {
@@ -195,9 +189,10 @@
     }
 
     .main_about li>a {
-  color: white;
+      color: white;
 
-}
+    }
+
     .main_about img {
       width: 80%;
       margin-bottom: 20px;
@@ -218,32 +213,36 @@
 
     /* 메인 라인업 */
     #lineup {
-  color: #00000000;
+      color: #00000000;
       font-size: 64px;
       margin: 40px;
       margin-bottom: 10px;
       text-align: center;
       -webkit-text-stroke: 1px rgb(255, 255, 255);
     }
-    hr{
+
+    hr {
       display: block;
-    height: 2px;
-    border: 2px;
-    padding: 2;
-    width: 70%;
-    margin: 0 auto;
-    background: #ffffff;
+      height: 2px;
+      border: 2px;
+      padding: 2;
+      width: 70%;
+      margin: 0 auto;
+      background: #ffffff;
     }
-    .main_lineup_scroll img{
+
+    .main_lineup_scroll img {
       display: none;
     }
-    .main_lineup_scroll{
+
+    .main_lineup_scroll {
       margin-top: 50px;
       text-align: center;
       font-size: 48px;
       margin-bottom: 50px;
     }
-    .main_lineup_scroll h3:hover{ 
+
+    .main_lineup_scroll h3:hover {
       color: #f00084;
     }
 
@@ -262,13 +261,13 @@
 
     }
 
-    .main_lineup a{ 
+    .main_lineup a {
       height: fit-content;
 
     }
-  
+
     /* 메인 하단 티켓 번들 */
-    .main_ticket_bundle{
+    .main_ticket_bundle {
       margin: 60px;
       height: 30vh;
       display: flex;
@@ -276,7 +275,7 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-     
+
 
     }
 
@@ -292,32 +291,50 @@
     }
 
 
-.main_ticket_bundle a:hover{
-background: aliceblue;;
-}
+    .main_ticket_bundle a:hover {
+      background: aliceblue;
+      ;
+    }
 
-    .main_ticket_btn a:hover, .main_ticket_bundle a:hover {
+    .main_ticket_btn a:hover,
+    .main_ticket_bundle a:hover {
 
       background: aliceblue;
-color: #f00084;
-box-shadow: 2px 2px 100px #00F260, 2px 2px 100px #0575E6;
-transition: 0.3s ease-in;
-}
+      color: #f00084;
+      box-shadow: 2px 2px 100px #00F260, 2px 2px 100px #0575E6;
+      transition: 0.3s ease-in;
+    }
+
     /* PC 화면 */
     @media all and (min-width:481px) {
+      #thumbnail {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        animation: fadeOut 5s forwards;
+      }
 
-        section{
-          width: 80%;
-          margin: 0 auto;
-        }
-        section:nth-of-type(1){
-          width: 100%;
-        }
-        
-        .main_about{
-          margin: 50px auto;
-        }
-      
+      #thumbnail img {
+        position: fixed;
+        width: 220px;
+        height: 220px;
+        animation: logo 5s ease;
+      }
+
+      section {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      section:nth-of-type(1) {
+        width: 100%;
+      }
+
+      .main_about {
+        margin: 50px auto;
+      }
+
       /* 메인 동영상 */
       #main_vid {
         top: 0px;
@@ -338,87 +355,93 @@ transition: 0.3s ease-in;
       .main_lineup img {
         max-width: 90%;
         margin-left: 5%;
-    
+
       }
-      
+
 
       /* 하단 티켓 번들 */
-      .main_ticket_bundle{
+      .main_ticket_bundle {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         width: 80%;
         margin: 0 auto;
-        height:26vh;
-  
+        height: 26vh;
+
       }
-    
+
       .main_ticket_bundle a {
         overflow: hidden;
-      color: aliceblue;
-      width: 32%;
-      height: 60px;
-      line-height: 60px;
-      display: inline-block;
-      border: 1px solid aliceblue;
-     
-    }
+        color: aliceblue;
+        width: 32%;
+        height: 60px;
+        line-height: 60px;
+        display: inline-block;
+        border: 1px solid aliceblue;
 
-    .lineup_h1{
-      width: 250px;
-      position: relative;
-    }
-    #lineup {
-      padding: 0;
-      margin: 0 auto;
-      text-align: start;
-      -webkit-text-stroke: 1px rgb(255, 255, 255);
-    }
-    .lineup_h1 hr{
-      
-      width: 100%;
-     
-      margin-top: 10px;
-    }
-    .main_lineup_scroll{
-     margin-top: 80px;
-      max-width: 80%;
-      margin-bottom: 100px;
-      overflow: hidden;
-      height: 100%;
-    }
+      }
 
-  
-    .main_lineup_scroll h3{
-      font-size: 64px;
-      position: relative;
-      z-index:999;
-      text-align: start;
-    }
-    .main_lineup_scroll img{
-      position: fixed;
-      bottom: 30%;
-      right: 15%;
-      background: #000;
-      transform: scale(1.5);
-      z-index: -1;
-    }
+      .lineup_h1 {
+        width: 250px;
+        position: relative;
+      }
 
-    .main_lineup_scroll h3:hover{
-      color: #00000000;
-      -webkit-text-stroke: 0.2px rgb(255, 255, 255);
+      #lineup {
+        padding: 0;
+        margin: 0 auto;
+        text-align: start;
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+      }
 
-    }
-    .main_lineup_scroll a:hover img{
-      display: block;
-    }
-    .main_lineup_scroll h3:hover .lineup_h1 {
+      .lineup_h1 hr {
+
+        width: 100%;
+
+        margin-top: 10px;
+      }
+
+      .main_lineup_scroll {
+        margin-top: 80px;
+        max-width: 80%;
+        margin-bottom: 100px;
+        overflow: hidden;
+        height: 100%;
+      }
+
+
+      .main_lineup_scroll h3 {
+        font-size: 64px;
+        position: relative;
+        z-index: 999;
+        text-align: start;
+      }
+
+      .main_lineup_scroll img {
+        position: fixed;
+        bottom: 30%;
+        right: 15%;
+        background: #000;
+        transform: scale(1.5);
+        z-index: -1;
+      }
+
+      .main_lineup_scroll h3:hover {
+        color: #00000000;
+        -webkit-text-stroke: 0.2px rgb(255, 255, 255);
+
+      }
+
+      .main_lineup_scroll a:hover img {
+        display: block;
+      }
+
+      .main_lineup_scroll h3:hover .lineup_h1 {
         left: 50%;
         background: #000;
-    }
+      }
 
     }
-    
+
 
 
     @media all and (min-width:720px) {
@@ -427,25 +450,27 @@ transition: 0.3s ease-in;
         width: 24%;
 
       }
+
       .main_lineup_scroll {
         transition: 0.3 ease-in-out;
       }
-      .main_lineup_scroll{
+
+      .main_lineup_scroll {
         margin-left: 10%;
       }
-      .main_lineup_scroll img{
+
+      .main_lineup_scroll img {
         right: 25%;
       }
-  
-    }
 
+    }
   </style>
 </head>
 
 <!-- 썸네일
     홈페이지 접속 시 2초간 출력 -->
 <div id="thumbnail">
- 
+
   <img src="./images/favicon/logo.png" alt="">
   <!-- <h1>GREEN<br>AND<br>BLUE</h1> -->
 
@@ -482,8 +507,8 @@ transition: 0.3s ease-in;
             <li><a href="artist.html">ARTIST</a></li>
             <li><a href="ticket.html">TICKET</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="map.html">MAP</a> </li> 
-             <li><a href="faq.html">FAQ/Q&A</a></li>
+            <li><a href="map.html">MAP</a> </li>
+            <li><a href="faq.html">FAQ/Q&A</a></li>
             <li><a href="signin.html">SIGN IN</a></li>
           </ul>
         </div>
@@ -493,29 +518,29 @@ transition: 0.3s ease-in;
 
 
         <!-- <div class="dropdown"> -->
-          <a class="dropbtn" href="artist.html">ARTIST</a>
-          <!-- <div class="dropdown-content">
+        <a class="dropbtn" href="artist.html">ARTIST</a>
+        <!-- <div class="dropdown-content">
             <a href="artist_g.html">GREEN</a>
             <a href="artist_b.html">BLUE</a>
           </div> -->
-          <!-- </div> -->
+        <!-- </div> -->
 
-          <a href="ticket.html">TICKET</a>
-          <a href="gallery.html">GALLERY</a>
+        <a href="ticket.html">TICKET</a>
+        <a href="gallery.html">GALLERY</a>
 
 
-          <div class="dropdown">
-            <a class="dropbtn">INFO</a>
-            <div class="dropdown-content">
-          <a href="map.html">MAP</a>
-          <a href="faq.html">FAQ/Q&A</a>
+        <div class="dropdown">
+          <a class="dropbtn">INFO</a>
+          <div class="dropdown-content">
+            <a href="map.html">MAP</a>
+            <a href="faq.html">FAQ/Q&A</a>
+          </div>
         </div>
-        </div>
 
 
-          <a href="signin.html">SIGN IN</a>
+        <a href="signin.html">SIGN IN</a>
       </div>
-      
+
 
     </header>
     <!-- 메인 영상 -->
@@ -562,112 +587,108 @@ transition: 0.3s ease-in;
 
     <section>
       <div class="lineup_h1">
-      <h1 id="lineup">LINE UP</h1>
-      <hr>
-    </div>
+        <h1 id="lineup">LINE UP</h1>
+        <hr>
+      </div>
       <div class="main_lineup_scroll">
-      <a href="https://www.paulmccartney.com/" target="_blank">
-        <img id="g1" src="./images/artist(green)/g1.jpg">
-        <h3 class="text">Paul McCartney</h3>
-      </a>
+        <a href="https://www.paulmccartney.com/" target="_blank">
+          <img id="g1" src="./images/artist(green)/g1.jpg">
+          <h3 class="text">Paul McCartney</h3>
+        </a>
 
 
-      <a href="https://www.adele.com/" target="_blank">
-        <img id="b1" src="./images/artist(blue)/b1.jpg">
-        <h3 class="text">Adele</h3>
-      </a>
+        <a href="https://www.adele.com/" target="_blank">
+          <img id="b1" src="./images/artist(blue)/b1.jpg">
+          <h3 class="text">Adele</h3>
+        </a>
 
-      <a href="https://newjeans.kr/" target="_blank">
-        <img id="g2" src="./images/artist(green)/g2.jpg">
-        <h3 class="text">NewJeans</h3>
-      </a>
+        <a href="https://newjeans.kr/" target="_blank">
+          <img id="g2" src="./images/artist(green)/g2.jpg">
+          <h3 class="text">NewJeans</h3>
+        </a>
 
-      <a href="https://redhotchilipeppers.com/" target="_blank">
-        <img id="b2" src="./images/artist(blue)/b2.jpg">
-        <h3 class="text">R.H.C.P</h3>
-      </a>
+        <a href="https://redhotchilipeppers.com/" target="_blank">
+          <img id="b2" src="./images/artist(blue)/b2.jpg">
+          <h3 class="text">R.H.C.P</h3>
+        </a>
 
-      <a href="https://www.radiohead.com/" target="_blank">
-        <img id="g3" src="./images/artist(green)/g3.jpg">
-        <h3 class="text">Radiohead</h3>
-      </a>
+        <a href="https://www.radiohead.com/" target="_blank">
+          <img id="g3" src="./images/artist(green)/g3.jpg">
+          <h3 class="text">Radiohead</h3>
+        </a>
 
-      <a href="https://www.coldplay.com/" target="_blank">
-        <img id="b3" src="./images/artist(blue)/b3.jpg">
-        <h3 class="text">Coldplay</h3>
-      </a>
+        <a href="https://www.coldplay.com/" target="_blank">
+          <img id="b3" src="./images/artist(blue)/b3.jpg">
+          <h3 class="text">Coldplay</h3>
+        </a>
 
-      <a href="https://www.billieeilish.com/" target="_blank">
-        <img src="./images/artist(green)/g4.jpg">
-        <h3 class="text">Billie Eilish</h3>
-      </a>
+        <a href="https://www.billieeilish.com/" target="_blank">
+          <img src="./images/artist(green)/g4.jpg">
+          <h3 class="text">Billie Eilish</h3>
+        </a>
 
-      <a href="https://itzy.jype.com/" target="_blank">
-        <img id="b4" src="./images/artist(blue)/b4.jpg">
-        <h3 class="text">ITZY</h3>
-      </a>
+        <a href="https://itzy.jype.com/" target="_blank">
+          <img id="b4" src="./images/artist(blue)/b4.jpg">
+          <h3 class="text">ITZY</h3>
+        </a>
 
-      <a href="https://slipknot1.com/" target="_blank">
-        <img id="g5" src="./images/artist(green)/g5.jpg">
-        <h3 class="text">SLIPKNOT</h3>
-      </a>
-      <a href="https://www.postmalone.com/" target="_blank">
-        <img id="b5" src="./images/artist(blue)/b5.jpg">
-        <h3 class="text">Post Malone</h3>
-      </a>
+        <a href="https://slipknot1.com/" target="_blank">
+          <img id="g5" src="./images/artist(green)/g5.jpg">
+          <h3 class="text">SLIPKNOT</h3>
+        </a>
+        <a href="https://www.postmalone.com/" target="_blank">
+          <img id="b5" src="./images/artist(blue)/b5.jpg">
+          <h3 class="text">Post Malone</h3>
+        </a>
 
-      <a href="https://beastieboys.com/" target="_blank">
-        <img id="g6" src="./images/artist(green)/g6.jpg">
-        <h3 class="text">Beastie Boys</h3>
-      </a>
+        <a href="https://beastieboys.com/" target="_blank">
+          <img id="g6" src="./images/artist(green)/g6.jpg">
+          <h3 class="text">Beastie Boys</h3>
+        </a>
 
-      <a href="https://the1975.com/" target="_blank">
-        <img id="b6" src="./images/artist(blue)/b6.jpg">
-        <h3 class="text">The 1975</h3>
-      </a>
+        <a href="https://the1975.com/" target="_blank">
+          <img id="b6" src="./images/artist(blue)/b6.jpg">
+          <h3 class="text">The 1975</h3>
+        </a>
 
-      <a href="https://www.youtube.com/user/PalmyOfficialChannel" target="_blank">
-        <img id="g7" src="./images/artist(green)/g7.jpg">
-        <h3 class="text">Palmy</h3>
-      </a>
+        <a href="https://www.youtube.com/user/PalmyOfficialChannel" target="_blank">
+          <img id="g7" src="./images/artist(green)/g7.jpg">
+          <h3 class="text">Palmy</h3>
+        </a>
 
-      <a href="https://www.smtown.com/artist/musician/10766" target="_blank">
-        <img id="b7" src="./images/artist(blue)/b7.jpg">
-        <h3 class="text">Aespa</h3>
-      </a>
+        <a href="https://www.smtown.com/artist/musician/10766" target="_blank">
+          <img id="b7" src="./images/artist(blue)/b7.jpg">
+          <h3 class="text">Aespa</h3>
+        </a>
 
-      <a href="https://greenday.com/" target="_blank">
-        <img id="g8" src="./images/artist(green)/g8.jpg">
-        <h3 class="text">Greenday</h3>
-      </a>
+        <a href="https://greenday.com/" target="_blank">
+          <img id="g8" src="./images/artist(green)/g8.jpg">
+          <h3 class="text">Greenday</h3>
+        </a>
 
-      <a href="https://sigurros.com/" target="_blank">
-        <img id="b8" src="./images/artist(blue)/b8.jpg">
-        <h3 class="text">Sigur Ros</h3>
-      </a>
+        <a href="https://sigurros.com/" target="_blank">
+          <img id="b8" src="./images/artist(blue)/b8.jpg">
+          <h3 class="text">Sigur Ros</h3>
+        </a>
 
-      <a href="https://www.aimyong.net/" target="_blank">
-        <img id="g9" src="./images/artist(green)/g9.jpg">
-        <h3 class="text">Aimyong</h3>
-      </a>
+        <a href="https://www.aimyong.net/" target="_blank">
+          <img id="g9" src="./images/artist(green)/g9.jpg">
+          <h3 class="text">Aimyong</h3>
+        </a>
 
-      <a href="https://soundcloud.com/250braingrain" target="_blank">
-        <img id="b9" src="./images/artist(blue)/b9.jpg">
-        <h3 class="text">250</h3>
-      </a>
-    </div>
+        <a href="https://soundcloud.com/250braingrain" target="_blank">
+          <img id="b9" src="./images/artist(blue)/b9.jpg">
+          <h3 class="text">250</h3>
+        </a>
+      </div>
     </section>
     <section>
       <div class="main_lineup">
         <a href="artist_g.html">
-          <img
-            src="./images/main/KakaoTalk_20230405_202030405.png"
-            alt=""> 
+          <img src="./images/main/KakaoTalk_20230405_202030405.png" alt="">
         </a>
         <a href="artist_b.html">
-          <img
-            src="./images/main/KakaoTalk_20230405_202030405_01.png"
-            alt="">
+          <img src="./images/main/KakaoTalk_20230405_202030405_01.png" alt="">
         </a>
       </div>
     </section>
@@ -675,8 +696,8 @@ transition: 0.3s ease-in;
       <!-- 티켓 번들 -->
       <div class="main_ticket_bundle">
         <a href="ticket.html">1DAY</a>
-          <a href="ticket.html">2DAY</a>
-          <a href="ticket.html">PREMIUM</a>
+        <a href="ticket.html">2DAY</a>
+        <a href="ticket.html">PREMIUM</a>
       </div>
     </section>
     <footer>
@@ -700,4 +721,5 @@ transition: 0.3s ease-in;
     document.cookie = `${cookieName}=${cookieValue}; path=/`;
   }
 </script>
+
 </html>

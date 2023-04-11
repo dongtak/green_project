@@ -1,106 +1,111 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <!-- 외부 스타일 -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/common.css"/>
-    <link rel="stylesheet" href="./css/signup.css"/>
-    <link rel="stylesheet" href="./css/blur.css">
-    <!-- 외부 스크립트 -->
-    <script src="./js/mobile_btn.js"></script>
-    <script src="./js/signup.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    
-    <!-- 외부 폰트 -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SIGN UP</title>
-    <script>
-      </script>
+
+<head>
+  <!-- 외부 스타일 -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/signup.css" />
+  <link rel="stylesheet" href="./css/blur.css">
+  <!-- 외부 스크립트 -->
+  <script src="./js/mobile_btn.js"></script>
+  <script src="./js/signup.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <!-- 외부 폰트 -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIGN UP</title>
+  <script>
+  </script>
 </head>
+
 <body>
   <div class="blur"></div>
-    <div id="wrapper">
-      <!-- 헤더 -->
-      <header>
-        <div class="logo">
-          <a href="index.html">
-            <img src="./images/favicon/logo.png">
-            <!-- <h1>
+  <div id="wrapper">
+    <!-- 헤더 -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="./images/favicon/logo.png">
+          <!-- <h1>
               G&B
               <br />
               FESTIVAL
             </h1> -->
-          </a>
+        </a>
+      </div>
+      <!-- 모바일 버튼 -->
+      <div class="mobile_btn">
+        <!-- 햄버거버튼 -->
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="top_nav">
+          <hr>
+          <ul class="nav_mobile">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="artist.html">ARTIST</a></li>
+            <li><a href="ticket.html">TICKET</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="map.html">MAP</a> </li>
+            <li><a href="faq.html">FAQ/Q&A</a></li>
+            <li><a href="signin.html">SIGN IN</a></li>
+          </ul>
         </div>
-        <!-- 모바일 버튼 -->
-        <div class="mobile_btn">
-          <!-- 햄버거버튼 -->
-          <input type="checkbox" id="hamburger" />
-          <label for="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <div class="top_nav">
-            <hr>
-            <ul class="nav_mobile">
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="artist.html">ARTIST</a></li>
-              <li><a href="ticket.html">TICKET</a></li>
-              <li><a href="gallery.html">GALLERY</a></li>
-              <li><a href="map.html">MAP</a> </li> 
-               <li><a href="faq.html">FAQ/Q&A</a></li>
-              <li><a href="signin.html">SIGN IN</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="top_pc">
-          <a href="about.html">ABOUT</a>
-  
-  
-          <!-- <div class="dropdown"> -->
-            <a class="dropbtn" href="artist.html">ARTIST</a>
-            <!-- <div class="dropdown-content">
+      </div>
+      <div class="top_pc">
+        <a href="about.html">ABOUT</a>
+
+
+        <!-- <div class="dropdown"> -->
+        <a class="dropbtn" href="artist.html">ARTIST</a>
+        <!-- <div class="dropdown-content">
               <a href="artist_g.html">GREEN</a>
               <a href="artist_b.html">BLUE</a>
             </div> -->
-            <!-- </div> -->
-  
-            <a href="ticket.html">TICKET</a>
-            <a href="gallery.html">GALLERY</a>
-  
-  
-            <div class="dropdown">
-              <a class="dropbtn">INFO</a>
-              <div class="dropdown-content">
+        <!-- </div> -->
+
+        <a href="ticket.html">TICKET</a>
+        <a href="gallery.html">GALLERY</a>
+
+
+        <div class="dropdown">
+          <a class="dropbtn">INFO</a>
+          <div class="dropdown-content">
             <a href="map.html">MAP</a>
             <a href="faq.html">FAQ/Q&A</a>
           </div>
-          </div>
-  
-  
-            <a href="signin.html">SIGN IN</a>
         </div>
-        
-  
-      </header>
-      <section>
-        <!-- 로그인 컨테이너 -->
+
+
+        <a href="signin.html">SIGN IN</a>
+      </div>
+
+
+    </header>
+    <section>
+      <!-- 로그인 컨테이너 -->
       <div class="container">
         <h1>회원가입</h1> <!-- 제목 -->
-        <form onsubmit="return checkz()" method="post" action="" enctype="text/plain" >
+        <form onsubmit="return checkz()" method="post" action="" enctype="text/plain">
           <label for="name">이름 :<input type="text" name="nam" id="name" placeholder="이름을 입력해 주세요."></label>
-         <label for="uid">ID :<input type="text" name="uid" id="uid" maxlength="12" placeholder="4~12자의 영문 대소문자와 숫자로만 입력" >
-         <small class="small">4~12자리의 영문 대소문자와 숫자로만 입력</small></label>
-         <label for="password" >PW :<input type="password" id="pwd" name="pwd" maxlength="12" placeholder="4~12자의 영문 대소문자와 숫자로만 입력" >
-         <small class="small"> 4~12자리의 영문 대소문자와 숫자로만 입력</small></label>
-         <label for="password2" >PW확인 :<input type="password" id="pwd2" name="pwd2" maxlength="12" placeholder="비밀번호 확인" ></label>
-         <label for="email" >E-MAIL :<input type="text" id="email" name="email" value="" placeholder="이메일 주소" >
-        <br>
-         <small class="samil">예)email2023@domain.com</small>  
-                                <!-- <select id="select">
+          <label for="uid">ID :<input type="text" name="uid" id="uid" maxlength="12"
+              placeholder="4~12자의 영문 대소문자와 숫자로만 입력">
+            <small class="small">4~12자리의 영문 대소문자와 숫자로만 입력</small></label>
+          <label for="password">PW :<input type="password" id="pwd" name="pwd" maxlength="12"
+              placeholder="4~12자의 영문 대소문자와 숫자로만 입력">
+            <small class="small"> 4~12자리의 영문 대소문자와 숫자로만 입력</small></label>
+          <label for="password2">PW확인 :<input type="password" id="pwd2" name="pwd2" maxlength="12"
+              placeholder="비밀번호 확인"></label>
+          <label for="email">E-MAIL :<input type="text" id="email" name="email" value="" placeholder="이메일 주소">
+            <br>
+            <small class="samil">예)email2023@domain.com</small>
+            <!-- <select id="select">
                                   <option value="" disabled selected>E-Mail 선택</option>
                                   <option value="naver.com" id="naver.com">naver.com</option>
                                   <option value="hanmail.net" id="hanmail.net">hanmail.net</option>
@@ -108,19 +113,22 @@
                                   <option value="nate.com" >nate.com</option>
                                   <option value="directly" id="textEmail">직접 입력하기</option>
                                 </select> -->
-         </label>
-         <label for="phone" >PHONE :<br><input type="phone" class="aa" id="phone-first" name="phone-first" maxlength="3" ><span class="spans">&nbsp;&nbsp;-</span>&nbsp;
-         <input type="text"  class="aa" id="phone-second" name="phone-second" maxlength="4" ><span class="spans">&nbsp;&nbsp;-</span>&nbsp; <input type="text"  class="aa" id="phone-third" name="phone-third" maxlength="4"  ></label>
-         
-          <div class="checkbox1"> 
-          <input type="checkbox" id="c1" name="cc" />
-          <label for="c1"><span></span>구독하기</label>
-         
-          <input type="checkbox" id="c2" name="cc" />
-          <label for="c2"><span></span>수신동의</label>
-        </div>
+          </label>
+          <label for="phone">PHONE :<br><input type="phone" class="aa" id="phone-first" name="phone-first"
+              maxlength="3"><span class="spans">&nbsp;&nbsp;-</span>&nbsp;
+            <input type="text" class="aa" id="phone-second" name="phone-second" maxlength="4"><span
+              class="spans">&nbsp;&nbsp;-</span>&nbsp; <input type="text" class="aa" id="phone-third" name="phone-third"
+              maxlength="4"></label>
 
-        <!-- <div class="policy">
+          <div class="checkbox1">
+            <input type="checkbox" id="c1" name="cc" />
+            <label for="c1"><span></span>구독하기</label>
+
+            <input type="checkbox" id="c2" name="cc" />
+            <label for="c2"><span></span>수신동의</label>
+          </div>
+
+          <!-- <div class="policy">
           <h2>개인보호 정책</h2>
           <div class="text">
               복붙해와야함
@@ -202,18 +210,19 @@
 
 
       </div> -->
-      <div class="button">
-         <button class="btn_signup" type="submit" value="회원가입">회원가입</button>
-         <button class="btn_reset" type="reset" value="다시입력">다시입력</button>
-        <!-- 누르면 회원가입 -->
-        </div>
+          <div class="button">
+            <button class="btn_signup" type="submit" value="회원가입">회원가입</button>
+            <button class="btn_reset" type="reset" value="다시입력">다시입력</button>
+            <!-- 누르면 회원가입 -->
+          </div>
         </form>
-      </section>
+    </section>
 
-      <footer>
-        <img src="./images/favicon/logo.png" alt="">
-        <p>&copy; G&B PRODUCTIONS CO.,LTD.2023 All Copyrights Reserved.</p>
-      </footer>
-    </div>
+    <footer>
+      <img src="./images/favicon/logo.png" alt="">
+      <p>&copy; G&B PRODUCTIONS CO.,LTD.2023 All Copyrights Reserved.</p>
+    </footer>
+  </div>
 </body>
+
 </html>

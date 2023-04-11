@@ -2,8 +2,8 @@
 <html lang="ko">
 
 <head>
-    <!-- 파비콘 -->
-    <link rel="shortcut icon" href="./images/favicon/logo.png" type="image/x-icon">
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="./images/favicon/logo.png" type="image/x-icon">
   <!-- 외부 스타일 -->
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/common.css" />
@@ -23,101 +23,108 @@
   <title>TICKET</title>
 
   <style>
-        section {
+    section {
       margin-top: 125px;
     }
 
-  
 
-.premium .grade a{
-   /* font-family: 'Times New Roman',serif; */
-   /* letter-spacing: 5px; */
-   background-image: linear-gradient(
-	to right,
-	/* #462323 0,
+
+    .premium .grade a {
+      /* font-family: 'Times New Roman',serif; */
+      /* letter-spacing: 5px; */
+      background-image: linear-gradient(to right,
+          /* #462323 0,
        	#cb9b51 22%, 
 	#f6e27a 45%,
 	#f6f2c0 50%,
 	#f6e27a 55%,
 	#cb9b51 78%,
 	#462523 100% */
-  rgb(234, 234, 234) 22.3%, rgb(201, 234, 211) 56.6%, rgb(255, 180, 189) 90.9%
-	);
-   color:transparent;
-   -webkit-background-clip:text;
-}
- .grade a{
-   /* font-family: 'Times New Roman',serif; */
-   /* letter-spacing: 5px; */
-   font-size: 36px;
-   background-image: linear-gradient(55deg, rgb(255, 255, 255) 20.1%, rgb(198, 206, 255)100.2%);
-   color:transparent;
-   -webkit-background-clip:text;
-  
-}
+          rgb(234, 234, 234) 22.3%, rgb(201, 234, 211) 56.6%, rgb(255, 180, 189) 90.9%);
+      color: transparent;
+      -webkit-background-clip: text;
+    }
 
-.general .ticket_btn a{
-  color: transparent;
-  font-weight: 600;
-  background-image: linear-gradient(55deg, rgb(255, 255, 255) 20.1%, rgb(198, 206, 255)100.2%);
-  -webkit-background-clip: text;
-  border: 2px solid rgb(234, 234, 234);
-}
-.general .ticket_btn a:hover{
-  animation: glow_g 6s ease-in-out infinite;
-}
-.premium .ticket_btn a
-{
-  font-weight: 600;
-  color: transparent;
-  background-image: linear-gradient(to right, rgb(234, 234, 234) 30.3%,
-   rgb(201, 234, 211) 56.6%, rgb(255, 180, 189) 70.9%);
-  -webkit-background-clip: text;
-  border: 2px solid rgb(234, 234, 234);
-  
-}
-.premium .ticket_btn a:hover{
-  animation: glow 6s ease-in-out infinite;
+    .grade a {
+      /* font-family: 'Times New Roman',serif; */
+      /* letter-spacing: 5px; */
+      font-size: 36px;
+      background-image: linear-gradient(55deg, rgb(255, 255, 255) 20.1%, rgb(198, 206, 255)100.2%);
+      color: transparent;
+      -webkit-background-clip: text;
+
+    }
+
+    .general .ticket_btn a {
+      color: transparent;
+      font-weight: 600;
+      background-image: linear-gradient(55deg, rgb(255, 255, 255) 20.1%, rgb(198, 206, 255)100.2%);
+      -webkit-background-clip: text;
+      border: 2px solid rgb(234, 234, 234);
+    }
+
+    .general .ticket_btn a:hover {
+      animation: glow_g 6s ease-in-out infinite;
+    }
+
+    .premium .ticket_btn a {
+      font-weight: 600;
+      color: transparent;
+      background-image: linear-gradient(to right, rgb(234, 234, 234) 30.3%,
+          rgb(201, 234, 211) 56.6%, rgb(255, 180, 189) 70.9%);
+      -webkit-background-clip: text;
+      border: 2px solid rgb(234, 234, 234);
+
+    }
+
+    .premium .ticket_btn a:hover {
+      animation: glow 6s ease-in-out infinite;
 
 
-}
-.premium .ticket_btn a:hover:before {
-  border: 2px solid rgb(201, 234, 211);
-}
-.premium .ticket_btn a:hover:after {
-  border: 2px solid rgb(255, 180, 189) ;
-}
-@keyframes glow {
-     10% {
+    }
+
+    .premium .ticket_btn a:hover:before {
+      border: 2px solid rgb(201, 234, 211);
+    }
+
+    .premium .ticket_btn a:hover:after {
+      border: 2px solid rgb(255, 180, 189);
+    }
+
+    @keyframes glow {
+      10% {
         box-shadow: -10px -10px 20px rgb(201, 234, 211), 10px -10px 48px rgb(255, 180, 189);
-        box-shadow: -6px -7px 17px rgb(201, 234, 211),  10px -10px 31px rgb(255, 180, 189);
+        box-shadow: -6px -7px 17px rgb(201, 234, 211), 10px -10px 31px rgb(255, 180, 189);
       }
 
-     50% {
-        box-shadow: -6px -12px 30px rgb(201, 234, 211),  4px -10px 20px rgb(255, 180, 189);
-        box-shadow: -2px -3px 20px rgb(201, 234, 211),  20px -10px 30px rgb(255, 180, 189);
+      50% {
+        box-shadow: -6px -12px 30px rgb(201, 234, 211), 4px -10px 20px rgb(255, 180, 189);
+        box-shadow: -2px -3px 20px rgb(201, 234, 211), 20px -10px 30px rgb(255, 180, 189);
       }
 
-      100%{
-        box-shadow: 2px -7px 30px rgb(201, 234, 211),  2px -20px 20px rgb(255, 180, 189);
-        box-shadow: -8px -6px 20px rgb(201, 234, 211),  5px -2px 40px rgb(255, 180, 189);
-      }}
+      100% {
+        box-shadow: 2px -7px 30px rgb(201, 234, 211), 2px -20px 20px rgb(255, 180, 189);
+        box-shadow: -8px -6px 20px rgb(201, 234, 211), 5px -2px 40px rgb(255, 180, 189);
+      }
+    }
 
-      @keyframes glow_g {
-     10% {
+    @keyframes glow_g {
+      10% {
         box-shadow: -5px -10px 20px rgb(255, 255, 255), 0 -10px 18px rgb(198, 206, 255);
-        box-shadow: -2px -7px 17px rgb(255, 255, 255),  0 -10px 31px rgb(198, 206, 255);
+        box-shadow: -2px -7px 17px rgb(255, 255, 255), 0 -10px 31px rgb(198, 206, 255);
       }
 
-     50% {
-        box-shadow: -10px -12px 30px rgb(255, 255, 255),  4px -10px 20px rgb(198, 206, 255);
-        box-shadow: -6px -3px 20px rgb(255, 255, 255),  12px -10px 30px rgb(198, 206, 255);
+      50% {
+        box-shadow: -10px -12px 30px rgb(255, 255, 255), 4px -10px 20px rgb(198, 206, 255);
+        box-shadow: -6px -3px 20px rgb(255, 255, 255), 12px -10px 30px rgb(198, 206, 255);
       }
 
-      100%{
-        box-shadow: -12px -7px 30px rgb(255, 255, 255),  12px -20px 20px rgb(198, 206, 255);
-        box-shadow: 8px -6px 20px rgb(255, 255, 255),  5px -2px 20px rgb(198, 206, 255);
-      }}
+      100% {
+        box-shadow: -12px -7px 30px rgb(255, 255, 255), 12px -20px 20px rgb(198, 206, 255);
+        box-shadow: 8px -6px 20px rgb(255, 255, 255), 5px -2px 20px rgb(198, 206, 255);
+      }
+    }
+
     a {
       color: aliceblue;
     }
@@ -135,78 +142,82 @@
       margin: 20px auto;
     }
 
-      .ticket_btn{
-       display: flex;
-       justify-content: space-evenly;
+    .ticket_btn {
+      display: flex;
+      justify-content: space-evenly;
 
-      }
-      .ticket_btn a {
-    position: relative;
-    border: 2px solid white;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    display: inline-block;
-    padding: 1em 2em;
-}
-.ticket_btn a:before,
-.ticket_btn a:after{
-    height:90px;
-    width:45px;
-    content: '';
-    position: absolute;
-    top: 0.9em;
-    top: calc(0.9em - 1px);
-    height: 1.2em;
-    width: 0.6em;
-   
-    border: 2px solid white;
-}
-.ticket_btn a:before {
-    left: -2px;
-    border-radius: 0 1em 1em 0;
-    border-left-color: rgb(189, 189, 189);
-}
-.ticket_btn a:after {
-    right: -2px;
-    border-radius: 1em 0 0 1em;
-    border-right-color: rgb(189, 189, 189);
-}
-/* 오퍼 */
+    }
 
-.general h2{
-  display: inline-block;
-  margin:20px;
-  margin-top: 100px;
-}
-.offer_pc,.grade_pc {
-    display:none;
-  }
-  
+    .ticket_btn a {
+      position: relative;
+      border: 2px solid white;
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      display: inline-block;
+      padding: 1em 2em;
+    }
+
+    .ticket_btn a:before,
+    .ticket_btn a:after {
+      height: 90px;
+      width: 45px;
+      content: '';
+      position: absolute;
+      top: 0.9em;
+      top: calc(0.9em - 1px);
+      height: 1.2em;
+      width: 0.6em;
+
+      border: 2px solid white;
+    }
+
+    .ticket_btn a:before {
+      left: -2px;
+      border-radius: 0 1em 1em 0;
+      border-left-color: rgb(189, 189, 189);
+    }
+
+    .ticket_btn a:after {
+      right: -2px;
+      border-radius: 1em 0 0 1em;
+      border-right-color: rgb(189, 189, 189);
+    }
+
+    /* 오퍼 */
+
+    .general h2 {
+      display: inline-block;
+      margin: 20px;
+      margin-top: 100px;
+    }
+
+    .offer_pc,
+    .grade_pc,
+    .offer_slider {
+      display: none;
+    }
+
     .offer_img {
       width: 100%;
       height: 100px;
       transition: 0.2s;
-    
-    }
-  
-    .offer_slider{
-      display: none;
+
     }
 
 
-    .offer:hover .offer_img{
-        height: 250px;
+    .offer:hover .offer_img {
+      height: 250px;
 
-      }
-    
+    }
+
 
 
     /* 오퍼 설명 */
     .offer_img::before {
       /* content: "셔틀버스"; */
       font-size: inherit;
-      
+
     }
 
     /* .offer_img::after {
@@ -238,10 +249,12 @@
     .offer:nth-child(6) .offer_img {
       background: url("./images/ticket/offer6.jpg") right/cover;
     }
-    .grade hr{
+
+    .grade hr {
       background: #ffffff;
       height: 2px;
     }
+
     .grade {
       width: 72%;
       text-align: center;
@@ -251,104 +264,120 @@
       margin-bottom: 50px;
       font-size: 24px;
     }
-    .grade a{
+
+    .grade a {
       font-size: 48px;
     }
-    .grade_pc{
-      display: none;
-    }
-    .general .grade>hr{
-  background:  linear-gradient(to right,rgb(255, 255, 255) 20.1%, rgb(198, 206, 255)100.2%);
-}
-.premium .grade>hr{
-  background: linear-gradient(to right,rgb(234, 234, 234) 22.3%, rgb(201, 234, 211) 56.6%, rgb(255, 180, 189) 90.9%
-	);
-}
 
-        /* 모바일용 */
-        @media all and (max-width: 481px) {
-        section {
-          padding-top: 125px;
-          margin: 0;
-        }
-      .offer:hover .offer_img:before{
-    position: absolute;
-    height: 250px;
-    width: 100%;
-    background:linear-gradient(to right,rgba(0, 0, 0, 0.623), rgba(255, 255, 255, 0));
-    z-index: 0;
-    font-size: 44px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493);
-    animation: fadeInLeft 0.2s ease forwards;
+    .general .grade>hr {
+      background: linear-gradient(to right, rgb(255, 255, 255) 20.1%, rgb(198, 206, 255)100.2%);
+    }
 
-}
-.offer:nth-child(1):hover .offer_img:before{
-  content: '\ Shuttle Bus';
-}
-.offer:nth-child(2):hover .offer_img:before{
-  content: ' Welcome Drinks';
-}
-.offer:nth-child(3):hover .offer_img:before{
-  content: ' 5 Stars Buffet';
-}
-.offer:nth-child(4):hover .offer_img:before{
-  content: ' Exclusive Campsite';
-}
-.offer:nth-child(5):hover .offer_img:before{
-  content: ' Premium Zone';
-}
-.offer:nth-child(6):hover .offer_img:before{
-  content: ' VIP LOUNGE';
-}
+    .premium .grade>hr {
+      background: linear-gradient(to right, rgb(234, 234, 234) 22.3%, rgb(201, 234, 211) 56.6%, rgb(255, 180, 189) 90.9%);
+    }
 
-.offer:hover .offer_img::after{
-  display: block;
-}
-.general .offer:nth-child(2) , .offer:nth-child(6){
-      border-bottom:1px solid #ffffff;
-    }
- 
-    .offer div{
-      border-top:1px solid white;
-    }
- 
-@keyframes fadeInLeft{
-    0%{
-      color: #ffffff00;
-        width: 0;
-        height: 100px;
-    }
-    100%{
-      color: #ffffff;
-        width: 100%;
+    /* 모바일용 */
+    @media all and (max-width: 481px) {
+      section {
+        padding-top: 125px;
+        margin: 0;
+      }
+
+      .offer:hover .offer_img:before {
+        position: absolute;
         height: 250px;
-    }
-  }
-  h2 {
-      border-top: none;
-    }
-    .premium h2{     
-      margin: 20px;
-      margin-top: 100px;
-    }
-    .premium .grade,  .grade{
-      position: relative;
-      margin-top: 100px;
-    }
-section>h2{
-  display: none;
-}
+        width: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.623), rgba(255, 255, 255, 0));
+        z-index: 0;
+        font-size: 44px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493);
+        animation: fadeInLeft 0.2s ease forwards;
 
-.grade{
-  width: 81%;
-}
-}
-/* PC화면 */
-    @media all and (min-width: 481px) {
-      .premium h2{
+      }
+
+      .offer:nth-child(1):hover .offer_img:before {
+        content: '\ Shuttle Bus';
+      }
+
+      .offer:nth-child(2):hover .offer_img:before {
+        content: ' Welcome Drinks';
+      }
+
+      .offer:nth-child(3):hover .offer_img:before {
+        content: ' 5 Stars Buffet';
+      }
+
+      .offer:nth-child(4):hover .offer_img:before {
+        content: ' Exclusive Campsite';
+      }
+
+      .offer:nth-child(5):hover .offer_img:before {
+        content: ' Premium Zone';
+      }
+
+      .offer:nth-child(6):hover .offer_img:before {
+        content: ' VIP LOUNGE';
+      }
+
+      .offer:hover .offer_img::after {
+        display: block;
+      }
+
+      .general .offer:nth-child(2),
+      .offer:nth-child(6) {
+        border-bottom: 1px solid #ffffff;
+      }
+
+      .offer div {
+        border-top: 1px solid white;
+      }
+
+      @keyframes fadeInLeft {
+        0% {
+          color: #ffffff00;
+          width: 0;
+          height: 100px;
+        }
+
+        100% {
+          color: #ffffff;
+          width: 100%;
+          height: 250px;
+        }
+      }
+
+      h2 {
+        border-top: none;
+      }
+
+      .premium h2 {
+        margin: 20px;
+        margin-top: 100px;
+      }
+
+      .premium .grade,
+      .grade {
+        position: relative;
+        margin-top: 100px;
+      }
+
+      section>h2 {
         display: none;
       }
-      .offer_slider{
+
+      .grade {
+        width: 81%;
+      }
+    }
+
+    /* PC화면 */
+    @media all and (min-width: 481px) {
+      .premium h2 {
+        display: none;
+      }
+
+      .offer_slider {
         display: block;
         padding-top: 125px;
         padding-bottom: 250px;
@@ -376,70 +405,76 @@ section>h2{
         color: #ffffff;
       }
 
-     
 
 
-      .general>h2{
+
+      .general>h2 {
         display: none;
       }
+
       .premium {
         padding-top: 100px;
         padding-bottom: 100px;
       }
+
       .ticket_btn a {
-    padding: 0;
-    height: auto;
-    width: 40%;
-}
-.ticket_btn a:before,
-.ticket_btn a:after{
-    height:90px;
-    width:45px;
-    content: '';
-    position: absolute;
-    top: 0.9em;
-    top: calc(0.9em - 1px);
-    height: 1.2em;
-    width: 0.6em;
-   
-    border: 2px solid white;
-}
-.ticket_btn a:before {
-    left: -2px;
-    border-radius: 0 1em 1em 0;
-    border-left-color: rgb(189, 189, 189);
-}
-.ticket_btn a:after {
-    right: -2px;
-    border-radius: 1em 0 0 1em;
-    border-right-color: rgb(189, 189, 189);
-}
+        padding: 0;
+        height: auto;
+        width: 40%;
+      }
+
+      .ticket_btn a:before,
+      .ticket_btn a:after {
+        height: 90px;
+        width: 45px;
+        content: '';
+        position: absolute;
+        top: 0.9em;
+        top: calc(0.9em - 1px);
+        height: 1.2em;
+        width: 0.6em;
+
+        border: 2px solid white;
+      }
+
+      .ticket_btn a:before {
+        left: -2px;
+        border-radius: 0 1em 1em 0;
+        border-left-color: rgb(189, 189, 189);
+      }
+
+      .ticket_btn a:after {
+        right: -2px;
+        border-radius: 1em 0 0 1em;
+        border-right-color: rgb(189, 189, 189);
+      }
 
 
 
-/* 슬라이더(PC) */
-#image-track {
-            display: flex;
-            gap: 2vmin;
-            position: absolute;
-            left: 30%;
-            transform: translate(0%, -50%);
-            user-select: none;
-        }
+      /* 슬라이더(PC) */
+      #image-track {
+        display: flex;
+        gap: 2vmin;
+        position: absolute;
+        left: 30%;
+        transform: translate(0%, -50%);
+        user-select: none;
+      }
 
-        #image-track>.image {
-            width:30vmin;
-            height: 45vmin;
-            object-fit: cover;
-            object-position: 50% center;
-        }
+      #image-track>.image {
+        width: 30vmin;
+        height: 45vmin;
+        object-fit: cover;
+        object-position: 50% center;
+      }
 
-        img:hover {
-      opacity: 0.5;
-     }
+      img:hover {
+        opacity: 0.5;
+      }
 
+       
       /* 오퍼 스타일 */
-     /* 삭제된 기능 */
+      /* 삭제된 기능 */
       .offers {
         height: 120px;
         margin: 100px auto;
@@ -447,16 +482,16 @@ section>h2{
         justify-content: center;
 
       }
-      
+
       .offer_bar {
         position: relative;
         z-index: 0;
-        top:-150px;
+        top: -150px;
         width: 100%;
         height: 60px;
         background: #ffffff;
         overflow: hidden;
-}
+      }
 
 
       .offer {
@@ -471,11 +506,53 @@ section>h2{
         /* background: #00c3ff; */
       }
 
-      .offer:nth-child(1) {
+      
+     
+
+      .offer:hover {
+        width: 240px;
+        height: 300px;
+        transform: translateY(-100px) skew(-10deg);
+        transform-origin: bottom left;
+
+      }
+
+      .offer_img {
+        width: 100%;
+        height: 100%;
+
+      }
+
+      .offer:hover .offer_img {
+        width: 100%;
+        height: 100%;
+
+      }
+
+
+
+      .offer:hover .offer_img::before {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 102%;
+        height: 101%;
+        transition: all 0.3s ease-in-out;
+        background: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 0, 0, 0));
+      }
+
+      .grade {
+        display: inline-block;
+        color: aliceblue;
+        height: 60px;
+      }
+
+    
+      .offer:nth-child(1)~:nth-child(6) {
         transform-origin: bottom left;
       }
 
-      .offer:nth-child(2) {
+      /* .offer:nth-child(2) {
         transform-origin: bottom left;
       }
 
@@ -494,48 +571,15 @@ section>h2{
 
       .offer:nth-child(6) {
         transform-origin: bottom left;
-      }
+      } */
 
-      .offer:hover {
-        width: 240px;
-        height: 300px;
-        transform: translateY(-100px) skew(-10deg);
-        transform-origin: bottom left;
-
-      }
-      .offer_img {
-        width: 100%;
-        height: 100%;
-
-      }
-      .offer:hover .offer_img{
-        width: 100%;
-        height: 100%;
-
-      }
-      
-  
-
-      .offer:hover .offer_img::before {
-        position: absolute;
-        top: 0;
-        left: 0px;
-        width: 102%;
-        height: 101%;
-        transition: all 0.3s ease-in-out;
-        background: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 0, 0, 0));
-      }
-
-      .grade {
-        display: inline-block;
-        color: aliceblue;
-        height: 60px;
-      }
-      .offers,.offer_bar{
-        display: none;
-      }
-      section>h2{
+      section>h2 {
         text-align: center;
+      }
+       /* 삭제된 기능 */
+       .offers,
+      .offer_bar {
+        display: none;
       }
     }
   </style>
@@ -547,72 +591,72 @@ section>h2{
 </head>
 
 <body>
-    <div class="blur"></div>
-    <div id="wrapper">
-      <!-- 헤더 -->
-      <header>
-        <div class="logo">
-          <a href="index.html">
-            <img src="./images/favicon/logo.png">
-            <!-- <h1>
+  <div class="blur"></div>
+  <div id="wrapper">
+    <!-- 헤더 -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="./images/favicon/logo.png">
+          <!-- <h1>
               G&B
               <br />
               FESTIVAL
             </h1> -->
-          </a>
+        </a>
+      </div>
+      <!-- 모바일 버튼 -->
+      <div class="mobile_btn">
+        <!-- 햄버거버튼 -->
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="top_nav">
+          <hr>
+          <ul class="nav_mobile">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="artist.html">ARTIST</a></li>
+            <li><a href="ticket.html">TICKET</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="map.html">MAP</a> </li>
+            <li><a href="faq.html">FAQ/Q&A</a></li>
+            <li><a href="signin.html">SIGN IN</a></li>
+          </ul>
         </div>
-        <!-- 모바일 버튼 -->
-        <div class="mobile_btn">
-          <!-- 햄버거버튼 -->
-          <input type="checkbox" id="hamburger" />
-          <label for="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <div class="top_nav">
-            <hr>
-            <ul class="nav_mobile">
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="artist.html">ARTIST</a></li>
-              <li><a href="ticket.html">TICKET</a></li>
-              <li><a href="gallery.html">GALLERY</a></li>
-              <li><a href="map.html">MAP</a> </li> 
-               <li><a href="faq.html">FAQ/Q&A</a></li>
-              <li><a href="signin.html">SIGN IN</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="top_pc">
-          <a href="about.html">ABOUT</a>
-  
-  
-          <!-- <div class="dropdown"> -->
-            <a class="dropbtn" href="artist.html">ARTIST</a>
-            <!-- <div class="dropdown-content">
+      </div>
+      <div class="top_pc">
+        <a href="about.html">ABOUT</a>
+
+
+        <!-- <div class="dropdown"> -->
+        <a class="dropbtn" href="artist.html">ARTIST</a>
+        <!-- <div class="dropdown-content">
               <a href="artist_g.html">GREEN</a>
               <a href="artist_b.html">BLUE</a>
             </div> -->
-            <!-- </div> -->
-  
-            <a href="ticket.html">TICKET</a>
-            <a href="gallery.html">GALLERY</a>
-  
-  
-            <div class="dropdown">
-              <a class="dropbtn">INFO</a>
-              <div class="dropdown-content">
+        <!-- </div> -->
+
+        <a href="ticket.html">TICKET</a>
+        <a href="gallery.html">GALLERY</a>
+
+
+        <div class="dropdown">
+          <a class="dropbtn">INFO</a>
+          <div class="dropdown-content">
             <a href="map.html">MAP</a>
             <a href="faq.html">FAQ/Q&A</a>
           </div>
-          </div>
-  
-  
-            <a href="signin.html">SIGN IN</a>
         </div>
-        
-  
-      </header>
+
+
+        <a href="signin.html">SIGN IN</a>
+      </div>
+
+
+    </header>
 
 
     <section>
@@ -621,7 +665,8 @@ section>h2{
         <h1>TICKET</h1>
         <div class="general">
           <div class="grade">
-            <hr><a href="">GENERAL</a><hr>
+            <hr><a href="">GENERAL</a>
+            <hr>
           </div>
           <div class="ticket_btn">
             <a href="">1 DAY<br>&#8361; 99,000</a>
@@ -638,15 +683,16 @@ section>h2{
             </div>
           </div>
           <div class="offer_bar"></div>
-          </div>
-          
+        </div>
+
 
 
         <div class="premium">
           <div class="grade">
-            <hr><a href="">PREMIUM</a><hr>
+            <hr><a href="">PREMIUM</a>
+            <hr>
           </div>
-         
+
           <div class="ticket_btn">
             <a href="">1 DAY<br>&#8361; 199,000</a>
             <a href="">2 DAY<br>&#8361; 249,000</a>
@@ -680,74 +726,74 @@ section>h2{
         </div>
       </div>
       <h2>OFFERS FOR PREMIUM</h2>
-     
+
+  </div>
+  </section>
+  <section class="offer_slider">
+    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+      <img class="image" src="./images/gallery/gall07.jpg" draggable="false" />
+      <img class="image" src="./images/gallery/gall14.jpg" draggable="false" />
+      <img class="image" src="./images/gallery/gall19.jpg" draggable="false" />
+      <img class="image" src="./images/gallery/gall10.jpg" draggable="false" />
+      <img class="image" src="./images/gallery/gall17.jpg" draggable="false" />
+      <img class="image" src="./images/gallery/gall24.jpg" draggable="false" />
+      <img class="image" src="./images/gallery/gall15.jpg" draggable="false" />
+      <img class="image" src="./images/gallery/gall08.jpg" draggable="false" />
+      <img class="image" src="./images/gallery/gall09.jpg" draggable="false" />
+      <img class="image" src="./images/gallery/gall20.jpg" draggable="false" />
+      <img class="image" src="./images/gallery/gall11.jpg" draggable="false" />
+      <img class="image" src="./images/gallery/gall12.jpg" draggable="false" />
+      <img class="image" src="./images/gallery/gall13.jpg" draggable="false" />
+      <img class="image" src="./images/gallery/gall36.jpg" draggable="false" />
+      <img class="image" src="./images/gallery/gall16.jpg" draggable="false" />
+      <img class="image" src="./images/gallery/gall43.jpg" draggable="false" />
     </div>
-    </section>
-    <section class="offer_slider">
-        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-          <img class="image" src="./images/gallery/gall07.jpg" draggable="false"/>
-          <img class="image" src="./images/gallery/gall14.jpg" draggable="false"/>
-          <img class="image" src="./images/gallery/gall19.jpg" draggable="false"/>
-          <img class="image" src="./images/gallery/gall10.jpg" draggable="false"/>
-          <img class="image" src="./images/gallery/gall17.jpg" draggable="false"/>
-          <img class="image" src="./images/gallery/gall24.jpg" draggable="false"/>
-          <img class="image" src="./images/gallery/gall15.jpg" draggable="false"/>
-          <img class="image" src="./images/gallery/gall08.jpg" draggable="false"/>
-          <img class="image" src="./images/gallery/gall09.jpg" draggable="false"/>
-          <img class="image" src="./images/gallery/gall20.jpg" draggable="false"/>
-          <img class="image" src="./images/gallery/gall11.jpg" draggable="false"/>
-          <img class="image" src="./images/gallery/gall12.jpg" draggable="false"/>
-          <img class="image" src="./images/gallery/gall13.jpg" draggable="false"/>
-          <img class="image" src="./images/gallery/gall36.jpg" draggable="false"/>
-          <img class="image" src="./images/gallery/gall16.jpg" draggable="false"/>
-          <img class="image" src="./images/gallery/gall43.jpg" draggable="false"/>
-         
-      </div>
-    </section>
-    <footer>
-      <img src="./images/favicon/logo.png" alt="">
-      <p>&copy; G&B PRODUCTIONS CO.,LTD.2023 All Copyrights Reserved.</p>
-    </footer>
-    </div>
+  </section>
+  <footer>
+    <img src="./images/favicon/logo.png" alt="">
+    <p>&copy; G&B PRODUCTIONS CO.,LTD.2023 All Copyrights Reserved.</p>
+  </footer>
+  </div>
 </body>
 <script>
 
-const track = document.getElementById("image-track");
+  const track = document.getElementById("image-track");
 
-const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+  const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
 
-const handleOnUp = () => {
+  const handleOnUp = () => {
     track.dataset.mouseDownAt = "0";
     track.dataset.prevPercentage = track.dataset.percentage;
-}
+  }
 
-const handleOnMove = e => {
+  const handleOnMove = e => {
     if (track.dataset.mouseDownAt === "0") return;
 
     const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-        maxDelta = window.innerWidth / 1;
+      maxDelta = window.innerWidth / 1;
 
     const percentage = (mouseDelta / maxDelta) * -100,
-        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -90);
+      nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+      nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -90);
 
     track.dataset.percentage = nextPercentage;
 
     track.animate({
-        transform: `translate(${nextPercentage}%, -50%)`
+      transform: `translate(${nextPercentage}%, -50%)`
     }, { duration: 1200, fill: "forwards" });
 
     for (const image of track.getElementsByClassName("image")) {
-        image.animate({
-            objectPosition: `${100 + nextPercentage}% center`
-        }, { duration: 1200, fill: "forwards" });
+      image.animate({
+        objectPosition: `${100 + nextPercentage}% center`
+      }, { duration: 1200, fill: "forwards" });
     }
-}
-window.onmousedown = e => handleOnDown(e);
-window.ontouchstart = e => handleOnDown(e.touches[0]);
-window.onmouseup = e => handleOnUp(e);
-window.ontouchend = e => handleOnUp(e.touches[0]);
-window.onmousemove = e => handleOnMove(e);
-window.ontouchmove = e => handleOnMove(e.touches[0]);
+  }
+  window.onmousedown = e => handleOnDown(e);
+  window.ontouchstart = e => handleOnDown(e.touches[0]);
+  window.onmouseup = e => handleOnUp(e);
+  window.ontouchend = e => handleOnUp(e.touches[0]);
+  window.onmousemove = e => handleOnMove(e);
+  window.ontouchmove = e => handleOnMove(e.touches[0]);
 </script>
+
 </html>
